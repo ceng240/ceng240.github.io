@@ -1,6 +1,9 @@
 # CENG 240
 ## Programming with Python for Engineers
 ## 2020-2021 Fall
+
+{:toc}
+
 ------
 
 ### Objectives
