@@ -1,20 +1,17 @@
 # CENG 240
-
-
 ## Programming with Python for Engineers
-
-### 2020-2021 Fall
+## 2020-2021 Fall
 ------
 
-#### Objectives
+### Objectives
 
 This course gives a brief introduction to a working understanding of basic computer organization, data representation, programming language constructs, and algorithmic thinking. It is designed as a first course of programming and supported by laboratory sessions for students outside of the Computer Engineering major.
 
-#### Textbook
+### Textbook
 *Programming with Python for Engineers,* by S. Kalkan, O. T. Şehitoğlu and G. Üçoluk. 
-Available at: https://ceng240.github.io/
+Available at: https://pp4e-book.github.io/
 
-  #### Grading
+### Grading
 
 | <!-- -->      | <!-- --> |
 | ------------- | -------- |
@@ -24,8 +21,7 @@ Available at: https://ceng240.github.io/
 | Final         | 35%      |
 
 
-
-#### Course Conduct _[In current case of distant education due to pandemic]_
+### Course Conduct _[In current case of distant education due to pandemic]_
 
 The normal (no pandemic case) flow of this course has 2 hours in-class (theoretical) lecture + 2 hours of laboratory work (which includes a quiz). In addition to this both theoretical and laboratory parts have their individual Midterms and Finals.
 
@@ -45,18 +41,18 @@ Once:
 
 
 
-#### Course Material
+### Course Material
 
-* **_Course Text Book_**  [Available at: https://ceng240.github.io/]
+* **_Course Text Book_**  [Available at: https://pp4e-book.github.io/]
   Is an 'interactive' book with a rather 'minimalist' approach: Some details or specialized subjects are not emphasized and instead, direct interaction with examples and problems are encouraged. Therefore, rather than being a 'complete reference manual', this book is a 'first things first' and 'hands on' book. The pointers to skipped details will be provided by links in the book. Bearing this in mind, the reader is strongly encouraged to read and interact <u>all</u> contents of the book thoroughly. 
 
   The book's interactivity is thanks to <a href="https://jupyter.org/">Jupyter notebook</a>. Therefore, the book differs from a conventional book by providing some dynamic content. This content can appear in audio-visual form as well as some applets (small applications) embedded in the book. It is also possible that the book asks the the reader to complete/write a piece of Python program, run it, and inspect the result, from time to time. The reader is encouraged to complete these minor tasks. Such tasks and interactions are of great assistance in gaining acquaintance with Python and building up a self-confidence in solving problems with Python. 
 
-  You can download the pdf form of the course text book from https://ceng240.github.io/
+  You can download the pdf form of the course text book from https://pp4e-book.github.io/
 
   Of course the pdf does not provide the dynamic content.
 
-* **_Course Workbook_**  [Available at: https://ceng240.github.io/]
+* **_Course Workbook_**  [Available at: https://pp4e-workbook.github.io/]
   Is also a Jupyter book that is coherent with the course text book. It contains solved and unsolved exercises in Python which are tagged with difficulty level [★－★★★★★]. Students are strongly advised to work , level by level, through the solved exercises then proceed to the unsolved ones.
 
 * **_Python Interpreter_**
@@ -92,7 +88,7 @@ Once:
        
      
 
-#### Supplementary  Material
+### Supplementary  Material
 
 **_Useful links on WEB_**  [mostly from wiki.python.org]
 
@@ -145,6 +141,6 @@ Once:
 
 
 
-#### Schedules
+### Schedules
 
 To-Be-Announced 
