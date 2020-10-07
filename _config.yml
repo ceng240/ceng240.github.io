@@ -1,11 +1,9 @@
-title: Your awesome title
+title: CENG240: Programming with Python for Engineers
 author:
-  name: GitHub User
-  email: your-email@domain.com
+  name: Sinan Kalkan, Gokturk Ucoluk
+  email: sinankalkan [at] gmail [dot] com
 description: > # this means to ignore newlines until "show_excerpts:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  This is the official course page for CENG240: Programming with Python for Engineers
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
@@ -16,8 +14,8 @@ minima:
 
   # generate social links in footer
   social_links:
-    twitter: jekyllrb
-    github:  jekyll
+    #twitter: jekyllrb
+    #github:  jekyll
     # devto: jekyll
     # dribbble: jekyll
     # facebook: jekyll
@@ -56,5 +54,5 @@ minima:
 theme: minima
 
 plugins:
- - jekyll-feed
- - jekyll-seo-tag
+ #- jekyll-feed
+ #- jekyll-seo-tag
