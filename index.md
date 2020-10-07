@@ -1,6 +1,9 @@
 # CENG 240
+{:.no_toc}
 ## Programming with Python for Engineers
+{:.no_toc}
 ## 2020-2021 Fall
+{:.no_toc}
 
 * TOC 
 {:toc}
