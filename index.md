@@ -2,7 +2,8 @@
 ## Programming with Python for Engineers
 ## 2020-2021 Fall
 
-* TOC {:toc}
+* TOC 
+{:toc}
 
 ------
 
