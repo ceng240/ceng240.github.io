@@ -26,71 +26,66 @@ Available at: [https://pp4e-book.github.io/](https://pp4e-book.github.io/)
 
 ### Course Conduct _[In current case of distant education due to pandemic]_
 
-The normal (no pandemic case) flow of this course has 2 hours in-class (theoretical) lecture + 2 hours of laboratory work (which includes a quiz). In addition to this both theoretical and laboratory parts have their individual Midterms and Finals.
+The normal (no pandemic case) flow of this course has 2 hours in-class (theoretical) lectures + 2 hours of laboratory work (which includes a quiz). In addition to this, both theoretical and laboratory parts have their individual Midterm and Final exams.
 
-This has been altered as follows.
+This has been altered as follows:
 
 Weekly:
 
-* Video recording of the weekly course subject, thought  in class, will be disseminated as a youtube link.
-* In a prescheduled zoom session the lecturer will perform subject review and a recitation (going over programming examples)
-* Course assistants will hold prescheduled zoom sessions where students will have the chance to ask their personalized questions similar to "office hours". 
-* Starting with the fourth week,  there will be a programming exam hold on a single time frame. Here the student will be given a programming  environment and a task that s/he will code in a given duration (this time will be in the range of 40-120 minutes)
+* Video recording of the weekly course subject, thought  in class, will be disseminated as a Youtube link.
+* In a prescheduled live session, the lecturer will perform subject review and a recitation (going over programming examples) of that week's topics.
+* Course assistants will hold prescheduled live sessions where students will have the chance to ask their questions, like in an "office hour" session. 
+* Starting with the fourth week, there will be a programming exam held on a single time frame. Here the students will be given a programming  environment and a task that they will code in a given duration (this time will be in the range of 40-120 minutes).
 
-Once:
+Once during the term:
 
-* A Midterm which will be a randomised multiple choice test with no-return-to-previous-question.
-* A Final which will be a randomised multiple choice test with no-return-to-previous-question.
+* A Midterm exam which will be a randomised multiple choice test with no-return-to-previous-question.
+* A Final exam which will be a randomised multiple choice test with no-return-to-previous-question.
 
 
 
 ### Course Material
 
 * **_Course Text Book_**  [Available at: [https://pp4e-book.github.io/](https://pp4e-book.github.io/)]
-  Is an 'interactive' book with a rather 'minimalist' approach: Some details or specialized subjects are not emphasized and instead, direct interaction with examples and problems are encouraged. Therefore, rather than being a 'complete reference manual', this book is a 'first things first' and 'hands on' book. The pointers to skipped details will be provided by links in the book. Bearing this in mind, the reader is strongly encouraged to read and interact <u>all</u> contents of the book thoroughly. 
+  This is an 'interactive' book with a rather 'minimalist' approach: Some details or specialized subjects are not emphasized and instead, direct interaction with examples and problems are encouraged. Therefore, rather than being a 'complete reference manual', this book is a 'first things first' and 'hands on' book. The pointers to skipped details will be provided by links in the book. Bearing this in mind, the reader is strongly encouraged to read and interact <u>all</u> contents of the book thoroughly. 
 
   The book's interactivity is thanks to <a href="https://jupyter.org/">Jupyter notebook</a>. Therefore, the book differs from a conventional book by providing some dynamic content. This content can appear in audio-visual form as well as some applets (small applications) embedded in the book. It is also possible that the book asks the the reader to complete/write a piece of Python program, run it, and inspect the result, from time to time. The reader is encouraged to complete these minor tasks. Such tasks and interactions are of great assistance in gaining acquaintance with Python and building up a self-confidence in solving problems with Python. 
 
-  You can download the pdf form of the course text book from https://pp4e-book.github.io/](https://pp4e-book.github.io/)
+  You can download the PDF of the course text book from https://pp4e-book.github.io/](https://pp4e-book.github.io/).
 
-  Of course the pdf does not provide the dynamic content.
+  Of course, the PDF does not provide the dynamic content.
 
 * **_Course Workbook_**  [Available at: [https://pp4e-workbook.github.io/](https://pp4e-workbook.github.io/)]
-  Is also a Jupyter book that is coherent with the course text book. It contains solved and unsolved exercises in Python which are tagged with difficulty level [★－★★★★★]. Students are strongly advised to work , level by level, through the solved exercises then proceed to the unsolved ones.
+  This is also a Jupyter book that is coherent with the course text book. It contains solved and unsolved exercises in Python which are tagged with difficulty levels [between ★ and ★★★★★]. Students are strongly advised to work, level by level, through the solved exercises then proceed to the unsolved ones.
 
 * **_Python Interpreter_**
 
-  There are two alternatives to practice Python.
+  There are two alternatives to practice Python:
   
-
   1. Installing a _Python 3 Interpreter_ on your personal computer.
 
-  2. Using an interpreter accessible on the WEB. 
+  2. Using an interpreter accessible on the Web. 
 
-     * For this one alternative is the environment the book is written on.
-
-        https://colab.research.google.com . 
+     * For this one alternative is the environment the book is written on, i.e. Googla Colab: <a href="https://colab.research.google.com"> https://colab.research.google.com</a>.
+     
        <img src="https://github.com/sinankalkan/CENG240/blob/master/figures/colabEntryPage.png?raw=true" alt="gg" style="zoom:70%;" />
 
-       After cancelling the entry page, you arrive at a page which looks like the one above. Click "+ Code" tab and you will see at the bottom a freshly created sub window. You can type in that window your Python code and run it by hitting the small arrow  <img src="https://github.com/sinankalkan/CENG240/blob/master/figures/rightarrowincircle.png?raw=true" alt="gg" style="zoom:50%;" />  at the left top of that sub window. 
+       After cancelling the entry page, you arrive at a page which looks like the one above. Click "+ Code" tab and you will see at the bottom a freshly created cell. You can type in that cell your Python code and run it by hitting the small arrow  <img src="https://github.com/sinankalkan/CENG240/blob/master/figures/rightarrowincircle.png?raw=true" alt="gg" style="zoom:50%;" />  at the left top of that cell. 
 
      * Another alternative is to use Python on an interpreter providing website:
 
-       * https://www.python.org/shell/
-       * http://www.pythontutor.com/visualize.html#mode=edit
-* https://www.programiz.com/python-programming/online-compiler/
-       * https://repl.it/repls/TechnicalOverjoyedDesignmethod#main.py
-       * http://pythonfiddle.com
-       * https://www.ideone.com
-       * https://www.programiz.com/python-programming/online-compiler/
-       * https://rextester.com/runcode
-       * https://www.onlinegdb.com/online_python_interpreter
-       * https://mathcs.holycross.edu/~kwalsh/python/
-       * http://techmums.co/python.html
-       
-       
+       * <a href="https://www.python.org/shell/">https://www.python.org/shell/</a>
+       * <a href="http://www.pythontutor.com/visualize.html#mode=edit">http://www.pythontutor.com/visualize.html#mode=edit</a>
+       * <a href="https://www.programiz.com/python-programming/online-compiler/">https://www.programiz.com/python-programming/online-compiler/</a>
+       * <a href="https://repl.it/repls/TechnicalOverjoyedDesignmethod#main.py">https://repl.it/repls/TechnicalOverjoyedDesignmethod#main.py</a>
+       * <a href="http://pythonfiddle.com">http://pythonfiddle.com</a>
+       * <a href="https://www.ideone.com">https://www.ideone.com</a>
+       * <a href="https://www.programiz.com/python-programming/online-compiler/">https://www.programiz.com/python-programming/online-compiler/</a>
+       * <a href="https://rextester.com/runcode">https://rextester.com/runcode</a>
+       * <a href="https://www.onlinegdb.com/online_python_interpreter">https://www.onlinegdb.com/online_python_interpreter</a>
+       * <a href="https://mathcs.holycross.edu/~kwalsh/python/">https://mathcs.holycross.edu/~kwalsh/python/</a>
+       * <a href="http://techmums.co/python.html">http://techmums.co/python.html</a>
      
-
 ### Supplementary  Material
 
 **_Useful links on WEB_**  [mostly from wiki.python.org]
@@ -119,9 +114,9 @@ Once:
   * [Top Courses to Learn Python - gitconnected.com](https://gitconnected.com/learn/python) Python tutorials submitted and ranked by Python developers with the best rising to the top 
   * [Coursesity - Python](https://coursesity.com/best-tutorials-learn/python) - Curated list of the best python courses and tutorials for beginners.
   * [BeginnersGuide/Programmers](https://wiki.python.org/moin/BeginnersGuide/Programmers) 
-  * https://realpython.com/python-first-steps/
-  * https://python.swaroopch.com
-  * https://www.learnpython.org
+  * <a href="https://realpython.com/python-first-steps/">https://realpython.com/python-first-steps/</a>
+  * <a href="https://python.swaroopch.com">https://python.swaroopch.com</a>
+  * <a href="https://www.learnpython.org">https://www.learnpython.org</a>
 * **_Interactive Courses_**
   * [CheckiO](http://www.checkio.org/) is a gamified website containing programming tasks that can be solved in Python 3. 
   * [Codecademy (](https://www.codecademy.com/search?query=python)Python) 
