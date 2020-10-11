@@ -33,9 +33,9 @@ This has been altered as follows:
 Weekly:
 
 * Video recording of the weekly course subject, thought  in class, will be disseminated as a Youtube link.
-* In a prescheduled live session, the lecturer will perform subject review and a recitation (going over programming examples) of that week's topics.
-* Course assistants will hold prescheduled live sessions where students will have the chance to ask their questions, like in an "office hour" session. 
-* Starting with the fourth week, there will be a programming exam held on a single time frame. Here the students will be given a programming  environment and a task that they will code in a given duration (this time will be in the range of 40-120 minutes).
+* In a prescheduled (see:Schedule section below) live session, the lecturer will perform subject review and a recitation (going over programming examples) of that week's topics.
+* Course assistants will hold prescheduled live sessions where students will have the chance to ask their questions, like in an "office hour" session. (will start after 4th week)
+* Starting with the 4th week, there will be a programming exam held on a single time frame. Here the students will be given a programming  environment and a task that they will code in a given duration (this time will be in the range of 40-120 minutes).
 
 Once during the term:
 
@@ -155,4 +155,16 @@ Once during the term:
 
 ### Schedules
 
-To-Be-Announced 
+| **DEPT** | **SECTION** | **LECTURER** | **ONLINE REVIEW LECT.** |
+| --- | --- | --- | --- |
+| **IE** | **9** | **Göktürk Üçoluk** | Monday 13:40-15:30 |
+| **ME** | **1** | **Oğuz Hanoğlu** | Monday 15:40-17:30 |
+| **METE** | **3** | **Selma Süloğlu** | Tuesday 15:40-17:30 |
+| **MathED &amp; EE** | **6** | **Gökhan Orhan** | Wednesday 08:40-10:30 |
+| **EE** | **7, 8** | **Onur Tolga Şehitoğlu** | To-Be-Arranged |
+| **ME** | **2** | **Hasan Ulusoy** | Friday 13:40-15:30 |
+| **MATH** | **5** | **Özcan Dülger** | Friday 13:40-15:30 |
+| **FDE** | **4** | **Özcan Dülger** | Friday 15:40-17:30 |
+
+
+Virtual Office Hourse: To-Be-Announced 
