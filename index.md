@@ -57,15 +57,15 @@ Once during the term:
 
 * **_Weekly Lecture Video_** (Will be updated weekly)
 
-**WEEK 1 LECTURE VIDEO**
+  **WEEK 1 LECTURE VIDEO**
 
-| **Upload name** | **Content** | **Youtube Link** |
-| --- | --- | --- |
-| Ceng 240 BASIC COMPUTER ORG Part 1/5 | What is computing | https://youtu.be/nKZ0zk6Kaz8 |
-| Ceng 240 BASIC COMPUTER ORG Part 2/5 | CPU &amp; Memory | https://youtu.be/IOlIhuHA9i8 |
-| Ceng 240 BASIC COMPUTER ORG Part 3/5 | Fetch,Decode,Execute | https://youtu.be/xhAd7k3ouKY |
-| Ceng 240 BASIC COMPUTER ORG Part 4/5 | Machine code+Assembler | https://youtu.be/NOuQMU605J8 |
-| Ceng 240 BASIC COMPUTER ORG Part 5/5 | BIOS, OS | https://youtu.be/t2S-nOXrA2Y |
+  | **Upload name**                      | **Content**            | **Youtube Link**             |
+  | ------------------------------------ | ---------------------- | ---------------------------- |
+  | Ceng 240 BASIC COMPUTER ORG Part 1/5 | What is computing      | https://youtu.be/nKZ0zk6Kaz8 |
+  | Ceng 240 BASIC COMPUTER ORG Part 2/5 | CPU &amp; Memory       | https://youtu.be/IOlIhuHA9i8 |
+  | Ceng 240 BASIC COMPUTER ORG Part 3/5 | Fetch,Decode,Execute   | https://youtu.be/xhAd7k3ouKY |
+  | Ceng 240 BASIC COMPUTER ORG Part 4/5 | Machine code+Assembler | https://youtu.be/NOuQMU605J8 |
+  | Ceng 240 BASIC COMPUTER ORG Part 5/5 | BIOS, OS               | https://youtu.be/t2S-nOXrA2Y |
 
 
 
