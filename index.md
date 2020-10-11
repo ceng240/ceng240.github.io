@@ -191,7 +191,7 @@ Virtual Office Hourse: To-Be-Announced
 </tr>
 <tr class="even">
 <td align="left">
-<p style="font-weight: bold;">Week1</p>
+<b>Week1</b>
 <p>12.10</p>
 </td>
 <td align="left">
@@ -200,13 +200,13 @@ Virtual Office Hourse: To-Be-Announced
 </td>
 <td align="left">
 <ul>
-<li><span style="font-weight: bold;">Introduction</span><br>
-<span style="font-style: italic;">Course content, objectives,
-outline; Grading; Information about the homeworks, the labs, the exams</span></li>
+<li><b>Introduction</b><br>
+<em>Course content, objectives,
+  outline; Grading; Information about the homeworks, the labs, the exams</em></li>
 </ul>
 <ul>
-<li><span style="font-weight: bold;">Basic computer organization</span><br>
-Von Neumann arch, <em>CPU, RAM and their interaction during program
+  <li><b>Basic computer organization</b><br>
+<em>Von Neumann arch, CPU, RAM and their interaction during program
 execution, stored program, Peripherals, OS</em></li>
 </ul>
 </td>
@@ -216,7 +216,7 @@ execution, stored program, Peripherals, OS</em></li>
 </tr>
 <tr class="odd">
 <td align="left">
-<p style="font-weight: bold;">Week2</p>
+<b>Week2</b>
 <p>19.10</p>
 </td>
 <td align="left">
@@ -225,15 +225,14 @@ execution, stored program, Peripherals, OS</em></li>
 </td>
 <td align="left">
 <ul>
-<li><span style="font-weight: bold;">A Broad Look at
-Programming and PL</span><span style="font-style: italic;"><br>
-Concept of Algorithm, Comparing algorithms, World of PLs, Low-High
-level PL, Interpreter vs Compiler, Programming Paradigms, Python as a PL</span></li>
+<li><b>A Broad Look at
+  Programming and PL</b><br>
+  <em>Concept of Algorithm, Comparing algorithms, World of PLs, Low-High
+level PL, Interpreter vs Compiler, Programming Paradigms, Python as a PL</em></li>
 </ul>
 <p> </p>
 <ul>
-<li><span style="font-weight: bold;">Representation of data in
-computers</span><em><br>
+<li><b>Representation of data in computers</b><br><em>
 Two's complement representation of integers, IEEE floating-point
 representation, Information loss with Floating Points, representation
 of characters, text and Boolean.</em></li>
@@ -245,7 +244,7 @@ of characters, text and Boolean.</em></li>
 </tr>
 <tr class="even">
 <td align="left">
-<p style="font-weight: bold;">Week3</p>
+<p><b>Week3</b></p>
 <p>26.10</p>
 </td>
 <td align="left">
@@ -253,7 +252,7 @@ of characters, text and Boolean.</em></li>
 </td>
 <td align="left">
 <ul>
-<li><span style="font-weight: bold;">Introduction to Python</span><em><br>
+<li><b>Introduction to Python</b><br><em>
 Numbers and Boolean values in Python, Container data in Python (str,
 tuple, list, dict, set); Mutable - immutable data; aliasing problem;</em></li>
 </ul>
@@ -264,7 +263,7 @@ tuple, list, dict, set); Mutable - immutable data; aliasing problem;</em></li>
 </tr>
 <tr class="odd">
 <td align="left">
-<p style="font-weight: bold;">Week4</p>
+<b>Week4</b>
 <p>02.11</p>
 </td>
 <td align="left">
@@ -273,8 +272,7 @@ tuple, list, dict, set); Mutable - immutable data; aliasing problem;</em></li>
 </td>
 <td align="left">
 <ul>
-<li><span style="font-weight: bold;">Introduction to Python <span
-style="font-style: italic;">[continued]</span></span><em><br>
+<li><b>Introduction to Python <em>[continued]</em></b><br><em>
 Operators and Expressions; Type casting; Statement in Python; Variables
 and Assignment; Basic I/O in Python;</em></li>
 </ul>
@@ -286,17 +284,14 @@ Containers</p>
 </tr>
 <tr class="even">
 <td align="left">
-<p style="font-weight: bold;">Week5</p>
+<b>Week5</b>
 <p>09.11</p>
 </td>
 <td align="left">
-<p><strong></strong><br>
-</p>
 </td>
 <td align="left">
 <ul>
-<li><span style="font-weight: bold;">Conditional &amp;
-repetitive execution in Python</span><em><br>
+<li><b>Conditional &amp; repetitive execution in Python</b><br><em>
 if statements; conditional expression; while &amp; for statements;
 continue &amp; break; List comprehension; Example problems</em></li>
 </ul>
@@ -307,7 +302,7 @@ continue &amp; break; List comprehension; Example problems</em></li>
 </tr>
 <tr class="odd">
 <td align="left">
-<p style="font-weight: bold;">Week6</p>
+<b>Week6</b>
 <p>16.11</p>
 </td>
 <td align="left">
@@ -316,13 +311,13 @@ continue &amp; break; List comprehension; Example problems</em></li>
 </td>
 <td align="left">
 <ul>
-<li><span style="font-weight: bold;">Conditional &amp;
-repetitive execution in Python <span style="font-style: italic;">[continued]</span></span><em><br>
+<li><b>Conditional &amp;
+repetitive execution in Python <em>[continued]</em></b><br><em>
 if statements; conditional expression; while &amp; for statements;
 continue &amp; break; List comprehension; Example problems</em></li>
 </ul>
 <ul>
-<li><span style="font-weight: bold;">Functions</span><em><br>
+<li><b>Functions</b><br><em>
 Defining functions; Passing parameters; Scope of variables; Recursion;
 Example definitions</em></li>
 </ul>
@@ -333,7 +328,7 @@ Example definitions</em></li>
 </tr>
 <tr class="even">
 <td align="left">
-<p style="font-weight: bold;">Week7</p>
+<b>Week7</b>
 <p>23.11</p>
 </td>
 <td align="left">
@@ -342,8 +337,7 @@ Example definitions</em></li>
 </td>
 <td align="left">
 <ul>
-<li><span style="font-weight: bold;">Functions <span
-style="font-style: italic;">[continued]</span></span><em><br>
+<li><b>Functions <em>[continued]</em></b><br><em>
 Defining functions; Passing parameters; Scope of variables; Recursion;
 Example definitions</em></li>
 </ul>
@@ -354,7 +348,7 @@ Example definitions</em></li>
 </tr>
 <tr class="odd">
 <td align="left">
-<p style="font-weight: bold;">Week8</p>
+<b>Week8</b>
 <p>30.11</p>
 </td>
 <td align="left">
@@ -363,8 +357,8 @@ Example definitions</em></li>
 </td>
 <td align="left">
 <ul>
-<li><span style="font-weight: bold;">Object-oriented
-Programming Concepts</span><em><br>
+<li><b>Object-oriented
+Programming Concepts</b><br><em>
 Class definition; Member functions &amp; variables; Message passing;
 Encapsulation; Inheritance; Polymorphism; Basics of OOP in Python</em></li>
 </ul>
@@ -375,7 +369,7 @@ Encapsulation; Inheritance; Polymorphism; Basics of OOP in Python</em></li>
 </tr>
 <tr class="even">
 <td align="left">
-<p style="font-weight: bold;">Week9</p>
+<b>Week9</b>
 <p>07.12</p>
 </td>
 <td align="left">
@@ -384,7 +378,7 @@ Encapsulation; Inheritance; Polymorphism; Basics of OOP in Python</em></li>
 </td>
 <td align="left">
 <ul>
-<li><span style="font-weight: bold;">File handling</span><em><br>
+<li><b>File handling</b><br><em>
 Files and Sequential access; Parsing; Termination of Input; Formatting
 output; binary files</em></li>
 </ul>
@@ -395,7 +389,7 @@ output; binary files</em></li>
 </tr>
 <tr class="odd">
 <td align="left">
-<p style="font-weight: bold;">Week10</p>
+<b>Week10</b>
 <p>14.12</p>
 </td>
 <td align="left">
@@ -404,8 +398,8 @@ output; binary files</em></li>
 </td>
 <td align="left">
 <ul>
-<li><span style="font-weight: bold;">Exception handling and
-Debugging</span><em><br>
+<li><b>Exception handling and
+Debugging</b><br><em>
 Kind of errors; Exceptions; Debugging techniques</em></li>
 </ul>
 </td>
@@ -415,7 +409,7 @@ Kind of errors; Exceptions; Debugging techniques</em></li>
 </tr>
 <tr class="even">
 <td align="left">
-<p style="font-weight: bold;">Week11</p>
+<b>Week11</b>
 <p>21.12</p>
 </td>
 <td align="left">
@@ -424,8 +418,8 @@ Kind of errors; Exceptions; Debugging techniques</em></li>
 </td>
 <td align="left">
 <ul>
-<li><span style="font-weight: bold;">Engineering and scientific
-libraries for Python</span><em><br>
+<li><b>Engineering and scientific
+libraries for Python</b><br><em>
 Libraries and tools for numerical &amp; scientific calculations
 (arrays, n-D arrays, slicing, basic operations on arrays, commonly used
 functions, algebraic functions etc.), data handling &amp; analysis, and
@@ -438,16 +432,15 @@ plotting. Illustration of these tools with examples.</em></li>
 </tr>
 <tr class="odd">
 <td align="left">
-<p style="font-weight: bold;">Week12</p>
+<b>Week12</b>
 <p>28.12</p>
 </td>
 <td align="left">
 <p>1<sup>st</sup> is holiday</p>
 </td>
-<td style="font-weight: bold;" align="left">
+<td align="left">
 <ul>
-<li>Engineering and scientific libraries for Python<span
-style="font-style: italic;"> [continued]</span><br>
+  <li><b>Engineering and scientific libraries for Python<em> [continued]</em></b> <br>
 </li>
 </ul>
 </td>
@@ -457,16 +450,16 @@ style="font-style: italic;"> [continued]</span><br>
 </tr>
 <tr class="even">
 <td align="left">
-<p style="font-weight: bold;">Week13</p>
+<b>Week13</b>
 <p>04.01</p>
 </td>
 <td align="left">
 <p><br>
 </p>
 </td>
-<td style="font-weight: bold;" align="left">
+<td align="left">
 <ul>
-<li>An Application: Approximation &amp; optimization</li>
+<li><b>An Application: Approximation &amp; optimization</b></li>
 </ul>
 </td>
 <td align="left">
@@ -475,16 +468,16 @@ style="font-style: italic;"> [continued]</span><br>
 </tr>
 <tr class="odd">
 <td align="left">
-<p style="font-weight: bold;">Week 14</p>
+<b>Week 14</b>
 <p>11.01</p>
 </td>
 <td align="left">
 <p><br>
 </p>
 </td>
-<td style="font-weight: bold;" align="left">
+<td align="left">
 <ul>
-<li>An Application: Solving a simple regression problem</li>
+<li><b>An Application: Solving a simple regression problem</b></li>
 </ul>
 </td>
 <td align="left">
