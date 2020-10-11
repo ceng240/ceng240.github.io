@@ -168,3 +168,328 @@ Once during the term:
 
 
 Virtual Office Hourse: To-Be-Announced 
+
+### Syllabus
+
+<table>
+<col width="12%">
+<col width="10%"><col width="60%">
+<col width="18%"><tbody>
+<tr class="odd">
+<td align="left">
+<p><big><strong><em>Week</em></strong></big></p>
+</td>
+<td align="left">
+<p><big><strong><em>Notes</em></strong></big></p>
+</td>
+<td align="left">
+<p><big><strong><em>Course Material</em></strong></big></p>
+</td>
+<td align="left">
+<p><big><strong><em>Lab Coverage</em></strong></big></p>
+</td>
+</tr>
+<tr class="even">
+<td align="left">
+<p style="font-weight: bold;">Week1</p>
+<p>12.10</p>
+</td>
+<td align="left">
+<p><br>
+</p>
+</td>
+<td align="left">
+<ul>
+<li><span style="font-weight: bold;">Introduction</span><br>
+<span style="font-style: italic;">Course content, objectives,
+outline; Grading; Information about the homeworks, the labs, the exams</span></li>
+</ul>
+<ul>
+<li><span style="font-weight: bold;">Basic computer organization</span><br>
+Von Neumann arch, <em>CPU, RAM and their interaction during program
+execution, stored program, Peripherals, OS</em></li>
+</ul>
+</td>
+<td align="left">
+<p>No lab</p>
+</td>
+</tr>
+<tr class="odd">
+<td align="left">
+<p style="font-weight: bold;">Week2</p>
+<p>19.10</p>
+</td>
+<td align="left">
+<p><br>
+</p>
+</td>
+<td align="left">
+<ul>
+<li><span style="font-weight: bold;">A Broad Look at
+Programming and PL</span><span style="font-style: italic;"><br>
+Concept of Algorithm, Comparing algorithms, World of PLs, Low-High
+level PL, Interpreter vs Compiler, Programming Paradigms, Python as a PL</span></li>
+</ul>
+<p> </p>
+<ul>
+<li><span style="font-weight: bold;">Representation of data in
+computers</span><em><br>
+Two's complement representation of integers, IEEE floating-point
+representation, Information loss with Floating Points, representation
+of characters, text and Boolean.</em></li>
+</ul>
+</td>
+<td align="left">
+<p>No lab</p>
+</td>
+</tr>
+<tr class="even">
+<td align="left">
+<p style="font-weight: bold;">Week3</p>
+<p>26.10</p>
+</td>
+<td align="left">
+<p>29<sup>th</sup> is holiday</p>
+</td>
+<td align="left">
+<ul>
+<li><span style="font-weight: bold;">Introduction to Python</span><em><br>
+Numbers and Boolean values in Python, Container data in Python (str,
+tuple, list, dict, set); Mutable - immutable data; aliasing problem;</em></li>
+</ul>
+</td>
+<td align="left">
+<p>No lab</p>
+</td>
+</tr>
+<tr class="odd">
+<td align="left">
+<p style="font-weight: bold;">Week4</p>
+<p>02.11</p>
+</td>
+<td align="left">
+<p><br>
+</p>
+</td>
+<td align="left">
+<ul>
+<li><span style="font-weight: bold;">Introduction to Python <span
+style="font-style: italic;">[continued]</span></span><em><br>
+Operators and Expressions; Type casting; Statement in Python; Variables
+and Assignment; Basic I/O in Python;</em></li>
+</ul>
+</td>
+<td align="left">
+<p>Numbers &amp;<br>
+Containers</p>
+</td>
+</tr>
+<tr class="even">
+<td align="left">
+<p style="font-weight: bold;">Week5</p>
+<p>09.11</p>
+</td>
+<td align="left">
+<p><strong></strong><br>
+</p>
+</td>
+<td align="left">
+<ul>
+<li><span style="font-weight: bold;">Conditional &amp;
+repetitive execution in Python</span><em><br>
+if statements; conditional expression; while &amp; for statements;
+continue &amp; break; List comprehension; Example problems</em></li>
+</ul>
+</td>
+<td align="left">
+<p>Expressions, Variables, Basic I/O</p>
+</td>
+</tr>
+<tr class="odd">
+<td align="left">
+<p style="font-weight: bold;">Week6</p>
+<p>16.11</p>
+</td>
+<td align="left">
+<p><br>
+</p>
+</td>
+<td align="left">
+<ul>
+<li><span style="font-weight: bold;">Conditional &amp;
+repetitive execution in Python <span style="font-style: italic;">[continued]</span></span><em><br>
+if statements; conditional expression; while &amp; for statements;
+continue &amp; break; List comprehension; Example problems</em></li>
+</ul>
+<ul>
+<li><span style="font-weight: bold;">Functions</span><em><br>
+Defining functions; Passing parameters; Scope of variables; Recursion;
+Example definitions</em></li>
+</ul>
+</td>
+<td align="left">
+<p>If, repetitive statements, list compr.</p>
+</td>
+</tr>
+<tr class="even">
+<td align="left">
+<p style="font-weight: bold;">Week7</p>
+<p>23.11</p>
+</td>
+<td align="left">
+<p><br>
+</p>
+</td>
+<td align="left">
+<ul>
+<li><span style="font-weight: bold;">Functions <span
+style="font-style: italic;">[continued]</span></span><em><br>
+Defining functions; Passing parameters; Scope of variables; Recursion;
+Example definitions</em></li>
+</ul>
+</td>
+<td align="left">
+<p>Functions</p>
+</td>
+</tr>
+<tr class="odd">
+<td align="left">
+<p style="font-weight: bold;">Week8</p>
+<p>30.11</p>
+</td>
+<td align="left">
+<p><br>
+</p>
+</td>
+<td align="left">
+<ul>
+<li><span style="font-weight: bold;">Object-oriented
+Programming Concepts</span><em><br>
+Class definition; Member functions &amp; variables; Message passing;
+Encapsulation; Inheritance; Polymorphism; Basics of OOP in Python</em></li>
+</ul>
+</td>
+<td align="left">
+<p>Repetitive execution &amp; functions</p>
+</td>
+</tr>
+<tr class="even">
+<td align="left">
+<p style="font-weight: bold;">Week9</p>
+<p>07.12</p>
+</td>
+<td align="left">
+<p><br>
+</p>
+</td>
+<td align="left">
+<ul>
+<li><span style="font-weight: bold;">File handling</span><em><br>
+Files and Sequential access; Parsing; Termination of Input; Formatting
+output; binary files</em></li>
+</ul>
+</td>
+<td align="left">
+<p>OO operations on built-in Objects</p>
+</td>
+</tr>
+<tr class="odd">
+<td align="left">
+<p style="font-weight: bold;">Week10</p>
+<p>14.12</p>
+</td>
+<td align="left">
+<p><br>
+</p>
+</td>
+<td align="left">
+<ul>
+<li><span style="font-weight: bold;">Exception handling and
+Debugging</span><em><br>
+Kind of errors; Exceptions; Debugging techniques</em></li>
+</ul>
+</td>
+<td align="left">
+<p>File handling</p>
+</td>
+</tr>
+<tr class="even">
+<td align="left">
+<p style="font-weight: bold;">Week11</p>
+<p>21.12</p>
+</td>
+<td align="left">
+<p><br>
+</p>
+</td>
+<td align="left">
+<ul>
+<li><span style="font-weight: bold;">Engineering and scientific
+libraries for Python</span><em><br>
+Libraries and tools for numerical &amp; scientific calculations
+(arrays, n-D arrays, slicing, basic operations on arrays, commonly used
+functions, algebraic functions etc.), data handling &amp; analysis, and
+plotting. Illustration of these tools with examples.</em></li>
+</ul>
+</td>
+<td align="left">
+<p>Exception handling and debugging </p>
+</td>
+</tr>
+<tr class="odd">
+<td align="left">
+<p style="font-weight: bold;">Week12</p>
+<p>28.12</p>
+</td>
+<td align="left">
+<p>1<sup>st</sup> is holiday</p>
+</td>
+<td style="font-weight: bold;" align="left">
+<ul>
+<li>Engineering and scientific libraries for Python<span
+style="font-style: italic;"> [continued]</span><br>
+</li>
+</ul>
+</td>
+<td align="left">
+<p>Engineering and scientific libraries</p>
+</td>
+</tr>
+<tr class="even">
+<td align="left">
+<p style="font-weight: bold;">Week13</p>
+<p>04.01</p>
+</td>
+<td align="left">
+<p><br>
+</p>
+</td>
+<td style="font-weight: bold;" align="left">
+<ul>
+<li>An Application: Approximation &amp; optimization</li>
+</ul>
+</td>
+<td align="left">
+<p>Engineering and scientific libraries</p>
+</td>
+</tr>
+<tr class="odd">
+<td align="left">
+<p style="font-weight: bold;">Week 14</p>
+<p>11.01</p>
+</td>
+<td align="left">
+<p><br>
+</p>
+</td>
+<td style="font-weight: bold;" align="left">
+<ul>
+<li>An Application: Solving a simple regression problem</li>
+</ul>
+</td>
+<td align="left">
+<p>Engineering and scientific libraries</p>
+</td>
+</tr>
+</tbody>
+</table>
