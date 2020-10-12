@@ -53,7 +53,7 @@ Once during the term:
 
   You can download the PDF of the course text book from https://pp4e-book.github.io/](https://pp4e-book.github.io/).
 
-  Of course, the PDF does not provide the dynamic content.
+  Of course, the PDF does not provide the dynamic content. 
 
 * **_Weekly Lecture Video_** (Will be updated weekly)
 
@@ -61,11 +61,11 @@ Once during the term:
 
   | **Upload name**                      | **Content**            | **Youtube Link**             |
   | ------------------------------------ | ---------------------- | ---------------------------- |
-  | Ceng 240 BASIC COMPUTER ORG Part 1/5 | What is computing      | https://youtu.be/nKZ0zk6Kaz8 |
-  | Ceng 240 BASIC COMPUTER ORG Part 2/5 | CPU &amp; Memory       | https://youtu.be/IOlIhuHA9i8 |
+  | Ceng 240 BASIC COMPUTER ORG Part 1/5 | What is computing      | https://youtu.be/t2S-nOXrA2Y | 
+  | Ceng 240 BASIC COMPUTER ORG Part 2/5 | CPU &amp; Memory       | https://youtu.be/NOuQMU605J8 |
   | Ceng 240 BASIC COMPUTER ORG Part 3/5 | Fetch,Decode,Execute   | https://youtu.be/xhAd7k3ouKY |
-  | Ceng 240 BASIC COMPUTER ORG Part 4/5 | Machine code+Assembler | https://youtu.be/NOuQMU605J8 |
-  | Ceng 240 BASIC COMPUTER ORG Part 5/5 | BIOS, OS               | https://youtu.be/t2S-nOXrA2Y |
+  | Ceng 240 BASIC COMPUTER ORG Part 4/5 | Machine code+Assembler | https://youtu.be/IOlIhuHA9i8 |
+  | Ceng 240 BASIC COMPUTER ORG Part 5/5 | BIOS, OS               | https://youtu.be/nKZ0zk6Kaz8 |
 
 
 
