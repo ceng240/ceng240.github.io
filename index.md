@@ -68,6 +68,15 @@ Once during the term:
   | Ceng 240 BASIC COMPUTER ORG Part 5/5 | BIOS, OS               | https://youtu.be/nKZ0zk6Kaz8 |
 
 
+ **WEEK 2 LECTURE VIDEO**
+
+  | **Upload name**                      | **Content**                                 | **Youtube Link**             |
+  | ------------------------------------ | ------------------------------------------- | ---------------------------- |
+  | Ceng 240 PROGRAMMING LANGUAGES       | Interpreters &amp; Compilers                | https://youtu.be/rVZTzpQ0epA |
+  | Ceng 240 REPRESENTATION OF DATA      | Integer &amp; Floating point representation | https://youtu.be/1IeF81cIKTo |
+
+
+
 
 * **_Course Workbook_**  [Available at: [https://pp4e-workbook.github.io/](https://pp4e-workbook.github.io/)]
   This is also a Jupyter book that is coherent with the course text book. It contains solved and unsolved exercises in Python which are tagged with difficulty levels [between ★ and ★★★★★]. Students are strongly advised to work, level by level, through the solved exercises then proceed to the unsolved ones.
