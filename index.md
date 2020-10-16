@@ -58,7 +58,7 @@ Once during the term:
 * **_Weekly Lecture Video_** (Will be updated weekly)
 
   **WEEK 1 LECTURE VIDEO**
-
+  
   | **Upload name**                      | **Content**            | **Youtube Link**             |
   | ------------------------------------ | ---------------------- | ---------------------------- |
   | Ceng 240 BASIC COMPUTER ORG Part 1/5 | What is computing      | https://youtu.be/t2S-nOXrA2Y | 
@@ -67,8 +67,7 @@ Once during the term:
   | Ceng 240 BASIC COMPUTER ORG Part 4/5 | Machine code+Assembler | https://youtu.be/IOlIhuHA9i8 |
   | Ceng 240 BASIC COMPUTER ORG Part 5/5 | BIOS, OS               | https://youtu.be/nKZ0zk6Kaz8 |
 
-
- **WEEK 2 LECTURE VIDEO**
+  **WEEK 2 LECTURE VIDEO**
 
   | **Upload name**                      | **Content**                                 | **Youtube Link**             |
   | ------------------------------------ | ------------------------------------------- | ---------------------------- |
