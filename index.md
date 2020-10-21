@@ -75,6 +75,12 @@ Once during the term:
   | Ceng 240 REPRESENTATION OF DATA      | Integer &amp; Floating point representation | https://youtu.be/1IeF81cIKTo |
 
 
+  **WEEK 3 LECTURE VIDEO**
+
+  | **Upload name**                     | **Content**                                                  | **Youtube Link**             |
+  | ----------------------------------- | ------------------------------------------------------------ | ---------------------------- |
+  | CENG 240 INTRODUCTION TO CONTAINERS | Arithmetic operators, Expression, Comparison operators, Logic connectives | https://youtu.be/AgNHUhTkB28 |
+  | CENG240 OEPERATORS & EXPRESSIONS    | Containers in Python (string, list,tuple,dict,set)           | https://youtu.be/z49W4IFVQ2M |
 
 
 * **_Course Workbook_**  [Available at: [https://pp4e-workbook.github.io/](https://pp4e-workbook.github.io/)]
