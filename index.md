@@ -500,3 +500,7 @@ plotting. Illustration of these tools with examples.</em></li>
 </tr>
 </tbody>
 </table>
+
+### Contact
+
+Please use the following email address for course related issues: 2xx [@] ceng [dot] metu [dot] edu [dot] tr
