@@ -80,7 +80,7 @@ Once during the term:
   | **Upload name**                     | **Content**                                                  | **Youtube Link**             |
   | ----------------------------------- | ------------------------------------------------------------ | ---------------------------- |
   | CENG 240 INTRODUCTION TO CONTAINERS | Arithmetic operators, Expression, Comparison operators, Logic connectives | https://youtu.be/AgNHUhTkB28 |
-  | CENG240 OEPERATORS & EXPRESSIONS    | Containers in Python (string, list,tuple,dict,set)           | https://youtu.be/z49W4IFVQ2M |
+  | CENG 240 OPERATORS & EXPRESSIONS    | Containers in Python (string, list,tuple,dict,set)           | https://youtu.be/z49W4IFVQ2M |
 
 
 * **_Course Workbook_**  [Available at: [https://pp4e-workbook.github.io/](https://pp4e-workbook.github.io/)]
