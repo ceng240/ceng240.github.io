@@ -83,6 +83,13 @@ Once during the term:
   | CENG 240 OPERATORS & EXPRESSIONS    | Containers in Python (string, list,tuple,dict,set)           | https://youtu.be/z49W4IFVQ2M |
 
 
+  **WEEK 4 LECTURE VIDEO**
+
+  | **Upload name**                     | **Content**                                                  | **Youtube Link**             |
+  | ----------------------------------- | ------------------------------------------------------------ | ---------------------------- |
+  | CENG240 VARIABLES & ASSIGNMENT      | Variables, Assignment of container values                    | https://youtu.be/wf-Hzwxmj28 |
+
+
 * **_Course Workbook_**  [Available at: [https://pp4e-workbook.github.io/](https://pp4e-workbook.github.io/)]
   This is also a Jupyter book that is coherent with the course text book. It contains solved and unsolved exercises in Python which are tagged with difficulty levels [between ★ and ★★★★★]. Students are strongly advised to work, level by level, through the solved exercises then proceed to the unsolved ones.
 
