@@ -60,7 +60,7 @@ def reset_src_area():
     if storage and "py_src" in storage:
         editor.value = storage["py_src"]
     else:
-        editor.value = 'for i in range(10):\n\tprint(i)'
+        editor.value = '# Write your program here. Then click Run button\nprint("hello CEng240")\n'
 
 
 class cOutput:
