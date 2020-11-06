@@ -5,6 +5,9 @@
 {:toc}
 
 ------
+### Announcements:
+* Midterm date: 15 December, Tuesday, at 17:40.
+------
 
 ### Objectives
 
