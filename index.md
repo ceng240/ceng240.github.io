@@ -10,6 +10,8 @@
 
   * Midterm date: 15 December, Tuesday, at 17:40.
 
+------
+
 ### Objectives
 
 This course gives a brief introduction to a working understanding of basic computer organization, data representation, programming language constructs, and algorithmic thinking. It is designed as a first course of programming and supported by laboratory sessions for students outside of the Computer Engineering major.
