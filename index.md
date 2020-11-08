@@ -96,6 +96,18 @@ Once during the term:
   | CENG240 VARIABLES & ASSIGNMENT      | Variables, Assignment of container values                    | https://youtu.be/wf-Hzwxmj28 |
 
 
+  **WEEK 5 LECTURE VIDEO**
+
+  | **Upload name**                     | **Content**                                                  | **Youtube Link**             |
+  | ----------------------------------- | ------------------------------------------------------------ | ---------------------------- |
+  | CENG240 CONDITIONAL EXECUTION       | if                                                           | https://youtu.be/VVZm4Ym06Sw |
+  | CENG 240 REPETITIVE EXECUTION       | while and for statements                                     | https://youtu.be/ByCj0kIGvTI |
+  | CENG 240 CONDITIONAL & REPETITIVE EXECUTION EXERCISE 1       |                                     | https://youtu.be/S5VjLj43MJM |
+  | CENG 240 CONDITIONAL & REPETITIVE EXECUTION EXERCISE 2       |                                     | https://youtu.be/ag98_cj_f3c |
+    
+
+
+
 * **_Course Workbook_**  [Available at: [https://pp4e-workbook.github.io/](https://pp4e-workbook.github.io/)]
   This is also a Jupyter book that is coherent with the course text book. It contains solved and unsolved exercises in Python which are tagged with difficulty levels [between ★ and ★★★★★]. Students are strongly advised to work, level by level, through the solved exercises then proceed to the unsolved ones.
 
