@@ -63,7 +63,7 @@ Once during the term:
 
 * **_Weekly Lecture Video_** (Will be updated weekly)
 
-  **WEEK 1 LECTURE VIDEO**
+  **WEEK 1 LECTURE VIDEOS**
   
   | **Upload name**                      | **Content**            | **Youtube Link**             |
   | ------------------------------------ | ---------------------- | ---------------------------- |
@@ -73,7 +73,7 @@ Once during the term:
   | Ceng 240 BASIC COMPUTER ORG Part 4/5 | Machine code+Assembler | https://youtu.be/IOlIhuHA9i8 |
   | Ceng 240 BASIC COMPUTER ORG Part 5/5 | BIOS, OS               | https://youtu.be/nKZ0zk6Kaz8 |
 
-  **WEEK 2 LECTURE VIDEO**
+  **WEEK 2 LECTURE VIDEOS**
 
   | **Upload name**                      | **Content**                                 | **Youtube Link**             |
   | ------------------------------------ | ------------------------------------------- | ---------------------------- |
@@ -81,7 +81,7 @@ Once during the term:
   | Ceng 240 REPRESENTATION OF DATA      | Integer &amp; Floating point representation | https://youtu.be/1IeF81cIKTo |
 
 
-  **WEEK 3 LECTURE VIDEO**
+  **WEEK 3 LECTURE VIDEOS**
 
   | **Upload name**                     | **Content**                                                  | **Youtube Link**             |
   | ----------------------------------- | ------------------------------------------------------------ | ---------------------------- |
@@ -89,14 +89,14 @@ Once during the term:
   | CENG 240 OPERATORS & EXPRESSIONS    | Containers in Python (string, list,tuple,dict,set)           | https://youtu.be/z49W4IFVQ2M |
 
 
-  **WEEK 4 LECTURE VIDEO**
+  **WEEK 4 LECTURE VIDEOS**
 
   | **Upload name**                     | **Content**                                                  | **Youtube Link**             |
   | ----------------------------------- | ------------------------------------------------------------ | ---------------------------- |
   | CENG240 VARIABLES & ASSIGNMENT      | Variables, Assignment of container values                    | https://youtu.be/wf-Hzwxmj28 |
 
 
-  **WEEK 5 LECTURE VIDEO**
+  **WEEK 5 LECTURE VIDEOS**
 
   | **Upload name**                     | **Content**                                                  | **Youtube Link**             |
   | ----------------------------------- | ------------------------------------------------------------ | ---------------------------- |
@@ -106,6 +106,14 @@ Once during the term:
   | CENG 240 CONDITIONAL & REPETITIVE EXECUTION EXERCISE 2       |                                     | https://youtu.be/ag98_cj_f3c |
     
 
+  **WEEK 6 and 7 LECTURE VIDEOS**
+
+  | **Upload name**                     | **Content**                                                  | **Youtube Link**             |
+  | ----------------------------------- | ------------------------------------------------------------ | ---------------------------- |
+  | CENG 240 FUNCTIONS                  | function                                                     | https://youtu.be/K0P15wn_sCU |
+  | CENG 240 FUNCTIONS EXERCISE 1       | function                                                     | https://youtu.be/IG5EsNvkd58 |
+  | CENG 240 FUNCTIONS EXERCISE 2       | function, sorting                                            | https://youtu.be/hyZeKlw41Ww |
+  | CENG 240 FUNCTIONS & RECURSION      | function, recursion                                          | https://youtu.be/ZRmg2OXry-w |
 
 
 * **_Course Workbook_**  [Available at: [https://pp4e-workbook.github.io/](https://pp4e-workbook.github.io/)]
