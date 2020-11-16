@@ -113,7 +113,7 @@ Once during the term:
   | CENG 240 FUNCTIONS                  | function                                                     | https://youtu.be/K0P15wn_sCU |
   | CENG 240 FUNCTIONS EXERCISE 1       | function                                                     | https://youtu.be/IG5EsNvkd58 |
   | CENG 240 FUNCTIONS EXERCISE 2       | function, sorting                                            | https://youtu.be/hyZeKlw41Ww |
-  | CENG 240 FUNCTIONS & RECURSION      | function, recursion                                          | https://youtu.be/ZRmg2OXry-w |
+  | CENG 240 FUNCTIONS & RECURSION      | function, recursion                                          | https://youtu.be/WifD3BiF6FE |
 
 
 * **_Course Workbook_**  [Available at: [https://pp4e-workbook.github.io/](https://pp4e-workbook.github.io/)]
