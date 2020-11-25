@@ -116,6 +116,15 @@ Once during the term:
   | CENG 240 FUNCTIONS & RECURSION      | function, recursion                                          | https://youtu.be/WifD3BiF6FE |
 
 
+  **WEEK 8 LECTURE VIDEOS**
+
+  | **Upload name**                                | **Content**                                       | **Youtube Link**             |
+  | ---------------------------------------------- | ------------------------------------------------- | ---------------------------- |
+  | CENG 240  OBJECT ORIENTED PROGRAMMING          | OOP                                               | https://youtu.be/2sC2tgOpM8s |
+  | CENG 240  OBJECT ORIENTED PROGRAMMING EXERCISE | OOP                                               | https://youtu.be/RmFovihZyUs |
+  
+
+
 * **_Course Workbook_**  [Available at: [https://pp4e-workbook.github.io/](https://pp4e-workbook.github.io/)]
   This is also a Jupyter book that is coherent with the course text book. It contains solved and unsolved exercises in Python which are tagged with difficulty levels [between ★ and ★★★★★]. Students are strongly advised to work, level by level, through the solved exercises then proceed to the unsolved ones.
 
