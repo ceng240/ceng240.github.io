@@ -31,16 +31,18 @@
         pyodide.runPython(`
           import io, code, sys
           from js import term, pyodide
-
+	
           class Console(code.InteractiveConsole):
               def runcode(self, code):
                   sys.stdout = io.StringIO()
                   sys.stderr = io.StringIO()
                   term.runPython("\\n".join(self.buffer))
+          _i = io.StringIO()
           _c = Console(locals=globals())
         `)
 
         c = pyodide.pyimport('_c')
+	imgio = pyodide.pyimport('_i')
 
         function handleResult(result) {
           if (result) {
@@ -107,7 +109,16 @@
 				if (out && out != '') {
 					term.echo(out);
 				}
-			} 		}
+			}
+		}
+		console.log(imgio.tell())
+		if (imgio.tell() > 0) { // output image
+			imgio.seek(0)
+			let imagecontent = imgio.read()
+			imgio.seek(0)
+			$('#imageout').attr('src', "data:image/svg+xml;base64," + btoa(imagecontent))
+			$('#imagediv').show()
+		}
 	})
 	}
     </script>
@@ -131,92 +142,10 @@
     </td>
     <td></td></tr>
  </table>
+  <div id="imagediv" style="display:none;position:absolute;height:450;width: 600;bottom: 0px">
+	  <span style="float:right" onclick="$('#imagediv').hide()">&#10060;</span>
+	  <img id="imageout"/>
+  </div>
   </body>
 </html>
 
-<!--
-
-
---------
-
-from browser import document as doc, window
-from browser import html
-#import header
-import editor
-#qs_lang,language = header.show()
-#doc["test_suite"].href = f"index.html?lang={language}"
-## other translations
-#trans = {
-#    'report_bugs':{'en':'Please report bugs in the ',
-#                   'es':'Poner los bugs en el ',
-#                   'fr':"Signalez les bugs dans l'"},
-#    'test_page':{'en':'Tests page','es':'P&aacute;gina de pruebas','fr':'Page de tests'},
-#    'run':{'en':'run','es':'ejecutar','fr':'Exécuter'},
-#    'clear':{'en':'clear','es':'borrar','fr':'Effacer'}
-#}
-#for key in trans:
-#    if key in doc:
-#        doc[key].html = trans[key].get(language,trans[key]['en'])
-#def set_debug(ev):
-#    if ev.target.checked:
-#        __BRYTHON__.debug = 1
-#    else:
-#        __BRYTHON__.debug = 0
-__BRYTHON__.debug = True
-#__BRYTHON__.debug = int(doc['set_debug'].checked)
-# bindings
-#doc['set_debug'].bind('change',set_debug)
-# next functions are defined in editor.py
-# Create a lambda around editor.run() so that the event object is not passed to it
-from interpreter import Interpreter
-def editorRun(*args):
-   Interpreter("console", startup_code = editor.editor.getValue())
-
-doc['run'].bind('click',lambda *args: editorRun(*args))
-#doc['run'].bind('click',lambda *args: editor.run())
-#doc['show_console'].bind('click', editor.show_console)
-</script>
-<script>
-function run_js(){
-    var cons = document.getElementById("console")
-    var jscode = cons.value
-    var t0 = (new Date()).getTime()
-    eval(jscode)
-    var t1 = (new Date()).getTime()
-    console.log("Javascript code run in "+(t1-t0)+" ms")
-}
-</script>
-</head>
-<body onload="brython({debug:1})">
-<div id="banner_row">
-<span class="logo">Browser Python</span>
-</div>
-<div id="main_container"></div>
-</div>
-<table id="container">
-  <tr>
-	  <td></td> 
-    <td></td>
-    <td>
-        <button id="run"> ▶ Run</button>
-    </td>
-  </tr>
-  <tr>
-    <td id="left">
-      <div class="editor" style="width:100%;"></div>
-    </td>
-    <td id="separator"></td>
-    <td id="right">
-      <textarea id="console" autocomplete="off"></textarea>
-    </td>
-  </tr>
-  <tr>
-	  <td style="font-size:70%">Based on <a href="https://brython.info/">Brython</a>, version: <span id="version"></span>, 
-      Python code editor uses <a href="https://ace.c9.io/" target="_blank">Ace</a>.
-    </td>
-    <td></td>
-    <td>
-    </td>
-  </tr>
-</table>
--->
