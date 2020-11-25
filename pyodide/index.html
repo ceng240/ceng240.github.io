@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.terminal/js/jquery.terminal.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/jquery.terminal/css/jquery.terminal.min.css" rel="stylesheet"/>
+    <link href="renderedhtml.css" rel="stylesheet"/>
+    <link href="pyeditor.css" rel="stylesheet"/>
+    <script src="./pyodide_dev.js"></script>
+<script src="ace/ace.js" type="text/javascript" charset="utf-8"></script>
+<script src="ace/ext-language_tools.js" type="text/javascript" charset="utf-8"></script>
+  </head>
+  <body>
+    <script>
+      languagePluginLoader.then(() => {
+        function pushCode(line) {
+          handleResult(c.push(line))
+        }
+
+        var term = $('#console').terminal(
+          pushCode,
+          {
+            greetings: "Welcome to the Pyodide terminal emulator 🐍",
+            prompt: "[[;red;]>>> ]"
+          }
+        );
+
+        window.term = term;
+	term.failed = false
+        pyodide.runPython(`
+          import io, code, sys
+          from js import term, pyodide
+
+          class Console(code.InteractiveConsole):
+              def runcode(self, code):
+                  sys.stdout = io.StringIO()
+                  sys.stderr = io.StringIO()
+                  term.runPython("\\n".join(self.buffer))
+          _c = Console(locals=globals())
+        `)
+
+        c = pyodide.pyimport('_c')
+
+        function handleResult(result) {
+          if (result) {
+            term.set_prompt('[[;gray;]... ]')
+          } else {
+            term.set_prompt('[[;red;]>>> ]')
+            var stderr = pyodide.runPython("sys.stderr.getvalue()").trim()
+            if (stderr) {
+              term.echo(`[[;red;]${stderr}]`)
+            } else {
+              var stdout = pyodide.runPython("sys.stdout.getvalue()")
+              if (stdout) {
+                term.echo(stdout.trim())
+              }
+            }
+          }
+        }
+
+        term.runPython = function(code) {
+          pyodide.runPythonAsync(code).then(
+            term.handlePythonResult, term.handlePythonError
+          )
+        }
+
+        term.handlePythonResult = function(result) {
+          if (result === undefined) {
+            return
+          } else if (result['_repr_html_'] !== undefined) {
+            term.echo(result['_repr_html_'], {raw: true})
+          } else {
+            term.echo(result.toString())
+          }
+	  term.failed = false
+        }
+
+        term.handlePythonError = function(result) {
+          term.error(result.toString())
+	  term.failed = true
+        }
+      });
+
+	document.body.onload = function() {
+    editor = window.ace.edit("editor");
+    editor.setTheme("ace/theme/solarized_light")
+    editor.session.setMode("ace/mode/python")
+    editor.focus()
+
+    editor.setOptions({
+     'enableLiveAutocompletion': true,
+     'highlightActiveLine': false,
+     'highlightSelectedWord': true
+    });
+	$('#clearbutton').click(async function () {
+		term.clear()
+	})
+	$('#runbutton').click(async function () {
+		term.failed = false
+		for (line of (editor.getValue() + '\n').split('\n')) {
+			let cont = await c.push(line);
+			if (! cont) {
+				if (term.failed)
+					break;
+				let out  = pyodide.runPython('sys.stdout.getvalue()');
+				if (out && out != '') {
+					term.echo(out);
+				}
+			} 		}
+	})
+	}
+    </script>
+    <div id="banner_row">
+<span class="logo">Browser Python</span>
+</div>
+ <table width="100%">
+	 <tr><td width="50%">&nbsp;</td>
+		 <td width="50%">
+			 <button id="runbutton">Run</button>
+			 <button id="clearbutton">Clear</button></td>
+	 </tr>
+	 <tr><td width="50%">
+		 <div id="editor" style="height:800px"></div></td>
+		 <td width="50%">
+			 <div id="console" style="height:800px">
+		</div></td></tr>
+  <tr>
+	  <td style="font-size:70%">Based on <a href="https://github.com/iodide-project/pyodide">Pyodide</a></span>, 
+	  <span>Python code editor uses <a href="https://ace.c9.io/" target="_blank">Ace</a>.</span>
+    </td>
+    <td></td></tr>
+ </table>
+  </body>
+</html>
+
+<!--
+
+
+--------
+
+from browser import document as doc, window
+from browser import html
+#import header
+import editor
+#qs_lang,language = header.show()
+#doc["test_suite"].href = f"index.html?lang={language}"
+## other translations
+#trans = {
+#    'report_bugs':{'en':'Please report bugs in the ',
+#                   'es':'Poner los bugs en el ',
+#                   'fr':"Signalez les bugs dans l'"},
+#    'test_page':{'en':'Tests page','es':'P&aacute;gina de pruebas','fr':'Page de tests'},
+#    'run':{'en':'run','es':'ejecutar','fr':'Exécuter'},
+#    'clear':{'en':'clear','es':'borrar','fr':'Effacer'}
+#}
+#for key in trans:
+#    if key in doc:
+#        doc[key].html = trans[key].get(language,trans[key]['en'])
+#def set_debug(ev):
+#    if ev.target.checked:
+#        __BRYTHON__.debug = 1
+#    else:
+#        __BRYTHON__.debug = 0
+__BRYTHON__.debug = True
+#__BRYTHON__.debug = int(doc['set_debug'].checked)
+# bindings
+#doc['set_debug'].bind('change',set_debug)
+# next functions are defined in editor.py
+# Create a lambda around editor.run() so that the event object is not passed to it
+from interpreter import Interpreter
+def editorRun(*args):
+   Interpreter("console", startup_code = editor.editor.getValue())
+
+doc['run'].bind('click',lambda *args: editorRun(*args))
+#doc['run'].bind('click',lambda *args: editor.run())
+#doc['show_console'].bind('click', editor.show_console)
+</script>
+<script>
+function run_js(){
+    var cons = document.getElementById("console")
+    var jscode = cons.value
+    var t0 = (new Date()).getTime()
+    eval(jscode)
+    var t1 = (new Date()).getTime()
+    console.log("Javascript code run in "+(t1-t0)+" ms")
+}
+</script>
+</head>
+<body onload="brython({debug:1})">
+<div id="banner_row">
+<span class="logo">Browser Python</span>
+</div>
+<div id="main_container"></div>
+</div>
+<table id="container">
+  <tr>
+	  <td></td> 
+    <td></td>
+    <td>
+        <button id="run"> ▶ Run</button>
+    </td>
+  </tr>
+  <tr>
+    <td id="left">
+      <div class="editor" style="width:100%;"></div>
+    </td>
+    <td id="separator"></td>
+    <td id="right">
+      <textarea id="console" autocomplete="off"></textarea>
+    </td>
+  </tr>
+  <tr>
+	  <td style="font-size:70%">Based on <a href="https://brython.info/">Brython</a>, version: <span id="version"></span>, 
+      Python code editor uses <a href="https://ace.c9.io/" target="_blank">Ace</a>.
+    </td>
+    <td></td>
+    <td>
+    </td>
+  </tr>
+</table>
+-->
