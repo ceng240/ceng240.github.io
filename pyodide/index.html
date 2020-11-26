@@ -10,6 +10,7 @@
     <script src="./pyodide_dev.js"></script>
 <script src="ace/ace.js" type="text/javascript" charset="utf-8"></script>
 <script src="ace/ext-language_tools.js" type="text/javascript" charset="utf-8"></script>
+<script src="./base64.js"></script>
   </head>
   <body>
     <script>
@@ -111,12 +112,11 @@
 				}
 			}
 		}
-		console.log(imgio.tell())
 		if (imgio.tell() > 0) { // output image
 			imgio.seek(0)
 			let imagecontent = imgio.read()
 			imgio.seek(0)
-			$('#imageout').attr('src', "data:image/svg+xml;base64," + btoa(imagecontent))
+			$('#imageout').attr('src', "data:image/svg+xml;base64," + base64encode(imagecontent))
 			$('#imagediv').show()
 		}
 	})
@@ -142,7 +142,7 @@
     </td>
     <td></td></tr>
  </table>
-  <div id="imagediv" style="display:none;position:absolute;height:450;width: 600;bottom: 0px">
+  <div id="imagediv" style="display:none;position:absolute;bottom: 0px">
 	  <span style="float:right" onclick="$('#imagediv').hide()">&#10060;</span>
 	  <img id="imageout"/>
   </div>
