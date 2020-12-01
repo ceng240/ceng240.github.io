@@ -23,7 +23,7 @@
           pushCode,
           {
             greetings: "Welcome to the Pyodide terminal emulator 🐍",
-            prompt: "[[;red;]>>> ]"
+            prompt: "[[;lightblue;]>>> ]"
           }
         );
 
@@ -49,7 +49,7 @@
           if (result) {
             term.set_prompt('[[;gray;]... ]')
           } else {
-            term.set_prompt('[[;red;]>>> ]')
+            term.set_prompt('[[;lightblue;]>>> ]')
             var stderr = pyodide.runPython("sys.stderr.getvalue()").trim()
             if (stderr) {
               term.echo(`[[;red;]${stderr}]`)
@@ -83,6 +83,7 @@
           term.error(result.toString())
 	  term.failed = true
         }
+	c.push('')
       });
 
 	document.body.onload = function() {
@@ -101,12 +102,19 @@
 	})
 	$('#runbutton').click(async function () {
 		term.failed = false
+            	term.echo('[[;lightblue;]>>> ]')
 		for (line of (editor.getValue() + '\n').split('\n')) {
 			let cont = await c.push(line);
 			if (! cont) {
-				if (term.failed)
+				if (term.failed) {
 					break;
-				let out  = pyodide.runPython('sys.stdout.getvalue()');
+				}
+            			var stderr = await pyodide.runPython("sys.stderr.getvalue()");
+            			if (stderr) {
+              				term.echo(`[[;red;]${stderr}]`);
+					break;
+				}
+				let out  = pyodide.runPython('sys.stdout.getvalue()').trim();
 				if (out && out != '') {
 					term.echo(out);
 				}
@@ -119,7 +127,7 @@
 			$('#imageout').attr('src', "data:image/svg+xml;base64," + base64encode(imagecontent))
 			$('#imagediv').show()
 		}
-	})
+	});
 	}
     </script>
     <div id="banner_row">
