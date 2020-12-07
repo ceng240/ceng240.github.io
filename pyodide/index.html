@@ -74,7 +74,12 @@
           } else if (result['_repr_html_'] !== undefined) {
             term.echo(result['_repr_html_'], {raw: true})
           } else {
-            term.echo(result.toString())
+            let r = JSON.stringify(result)
+            if (r === undefined) {
+               term.echo(result.toString())
+            } else {
+               term.echo(r)
+            }
           }
 	  term.failed = false
         }
@@ -90,13 +95,14 @@
     editor = window.ace.edit("editor");
     editor.setTheme("ace/theme/solarized_light")
     editor.session.setMode("ace/mode/python")
-    editor.focus()
-
     editor.setOptions({
      'enableLiveAutocompletion': true,
      'highlightActiveLine': false,
-     'highlightSelectedWord': true
+     'highlightSelectedWord': true,
+     'displayIndentGuides': true
     });
+    editor.focus()
+
 	$('#clearbutton').click(async function () {
 		term.clear()
 	})
