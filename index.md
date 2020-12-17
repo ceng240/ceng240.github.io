@@ -139,6 +139,13 @@ Once during the term:
   | CENG 240  EXCEPTIONS                           | Exceptions & Debugging                            | https://youtu.be/hAqwoF3_4RE |
 
 
+**WEEK 11 LECTURE VIDEOS**
+
+  | **Upload name**                                | **Content**                                       | **Youtube Link**             |
+  | ---------------------------------------------- | ------------------------------------------------- | ---------------------------- |
+  | CENG240 NumPy and SciPy [Part 1]               | NumPy & SciPy                                     | https://youtu.be/3v_Wg7_TIto |
+  | CENG240 NumPy and SciPy [Part 2]               | NumPy & SciPy                                     | https://youtu.be/vYM8NcJSEcE |
+
 
 * **_Course Workbook_**  [Available at: [https://pp4e-workbook.github.io/](https://pp4e-workbook.github.io/)]
   This is also a Jupyter book that is coherent with the course text book. It contains solved and unsolved exercises in Python which are tagged with difficulty levels [between ★ and ★★★★★]. Students are strongly advised to work, level by level, through the solved exercises then proceed to the unsolved ones.
