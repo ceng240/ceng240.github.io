@@ -12,8 +12,26 @@
 <script src="ace/ext-language_tools.js" type="text/javascript" charset="utf-8"></script>
 <script src="./base64.js"></script>
   </head>
-  <body>
+  <body style="height:100%">
     <script>
+
+	function pretty(obj) {
+		if (typeof(obj) == "string") {
+			return `'${obj}'`
+		} else if (Array.isArray(obj) || (typeof(t) == 'object' &&
+			obj.__proto__.constructor.__proto__.name == 'TypedArray')) {
+			var mapped = obj.map(pretty);
+			return `[${mapped}]`
+		} else if (typeof(obj) == "object") {
+			var members = []
+			for (k in obj) {
+				members.push([pretty(k), pretty(obj[k])].join(": "))
+			}
+			return `{${members}}`
+		} else {
+			return obj.toString()
+		}
+	}
       languagePluginLoader.then(() => {
         function pushCode(line) {
           handleResult(c.push(line))
@@ -28,7 +46,6 @@
         );
 
         window.term = term;
-	term.failed = false
         pyodide.runPython(`
           import io, code, sys
           from js import term, pyodide
@@ -38,8 +55,21 @@
                   sys.stdout = io.StringIO()
                   sys.stderr = io.StringIO()
                   term.runPython("\\n".join(self.buffer))
-          _i = io.StringIO()
+          _i = io.BytesIO()
           _c = Console(locals=globals())
+
+          filecontent='''1.0 2.0 3.0
+          4.0 5.0 6.0
+          2.0 1.0 1.0
+          1.0 1.0 2.0
+          3.0 2.0 3.0
+          4.0 5.0 4.0
+          6.0 4.0 5.0
+          7.0 3.0 6.0
+          8.0 2.0 7.0
+          2.0 1.0 9.0
+          '''
+          with open("/tmp/testinput.txt","w") as f : f.write(filecontent)
         `)
 
         c = pyodide.pyimport('_c')
@@ -74,19 +104,13 @@
           } else if (result['_repr_html_'] !== undefined) {
             term.echo(result['_repr_html_'], {raw: true})
           } else {
-            let r = JSON.stringify(result)
-            if (r === undefined) {
-               term.echo(result.toString())
-            } else {
-               term.echo(r)
-            }
+			term.echo(pretty(result))
           }
-	  term.failed = false
+		checkplot();
         }
 
         term.handlePythonError = function(result) {
           term.error(result.toString())
-	  term.failed = true
         }
 	c.push('')
       });
@@ -95,60 +119,75 @@
     editor = window.ace.edit("editor");
     editor.setTheme("ace/theme/solarized_light")
     editor.session.setMode("ace/mode/python")
+    editor.focus()
+
     editor.setOptions({
      'enableLiveAutocompletion': true,
      'highlightActiveLine': false,
-     'highlightSelectedWord': true,
-     'displayIndentGuides': true
+     'highlightSelectedWord': true
     });
-    editor.focus()
-
 	$('#clearbutton').click(async function () {
 		term.clear()
 	})
 	$('#runbutton').click(async function () {
-		term.failed = false
-            	term.echo('[[;lightblue;]>>> ]')
-		for (line of (editor.getValue() + '\n').split('\n')) {
-			let cont = await c.push(line);
-			if (! cont) {
-				if (term.failed) {
-					break;
+		term.echo('[[;lightblue;]>>> ]')
+		try {
+			await pyodide.runPython('sys.stdout.truncate(0)\nsys.stdout.seek(0)')
+			pyodide.runPythonAsync(editor.getValue()).then(
+			async function(result) {
+				var output = await pyodide.runPython('sys.stdout.getvalue()').trim()
+				if (output && output != '') {
+					term.echo(output)
 				}
-            			var stderr = await pyodide.runPython("sys.stderr.getvalue()");
-            			if (stderr) {
-              				term.echo(`[[;red;]${stderr}]`);
-					break;
+				if (result) {
+          			if (result['_repr_html_'] !== undefined) {
+            			term.echo(result['_repr_html_'], {raw: true})
+          			} else {
+	    				let r = JSON.stringify(result)
+	    				if (r === undefined) {
+               				term.echo(result.toString())
+    	    			} else {
+	    					term.echo(r)
+	    				}
+					}
 				}
-				let out  = pyodide.runPython('sys.stdout.getvalue()').trim();
-				if (out && out != '') {
-					term.echo(out);
+			},async function(error) {
+				var stderr = await pyodide.runPython("sys.stderr.getvalue()")
+				if (stderr && stderr != '' ) {
+					term.echo(`[[;red;]${stderr}]`);
 				}
-			}
+				term.echo(`[[;red;]${error}]`);
+			})
+		} catch (err) {
+			term.echo(`[[;red;]${err}]`);
 		}
+		checkplot();
+	});
+	}
+	function checkplot() {
 		if (imgio.tell() > 0) { // output image
 			imgio.seek(0)
 			let imagecontent = imgio.read()
 			imgio.seek(0)
-			$('#imageout').attr('src', "data:image/svg+xml;base64," + base64encode(imagecontent))
+			$('#imageout').attr('src', "data:image/png;base64," + bytesToBase64(imagecontent))
+			//$('#imageout').attr('src', "data:image/svg+xml;base64," + base64encode(imagecontent))
 			$('#imagediv').show()
 		}
-	});
 	}
     </script>
     <div id="banner_row">
 <span class="logo">Browser Python</span>
 </div>
- <table width="100%">
+ <table width="100%" style="height:calc(100% - 4em)">
 	 <tr><td width="50%">&nbsp;</td>
 		 <td width="50%">
 			 <button id="runbutton">Run</button>
 			 <button id="clearbutton">Clear</button></td>
 	 </tr>
-	 <tr><td width="50%">
-		 <div id="editor" style="height:800px"></div></td>
+	 <tr style="height:100%"><td width="50%">
+		 	<div id="editor" style="height:100%"><div></td>
 		 <td width="50%">
-			 <div id="console" style="height:800px">
+			 <div id="console" style="height:100%">
 		</div></td></tr>
   <tr>
 	  <td style="font-size:70%">Based on <a href="https://github.com/iodide-project/pyodide">Pyodide</a></span>, 
