@@ -309,4 +309,8 @@ strong {
   padding:5px
 }
 
-
+.terminal .terminal-output > :not(.raw) .terminal-error,
+.terminal .terminal-output > :not(.raw) .terminal-error * {
+    color: pink;
+    color: var(--error-color, pink);
+}

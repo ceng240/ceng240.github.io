@@ -58,18 +58,13 @@
           _i = io.BytesIO()
           _c = Console(locals=globals())
 
-          filecontent='''1.0 2.0 3.0
-          4.0 5.0 6.0
-          2.0 1.0 1.0
-          1.0 1.0 2.0
-          3.0 2.0 3.0
-          4.0 5.0 4.0
-          6.0 4.0 5.0
-          7.0 3.0 6.0
-          8.0 2.0 7.0
-          2.0 1.0 9.0
+          filecontent='''15 95 91 8 100
+          21 91 83 87 40
+          82 83 56 84 75
+          67 82 18 0 83
+          95 8 25 41 73
           '''
-          with open("/tmp/testinput.txt","w") as f : f.write(filecontent)
+          with open("input.txt","w") as f : f.write(filecontent)
         `)
 
         c = pyodide.pyimport('_c')
@@ -82,7 +77,7 @@
             term.set_prompt('[[;lightblue;]>>> ]')
             var stderr = pyodide.runPython("sys.stderr.getvalue()").trim()
             if (stderr) {
-              term.echo(`[[;red;]${stderr}]`)
+              term.echo(`[[;pink;]${stderr}]`)
             } else {
               var stdout = pyodide.runPython("sys.stdout.getvalue()")
               if (stdout) {
@@ -154,12 +149,12 @@
 			},async function(error) {
 				var stderr = await pyodide.runPython("sys.stderr.getvalue()")
 				if (stderr && stderr != '' ) {
-					term.echo(`[[;red;]${stderr}]`);
+					term.echo(`[[;pink;]${stderr}]`);
 				}
-				term.echo(`[[;red;]${error}]`);
+				term.echo(`[[;pink;]${error}]`);
 			})
 		} catch (err) {
-			term.echo(`[[;red;]${err}]`);
+			term.echo(`[[;pink;]${err}]`);
 		}
 		checkplot();
 	});
