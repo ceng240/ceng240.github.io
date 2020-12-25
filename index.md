@@ -146,6 +146,14 @@ Once during the term:
   | CENG240 NumPy and SciPy [Part 1]               | NumPy & SciPy                                     | https://youtu.be/3v_Wg7_TIto |
   | CENG240 NumPy and SciPy [Part 2]               | NumPy & SciPy                                     | https://youtu.be/vYM8NcJSEcE |
 
+**WEEK 12 LECTURE VIDEOS**
+
+  | **Upload name**                                | **Content**                                       | **Youtube Link**             |
+  | ---------------------------------------------- | ------------------------------------------------- | ---------------------------- |
+  | CENG240 Pandas [Part 1]                        | Pandas                                            | https://youtu.be/Kvjd2kS_Nh8 |
+  | CENG240 Matplotlib [Part 2]                    | Mathplot                                          | https://youtu.be/2rgXvoXPIIQ |
+
+
 
 * **_Course Workbook_**  [Available at: [https://pp4e-workbook.github.io/](https://pp4e-workbook.github.io/)]
   This is also a Jupyter book that is coherent with the course text book. It contains solved and unsolved exercises in Python which are tagged with difficulty levels [between ★ and ★★★★★]. Students are strongly advised to work, level by level, through the solved exercises then proceed to the unsolved ones.
