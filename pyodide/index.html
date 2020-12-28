@@ -18,7 +18,20 @@
 	function pretty(obj) {
 		if (typeof(obj) == "string") {
 			return `'${obj}'`
-		} else if (Array.isArray(obj) || (typeof(t) == 'object' &&
+		} else if (obj instanceof Uint8ClampedArray) {
+			var outstr = "b'"
+			for (let val of obj) {
+				let ch;
+				if (val > 126 || val < 32) {
+					ch = val.toString(16)
+					ch = ((ch.length == 1)?'\\x0':'\\x') + ch
+				} else {
+					ch = String.fromCharCode(val)
+				}
+				outstr += ch
+			}
+			return outstr + "'"
+		} else if (Array.isArray(obj) || (typeof(obj) == 'object' &&
 			obj.__proto__.constructor.__proto__.name == 'TypedArray')) {
 			var mapped = obj.map(pretty);
 			return `[${mapped}]`
@@ -49,13 +62,26 @@
         pyodide.runPython(`
           import io, code, sys
           from js import term, pyodide
-	
+          from base64 import b64encode
+
           class Console(code.InteractiveConsole):
               def runcode(self, code):
                   sys.stdout = io.StringIO()
                   sys.stderr = io.StringIO()
                   term.runPython("\\n".join(self.buffer))
           _i = io.BytesIO()
+          class MPImage:
+              def __init__(self, fp):
+                self.fp = fp
+              def getb64(self):
+                self.fp.seek(0)
+                bstr =  b64encode(self.fp.read()).decode()
+                self.fp.seek(0)
+                return bstr
+              def fptr(self):
+                return self.fp.tell()      
+
+          _mpi = MPImage(_i)
           _c = Console(locals=globals())
 
           filecontent='''15 95 91 8 100
@@ -65,10 +91,33 @@
           95 8 25 41 73
           '''
           with open("input.txt","w") as f : f.write(filecontent)
+
+          import random
+
+          def get_gpa(student_id, semester_no):
+              student_ids = [4567890, 5678901, 6789012, 7890123, 8901234, 9012345, 2171544, 2315477, 2424937]
+              grades = fill_gpa(student_id)
+              random.seed(student_id + semester_no)
+              rand = random.random()
+              if student_id not in student_ids: # ID's which does not exist in the database
+                  raise KeyError
+              elif rand > 0.25:
+                  return grades[semester_no-1]
+              elif rand < 0.125:
+                  raise ValueError
+              else:
+                  raise IndexError
+
+          def fill_gpa(student_id):
+              random.seed(student_id)
+              gpas = []
+              for sem in range(8):
+                  gpas.append(round((random.random() + 1) * 2, 2)) # gpa's are in [2.0, 4.0]
+              return gpas
         `)
 
         c = pyodide.pyimport('_c')
-	imgio = pyodide.pyimport('_i')
+	mpi = pyodide.pyimport('_mpi')
 
         function handleResult(result) {
           if (result) {
@@ -160,11 +209,9 @@
 	});
 	}
 	function checkplot() {
-		if (imgio.tell() > 0) { // output image
-			imgio.seek(0)
-			let imagecontent = imgio.read()
-			imgio.seek(0)
-			$('#imageout').attr('src', "data:image/png;base64," + bytesToBase64(imagecontent))
+		if (mpi.fptr() > 0) { // output image
+			let imagecontent = mpi.getb64()
+			$('#imageout').attr('src', "data:image/png;base64," + imagecontent);
 			//$('#imageout').attr('src', "data:image/svg+xml;base64," + base64encode(imagecontent))
 			$('#imagediv').show()
 		}
