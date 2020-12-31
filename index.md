@@ -157,7 +157,7 @@ Once during the term:
 
   | **Upload name**                                | **Content**                                       | **Youtube Link**             |
   | ---------------------------------------------- | ------------------------------------------------- | ---------------------------- |
-  | CENG240  Week13  Approximation and Optimization| Approximation and Optimization                    | https://youtu.be/6EqSf0hFbRI |
+  | CENG240 Approximation and Optimization         | Approximation and Optimization                    | https://youtu.be/6EqSf0hFbRI |
  
 
 
