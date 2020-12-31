@@ -153,6 +153,13 @@ Once during the term:
   | CENG240 Pandas [Part 1]                        | Pandas                                            | https://youtu.be/Kvjd2kS_Nh8 |
   | CENG240 Matplotlib [Part 2]                    | Mathplot                                          | https://youtu.be/2rgXvoXPIIQ |
 
+**WEEK 13 LECTURE VIDEO**
+
+  | **Upload name**                                | **Content**                                       | **Youtube Link**             |
+  | ---------------------------------------------- | ------------------------------------------------- | ---------------------------- |
+  | CENG240  Week13  Approximation and Optimization| Approximation and Optimization                    | https://youtu.be/6EqSf0hFbRI |
+ 
+
 
 
 * **_Course Workbook_**  [Available at: [https://pp4e-workbook.github.io/](https://pp4e-workbook.github.io/)]
