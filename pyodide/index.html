@@ -58,6 +58,9 @@
           }
         );
 
+	$(window).resize(function() { term.height($(window).height() - $('#banner_row').height() - 
+		      	$('tr:first-child').height() - $('tr:last-child').height() )})
+
         window.term = term;
         pyodide.runPython(`
           import io, code, sys
