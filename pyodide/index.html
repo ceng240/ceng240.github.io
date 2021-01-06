@@ -42,7 +42,7 @@
 			}
 			return `{${members}}`
 		} else {
-			return obj.toString()
+                        return `${obj}`
 		}
 	}
       languagePluginLoader.then(() => {
@@ -83,38 +83,24 @@
 
           _mpi = MPImage(_i)
           _c = Console(locals=globals())
+          `)
 
-          filecontent='''15 95 91 8 100
-          21 91 83 87 40
-          82 83 56 84 75
-          67 82 18 0 83
-          95 8 25 41 73
-          '''
-          with open("input.txt","w") as f : f.write(filecontent)
+        pyodide.runPython(`
+          import pyodide as pd
+          extralibcont = pd.open_url('ceng240.py')
+          open('ceng240.py','w').write(extralibcont.getvalue())
+          sys.path.append(".")
+          from ceng240 import *
+          `);
 
-          import random
-
-          def get_gpa(student_id, semester_no):
-              student_ids = [4567890, 5678901, 6789012, 7890123, 8901234, 9012345, 2171544, 2315477, 2424937]
-              grades = fill_gpa(student_id)
-              random.seed(student_id + semester_no)
-              rand = random.random()
-              if student_id not in student_ids: # ID's which does not exist in the database
-                  raise KeyError
-              elif rand > 0.25:
-                  return grades[semester_no-1]
-              elif rand < 0.125:
-                  raise ValueError
-              else:
-                  raise IndexError
-
-          def fill_gpa(student_id):
-              random.seed(student_id)
-              gpas = []
-              for sem in range(8):
-                  gpas.append(round((random.random() + 1) * 2, 2)) # gpa's are in [2.0, 4.0]
-              return gpas
-        `)
+        pyodide.loadPackage('matplotlib').then(()=>{
+        pyodide.runPython(`
+          extralibcont = pd.open_url('mplbackend.py')
+          open('mplbackend.py','w').write(extralibcont.getvalue())
+          sys.path.append(".")
+          from mplbackend import *
+          `)})
+	
 
         c = pyodide.pyimport('_c')
 	mpi = pyodide.pyimport('_mpi')
@@ -237,9 +223,9 @@
     </td>
     <td></td></tr>
  </table>
-  <div id="imagediv" style="display:none;position:absolute;bottom: 0px">
-	  <span style="float:right" onclick="$('#imagediv').hide()">&#10060;</span>
-	  <img id="imageout"/>
+  <div id="imagediv" style="position:absolute;top: 0px";>
+	  <span id="ploticon"  onclick="$('#imagediv div').toggle()">&#x2630;</span><br clear="left">
+          <!-- <img id="imageout"/> -->
   </div>
   </body>
 </html>

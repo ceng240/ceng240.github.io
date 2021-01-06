@@ -165,11 +165,11 @@ h1.brython{
 .logo {
   font-family: libra_bt;
   font-size: 2em;
-  color:var(--dark-2)
-  /*background-color:var(--clear-2);*/
+  color:var(--dark-2);
   padding: 1em 1em 0.5em 1em;
   width:15%;
   cursor: pointer;
+  /*background-color:var(--clear-2);*/
 }
 
 a.logo {
@@ -313,4 +313,37 @@ strong {
 .terminal .terminal-output > :not(.raw) .terminal-error * {
     color: pink;
     color: var(--error-color, pink);
+}
+
+#ploticon {
+    float:left;
+    font-size:30px;
+    font-weight: bold;
+    border-top:solid gray 1px;
+    border-left:solid gray 1px;
+    border-right:solid gray 1px;
+}
+
+#imagediv > div {
+    border: solid gray 1px;
+}
+
+#imagediv {
+   background-color:white;
+}
+
+.fa-arrow-left:after {
+	content: "\2190"
+}
+.fa-arrow-right:after {
+	content: "\2192"
+}
+.fa-home:after {
+	content: "\2302"
+}
+.fa-search-plus:after {
+	content: "\1f50d"
+}
+.fa-arrows:after {
+	content: "\2194"
 }
