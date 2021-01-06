@@ -12,6 +12,7 @@ function pretty(obj) {
 		}
 		return `{${members}}`
 	} else {
-		return obj.toString()
+		let v = obj.toString()
+		return (v) ? v : `${obj}`
 	}
 }
