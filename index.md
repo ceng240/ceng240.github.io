@@ -159,7 +159,12 @@ Once during the term:
   | ---------------------------------------------- | ------------------------------------------------- | ---------------------------- |
   | CENG240 Approximation and Optimization         | Approximation and Optimization                    | https://youtu.be/6EqSf0hFbRI |
  
+**WEEK 14 LECTURE VIDEO**
 
+  | **Upload name**                                | **Content**                                       | **Youtube Link**             |
+  | ---------------------------------------------- | ------------------------------------------------- | ---------------------------- |
+  | CENG240 Regression                             | Regression                                        | https://youtu.be/neMuOF5XMkU |
+ 
 
 
 * **_Course Workbook_**  [Available at: [https://pp4e-workbook.github.io/](https://pp4e-workbook.github.io/)]
