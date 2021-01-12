@@ -163,9 +163,9 @@ Once during the term:
 
   | **Upload name**                                | **Content**                                       | **Youtube Link**             |
   | ---------------------------------------------- | ------------------------------------------------- | ---------------------------- |
-  | CENG240 Regression                             | Regression                                        | https://youtu.be/neMuOF5XMkU |
+  | CENG240 Regression                             | Regression                                        | https://youtu.be/v9Ekxqz1jHA |
  
-
+https://youtu.be/v9Ekxqz1jHA
 
 * **_Course Workbook_**  [Available at: [https://pp4e-workbook.github.io/](https://pp4e-workbook.github.io/)]
   This is also a Jupyter book that is coherent with the course text book. It contains solved and unsolved exercises in Python which are tagged with difficulty levels [between ★ and ★★★★★]. Students are strongly advised to work, level by level, through the solved exercises then proceed to the unsolved ones.
