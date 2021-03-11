@@ -10,13 +10,13 @@
 
 01-CE  - Thu 8:40 <br />
 02-STAT,CE,MINE - Fri 10:40  <br />
-03-STAT,MINE - Wed 13:40 
-04-ENVE - Fri 8:40
-05-GEOE - Fri 8:40
-06-PETE - Thu 15:40
-07- Fri 8:40
-08-  Mon 15:40
-09-CHE - Mon 10:40
+03-STAT,MINE - Wed 13:40 <br />
+04-ENVE - Fri 8:40 <br />
+05-GEOE - Fri 8:40 <br />
+06-PETE - Thu 15:40 <br />
+07- Fri 8:40 <br />
+08-  Mon 15:40 <br />
+09-CHE - Mon 10:40 <br />
 
 The students of CE, STAT, MINE, PETE, GEOE, CHE, ENVE departments may take the course 240 if they have failed from the CENG 230/240 or didn't take the course before.
 
