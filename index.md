@@ -8,8 +8,8 @@
 
 ### Announcements:
 
-01-CE  - Thu 8:40
-02-STAT,CE,MINE - Fri 10:40  
+01-CE  - Thu 8:40 <br />
+02-STAT,CE,MINE - Fri 10:40  <br />
 03-STAT,MINE - Wed 13:40 
 04-ENVE - Fri 8:40
 05-GEOE - Fri 8:40
