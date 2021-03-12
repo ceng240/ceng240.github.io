@@ -14,7 +14,7 @@
 04-ENVE - Fri 8:40 <br />
 05-GEOE - Fri 8:40 <br />
 06-PETE - Thu 15:40 <br />
-07- Fri 8:40 <br />
+07- Wed 15:40 <br />
 08-  Mon 15:40 <br />
 09-CHE - Mon 10:40 <br />
 
