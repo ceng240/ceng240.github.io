@@ -277,14 +277,14 @@ https://youtu.be/v9Ekxqz1jHA
 
 | **DEPT** | **SECTION** | **LECTURER** | **ONLINE REVIEW LECT.** |
 | --- | --- | --- | --- |
-| **IE** | **9** | **Göktürk Üçoluk** | Monday 13:40-15:30 |
-| **ME** | **1** | **Oğuz Hanoğlu** | Monday 15:40-17:30 |
-| **METE** | **3** | **Selma Süloğlu** | Tuesday 15:40-17:30 |
-| **MathED &amp; EE** | **6** | **Gökhan Orhan** | Wednesday 08:40-10:30 |
-| **EE** | **7, 8** | **Onur Tolga Şehitoğlu** | To-Be-Arranged |
-| **ME** | **2** | **Hasan Ulusoy** | Friday 13:40-15:30 |
-| **MATH** | **5** | **Özcan Dülger** | Friday 13:40-15:30 |
-| **FDE** | **4** | **Özcan Dülger** | Friday 15:40-17:30 |
+| **CE,STAT** | **1** | **Selma Süloğlu** | Thursday 08:40-10:30 |
+| **CE** | **2** | **Göktürk Üçoluk** | Friday 10:40-12:30 |
+| **STAT,MINE** | **3** | **Muhammed Çağrı Kaya** | Wednesday 13:40-15:30 |
+| **ENVE &amp; GEOE** | **4, 5** | **Sinan Kalkan** | Friday 08:40-10:30 |
+| **PETE** | **6** | **Hasan Ulusoy** | Thursday 15:40-17:30 |
+| **ENVE** | **7** | ***Gökhan Orhan* | Wednesday 15:40-17:30 |
+| **PETE** | **8** | **Özcan Dülger** | Monday 15:40-17:30 |
+| **CHE** | **9** | **Oğuz Hanoğlu** | Monday 10:40-12:30 |
 
 
 Virtual Office Hourse: To-Be-Announced 
