@@ -512,8 +512,7 @@ Encapsulation; Inheritance; Polymorphism; Basics of OOP in Python</em></li>
 <p>17.05</p>
 </td>
 <td align="left">
-<p><br>
-</p>
+<p>19<sup>th</sup> is holiday</p>
 </td>
 <td align="left">
 <ul>
@@ -575,7 +574,8 @@ plotting. Illustration of these tools with examples.</em></li>
 <p>07.06</p>
 </td>
 <td align="left">
-<p>1<sup>st</sup> is holiday</p>
+<p><br>
+</p>
 </td>
 <td align="left">
 <ul>
@@ -602,7 +602,7 @@ plotting. Illustration of these tools with examples.</em></li>
 </ul>
 </td>
 <td align="left">
-<p>Engineering and scientific libraries</p>
+<p>No lab</p>
 </td>
 </tr>
 <tr class="odd">
@@ -620,7 +620,7 @@ plotting. Illustration of these tools with examples.</em></li>
 </ul>
 </td>
 <td align="left">
-<p>Engineering and scientific libraries</p>
+<p>No lab</p>
 </td>
 </tr>
 </tbody>
