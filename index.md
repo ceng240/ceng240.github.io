@@ -368,7 +368,8 @@ of characters, text and Boolean.</em></li>
 <p>29.03</p>
 </td>
 <td align="left">
-<p>29<sup>th</sup> is holiday</p>
+<p><br>
+</p>
 </td>
 <td align="left">
 <ul>
@@ -426,8 +427,7 @@ continue &amp; break; List comprehension; Example problems</em></li>
 <p>19.04</p>
 </td>
 <td align="left">
-<p><br>
-</p>
+<p>23<sup>rd</sup> is holiday</p>
 </td>
 <td align="left">
 <ul>
@@ -607,7 +607,7 @@ plotting. Illustration of these tools with examples.</em></li>
 </tr>
 <tr class="odd">
 <td align="left">
-<b>Week 15</b>
+<b>Week15</b>
 <p>21.06</p>
 </td>
 <td align="left">
