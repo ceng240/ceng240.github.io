@@ -312,7 +312,7 @@ Virtual Office Hourse: To-Be-Announced
 <tr class="even">
 <td align="left">
 <b>Week1</b>
-<p>12.10</p>
+<p>15.03</p>
 </td>
 <td align="left">
 <p><br>
@@ -337,7 +337,7 @@ execution, stored program, Peripherals, OS</em></li>
 <tr class="odd">
 <td align="left">
 <b>Week2</b>
-<p>19.10</p>
+<p>22.03</p>
 </td>
 <td align="left">
 <p><br>
@@ -365,7 +365,7 @@ of characters, text and Boolean.</em></li>
 <tr class="even">
 <td align="left">
 <p><b>Week3</b></p>
-<p>26.10</p>
+<p>29.03</p>
 </td>
 <td align="left">
 <p>29<sup>th</sup> is holiday</p>
@@ -384,7 +384,7 @@ tuple, list, dict, set); Mutable - immutable data; aliasing problem;</em></li>
 <tr class="odd">
 <td align="left">
 <b>Week4</b>
-<p>02.11</p>
+<p>05.04</p>
 </td>
 <td align="left">
 <p><br>
@@ -405,7 +405,7 @@ Containers</p>
 <tr class="even">
 <td align="left">
 <b>Week5</b>
-<p>09.11</p>
+<p>12.04</p>
 </td>
 <td align="left">
 </td>
@@ -423,7 +423,7 @@ continue &amp; break; List comprehension; Example problems</em></li>
 <tr class="odd">
 <td align="left">
 <b>Week6</b>
-<p>16.11</p>
+<p>19.04</p>
 </td>
 <td align="left">
 <p><br>
@@ -449,7 +449,7 @@ Example definitions</em></li>
 <tr class="even">
 <td align="left">
 <b>Week7</b>
-<p>23.11</p>
+<p>26.04</p>
 </td>
 <td align="left">
 <p><br>
@@ -469,7 +469,7 @@ Example definitions</em></li>
 <tr class="odd">
 <td align="left">
 <b>Week8</b>
-<p>30.11</p>
+<p>03.05</p>
 </td>
 <td align="left">
 <p><br>
@@ -490,7 +490,26 @@ Encapsulation; Inheritance; Polymorphism; Basics of OOP in Python</em></li>
 <tr class="even">
 <td align="left">
 <b>Week9</b>
-<p>07.12</p>
+<p>10.05</p>
+</td>
+<td align="left">
+<p><br>
+</p>
+</td>
+<td align="left">
+<ul>
+<li><b>Spring Break</b><br><em>
+</em></li>
+</ul>
+</td>
+<td align="left">
+<p>No lab</p>
+</td>
+</tr>
+<tr class="even">
+<td align="left">
+<b>Week10</b>
+<p>17.05</p>
 </td>
 <td align="left">
 <p><br>
@@ -509,8 +528,8 @@ output; binary files</em></li>
 </tr>
 <tr class="odd">
 <td align="left">
-<b>Week10</b>
-<p>14.12</p>
+<b>Week11</b>
+<p>24.05</p>
 </td>
 <td align="left">
 <p><br>
@@ -529,8 +548,8 @@ Kind of errors; Exceptions; Debugging techniques</em></li>
 </tr>
 <tr class="even">
 <td align="left">
-<b>Week11</b>
-<p>21.12</p>
+<b>Week12</b>
+<p>31.05</p>
 </td>
 <td align="left">
 <p><br>
@@ -552,8 +571,8 @@ plotting. Illustration of these tools with examples.</em></li>
 </tr>
 <tr class="odd">
 <td align="left">
-<b>Week12</b>
-<p>28.12</p>
+<b>Week13</b>
+<p>07.06</p>
 </td>
 <td align="left">
 <p>1<sup>st</sup> is holiday</p>
@@ -570,8 +589,8 @@ plotting. Illustration of these tools with examples.</em></li>
 </tr>
 <tr class="even">
 <td align="left">
-<b>Week13</b>
-<p>04.01</p>
+<b>Week14</b>
+<p>14.06</p>
 </td>
 <td align="left">
 <p><br>
@@ -588,8 +607,8 @@ plotting. Illustration of these tools with examples.</em></li>
 </tr>
 <tr class="odd">
 <td align="left">
-<b>Week 14</b>
-<p>11.01</p>
+<b>Week 15</b>
+<p>21.06</p>
 </td>
 <td align="left">
 <p><br>
