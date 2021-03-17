@@ -74,16 +74,16 @@ Once during the term:
 
 ### Course Material
 
-* **_Course Text Book_**  [Available at: [https://pp4e-book.github.io/](https://pp4e-book.github.io/)]
+* **_Course Textbook_**  [Available at: [https://pp4e-book.github.io/](https://pp4e-book.github.io/)]
   This is an 'interactive' book with a rather 'minimalist' approach: Some details or specialized subjects are not emphasized and instead, direct interaction with examples and problems are encouraged. Therefore, rather than being a 'complete reference manual', this book is a 'first things first' and 'hands on' book. The pointers to skipped details will be provided by links in the book. Bearing this in mind, the reader is strongly encouraged to read and interact <u>all</u> contents of the book thoroughly. 
 
   The book's interactivity is thanks to <a href="https://jupyter.org/">Jupyter notebook</a>. Therefore, the book differs from a conventional book by providing some dynamic content. This content can appear in audio-visual form as well as some applets (small applications) embedded in the book. It is also possible that the book asks the the reader to complete/write a piece of Python program, run it, and inspect the result, from time to time. The reader is encouraged to complete these minor tasks. Such tasks and interactions are of great assistance in gaining acquaintance with Python and building up a self-confidence in solving problems with Python. 
 
-  You can download the PDF of the course text book from https://pp4e-book.github.io/](https://pp4e-book.github.io/).
+  You can download the PDF of the course textbook from [https://pp4e-book.github.io/](https://pp4e-book.github.io/).
 
   Of course, the PDF does not provide the dynamic content. 
 
-* **_Weekly Lecture Video_** (Will be updated weekly)
+### Weekly Lecture Videos
 
   **WEEK 1 LECTURE VIDEOS**
   
