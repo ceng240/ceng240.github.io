@@ -83,112 +83,6 @@ Once during the term:
 
   Of course, the PDF does not provide the dynamic content. 
 
-### Weekly Lecture Videos
-
-  **WEEK 1 LECTURE VIDEOS**
-  
-  | **Upload name**                      | **Content**            | **Youtube Link**             |
-  | ------------------------------------ | ---------------------- | ---------------------------- |
-  | Ceng 240 BASIC COMPUTER ORG Part 1/5 | What is computing      | [https://youtu.be/t2S-nOXrA2Y](https://youtu.be/t2S-nOXrA2Y) | 
-  | Ceng 240 BASIC COMPUTER ORG Part 2/5 | CPU &amp; Memory       | [https://youtu.be/NOuQMU605J8](https://youtu.be/NOuQMU605J8) |
-  | Ceng 240 BASIC COMPUTER ORG Part 3/5 | Fetch,Decode,Execute   | [https://youtu.be/xhAd7k3ouKY](https://youtu.be/xhAd7k3ouKY) |
-  | Ceng 240 BASIC COMPUTER ORG Part 4/5 | Machine code+Assembler | [https://youtu.be/IOlIhuHA9i8](https://youtu.be/IOlIhuHA9i8) |
-  | Ceng 240 BASIC COMPUTER ORG Part 5/5 | BIOS, OS               | [https://youtu.be/nKZ0zk6Kaz8](https://youtu.be/nKZ0zk6Kaz8) |
-
-  **WEEK 2 LECTURE VIDEOS**
-
-  | **Upload name**                      | **Content**                                 | **Youtube Link**             |
-  | ------------------------------------ | ------------------------------------------- | ---------------------------- |
-  | Ceng 240 PROGRAMMING LANGUAGES       | Interpreters &amp; Compilers                | [https://youtu.be/rVZTzpQ0epA](https://youtu.be/rVZTzpQ0epA) |
-  | Ceng 240 REPRESENTATION OF DATA      | Integer &amp; Floating point representation | [https://youtu.be/1IeF81cIKTo](https://youtu.be/1IeF81cIKTo) |
-
-
-  **WEEK 3 LECTURE VIDEOS**
-
-  | **Upload name**                     | **Content**                                                  | **Youtube Link**             |
-  | ----------------------------------- | ------------------------------------------------------------ | ---------------------------- |
-  | CENG 240 INTRODUCTION TO CONTAINERS | Arithmetic operators, Expression, Comparison operators, Logic connectives | [https://youtu.be/AgNHUhTkB28](https://youtu.be/AgNHUhTkB28) |
-  | CENG 240 OPERATORS & EXPRESSIONS    | Containers in Python (string, list,tuple,dict,set)           | [https://youtu.be/z49W4IFVQ2M](https://youtu.be/z49W4IFVQ2M) |
-
-
-  **WEEK 4 LECTURE VIDEOS**
-
-  | **Upload name**                     | **Content**                                                  | **Youtube Link**             |
-  | ----------------------------------- | ------------------------------------------------------------ | ---------------------------- |
-  | CENG240 VARIABLES & ASSIGNMENT      | Variables, Assignment of container values                    | [https://youtu.be/wf-Hzwxmj28](https://youtu.be/wf-Hzwxmj28) |
-
-
-  **WEEK 5 LECTURE VIDEOS**
-
-  | **Upload name**                     | **Content**                                                  | **Youtube Link**             |
-  | ----------------------------------- | ------------------------------------------------------------ | ---------------------------- |
-  | CENG240 CONDITIONAL EXECUTION       | if                                                           | [https://youtu.be/VVZm4Ym06Sw](https://youtu.be/VVZm4Ym06Sw) |
-  | CENG 240 REPETITIVE EXECUTION       | while and for statements                                     | [https://youtu.be/ByCj0kIGvTI](https://youtu.be/ByCj0kIGvTI) |
-  | CENG 240 CONDITIONAL & REPETITIVE EXECUTION EXERCISE 1       |                                     | [https://youtu.be/S5VjLj43MJM](https://youtu.be/S5VjLj43MJM) |
-  | CENG 240 CONDITIONAL & REPETITIVE EXECUTION EXERCISE 2       |                                     | [https://youtu.be/ag98_cj_f3c](https://youtu.be/ag98_cj_f3c) |
-    
-
-  **WEEK 6 and 7 LECTURE VIDEOS**
-
-  | **Upload name**                     | **Content**                                                  | **Youtube Link**             |
-  | ----------------------------------- | ------------------------------------------------------------ | ---------------------------- |
-  | CENG 240 FUNCTIONS                  | function                                                     | [https://youtu.be/K0P15wn_sCU](https://youtu.be/K0P15wn_sCU) |
-  | CENG 240 FUNCTIONS EXERCISE 1       | function                                                     | [https://youtu.be/IG5EsNvkd58](https://youtu.be/IG5EsNvkd58) |
-  | CENG 240 FUNCTIONS EXERCISE 2       | function, sorting                                            | [https://youtu.be/hyZeKlw41Ww](https://youtu.be/hyZeKlw41Ww) |
-  | CENG 240 FUNCTIONS & RECURSION      | function, recursion                                          | [https://youtu.be/WifD3BiF6FE](https://youtu.be/WifD3BiF6FE) |
-
-
-  **WEEK 8 LECTURE VIDEOS**
-
-  | **Upload name**                                | **Content**                                       | **Youtube Link**             |
-  | ---------------------------------------------- | ------------------------------------------------- | ---------------------------- |
-  | CENG 240  OBJECT ORIENTED PROGRAMMING          | OOP                                               | [https://youtu.be/2sC2tgOpM8s](https://youtu.be/2sC2tgOpM8s) |
-  | CENG 240  OBJECT ORIENTED PROGRAMMING EXERCISE | OOP                                               | [https://youtu.be/RmFovihZyUs](https://youtu.be/RmFovihZyUs) |
-  
-
-  **WEEK 9 LECTURE VIDEOS**
-
-  | **Upload name**                                | **Content**                                       | **Youtube Link**             |
-  | ---------------------------------------------- | ------------------------------------------------- | ---------------------------- |
-  | CENG 240  FILES                                | Files                                             | [https://youtu.be/GYULHrIDTsU](https://youtu.be/GYULHrIDTsU) |
-  | CENG 240  FILES EXERCISE                       | Files                                             | [https://youtu.be/fxIpEo-CEM0](https://youtu.be/fxIpEo-CEM0) |
-
-
- **WEEK 10 LECTURE VIDEO**
-
-  | **Upload name**                                | **Content**                                       | **Youtube Link**             |
-  | ---------------------------------------------- | ------------------------------------------------- | ---------------------------- |
-  | CENG 240  EXCEPTIONS                           | Exceptions & Debugging                            | [https://youtu.be/hAqwoF3_4RE](https://youtu.be/hAqwoF3_4RE) |
-
-
-**WEEK 11 LECTURE VIDEOS**
-
-  | **Upload name**                                | **Content**                                       | **Youtube Link**             |
-  | ---------------------------------------------- | ------------------------------------------------- | ---------------------------- |
-  | CENG240 NumPy and SciPy [Part 1]               | NumPy & SciPy                                     | [https://youtu.be/3v_Wg7_TIto](https://youtu.be/3v_Wg7_TIto) |
-  | CENG240 NumPy and SciPy [Part 2]               | NumPy & SciPy                                     | [https://youtu.be/vYM8NcJSEcE](https://youtu.be/vYM8NcJSEcE) |
-
-**WEEK 12 LECTURE VIDEOS**
-
-  | **Upload name**                                | **Content**                                       | **Youtube Link**             |
-  | ---------------------------------------------- | ------------------------------------------------- | ---------------------------- |
-  | CENG240 Pandas [Part 1]                        | Pandas                                            | [https://youtu.be/Kvjd2kS_Nh8](https://youtu.be/Kvjd2kS_Nh8) |
-  | CENG240 Matplotlib [Part 2]                    | Mathplot                                          | [https://youtu.be/2rgXvoXPIIQ](https://youtu.be/2rgXvoXPIIQ) |
-
-**WEEK 13 LECTURE VIDEO**
-
-  | **Upload name**                                | **Content**                                       | **Youtube Link**             |
-  | ---------------------------------------------- | ------------------------------------------------- | ---------------------------- |
-  | CENG240 Approximation and Optimization         | Approximation and Optimization                    | [https://youtu.be/6EqSf0hFbRI](https://youtu.be/6EqSf0hFbRI) |
- 
-**WEEK 14 LECTURE VIDEO**
-
-  | **Upload name**                                | **Content**                                       | **Youtube Link**             |
-  | ---------------------------------------------- | ------------------------------------------------- | ---------------------------- |
-  | CENG240 Regression                             | Regression                                        | [https://youtu.be/v9Ekxqz1jHA](https://youtu.be/v9Ekxqz1jHA) |
- 
-https://youtu.be/v9Ekxqz1jHA
-
 * **_Course Workbook_**  [Available at: [https://pp4e-workbook.github.io/](https://pp4e-workbook.github.io/)]
   This is also a Jupyter book that is coherent with the course text book. It contains solved and unsolved exercises in Python which are tagged with difficulty levels [between ★ and ★★★★★]. Students are strongly advised to work, level by level, through the solved exercises then proceed to the unsolved ones.
 
@@ -291,340 +185,151 @@ Virtual Office Hourse: To-Be-Announced
 
 ### Weekly Coverage
 
-<table>
-<col width="12%">
-<col width="10%"><col width="60%">
-<col width="18%"><tbody>
-<tr class="odd">
-<td align="left">
-<p><big><strong><em>Week</em></strong></big></p>
-</td>
-<td align="left">
-<p><big><strong><em>Notes</em></strong></big></p>
-</td>
-<td align="left">
-<p><big><strong><em>Course Material</em></strong></big></p>
-</td>
-<td align="left">
-<p><big><strong><em>Lab Coverage</em></strong></big></p>
-</td>
-</tr>
-<tr class="even">
-<td align="left">
-<b>Week1</b>
-<p>15.03</p>
-</td>
-<td align="left">
-<p><br>
-</p>
-</td>
-<td align="left">
-<ul>
-<li><b>Introduction</b><br>
-<em>Course content, objectives,
-  outline; Grading; Information about the homeworks, the labs, the exams</em></li>
-</ul>
-<ul>
-  <li><b>Basic computer organization</b><br>
-<em>Von Neumann arch, CPU, RAM and their interaction during program
-execution, stored program, Peripherals, OS</em></li>
-</ul>
-</td>
-<td align="left">
-<p>No lab</p>
-</td>
-</tr>
-<tr class="odd">
-<td align="left">
-<b>Week2</b>
-<p>22.03</p>
-</td>
-<td align="left">
-<p><br>
-</p>
-</td>
-<td align="left">
-<ul>
-<li><b>A Broad Look at
-  Programming and PL</b><br>
-  <em>Concept of Algorithm, Comparing algorithms, World of PLs, Low-High
-level PL, Interpreter vs Compiler, Programming Paradigms, Python as a PL</em></li>
-</ul>
-<p> </p>
-<ul>
-<li><b>Representation of data in computers</b><br><em>
-Two's complement representation of integers, IEEE floating-point
-representation, Information loss with Floating Points, representation
-of characters, text and Boolean.</em></li>
-</ul>
-</td>
-<td align="left">
-<p>No lab</p>
-</td>
-</tr>
-<tr class="even">
-<td align="left">
-<p><b>Week3</b></p>
-<p>29.03</p>
-</td>
-<td align="left">
-<p><br>
-</p>
-</td>
-<td align="left">
-<ul>
-<li><b>Introduction to Python</b><br><em>
-Numbers and Boolean values in Python, Container data in Python (str,
-tuple, list, dict, set); Mutable - immutable data; aliasing problem;</em></li>
-</ul>
-</td>
-<td align="left">
-<p>No lab</p>
-</td>
-</tr>
-<tr class="odd">
-<td align="left">
-<b>Week4</b>
-<p>05.04</p>
-</td>
-<td align="left">
-<p><br>
-</p>
-</td>
-<td align="left">
-<ul>
-<li><b>Introduction to Python <em>[continued]</em></b><br><em>
-Operators and Expressions; Type casting; Statement in Python; Variables
-and Assignment; Basic I/O in Python;</em></li>
-</ul>
-</td>
-<td align="left">
-<p>Numbers &amp;<br>
-Containers</p>
-</td>
-</tr>
-<tr class="even">
-<td align="left">
-<b>Week5</b>
-<p>12.04</p>
-</td>
-<td align="left">
-</td>
-<td align="left">
-<ul>
-<li><b>Conditional &amp; repetitive execution in Python</b><br><em>
-if statements; conditional expression; while &amp; for statements;
-continue &amp; break; List comprehension; Example problems</em></li>
-</ul>
-</td>
-<td align="left">
-<p>Expressions, Variables, Basic I/O</p>
-</td>
-</tr>
-<tr class="odd">
-<td align="left">
-<b>Week6</b>
-<p>19.04</p>
-</td>
-<td align="left">
-<p>23<sup>rd</sup> is holiday</p>
-</td>
-<td align="left">
-<ul>
-<li><b>Conditional &amp;
-repetitive execution in Python <em>[continued]</em></b><br><em>
-if statements; conditional expression; while &amp; for statements;
-continue &amp; break; List comprehension; Example problems</em></li>
-</ul>
-<ul>
-<li><b>Functions</b><br><em>
-Defining functions; Passing parameters; Scope of variables; Recursion;
-Example definitions</em></li>
-</ul>
-</td>
-<td align="left">
-<p>If, repetitive statements, list compr.</p>
-</td>
-</tr>
-<tr class="even">
-<td align="left">
-<b>Week7</b>
-<p>26.04</p>
-</td>
-<td align="left">
-<p><br>
-</p>
-</td>
-<td align="left">
-<ul>
-<li><b>Functions <em>[continued]</em></b><br><em>
-Defining functions; Passing parameters; Scope of variables; Recursion;
-Example definitions</em></li>
-</ul>
-</td>
-<td align="left">
-<p>Functions</p>
-</td>
-</tr>
-<tr class="odd">
-<td align="left">
-<b>Week8</b>
-<p>03.05</p>
-</td>
-<td align="left">
-<p><br>
-</p>
-</td>
-<td align="left">
-<ul>
-<li><b>Object-oriented
-Programming Concepts</b><br><em>
-Class definition; Member functions &amp; variables; Message passing;
-Encapsulation; Inheritance; Polymorphism; Basics of OOP in Python</em></li>
-</ul>
-</td>
-<td align="left">
-<p>Repetitive execution &amp; functions</p>
-</td>
-</tr>
-<tr class="even">
-<td align="left">
-<b>Week9</b>
-<p>10.05</p>
-</td>
-<td align="left">
-<p><br>
-</p>
-</td>
-<td align="left">
-<ul>
-<li><b>Spring Break</b><br><em>
-</em></li>
-</ul>
-</td>
-<td align="left">
-<p>No lab</p>
-</td>
-</tr>
-<tr class="even">
-<td align="left">
-<b>Week10</b>
-<p>17.05</p>
-</td>
-<td align="left">
-<p>19<sup>th</sup> is holiday</p>
-</td>
-<td align="left">
-<ul>
-<li><b>File handling</b><br><em>
-Files and Sequential access; Parsing; Termination of Input; Formatting
-output; binary files</em></li>
-</ul>
-</td>
-<td align="left">
-<p>OO operations on built-in Objects</p>
-</td>
-</tr>
-<tr class="odd">
-<td align="left">
-<b>Week11</b>
-<p>24.05</p>
-</td>
-<td align="left">
-<p><br>
-</p>
-</td>
-<td align="left">
-<ul>
-<li><b>Exception handling and
-Debugging</b><br><em>
-Kind of errors; Exceptions; Debugging techniques</em></li>
-</ul>
-</td>
-<td align="left">
-<p>File handling</p>
-</td>
-</tr>
-<tr class="even">
-<td align="left">
-<b>Week12</b>
-<p>31.05</p>
-</td>
-<td align="left">
-<p><br>
-</p>
-</td>
-<td align="left">
-<ul>
-<li><b>Engineering and scientific
-libraries for Python</b><br><em>
-Libraries and tools for numerical &amp; scientific calculations
-(arrays, n-D arrays, slicing, basic operations on arrays, commonly used
-functions, algebraic functions etc.), data handling &amp; analysis, and
-plotting. Illustration of these tools with examples.</em></li>
-</ul>
-</td>
-<td align="left">
-<p>Exception handling and debugging </p>
-</td>
-</tr>
-<tr class="odd">
-<td align="left">
-<b>Week13</b>
-<p>07.06</p>
-</td>
-<td align="left">
-<p><br>
-</p>
-</td>
-<td align="left">
-<ul>
-  <li><b>Engineering and scientific libraries for Python<em> [continued]</em></b> <br>
-</li>
-</ul>
-</td>
-<td align="left">
-<p>Engineering and scientific libraries</p>
-</td>
-</tr>
-<tr class="even">
-<td align="left">
-<b>Week14</b>
-<p>14.06</p>
-</td>
-<td align="left">
-<p><br>
-</p>
-</td>
-<td align="left">
-<ul>
-<li><b>An Application: Approximation &amp; optimization</b></li>
-</ul>
-</td>
-<td align="left">
-<p>No lab</p>
-</td>
-</tr>
-<tr class="odd">
-<td align="left">
-<b>Week15</b>
-<p>21.06</p>
-</td>
-<td align="left">
-<p><br>
-</p>
-</td>
-<td align="left">
-<ul>
-<li><b>An Application: Solving a simple regression problem</b></li>
-</ul>
-</td>
-<td align="left">
-<p>No lab</p>
-</td>
-</tr>
-</tbody>
-</table>
+
+### Weekly Lecture Videos
+
+**Week 1 (15.03)**
+
+- Lecture Topics: 
+  + Introduction: Course content, objectives, outline; Grading; Information about the homeworks, the labs, the exams.
+  + Basic computer organization: Von Neumann arch, CPU, RAM and their interaction during program execution, stored program, Peripherals, OS.
+- Lecture Videos:
+  + [Part 1/5: What is computing](https://youtu.be/t2S-nOXrA2Y)
+  + [Part 2/5: CPU &amp; Memory](https://youtu.be/NOuQMU605J8)
+  + [Part 3/5: Fetch, Decode, Execute](https://youtu.be/xhAd7k3ouKY)
+  + [Part 4/5: Machine code+Assembler](https://youtu.be/IOlIhuHA9i8)
+  + [Part 5/5: BIOS, OS](https://youtu.be/nKZ0zk6Kaz8)
+- Lab Topics:
+  No Lab.
+  
+**Week 2 (22.03)**
+
+- Lecture Topics: 
+  + A Broad Look at Programming and PL: Concept of Algorithm, Comparing algorithms, World of PLs, Low-High level PL, Interpreter vs Compiler, Programming Paradigms, Python as a PL. 
+  + Representation of data in computers: Two's complement representation of integers, IEEE floating-point representation, Information loss with Floating Points, representation of characters, text and Boolean.
+- Lecture Videos:
+  + [Part 1/2: Interpreters &amp; Compilers ](https://youtu.be/rVZTzpQ0epA)
+  + [Part 2/2: Integer &amp; Floating point representation](https://youtu.be/1IeF81cIKTo)
+- Lab Topics:
+  No Lab.
+ 
+**Week 3 (29.03)**
+
+- Lecture Topics: 
+  + Introduction to Python: Numbers and Boolean values in Python, Container data in Python (str, tuple, list, dict, set); Mutable - immutable data; aliasing problem.
+- Lecture Videos:
+  + [Part 1/2: Arithmetic operators, Expression, Comparison operators, Logic connectives](https://youtu.be/AgNHUhTkB28)
+  + [Part 2/2: Containers in Python (string, list,tuple,dict,set](https://youtu.be/z49W4IFVQ2M)
+- Lab Topics:
+  No Lab.
+ 
+**Week 4 (05.04)**
+
+- Lecture Topics: 
+  + Introduction to Python [continued]: Operators and Expressions; Type casting; Statement in Python; Variables and Assignment; Basic I/O in Python.
+- Lecture Videos:
+  + [Variables, Assignment of container values](https://youtu.be/wf-Hzwxmj28)
+- Lab Topics: Numbers & Containers.
+
+**Week 5 (12.04)**
+
+- Lecture Topics: 
+  + Conditional & repetitive execution in Python: if statements; conditional expression; while & for statements; continue & break; List comprehension; Example problems.
+- Lecture Videos:
+  + [Part 1/4: if](ttps://youtu.be/VVZm4Ym06Sw)
+  + [Part 2/4: while and for statements](https://youtu.be/ByCj0kIGvTI)
+  + [Part 3/4: Exercise 1](https://youtu.be/S5VjLj43MJM)
+  + [Part 4/4: Exercise 2](https://youtu.be/ag98_cj_f3c)
+- Lab Topics: Expressions, Variables, Basic I/O.
+
+
+**Week 6 (19.04) [23rd is holiday]**
+
+- Lecture Topics: 
+  + Conditional & repetitive execution in Python [continued]: if statements; conditional expression; while & for statements; continue & break; List comprehension; Example problems.
+  + Functions: Defining functions; Passing parameters; Scope of variables; Recursion; Example definitions.
+- Lecture Videos (for Week 6 and 7):
+  + [Part 1/4: Functions](https://youtu.be/K0P15wn_sCU)
+  + [Part 2/4: Functions Exercise 1](https://youtu.be/IG5EsNvkd58)
+  + [Part 3/4: Functions Exercise 2 (sorting)](https://youtu.be/hyZeKlw41Ww)
+  + [Part 4/4: Functions and Recursion](https://youtu.be/WifD3BiF6FE)
+- Lab Topics: If, repetitive statements, list comprehension.
+
+**Week 7 (26.04)**
+
+- Lecture Topics: 
+  + Functions [continued]: Defining functions; Passing parameters; Scope of variables; Recursion; Example definitions.
+- Lecture Videos:
+  + See Week 6 videos.
+- Lab Topics: Functions.
+
+**Week 8 (03.05)**
+
+- Lecture Topics: 
+  + Object-oriented Programming (OOP) Concepts: Class definition; Member functions & variables; Message passing; Encapsulation; Inheritance; Polymorphism; Basics of OOP in Python.
+- Lecture Videos:
+  + [Part 1/2: OOP](https://youtu.be/2sC2tgOpM8s)
+  + [Part 2/2: OOP Exercise](https://youtu.be/RmFovihZyUs)
+- Lab Topics: Repetitive execution & functions.
+
+**Week 9 (10.05)**
+
+- Lecture Topics: 
+  + Spring Break.
+- Lecture Videos:
+  + Spring Break.
+- Lab Topics: Spring Break.
+
+**Week 10 (17.05) [19th is holiday]**
+
+- Lecture Topics: 
+  + File handling: Files and Sequential access; Parsing; Termination of Input; Formatting output; binary files.
+- Lecture Videos:
+  + [Part 1/2: Files](https://youtu.be/GYULHrIDTsU)
+  + [Part 2/2: Files Exercise](https://youtu.be/fxIpEo-CEM0)
+- Lab Topics: OO operations on built-in objects.
+
+**Week 11 (24.05)**
+
+- Lecture Topics: 
+  + Exception handling and Debugging: Kind of errors; Exceptions; Debugging techniques.
+- Lecture Videos:
+  + [Exceptions & Debugging ](https://youtu.be/hAqwoF3_4RE)
+- Lab Topics: File handling.
+
+**Week 12 (31.05)**
+
+- Lecture Topics: 
+  + Engineering and scientific libraries for Python: Libraries and tools for numerical & scientific calculations (arrays, n-D arrays, slicing, basic operations on arrays, commonly used functions, algebraic functions etc.).
+- Lecture Videos:
+  + [Part 1/2: NumPy and SciPy](https://youtu.be/3v_Wg7_TIto)
+  + [Part 2/2: NumPy and SciPy](https://youtu.be/vYM8NcJSEcE)
+- Lab Topics: Exception handling and debugging.
+
+**Week 13 (07.06)**
+
+- Lecture Topics: 
+  + Engineering and scientific libraries for Python [continued]: Data handling & analysis, and plotting. Illustration of these tools with examples.
+- Lecture Videos:
+  + [Part 1/2: Pandas](https://youtu.be/Kvjd2kS_Nh8)
+  + [Part 2/2: Matplotlib](https://youtu.be/2rgXvoXPIIQ)
+- Lab Topics: Engineering and scientific libraries.
+
+**Week 14 (13.06)**
+
+- Lecture Topics: 
+  + An Application: Approximation & optimization.
+- Lecture Videos:
+  + [Approximation and Optimization](https://youtu.be/6EqSf0hFbRI)
+- Lab Topics: No lab.
+
+**Week 15 (20.06)**
+
+- Lecture Topics: 
+  + An Application: Solving a simple regression problem.
+- Lecture Videos:
+  + [Regression](https://youtu.be/v9Ekxqz1jHA)
+- Lab Topics: No lab.
 
 ### Contact
 
