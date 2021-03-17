@@ -289,7 +289,7 @@ https://youtu.be/v9Ekxqz1jHA
 
 Virtual Office Hourse: To-Be-Announced 
 
-### Syllabus
+### Weekly Coverage
 
 <table>
 <col width="12%">
