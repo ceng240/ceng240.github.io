@@ -84,7 +84,7 @@ Once during the term:
   Of course, the PDF does not provide the dynamic content. 
 
 * **_Course Workbook_**  [Available at: [https://pp4e-workbook.github.io/](https://pp4e-workbook.github.io/)]
-  This is also a Jupyter book that is coherent with the course text book. It contains solved and unsolved exercises in Python which are tagged with difficulty levels [between ★ and ★★★★★]. Students are strongly advised to work, level by level, through the solved exercises then proceed to the unsolved ones.
+  This is also a Jupyter book that is coherent with the course textbook. It contains solved and unsolved exercises in Python which are tagged with difficulty levels [between ★ and ★★★★★]. Students are strongly advised to work, level by level, through the solved exercises then proceed to the unsolved ones.
 
 * **_Python Interpreter_**
 
@@ -94,13 +94,13 @@ Once during the term:
 
   2. Using an interpreter accessible on the Web. 
 
-     * For this one alternative is the environment the book is written on, i.e. Googla Colab: <a href="https://colab.research.google.com"> https://colab.research.google.com</a>.
+     * This alternative is the environment the book is written on, i.e. Google Colab: <a href="https://colab.research.google.com"> https://colab.research.google.com</a>.
      
        <img src="https://github.com/sinankalkan/CENG240/blob/master/figures/colabEntryPage.png?raw=true" alt="gg" style="zoom:70%;" />
 
        After cancelling the entry page, you arrive at a page which looks like the one above. Click "+ Code" tab and you will see at the bottom a freshly created cell. You can type in that cell your Python code and run it by hitting the small arrow  <img src="https://github.com/sinankalkan/CENG240/blob/master/figures/rightarrowincircle.png?raw=true" alt="gg" style="zoom:50%;" />  at the left top of that cell. 
 
-     * Another alternative is to use Python on an interpreter providing website:
+     * Another alternative is to use another online interpreter:
 
        * <a href="https://www.python.org/shell/">https://www.python.org/shell/</a>
        * <a href="http://www.pythontutor.com/visualize.html#mode=edit">http://www.pythontutor.com/visualize.html#mode=edit</a>
@@ -233,7 +233,7 @@ Virtual Office Hourse: To-Be-Announced
 - Lecture Topics: 
   + Conditional & repetitive execution in Python: if statements; conditional expression; while & for statements; continue & break; List comprehension; Example problems.
 - Lecture Videos:
-  + [Part 1/4: if](ttps://youtu.be/VVZm4Ym06Sw)
+  + [Part 1/4: if](https://youtu.be/VVZm4Ym06Sw)
   + [Part 2/4: while and for statements](https://youtu.be/ByCj0kIGvTI)
   + [Part 3/4: Exercise 1](https://youtu.be/S5VjLj43MJM)
   + [Part 4/4: Exercise 2](https://youtu.be/ag98_cj_f3c)
