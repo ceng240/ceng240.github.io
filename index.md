@@ -89,103 +89,103 @@ Once during the term:
   
   | **Upload name**                      | **Content**            | **Youtube Link**             |
   | ------------------------------------ | ---------------------- | ---------------------------- |
-  | Ceng 240 BASIC COMPUTER ORG Part 1/5 | What is computing      | https://youtu.be/t2S-nOXrA2Y | 
-  | Ceng 240 BASIC COMPUTER ORG Part 2/5 | CPU &amp; Memory       | https://youtu.be/NOuQMU605J8 |
-  | Ceng 240 BASIC COMPUTER ORG Part 3/5 | Fetch,Decode,Execute   | https://youtu.be/xhAd7k3ouKY |
-  | Ceng 240 BASIC COMPUTER ORG Part 4/5 | Machine code+Assembler | https://youtu.be/IOlIhuHA9i8 |
-  | Ceng 240 BASIC COMPUTER ORG Part 5/5 | BIOS, OS               | https://youtu.be/nKZ0zk6Kaz8 |
+  | Ceng 240 BASIC COMPUTER ORG Part 1/5 | What is computing      | [https://youtu.be/t2S-nOXrA2Y](https://youtu.be/t2S-nOXrA2Y) | 
+  | Ceng 240 BASIC COMPUTER ORG Part 2/5 | CPU &amp; Memory       | [https://youtu.be/NOuQMU605J8](https://youtu.be/NOuQMU605J8) |
+  | Ceng 240 BASIC COMPUTER ORG Part 3/5 | Fetch,Decode,Execute   | [https://youtu.be/xhAd7k3ouKY](https://youtu.be/xhAd7k3ouKY) |
+  | Ceng 240 BASIC COMPUTER ORG Part 4/5 | Machine code+Assembler | [https://youtu.be/IOlIhuHA9i8](https://youtu.be/IOlIhuHA9i8) |
+  | Ceng 240 BASIC COMPUTER ORG Part 5/5 | BIOS, OS               | [https://youtu.be/nKZ0zk6Kaz8](https://youtu.be/nKZ0zk6Kaz8) |
 
   **WEEK 2 LECTURE VIDEOS**
 
   | **Upload name**                      | **Content**                                 | **Youtube Link**             |
   | ------------------------------------ | ------------------------------------------- | ---------------------------- |
-  | Ceng 240 PROGRAMMING LANGUAGES       | Interpreters &amp; Compilers                | https://youtu.be/rVZTzpQ0epA |
-  | Ceng 240 REPRESENTATION OF DATA      | Integer &amp; Floating point representation | https://youtu.be/1IeF81cIKTo |
+  | Ceng 240 PROGRAMMING LANGUAGES       | Interpreters &amp; Compilers                | [https://youtu.be/rVZTzpQ0epA](https://youtu.be/rVZTzpQ0epA) |
+  | Ceng 240 REPRESENTATION OF DATA      | Integer &amp; Floating point representation | [https://youtu.be/1IeF81cIKTo](https://youtu.be/1IeF81cIKTo) |
 
 
   **WEEK 3 LECTURE VIDEOS**
 
   | **Upload name**                     | **Content**                                                  | **Youtube Link**             |
   | ----------------------------------- | ------------------------------------------------------------ | ---------------------------- |
-  | CENG 240 INTRODUCTION TO CONTAINERS | Arithmetic operators, Expression, Comparison operators, Logic connectives | https://youtu.be/AgNHUhTkB28 |
-  | CENG 240 OPERATORS & EXPRESSIONS    | Containers in Python (string, list,tuple,dict,set)           | https://youtu.be/z49W4IFVQ2M |
+  | CENG 240 INTRODUCTION TO CONTAINERS | Arithmetic operators, Expression, Comparison operators, Logic connectives | [https://youtu.be/AgNHUhTkB28](https://youtu.be/AgNHUhTkB28) |
+  | CENG 240 OPERATORS & EXPRESSIONS    | Containers in Python (string, list,tuple,dict,set)           | [https://youtu.be/z49W4IFVQ2M](https://youtu.be/z49W4IFVQ2M) |
 
 
   **WEEK 4 LECTURE VIDEOS**
 
   | **Upload name**                     | **Content**                                                  | **Youtube Link**             |
   | ----------------------------------- | ------------------------------------------------------------ | ---------------------------- |
-  | CENG240 VARIABLES & ASSIGNMENT      | Variables, Assignment of container values                    | https://youtu.be/wf-Hzwxmj28 |
+  | CENG240 VARIABLES & ASSIGNMENT      | Variables, Assignment of container values                    | [https://youtu.be/wf-Hzwxmj28](https://youtu.be/wf-Hzwxmj28) |
 
 
   **WEEK 5 LECTURE VIDEOS**
 
   | **Upload name**                     | **Content**                                                  | **Youtube Link**             |
   | ----------------------------------- | ------------------------------------------------------------ | ---------------------------- |
-  | CENG240 CONDITIONAL EXECUTION       | if                                                           | https://youtu.be/VVZm4Ym06Sw |
-  | CENG 240 REPETITIVE EXECUTION       | while and for statements                                     | https://youtu.be/ByCj0kIGvTI |
-  | CENG 240 CONDITIONAL & REPETITIVE EXECUTION EXERCISE 1       |                                     | https://youtu.be/S5VjLj43MJM |
-  | CENG 240 CONDITIONAL & REPETITIVE EXECUTION EXERCISE 2       |                                     | https://youtu.be/ag98_cj_f3c |
+  | CENG240 CONDITIONAL EXECUTION       | if                                                           | [https://youtu.be/VVZm4Ym06Sw](https://youtu.be/VVZm4Ym06Sw) |
+  | CENG 240 REPETITIVE EXECUTION       | while and for statements                                     | [https://youtu.be/ByCj0kIGvTI](https://youtu.be/ByCj0kIGvTI) |
+  | CENG 240 CONDITIONAL & REPETITIVE EXECUTION EXERCISE 1       |                                     | [https://youtu.be/S5VjLj43MJM](https://youtu.be/S5VjLj43MJM) |
+  | CENG 240 CONDITIONAL & REPETITIVE EXECUTION EXERCISE 2       |                                     | [https://youtu.be/ag98_cj_f3c](https://youtu.be/ag98_cj_f3c) |
     
 
   **WEEK 6 and 7 LECTURE VIDEOS**
 
   | **Upload name**                     | **Content**                                                  | **Youtube Link**             |
   | ----------------------------------- | ------------------------------------------------------------ | ---------------------------- |
-  | CENG 240 FUNCTIONS                  | function                                                     | https://youtu.be/K0P15wn_sCU |
-  | CENG 240 FUNCTIONS EXERCISE 1       | function                                                     | https://youtu.be/IG5EsNvkd58 |
-  | CENG 240 FUNCTIONS EXERCISE 2       | function, sorting                                            | https://youtu.be/hyZeKlw41Ww |
-  | CENG 240 FUNCTIONS & RECURSION      | function, recursion                                          | https://youtu.be/WifD3BiF6FE |
+  | CENG 240 FUNCTIONS                  | function                                                     | [https://youtu.be/K0P15wn_sCU](https://youtu.be/K0P15wn_sCU) |
+  | CENG 240 FUNCTIONS EXERCISE 1       | function                                                     | [https://youtu.be/IG5EsNvkd58](https://youtu.be/IG5EsNvkd58) |
+  | CENG 240 FUNCTIONS EXERCISE 2       | function, sorting                                            | [https://youtu.be/hyZeKlw41Ww](https://youtu.be/hyZeKlw41Ww) |
+  | CENG 240 FUNCTIONS & RECURSION      | function, recursion                                          | [https://youtu.be/WifD3BiF6FE](https://youtu.be/WifD3BiF6FE) |
 
 
   **WEEK 8 LECTURE VIDEOS**
 
   | **Upload name**                                | **Content**                                       | **Youtube Link**             |
   | ---------------------------------------------- | ------------------------------------------------- | ---------------------------- |
-  | CENG 240  OBJECT ORIENTED PROGRAMMING          | OOP                                               | https://youtu.be/2sC2tgOpM8s |
-  | CENG 240  OBJECT ORIENTED PROGRAMMING EXERCISE | OOP                                               | https://youtu.be/RmFovihZyUs |
+  | CENG 240  OBJECT ORIENTED PROGRAMMING          | OOP                                               | [https://youtu.be/2sC2tgOpM8s](https://youtu.be/2sC2tgOpM8s) |
+  | CENG 240  OBJECT ORIENTED PROGRAMMING EXERCISE | OOP                                               | [https://youtu.be/RmFovihZyUs](https://youtu.be/RmFovihZyUs) |
   
 
   **WEEK 9 LECTURE VIDEOS**
 
   | **Upload name**                                | **Content**                                       | **Youtube Link**             |
   | ---------------------------------------------- | ------------------------------------------------- | ---------------------------- |
-  | CENG 240  FILES                                | Files                                             | https://youtu.be/GYULHrIDTsU |
-  | CENG 240  FILES EXERCISE                       | Files                                             | https://youtu.be/fxIpEo-CEM0 |
+  | CENG 240  FILES                                | Files                                             | [https://youtu.be/GYULHrIDTsU](https://youtu.be/GYULHrIDTsU) |
+  | CENG 240  FILES EXERCISE                       | Files                                             | [https://youtu.be/fxIpEo-CEM0](https://youtu.be/fxIpEo-CEM0) |
 
 
  **WEEK 10 LECTURE VIDEO**
 
   | **Upload name**                                | **Content**                                       | **Youtube Link**             |
   | ---------------------------------------------- | ------------------------------------------------- | ---------------------------- |
-  | CENG 240  EXCEPTIONS                           | Exceptions & Debugging                            | https://youtu.be/hAqwoF3_4RE |
+  | CENG 240  EXCEPTIONS                           | Exceptions & Debugging                            | [https://youtu.be/hAqwoF3_4RE](https://youtu.be/hAqwoF3_4RE) |
 
 
 **WEEK 11 LECTURE VIDEOS**
 
   | **Upload name**                                | **Content**                                       | **Youtube Link**             |
   | ---------------------------------------------- | ------------------------------------------------- | ---------------------------- |
-  | CENG240 NumPy and SciPy [Part 1]               | NumPy & SciPy                                     | https://youtu.be/3v_Wg7_TIto |
-  | CENG240 NumPy and SciPy [Part 2]               | NumPy & SciPy                                     | https://youtu.be/vYM8NcJSEcE |
+  | CENG240 NumPy and SciPy [Part 1]               | NumPy & SciPy                                     | [https://youtu.be/3v_Wg7_TIto](https://youtu.be/3v_Wg7_TIto) |
+  | CENG240 NumPy and SciPy [Part 2]               | NumPy & SciPy                                     | [https://youtu.be/vYM8NcJSEcE](https://youtu.be/vYM8NcJSEcE) |
 
 **WEEK 12 LECTURE VIDEOS**
 
   | **Upload name**                                | **Content**                                       | **Youtube Link**             |
   | ---------------------------------------------- | ------------------------------------------------- | ---------------------------- |
-  | CENG240 Pandas [Part 1]                        | Pandas                                            | https://youtu.be/Kvjd2kS_Nh8 |
-  | CENG240 Matplotlib [Part 2]                    | Mathplot                                          | https://youtu.be/2rgXvoXPIIQ |
+  | CENG240 Pandas [Part 1]                        | Pandas                                            | [https://youtu.be/Kvjd2kS_Nh8](https://youtu.be/Kvjd2kS_Nh8) |
+  | CENG240 Matplotlib [Part 2]                    | Mathplot                                          | [https://youtu.be/2rgXvoXPIIQ](https://youtu.be/2rgXvoXPIIQ) |
 
 **WEEK 13 LECTURE VIDEO**
 
   | **Upload name**                                | **Content**                                       | **Youtube Link**             |
   | ---------------------------------------------- | ------------------------------------------------- | ---------------------------- |
-  | CENG240 Approximation and Optimization         | Approximation and Optimization                    | https://youtu.be/6EqSf0hFbRI |
+  | CENG240 Approximation and Optimization         | Approximation and Optimization                    | [https://youtu.be/6EqSf0hFbRI](https://youtu.be/6EqSf0hFbRI) |
  
 **WEEK 14 LECTURE VIDEO**
 
   | **Upload name**                                | **Content**                                       | **Youtube Link**             |
   | ---------------------------------------------- | ------------------------------------------------- | ---------------------------- |
-  | CENG240 Regression                             | Regression                                        | https://youtu.be/v9Ekxqz1jHA |
+  | CENG240 Regression                             | Regression                                        | [https://youtu.be/v9Ekxqz1jHA](https://youtu.be/v9Ekxqz1jHA) |
  
 https://youtu.be/v9Ekxqz1jHA
 
