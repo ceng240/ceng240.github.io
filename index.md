@@ -183,10 +183,7 @@ Once during the term:
 
 Virtual Office Hourse: To-Be-Announced 
 
-### Weekly Coverage
-
-
-### Weekly Lecture Videos
+### Weekly Coverage and Lecture Videos
 
 **Week 1 (15.03)**
 
