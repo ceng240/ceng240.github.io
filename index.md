@@ -306,9 +306,6 @@ Virtual Office Hourse: To-Be-Announced
 <p><big><strong><em>Course Material</em></strong></big></p>
 </td>
 <td align="left">
-<p><big><strong><em>Video</em></strong></big></p>
-</td>
-<td align="left">
 <p><big><strong><em>Lab Coverage</em></strong></big></p>
 </td>
 </tr>
@@ -332,9 +329,6 @@ Virtual Office Hourse: To-Be-Announced
 <em>Von Neumann arch, CPU, RAM and their interaction during program
 execution, stored program, Peripherals, OS</em></li>
 </ul>
-</td>
-<td>
-Video
 </td>
 <td align="left">
 <p>No lab</p>
@@ -364,9 +358,6 @@ representation, Information loss with Floating Points, representation
 of characters, text and Boolean.</em></li>
 </ul>
 </td>
-<td>
-Video
-</td>
 <td align="left">
 <p>No lab</p>
 </td>
@@ -386,9 +377,6 @@ Video
 Numbers and Boolean values in Python, Container data in Python (str,
 tuple, list, dict, set); Mutable - immutable data; aliasing problem;</em></li>
 </ul>
-</td>
-<td>
-Video
 </td>
 <td align="left">
 <p>No lab</p>
@@ -410,9 +398,6 @@ Operators and Expressions; Type casting; Statement in Python; Variables
 and Assignment; Basic I/O in Python;</em></li>
 </ul>
 </td>
-<td>
-Video
-</td>
 <td align="left">
 <p>Numbers &amp;<br>
 Containers</p>
@@ -431,9 +416,6 @@ Containers</p>
 if statements; conditional expression; while &amp; for statements;
 continue &amp; break; List comprehension; Example problems</em></li>
 </ul>
-</td>
-<td>
-Video
 </td>
 <td align="left">
 <p>Expressions, Variables, Basic I/O</p>
@@ -460,9 +442,6 @@ Defining functions; Passing parameters; Scope of variables; Recursion;
 Example definitions</em></li>
 </ul>
 </td>
-<td>
-Video
-</td>
 <td align="left">
 <p>If, repetitive statements, list compr.</p>
 </td>
@@ -482,9 +461,6 @@ Video
 Defining functions; Passing parameters; Scope of variables; Recursion;
 Example definitions</em></li>
 </ul>
-</td>
-<td>
-Video
 </td>
 <td align="left">
 <p>Functions</p>
@@ -507,9 +483,6 @@ Class definition; Member functions &amp; variables; Message passing;
 Encapsulation; Inheritance; Polymorphism; Basics of OOP in Python</em></li>
 </ul>
 </td>
-<td>
-Video
-</td>
 <td align="left">
 <p>Repetitive execution &amp; functions</p>
 </td>
@@ -528,9 +501,6 @@ Video
 <li><b>Spring Break</b><br><em>
 </em></li>
 </ul>
-</td>
-<td>
-Video
 </td>
 <td align="left">
 <p>No lab</p>
@@ -551,9 +521,6 @@ Files and Sequential access; Parsing; Termination of Input; Formatting
 output; binary files</em></li>
 </ul>
 </td>
-<td>
-Video
-</td>
 <td align="left">
 <p>OO operations on built-in Objects</p>
 </td>
@@ -573,9 +540,6 @@ Video
 Debugging</b><br><em>
 Kind of errors; Exceptions; Debugging techniques</em></li>
 </ul>
-</td>
-<td>
-Video
 </td>
 <td align="left">
 <p>File handling</p>
@@ -600,9 +564,6 @@ functions, algebraic functions etc.), data handling &amp; analysis, and
 plotting. Illustration of these tools with examples.</em></li>
 </ul>
 </td>
-<td>
-Video
-</td>
 <td align="left">
 <p>Exception handling and debugging </p>
 </td>
@@ -622,9 +583,6 @@ Video
 </li>
 </ul>
 </td>
-<td>
-Video
-</td>
 <td align="left">
 <p>Engineering and scientific libraries</p>
 </td>
@@ -643,9 +601,6 @@ Video
 <li><b>An Application: Approximation &amp; optimization</b></li>
 </ul>
 </td>
-<td>
-Video
-</td>
 <td align="left">
 <p>No lab</p>
 </td>
@@ -663,9 +618,6 @@ Video
 <ul>
 <li><b>An Application: Solving a simple regression problem</b></li>
 </ul>
-</td>
-<td>
-Video
 </td>
 <td align="left">
 <p>No lab</p>
