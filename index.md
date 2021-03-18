@@ -21,7 +21,7 @@ The students of CE, STAT, MINE, PETE, GEOE, CHE, ENVE departments may take the c
 
 Due to overwhelming interest in the 240 course, we have to request pre-registration from students who want to take it.
 
-You can access the pre-registration FROM(11.03.2021-14:00)-TO(23.03.2021-17:00) form from the link below:
+You can access the pre-registration form FROM 11.03.2021, 14:00 TO 23.03.2021, 17:00 via the link below:
 
 https://forms.gle/3nYthuSwYpjUcbkr6
 
