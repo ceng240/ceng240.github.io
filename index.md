@@ -5,7 +5,7 @@
 
 ------
 
-### Announcements:
+## Announcements
 
 01-CE  - Thu 8:40 <br />
 02-STAT,CE,MINE - Fri 10:40  <br />
@@ -33,15 +33,15 @@ Also, the information which you will provide will be checked for correctness. In
 
 ------
 
-### Objectives
+## Objectives
 
 This course gives a brief introduction to a working understanding of basic computer organization, data representation, programming language constructs, and algorithmic thinking. It is designed as a first course of programming and supported by laboratory sessions for students outside of the Computer Engineering major.
 
-### Textbook
+## Textbook
 *Programming with Python for Engineers,* by S. Kalkan, O. T. Şehitoğlu and G. Üçoluk. 
 Available at: [https://pp4e-book.github.io/](https://pp4e-book.github.io/)
 
-### Grading
+## Grading
 
 | <!-- -->      | <!-- --> |
 | ------------- | -------- |
@@ -51,7 +51,7 @@ Available at: [https://pp4e-book.github.io/](https://pp4e-book.github.io/)
 | Final         | 35%      |
 
 
-### Course Conduct _[In current case of distant education due to pandemic]_
+## Course Conduct _[In current case of distant education due to pandemic]_
 
 The normal (no pandemic case) flow of this course has 2 hours in-class (theoretical) lectures + 2 hours of laboratory work (which includes a quiz). In addition to this, both theoretical and laboratory parts have their individual Midterm and Final exams.
 
@@ -71,7 +71,7 @@ Once during the term:
 
 
 
-### Course Material
+## Course Material
 
 * **_Course Textbook_**  [Available at: [https://pp4e-book.github.io/](https://pp4e-book.github.io/)]
   This is an 'interactive' book with a rather 'minimalist' approach: Some details or specialized subjects are not emphasized and instead, direct interaction with examples and problems are encouraged. Therefore, rather than being a 'complete reference manual', this book is a 'first things first' and 'hands on' book. The pointers to skipped details will be provided by links in the book. Bearing this in mind, the reader is strongly encouraged to read and interact <u>all</u> contents of the book thoroughly. 
@@ -113,7 +113,7 @@ Once during the term:
        * <a href="https://mathcs.holycross.edu/~kwalsh/python/">https://mathcs.holycross.edu/~kwalsh/python/</a>
        * <a href="http://techmums.co/python.html">http://techmums.co/python.html</a>
      
-### Supplementary  Material
+## Supplementary  Material
 
 **_Useful links on WEB_**  [mostly from wiki.python.org]
 
@@ -165,8 +165,7 @@ Once during the term:
   * [Thonny, Python IDE for beginners](http://thonny.org/)
 
 
-
-### Schedules
+## Schedules
 
 | **DEPT** | **SECTION** | **LECTURER** | **ONLINE REVIEW LECT.** |
 | --- | --- | --- | --- |
@@ -182,7 +181,7 @@ Once during the term:
 
 Virtual Office Hourse: To-Be-Announced 
 
-### Weekly Coverage and Lecture Videos
+## Weekly Coverage and Lecture Videos
 
 **Week 1 (15.03)**
 
@@ -327,6 +326,6 @@ Virtual Office Hourse: To-Be-Announced
   + [Regression](https://youtu.be/v9Ekxqz1jHA)
 - Lab Topics: No lab.
 
-### Contact
+## Contact
 
 Please use the following email address for course related issues: 2xx [@] ceng [dot] metu [dot] edu [dot] tr
