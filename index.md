@@ -179,7 +179,7 @@ Once during the term:
 | **CHE** | **9** | **Oğuz Hanoğlu** | Monday 10:40-12:30 |
 
 
-Virtual Office Hourse: To-Be-Announced 
+Virtual Office Hours: To be announced.
 
 ## Weekly Coverage and Lecture Videos
 
