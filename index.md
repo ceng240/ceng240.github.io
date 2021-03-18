@@ -1,4 +1,3 @@
-## 2020-2021 Spring
 {:.no_toc}
 
 * TOC 
