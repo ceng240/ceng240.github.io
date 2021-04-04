@@ -50,8 +50,10 @@
 		  var inputcheck =  /(.*)input([^)]*)/.exec(line);
 		  if (inputcheck) {
 			term.read().then( inpstr => {
-					handleResult(c.push(inputcheck[1] + "'" + inpstr + "'"))
-			})
+						handleResult(c.push(inputcheck[1] + "'" + inpstr + "'"))
+					}, error => {
+						handleResult(c.push("raise EOFError"))
+					})
 		  } else {
           	handleResult(c.push(line))
 		  }
