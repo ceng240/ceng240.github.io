@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery.terminal/js/jquery.terminal.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.terminal/js/echo_newline.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/jquery.terminal/css/jquery.terminal.min.css" rel="stylesheet"/>
     <link href="renderedhtml.css" rel="stylesheet"/>
     <link href="pyeditor.css" rel="stylesheet"/>
@@ -47,16 +48,7 @@
 	}
       languagePluginLoader.then(() => {
         function pushCode(line) {
-		  var inputcheck =  /(.*)input([^)]*)/.exec(line);
-		  if (inputcheck) {
-			term.read().then( inpstr => {
-						handleResult(c.push(inputcheck[1] + "'" + inpstr + "'"))
-					}, error => {
-						handleResult(c.push("raise EOFError"))
-					})
-		  } else {
           	handleResult(c.push(line))
-		  }
         }
 
         var term = $('#console').terminal(
@@ -73,8 +65,14 @@
         window.term = term;
         pyodide.runPython(`
           import io, code, sys
-          from js import term, pyodide
+          from js import term, pyodide, window
           from base64 import b64encode
+
+          def input(prompt = "Input:"):
+             t = window.prompt(prompt)
+             if (t == None):
+                raise EOFError
+             return t
 
           class Console(code.InteractiveConsole):
               def runcode(self, code):
