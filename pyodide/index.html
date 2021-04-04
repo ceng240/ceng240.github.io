@@ -47,7 +47,14 @@
 	}
       languagePluginLoader.then(() => {
         function pushCode(line) {
-          handleResult(c.push(line))
+		  var inputcheck =  /(.*)input([^)]*)/.exec(line);
+		  if (inputcheck) {
+			term.read().then( inpstr => {
+					handleResult(c.push(inputcheck[1] + "'" + inpstr + "'"))
+			})
+		  } else {
+          	handleResult(c.push(line))
+		  }
         }
 
         var term = $('#console').terminal(
@@ -72,6 +79,7 @@
                   sys.stdout = io.StringIO()
                   sys.stderr = io.StringIO()
                   term.runPython("\\n".join(self.buffer))
+
           _i = io.BytesIO()
           class MPImage:
               def __init__(self, fp):
