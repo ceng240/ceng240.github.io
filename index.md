@@ -7,29 +7,7 @@
 
 ## Announcements
 
-01-CE  - Thu 8:40 <br />
-02-STAT,CE,MINE - Fri 10:40  <br />
-03-STAT,MINE - Wed 13:40 <br />
-04-ENVE - Fri 8:40 <br />
-05-GEOE - Fri 8:40 <br />
-06-PETE - Thu 15:40 <br />
-07- Wed 15:40 <br />
-08-  Mon 15:40 <br />
-09-CHE - Mon 10:40 <br />
-
-The students of CE, STAT, MINE, PETE, GEOE, CHE, ENVE departments may take the course 240 if they have failed from the CENG 230/240 or didn't take the course before.
-
-Due to overwhelming interest in the 240 course, we have to request pre-registration from students who want to take it.
-
-You can access the pre-registration form FROM 11.03.2021, 14:00 TO 23.03.2021, 17:00 via the link below:
-
-https://forms.gle/3nYthuSwYpjUcbkr6
-
-Pre-registeration is a "necessary but not sufficient”  condition: 
-There will be an elimination process due to the limitation of resources.
-We will let you know, the day right after the deadline pre-registration,  by email, if you are accepted or not for enrollment.  
-
-Also, the information which you will provide will be checked for correctness. In case of contradiction your application will be canceled.
+* Midterm date: June 1, Tuesday, at 18:00.
 
 ------
 
