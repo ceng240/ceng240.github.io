@@ -208,42 +208,37 @@ Virtual Office Hours: To be announced.
 
 - Lecture Topics: 
   + Conditional & repetitive execution in Python: if statements; conditional expression; while & for statements; continue & break; List comprehension; Example problems.
-- Lecture Videos:
+- Lecture Videos [for Week 5 and 6]:
   + [Part 1/4: if](https://youtu.be/VVZm4Ym06Sw)
   + [Part 2/4: while and for statements](https://youtu.be/ByCj0kIGvTI)
   + [Part 3/4: Exercise 1](https://youtu.be/S5VjLj43MJM)
   + [Part 4/4: Exercise 2](https://youtu.be/ag98_cj_f3c)
 - Lab Topics: Expressions, Variables, Basic I/O.
 
-
 **Week 6 (19.04) [23rd is holiday]**
 
 - Lecture Topics: 
   + Conditional & repetitive execution in Python [continued]: if statements; conditional expression; while & for statements; continue & break; List comprehension; Example problems.
+- Lab Topics: If statement, conditional expression.
+
+**Week 7 (26.04)**
+
+- Lecture Topics: 
   + Functions: Defining functions; Passing parameters; Scope of variables; Recursion; Example definitions.
 - Lecture Videos (for Week 6 and 7):
   + [Part 1/4: Functions](https://youtu.be/K0P15wn_sCU)
   + [Part 2/4: Functions Exercise 1](https://youtu.be/IG5EsNvkd58)
   + [Part 3/4: Functions Exercise 2 (sorting)](https://youtu.be/hyZeKlw41Ww)
   + [Part 4/4: Functions and Recursion](https://youtu.be/WifD3BiF6FE)
-- Lab Topics: If, repetitive statements, list comprehension.
+- Lab Topics: Conditional and repetitive statements & expressions.
 
-**Week 7 (26.04)**
+**Week 8 (03.05)**
 
 - Lecture Topics: 
   + Functions [continued]: Defining functions; Passing parameters; Scope of variables; Recursion; Example definitions.
 - Lecture Videos:
   + See Week 6 videos.
 - Lab Topics: Functions.
-
-**Week 8 (03.05)**
-
-- Lecture Topics: 
-  + Object-oriented Programming (OOP) Concepts: Class definition; Member functions & variables; Message passing; Encapsulation; Inheritance; Polymorphism; Basics of OOP in Python.
-- Lecture Videos:
-  + [Part 1/2: OOP](https://youtu.be/2sC2tgOpM8s)
-  + [Part 2/2: OOP Exercise](https://youtu.be/RmFovihZyUs)
-- Lab Topics: Repetitive execution & functions.
 
 **Week 9 (10.05)**
 
@@ -256,13 +251,22 @@ Virtual Office Hours: To be announced.
 **Week 10 (17.05) [19th is holiday]**
 
 - Lecture Topics: 
+  + Object-oriented Programming (OOP) Concepts: Class definition; Member functions & variables; Message passing; Encapsulation; Inheritance; Polymorphism; Basics of OOP in Python.
+- Lecture Videos:
+  + [Part 1/2: OOP](https://youtu.be/2sC2tgOpM8s)
+  + [Part 2/2: OOP Exercise](https://youtu.be/RmFovihZyUs)
+- Lab Topics: Repetitive execution & functions.
+
+**Week 11 (24.05)**
+
+- Lecture Topics: 
   + File handling: Files and Sequential access; Parsing; Termination of Input; Formatting output; binary files.
 - Lecture Videos:
   + [Part 1/2: Files](https://youtu.be/GYULHrIDTsU)
   + [Part 2/2: Files Exercise](https://youtu.be/fxIpEo-CEM0)
 - Lab Topics: OO operations on built-in objects.
 
-**Week 11 (24.05)**
+**Week 12 (31.05)**
 
 - Lecture Topics: 
   + Exception handling and Debugging: Kind of errors; Exceptions; Debugging techniques.
@@ -270,7 +274,7 @@ Virtual Office Hours: To be announced.
   + [Exceptions & Debugging ](https://youtu.be/hAqwoF3_4RE)
 - Lab Topics: File handling.
 
-**Week 12 (31.05)**
+**Week 13 (07.06)**
 
 - Lecture Topics: 
   + Engineering and scientific libraries for Python: Libraries and tools for numerical & scientific calculations (arrays, n-D arrays, slicing, basic operations on arrays, commonly used functions, algebraic functions etc.).
@@ -279,7 +283,7 @@ Virtual Office Hours: To be announced.
   + [Part 2/2: NumPy and SciPy](https://youtu.be/vYM8NcJSEcE)
 - Lab Topics: Exception handling and debugging.
 
-**Week 13 (07.06)**
+**Week 14 (13.06)**
 
 - Lecture Topics: 
   + Engineering and scientific libraries for Python [continued]: Data handling & analysis, and plotting. Illustration of these tools with examples.
@@ -288,19 +292,13 @@ Virtual Office Hours: To be announced.
   + [Part 2/2: Matplotlib](https://youtu.be/2rgXvoXPIIQ)
 - Lab Topics: Engineering and scientific libraries.
 
-**Week 14 (13.06)**
-
-- Lecture Topics: 
-  + An Application: Approximation & optimization.
-- Lecture Videos:
-  + [Approximation and Optimization](https://youtu.be/6EqSf0hFbRI)
-- Lab Topics: No lab.
-
 **Week 15 (20.06)**
 
 - Lecture Topics: 
+  + An Application: Approximation & optimization.
   + An Application: Solving a simple regression problem.
 - Lecture Videos:
+  + [Approximation and Optimization](https://youtu.be/6EqSf0hFbRI)
   + [Regression](https://youtu.be/v9Ekxqz1jHA)
 - Lab Topics: No lab.
 
