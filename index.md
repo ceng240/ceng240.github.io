@@ -281,7 +281,7 @@ Virtual Office Hours: To be announced.
 - Lecture Videos:
   + [Part 1/2: NumPy and SciPy](https://youtu.be/3v_Wg7_TIto)
   + [Part 2/2: NumPy and SciPy](https://youtu.be/vYM8NcJSEcE)
-- Lab Topics: Exception handling and debugging.
+- Lab Topics: No lab.
 
 **Week 14 (13.06)**
 
