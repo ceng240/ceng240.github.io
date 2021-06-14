@@ -283,7 +283,7 @@ Virtual Office Hours: To be announced.
   + [Part 2/2: NumPy and SciPy](https://youtu.be/vYM8NcJSEcE)
 - Lab Topics: No lab.
 
-**Week 14 (13.06)**
+**Week 14 (14.06)**
 
 - Lecture Topics: 
   + Engineering and scientific libraries for Python [continued]: Data handling & analysis, and plotting. Illustration of these tools with examples.
@@ -292,7 +292,7 @@ Virtual Office Hours: To be announced.
   + [Part 2/2: Matplotlib](https://youtu.be/2rgXvoXPIIQ)
 - Lab Topics: Engineering and scientific libraries.
 
-**Week 15 (20.06)**
+**Week 15 (21.06)**
 
 - Lecture Topics: 
   + An Application: Approximation & optimization.
