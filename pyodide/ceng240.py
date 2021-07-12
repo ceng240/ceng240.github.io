@@ -398,8 +398,7 @@ def custom_sort(lst):
 
 with open("sample_20201.txt","w") as f : f.write(sample_20201_txt)
 
-sample_txt = '''
-113596,CHE,20.25,65.75,10
+sample_txt = '''113596,CHE,20.25,65.75,10
 131832,METE,50.25,80.25,15.75
 126310,CENG,35,0.25,45.25
 112020,CENG,90.25,75,55.25
