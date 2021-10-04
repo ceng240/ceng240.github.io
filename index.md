@@ -152,9 +152,9 @@ Once during the term:
 | **METE** | **3** | **Gökhan Orhan** | Tuesday 15:40-17:30 |
 | **FDE** | **4** | **Hasan Ulusoy** | Friday 15:40-17:30 |
 | **MATH** | **5** | **Selma Süloğlu** | Friday 13:40-15:30 |
-| **MathED &amp; EE** | **6** | **Hakkı Toroslu** | Wednesday 08:40-10:30 |
+| **MHED &amp; EE** | **6** | **Hakkı Toroslu** | Wednesday 08:40-10:30 |
 | **EE** | **7** | **Mustafa Murat Coşkun** | Thursday 13:40-15:30 |
-| **EE** | **8** | **Yunus Emre** | Thursday 15:40-17:30 |
+| **EE** | **8** | **Yunus Emre Esin** | Thursday 15:40-17:30 |
 | **IE** | **9** | **Onur Tolga Şehitoğlu** | Monday 13:40-15:30 |
 
 
