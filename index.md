@@ -159,7 +159,7 @@ Once during the term:
 
 
 
-Virtual Office Hours: To be announced.
+Virtual Office Hours: Thursday 19:00-21:00 and Friday 19:00-21:00.
 
 ## Weekly Coverage and Lecture Videos
 
