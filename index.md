@@ -7,7 +7,7 @@
 
 ## Announcements
 
-* Midterm date: TBA.
+* Midterm date: December 21, 18:00.
 
 ------
 
