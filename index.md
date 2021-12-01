@@ -8,7 +8,7 @@
 ## Announcements
 
 * Midterm date: December 21, 18:00.
-
+* Final date: January 25, 13:30.
 ------
 
 ## Objectives
