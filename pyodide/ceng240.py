@@ -549,7 +549,7 @@ sample_txt = '''113596,CHE,20.25,65.75,10
 
 with open("sample.txt","w") as f : f.write(sample_txt)
     
-test_data_csv = '''    
+test_data_csv = '''
  X,Y,Type
 3.514424835704529,3.80354339176155,c
 -4.557945505385625,-5.589419579525727,c
