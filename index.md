@@ -147,15 +147,15 @@ Once during the term:
 
 | **DEPT** | **SECTION** | **LECTURER** | **ONLINE REVIEW LECT.** |
 | --- | --- | --- | --- |
-| **ME** | **1** | **M. Çağrı Kaya** | Monday 15:40-17:30 |
-| **ME** | **2** | **Mehmet Ersan** | Friday 13:40-15:30 |
-| **METE** | **3** | **Gökhan Orhan** | Tuesday 15:40-17:30 |
-| **FDE** | **4** | **Mustafa Murat Coşkun** | Friday 15:40-17:30 |
-| **MATH** | **5** | **Selma Süloğlu** | Friday 13:40-15:30 |
-| **MHED &amp; EE** | **6** | **Hakkı Toroslu** | Wednesday 08:40-10:30 |
-| **EE** | **7** | **Hasan Ulusoy** | Thursday 13:40-15:30 |
-| **EE** | **8** | **Yunus Emre Esin** | Thursday 15:40-17:30 |
-| **IE** | **9** | **Onur Tolga Şehitoğlu** | Monday 13:40-15:30 |
+| **ME** | **1** | **Yunus Emre Esin** | Thursday 08:40-10:30 |
+| **ME** | **2** | **Hasan Ulusoy** | Friday 10:40-12:30 |
+| **METE** | **3** | **Alper Sert** | Wednesday 13:40-15:30 |
+| **FDE** | **4** | **Selma Nazlıoğlu** | Friday 08:40-10:30 |
+| **MATH** | **5** | **Hasan Ulusoy** | Friday 08:40-10:30 |
+| **MHED &amp; EE** | **6** | **Gökhan Orhan** | Thursday 15:40-17:30 |
+| **EE** | **7** | **Yunus Emre Esin** | Wednesday 15:40-17:30 |
+| **EE** | **8** | **Güven Fidan** | Monday 15:40-17:30 |
+| **IE** | **9** | **M. Çağrı Kaya** | Monday 10:40-12:30 |
 
 
 
