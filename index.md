@@ -42,11 +42,9 @@ Weekly:
 * Course assistants will hold prescheduled live sessions where students will have the chance to ask their questions, like in an "office hour" session. (will start after 4th week)
 * Starting with the 4th week, there will be a programming exam held on a single time frame. Here the students will be given a programming  environment and a task that they will code in a given duration (this time will be in the range of 40-120 minutes).
 
-Once during the term:
+About Exams:
 
-* A Midterm exam which will be a randomised multiple choice test with no-return-to-previous-question.
-* A Final exam which will be a randomised multiple choice test with no-return-to-previous-question.
-
+* Midterm and final exams will be in class.
 
 
 ## Course Material
