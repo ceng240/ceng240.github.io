@@ -249,7 +249,7 @@ Virtual Office Hours: Thursday 19:00-21:00 and Friday 19:00-21:00.
   + [Part 2/2: OOP Exercise](https://youtu.be/RmFovihZyUs)
 - Lab Topics: Repetitive execution & functions.
 
-**Week 10 (16.05)**
+**Week 10 (16.05)[19th is holiday]**
 
 - Lecture Topics: 
   + File handling: Files and Sequential access; Parsing; Termination of Input; Formatting output; binary files.
@@ -258,7 +258,7 @@ Virtual Office Hours: Thursday 19:00-21:00 and Friday 19:00-21:00.
   + [Part 2/2: Files Exercise](https://youtu.be/fxIpEo-CEM0)
 - Lab Topics: OO operations on built-in objects.
 
-**Week 11 (23.05)[19th is holiday]**
+**Week 11 (23.05)**
 
 - Lecture Topics: 
   + Exception handling and Debugging: Kind of errors; Exceptions; Debugging techniques.
