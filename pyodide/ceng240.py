@@ -1,9 +1,9 @@
 import random
 
 import os
-os.remove("data.csv")
-os.remove("data.txt")
-os.remove("data2.csv")
+#os.remove("data.csv")
+#os.remove("data.txt")
+#os.remove("data2.csv")
 
 
 filecontent='''15 95 91 8 100
