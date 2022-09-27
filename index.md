@@ -7,8 +7,8 @@
 
 ## Announcements
 
-* Midterm date: May 31, 17:40.
-* Final date: June 30, 09:30.
+* Midterm date: December 6, 17:40.
+* Final date: January.
 ------
 
 ## Objectives
@@ -145,23 +145,23 @@ About Exams:
 
 | **DEPT** | **SECTION** | **LECTURER** | **ONLINE REVIEW LECT.** |
 | --- | --- | --- | --- |
-| **CE** | **1** | **Yunus Emre Esin** | Thursday 08:40-10:30 |
-| **STAT &amp; CE** | **2** | **Hasan Ulusoy** | Friday 10:40-12:30 |
-| **STAT &amp; MINE** | **3** | **Alper Sert** | Wednesday 13:40-15:30 |
-| **ENVE** | **4** | **Selma Nazlıoğlu** | Friday 08:40-10:30 |
-| **GEOE** | **5** | **Hasan Ulusoy** | Friday 08:40-10:30 |
-| **PETE** | **6** | **Gökhan Orhan** | Thursday 15:40-17:30 |
-| **Irregular** | **7** | **Yunus Emre Esin** | Wednesday 15:40-17:30 |
-| **Irregular** | **8** | **Güven Fidan** | Monday 15:40-17:30 |
-| **CHE** | **9** | **M. Çağrı Kaya** | Monday 10:40-12:30 |
+| **ME** | **1** | **Hasan Ulusoy** | Monday 15:40-17:30 |
+| **ME** | **2** | **Gökhan Orhan** | Friday 13:40-15:30 |
+| **METE** | **3** | **Hüseyin Aydın** | Tuesday 15:40-17:30 |
+| **FDE** | **4** | **Alper Sert** | Friday 15:40-17:30 |
+| **MATH** | **5** | **Yunus Emre Esin** | Friday 13:40-15:30 |
+| **MHED &amp; EE** | **6** | **Güven Fidan** | Wednesday 08:40-10:30 |
+| **EE** | **7** | **Mehmet Ersan Topaloğlu** | Thursday 13:40-15:30 |
+| **EE** | **8** | **Levent Eksert** | Thursday 15:40-17:30 |
+| **IE** | **9** | **Onur Tolga Şehitoğlu** | Monday 13:40-15:30 |
 
 
 
-Virtual Office Hours: Thursday 19:00-21:00 and Friday 19:00-21:00.
+<!-- Virtual Office Hours: Thursday 19:00-21:00 and Friday 19:00-21:00. -->
 
 ## Weekly Coverage and Lecture Videos
 
-**Week 1 (07.03)**
+**Week 1 (03.10)**
 
 - Lecture Topics: 
   + Introduction: Course content, objectives, outline; Grading; Information about the homeworks, the labs, the exams.
@@ -175,7 +175,7 @@ Virtual Office Hours: Thursday 19:00-21:00 and Friday 19:00-21:00.
 - Lab Topics:
   No Lab.
   
-**Week 2 (14.03)**
+**Week 2 (10.10)**
 
 - Lecture Topics: 
   + A Broad Look at Programming and PL: Concept of Algorithm, Comparing algorithms, World of PLs, Low-High level PL, Interpreter vs Compiler, Programming Paradigms, Python as a PL. 
@@ -186,7 +186,7 @@ Virtual Office Hours: Thursday 19:00-21:00 and Friday 19:00-21:00.
 - Lab Topics:
   No Lab.
  
-**Week 3 (21.03)**
+**Week 3 (17.10)**
 
 - Lecture Topics: 
   + Introduction to Python: Numbers and Boolean values in Python, Container data in Python (str, tuple, list, dict, set); Mutable - immutable data; aliasing problem.
@@ -196,7 +196,7 @@ Virtual Office Hours: Thursday 19:00-21:00 and Friday 19:00-21:00.
 - Lab Topics:
   No Lab.
  
-**Week 4 (28.03)**
+**Week 4 (24.10)**
 
 - Lecture Topics: 
   + Introduction to Python [continued]: Operators and Expressions; Type casting; Statement in Python; Variables and Assignment; Basic I/O in Python.
@@ -204,7 +204,7 @@ Virtual Office Hours: Thursday 19:00-21:00 and Friday 19:00-21:00.
   + [Variables, Assignment of container values](https://youtu.be/wf-Hzwxmj28)
 - Lab Topics: Numbers & Containers.
 
-**Week 5 (04.04)**
+**Week 5 (31.10)**
 
 - Lecture Topics: 
   + Conditional & repetitive execution in Python: if statements; conditional expression; while & for statements; continue & break; List comprehension; Example problems.
@@ -215,13 +215,13 @@ Virtual Office Hours: Thursday 19:00-21:00 and Friday 19:00-21:00.
   + [Part 4/4: Exercise 2](https://youtu.be/ag98_cj_f3c)
 - Lab Topics: Expressions, Variables, Basic I/O.
 
-**Week 6 (11.04)**
+**Week 6 (07.11)**
 
 - Lecture Topics: 
   + Conditional & repetitive execution in Python [continued]: if statements; conditional expression; while & for statements; continue & break; List comprehension; Example problems.
 - Lab Topics: If statement, conditional expression.
 
-**Week 7 (18.04)**
+**Week 7 (14.11)**
 
 - Lecture Topics: 
   + Functions: Defining functions; Passing parameters; Scope of variables; Recursion; Example definitions.
@@ -232,7 +232,7 @@ Virtual Office Hours: Thursday 19:00-21:00 and Friday 19:00-21:00.
   + [Part 4/4: Functions and Recursion](https://youtu.be/WifD3BiF6FE)
 - Lab Topics: Conditional and repetitive statements & expressions.
 
-**Week 8 (25.04)**
+**Week 8 (21.11)**
 
 - Lecture Topics: 
   + Functions [continued]: Defining functions; Passing parameters; Scope of variables; Recursion; Example definitions.
@@ -240,7 +240,7 @@ Virtual Office Hours: Thursday 19:00-21:00 and Friday 19:00-21:00.
   + See Week 6 videos.
 - Lab Topics: Functions.
 
-**Week 9 (09.05)**
+**Week 9 (28.11)**
 
 - Lecture Topics: 
   + Object-oriented Programming (OOP) Concepts: Class definition; Member functions & variables; Message passing; Encapsulation; Inheritance; Polymorphism; Basics of OOP in Python.
@@ -249,7 +249,7 @@ Virtual Office Hours: Thursday 19:00-21:00 and Friday 19:00-21:00.
   + [Part 2/2: OOP Exercise](https://youtu.be/RmFovihZyUs)
 - Lab Topics: Repetitive execution & functions.
 
-**Week 10 (16.05)[19th is holiday]**
+**Week 10 (05.12)**
 
 - Lecture Topics: 
   + File handling: Files and Sequential access; Parsing; Termination of Input; Formatting output; binary files.
@@ -258,7 +258,7 @@ Virtual Office Hours: Thursday 19:00-21:00 and Friday 19:00-21:00.
   + [Part 2/2: Files Exercise](https://youtu.be/fxIpEo-CEM0)
 - Lab Topics: OO operations on built-in objects.
 
-**Week 11 (23.05)**
+**Week 11 (12.12)**
 
 - Lecture Topics: 
   + Exception handling and Debugging: Kind of errors; Exceptions; Debugging techniques.
@@ -266,7 +266,7 @@ Virtual Office Hours: Thursday 19:00-21:00 and Friday 19:00-21:00.
   + [Exceptions & Debugging ](https://youtu.be/hAqwoF3_4RE)
 - Lab Topics: File handling.
 
-**Week 12 (30.05)**
+**Week 12 (19.12)**
 
 - Lecture Topics: 
   + Engineering and scientific libraries for Python: Libraries and tools for numerical & scientific calculations (arrays, n-D arrays, slicing, basic operations on arrays, commonly used functions, algebraic functions etc.).
@@ -275,7 +275,7 @@ Virtual Office Hours: Thursday 19:00-21:00 and Friday 19:00-21:00.
   + [Part 2/2: NumPy and SciPy](https://youtu.be/vYM8NcJSEcE)
 - Lab Topics: No lab.
 
-**Week 13 (06.06)**
+**Week 13 (26.12)**
 
 - Lecture Topics: 
   + Engineering and scientific libraries for Python [continued]: Data handling & analysis, and plotting. Illustration of these tools with examples.
@@ -284,7 +284,7 @@ Virtual Office Hours: Thursday 19:00-21:00 and Friday 19:00-21:00.
   + [Part 2/2: Matplotlib](https://youtu.be/2rgXvoXPIIQ)
 - Lab Topics: Engineering and scientific libraries.
 
-**Week 14 (13.06)**
+**Week 14 (02.01)**
 
 - Lecture Topics: 
   + An Application: Approximation & optimization.
