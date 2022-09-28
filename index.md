@@ -140,7 +140,7 @@ About Exams:
 * **_Tools_**
   * [Thonny, Python IDE for beginners](http://thonny.org/)
 
-
+<!--
 ## Schedules
 
 | **DEPT** | **SECTION** | **LECTURER** | **ONLINE REVIEW LECT.** |
@@ -154,7 +154,7 @@ About Exams:
 | **EE** | **7** | **Mehmet Ersan Topaloğlu** | Thursday 13:40-15:30 |
 | **EE** | **8** | **Levent Eksert** | Thursday 15:40-17:30 |
 | **IE** | **9** | **Onur Tolga Şehitoğlu** | Monday 13:40-15:30 |
-
+-->
 
 
 <!-- Virtual Office Hours: Thursday 19:00-21:00 and Friday 19:00-21:00. -->
