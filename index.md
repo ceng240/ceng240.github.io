@@ -140,21 +140,21 @@ About Exams:
 * **_Tools_**
   * [Thonny, Python IDE for beginners](http://thonny.org/)
 
-<!--
+
 ## Schedules
 
-| **DEPT** | **SECTION** | **LECTURER** | **ONLINE REVIEW LECT.** |
-| --- | --- | --- | --- |
-| **ME** | **1** | **Hasan Ulusoy** | Monday 15:40-17:30 |
-| **ME** | **2** | **Gökhan Orhan** | Friday 13:40-15:30 |
-| **METE** | **3** | **Hüseyin Aydın** | Tuesday 15:40-17:30 |
-| **FDE** | **4** | **Alper Sert** | Friday 15:40-17:30 |
-| **MATH** | **5** | **Yunus Emre Esin** | Friday 13:40-15:30 |
-| **MHED &amp; EE** | **6** | **Güven Fidan** | Wednesday 08:40-10:30 |
-| **EE** | **7** | **Mehmet Ersan Topaloğlu** | Thursday 13:40-15:30 |
-| **EE** | **8** | **Levent Eksert** | Thursday 15:40-17:30 |
-| **IE** | **9** | **Onur Tolga Şehitoğlu** | Monday 13:40-15:30 |
--->
+| **DEPT** | **SECTION** | **PLACE** | **LECTURER** | **TIME** |
+| --- | --- | --- | --- | --- |
+| **ME** | **1** | **G111** | **Levent EKSERT** | Monday 15:40-17:30 |
+| **ME** | **2** | **YP-A2** | **Güven FIDAN** | Friday 13:40-15:30 |
+| **METE** | **3** | **U1** | **Alper SERT** | Tuesday 15:40-17:30 |
+| **FDE** | **4** | **YP-A2** | **Hasan ULUSOY** | Friday 15:40-17:30 |
+| **MATH** | **5** | **YP-A3** | **Onur Tolga SEHITOGLU** | Friday 13:40-15:30 |
+| **MHED &amp; EE** | **6** | **U1** | **Hüseyin AYDIN** | Wednesday 08:40-10:30 |
+| **EE &amp; IE** | **7** | **To be arranged** | **Gokhan ORHAN** | Thursday 13:40-15:30 |
+| **EE** | **8** | **U1** | **Mehmet Ersan TOPALOGLU** | Thursday 15:40-17:30 |
+| **IE** | **9** | **G111** | **Yunus Emre ESIN** | Monday 13:40-15:30 |
+
 
 
 <!-- Virtual Office Hours: Thursday 19:00-21:00 and Friday 19:00-21:00. -->
