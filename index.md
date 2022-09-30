@@ -159,19 +159,19 @@ About Exams:
 
 <!-- Virtual Office Hours: Thursday 19:00-21:00 and Friday 19:00-21:00. -->
 
-## Weekly Coverage and Lecture Videos
+## Weekly Coverage <!--and Lecture Videos-->
 
 **Week 1 (03.10)**
 
 - Lecture Topics: 
   + Introduction: Course content, objectives, outline; Grading; Information about the homeworks, the labs, the exams.
   + Basic computer organization: Von Neumann arch, CPU, RAM and their interaction during program execution, stored program, Peripherals, OS.
-- Lecture Videos:
+<!--- Lecture Videos:
   + [Part 1/5: What is computing](https://youtu.be/t2S-nOXrA2Y)
   + [Part 2/5: CPU &amp; Memory](https://youtu.be/NOuQMU605J8)
   + [Part 3/5: Fetch, Decode, Execute](https://youtu.be/xhAd7k3ouKY)
   + [Part 4/5: Machine code+Assembler](https://youtu.be/IOlIhuHA9i8)
-  + [Part 5/5: BIOS, OS](https://youtu.be/nKZ0zk6Kaz8)
+  + [Part 5/5: BIOS, OS](https://youtu.be/nKZ0zk6Kaz8)-->
 - Lab Topics:
   No Lab.
   
@@ -180,9 +180,9 @@ About Exams:
 - Lecture Topics: 
   + A Broad Look at Programming and PL: Concept of Algorithm, Comparing algorithms, World of PLs, Low-High level PL, Interpreter vs Compiler, Programming Paradigms, Python as a PL. 
   + Representation of data in computers: Two's complement representation of integers, IEEE floating-point representation, Information loss with Floating Points, representation of characters, text and Boolean.
-- Lecture Videos:
+<!--- Lecture Videos:
   + [Part 1/2: Interpreters &amp; Compilers ](https://youtu.be/rVZTzpQ0epA)
-  + [Part 2/2: Integer &amp; Floating point representation](https://youtu.be/1IeF81cIKTo)
+  + [Part 2/2: Integer &amp; Floating point representation](https://youtu.be/1IeF81cIKTo)-->
 - Lab Topics:
   No Lab.
  
@@ -190,9 +190,9 @@ About Exams:
 
 - Lecture Topics: 
   + Introduction to Python: Numbers and Boolean values in Python, Container data in Python (str, tuple, list, dict, set); Mutable - immutable data; aliasing problem.
-- Lecture Videos:
+<!--- Lecture Videos:
   + [Part 1/2: Arithmetic operators, Expression, Comparison operators, Logic connectives](https://youtu.be/AgNHUhTkB28)
-  + [Part 2/2: Containers in Python (string, list,tuple,dict,set](https://youtu.be/z49W4IFVQ2M)
+  + [Part 2/2: Containers in Python (string, list,tuple,dict,set](https://youtu.be/z49W4IFVQ2M)-->
 - Lab Topics:
   No Lab.
  
@@ -200,19 +200,19 @@ About Exams:
 
 - Lecture Topics: 
   + Introduction to Python [continued]: Operators and Expressions; Type casting; Statement in Python; Variables and Assignment; Basic I/O in Python.
-- Lecture Videos:
-  + [Variables, Assignment of container values](https://youtu.be/wf-Hzwxmj28)
+<!--- Lecture Videos:
+  + [Variables, Assignment of container values](https://youtu.be/wf-Hzwxmj28)-->
 - Lab Topics: Numbers & Containers.
 
 **Week 5 (31.10)**
 
 - Lecture Topics: 
   + Conditional & repetitive execution in Python: if statements; conditional expression; while & for statements; continue & break; List comprehension; Example problems.
-- Lecture Videos [for Week 5 and 6]:
+<!--- Lecture Videos [for Week 5 and 6]:
   + [Part 1/4: if](https://youtu.be/VVZm4Ym06Sw)
   + [Part 2/4: while and for statements](https://youtu.be/ByCj0kIGvTI)
   + [Part 3/4: Exercise 1](https://youtu.be/S5VjLj43MJM)
-  + [Part 4/4: Exercise 2](https://youtu.be/ag98_cj_f3c)
+  + [Part 4/4: Exercise 2](https://youtu.be/ag98_cj_f3c)-->
 - Lab Topics: Expressions, Variables, Basic I/O.
 
 **Week 6 (07.11)**
@@ -225,63 +225,63 @@ About Exams:
 
 - Lecture Topics: 
   + Functions: Defining functions; Passing parameters; Scope of variables; Recursion; Example definitions.
-- Lecture Videos (for Week 6 and 7):
+<!--- Lecture Videos (for Week 6 and 7):
   + [Part 1/4: Functions](https://youtu.be/K0P15wn_sCU)
   + [Part 2/4: Functions Exercise 1](https://youtu.be/IG5EsNvkd58)
   + [Part 3/4: Functions Exercise 2 (sorting)](https://youtu.be/hyZeKlw41Ww)
-  + [Part 4/4: Functions and Recursion](https://youtu.be/WifD3BiF6FE)
+  + [Part 4/4: Functions and Recursion](https://youtu.be/WifD3BiF6FE)-->
 - Lab Topics: Conditional and repetitive statements & expressions.
 
 **Week 8 (21.11)**
 
 - Lecture Topics: 
   + Functions [continued]: Defining functions; Passing parameters; Scope of variables; Recursion; Example definitions.
-- Lecture Videos:
-  + See Week 6 videos.
+<!--- Lecture Videos:
+  + See Week 6 videos.-->
 - Lab Topics: Functions.
 
 **Week 9 (28.11)**
 
 - Lecture Topics: 
   + Object-oriented Programming (OOP) Concepts: Class definition; Member functions & variables; Message passing; Encapsulation; Inheritance; Polymorphism; Basics of OOP in Python.
-- Lecture Videos:
+<!--- Lecture Videos:
   + [Part 1/2: OOP](https://youtu.be/2sC2tgOpM8s)
-  + [Part 2/2: OOP Exercise](https://youtu.be/RmFovihZyUs)
+  + [Part 2/2: OOP Exercise](https://youtu.be/RmFovihZyUs)-->
 - Lab Topics: Repetitive execution & functions.
 
 **Week 10 (05.12)**
 
 - Lecture Topics: 
   + File handling: Files and Sequential access; Parsing; Termination of Input; Formatting output; binary files.
-- Lecture Videos:
+<!--- Lecture Videos:
   + [Part 1/2: Files](https://youtu.be/GYULHrIDTsU)
-  + [Part 2/2: Files Exercise](https://youtu.be/fxIpEo-CEM0)
+  + [Part 2/2: Files Exercise](https://youtu.be/fxIpEo-CEM0)-->
 - Lab Topics: OO operations on built-in objects.
 
 **Week 11 (12.12)**
 
 - Lecture Topics: 
   + Exception handling and Debugging: Kind of errors; Exceptions; Debugging techniques.
-- Lecture Videos:
-  + [Exceptions & Debugging ](https://youtu.be/hAqwoF3_4RE)
+<!--- Lecture Videos:
+  + [Exceptions & Debugging ](https://youtu.be/hAqwoF3_4RE)-->
 - Lab Topics: File handling.
 
 **Week 12 (19.12)**
 
 - Lecture Topics: 
   + Engineering and scientific libraries for Python: Libraries and tools for numerical & scientific calculations (arrays, n-D arrays, slicing, basic operations on arrays, commonly used functions, algebraic functions etc.).
-- Lecture Videos:
+<!--- Lecture Videos:
   + [Part 1/2: NumPy and SciPy](https://youtu.be/3v_Wg7_TIto)
-  + [Part 2/2: NumPy and SciPy](https://youtu.be/vYM8NcJSEcE)
+  + [Part 2/2: NumPy and SciPy](https://youtu.be/vYM8NcJSEcE)-->
 - Lab Topics: No lab.
 
 **Week 13 (26.12)**
 
 - Lecture Topics: 
   + Engineering and scientific libraries for Python [continued]: Data handling & analysis, and plotting. Illustration of these tools with examples.
-- Lecture Videos:
+<!--- Lecture Videos:
   + [Part 1/2: Pandas](https://youtu.be/Kvjd2kS_Nh8)
-  + [Part 2/2: Matplotlib](https://youtu.be/2rgXvoXPIIQ)
+  + [Part 2/2: Matplotlib](https://youtu.be/2rgXvoXPIIQ)-->
 - Lab Topics: Engineering and scientific libraries.
 
 **Week 14 (02.01)**
@@ -289,9 +289,9 @@ About Exams:
 - Lecture Topics: 
   + An Application: Approximation & optimization.
   + An Application: Solving a simple regression problem.
-- Lecture Videos:
+<!--- Lecture Videos:
   + [Approximation and Optimization](https://youtu.be/6EqSf0hFbRI)
-  + [Regression](https://youtu.be/v9Ekxqz1jHA)
+  + [Regression](https://youtu.be/v9Ekxqz1jHA)-->
 - Lab Topics: No lab.
 
 
