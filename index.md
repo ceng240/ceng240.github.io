@@ -24,8 +24,7 @@ Available at: [https://pp4e-book.github.io/](https://pp4e-book.github.io/)
 | <!-- -->      | <!-- --> |
 | ------------- | -------- |
 | Midterm       | 30%      |
-| Labs          | 30%      |
-| Participation | 5%       |
+| Labs          | 35%      |
 | Final         | 35%      |
 
 
