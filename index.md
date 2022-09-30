@@ -28,17 +28,15 @@ Available at: [https://pp4e-book.github.io/](https://pp4e-book.github.io/)
 | Final         | 35%      |
 
 
-## Course Conduct _[In current case of distant education due to pandemic]_
+## Course Conduct
 
-The normal (no pandemic case) flow of this course has 2 hours in-class (theoretical) lectures + 2 hours of laboratory work (which includes a quiz). In addition to this, both theoretical and laboratory parts have their individual Midterm and Final exams.
+The flow of this course has 2 hours of in-class (theoretical) lectures + 2 hours of laboratory work (which is online). In addition, the theoretical part has Midterm and Final exams.
 
 This has been altered as follows:
 
 Weekly:
 
-* Video recording of the weekly course subject, thought  in class, will be disseminated as a Youtube link.
-* In a prescheduled (see:Schedule section below) live session, the lecturer will perform subject review and a recitation (going over programming examples) of that week's topics.
-* Course assistants will hold prescheduled live sessions where students will have the chance to ask their questions, like in an "office hour" session. (will start after 4th week)
+* In a pre-scheduled (see: Schedule section below) session, the lecturer will perform the subject review and a recitation (going over programming examples) of that week’s topics.
 * Starting with the 4th week, there will be a programming exam held on a single time frame. Here the students will be given a programming  environment and a task that they will code in a given duration (this time will be in the range of 40-120 minutes).
 
 About Exams:
@@ -241,7 +239,7 @@ About Exams:
 
 - Lecture Topics: 
   + Engineering and scientific libraries for Python [continued]: Data handling & analysis, and plotting. Illustration of these tools with examples.
-- Lab Topics: Engineering and scientific libraries.
+- Lab Topics: No lab.
 
 **Week 14 (02.01)**
 
