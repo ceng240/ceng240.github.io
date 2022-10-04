@@ -148,7 +148,7 @@ About Exams:
 | **FDE** | **4** | **YP-A2** | **Hasan ULUSOY** | Friday 15:40-17:30 |
 | **MATH** | **5** | **YP-A3** | **Onur Tolga SEHITOGLU** | Friday 13:40-15:30 |
 | **MHED &amp; EE** | **6** | **U1** | **Hüseyin AYDIN** | Wednesday 08:40-10:30 |
-| **EE &amp; IE** | **7** | **To be arranged** | **Gokhan ORHAN** | Thursday 13:40-15:30 |
+| **EE &amp; IE** | **7** | **BMB3** | **Gokhan ORHAN** | Thursday 13:40-15:30 |
 | **EE** | **8** | **U1** | **Mehmet Ersan TOPALOGLU** | Thursday 15:40-17:30 |
 | **IE** | **9** | **G111** | **Yunus Emre ESIN** | Monday 13:40-15:30 |
 
