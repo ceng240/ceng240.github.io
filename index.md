@@ -191,49 +191,49 @@ About Exams:
 
 - Lecture Topics: 
   + Conditional & repetitive execution in Python: if statements; conditional expression; while & for statements; continue & break; List comprehension; Example problems.
-- Lab Topics: Expressions, Variables, Basic I/O.
+- Lab Topics: No lab.
 
 **Week 6 (07.11)**
 
 - Lecture Topics: 
   + Conditional & repetitive execution in Python [continued]: if statements; conditional expression; while & for statements; continue & break; List comprehension; Example problems.
-- Lab Topics: If statement, conditional expression.
+- Lab Topics: Expressions, Variables, Basic I/O.
 
 **Week 7 (14.11)**
 
 - Lecture Topics: 
   + Functions: Defining functions; Passing parameters; Scope of variables; Recursion; Example definitions.
-- Lab Topics: Conditional and repetitive statements & expressions.
+- Lab Topics: If statement, conditional expression.
 
 **Week 8 (21.11)**
 
 - Lecture Topics: 
   + Functions [continued]: Defining functions; Passing parameters; Scope of variables; Recursion; Example definitions.
-- Lab Topics: Functions.
+- Lab Topics: Conditional and repetitive statements & expressions.
 
 **Week 9 (28.11)**
 
 - Lecture Topics: 
   + Object-oriented Programming (OOP) Concepts: Class definition; Member functions & variables; Message passing; Encapsulation; Inheritance; Polymorphism; Basics of OOP in Python.
-- Lab Topics: Repetitive execution & functions.
+- Lab Topics: Functions.
 
 **Week 10 (05.12)**
 
 - Lecture Topics: 
   + File handling: Files and Sequential access; Parsing; Termination of Input; Formatting output; binary files.
-- Lab Topics: OO operations on built-in objects.
+- Lab Topics: Repetitive execution & functions.
 
 **Week 11 (12.12)**
 
 - Lecture Topics: 
   + Exception handling and Debugging: Kind of errors; Exceptions; Debugging techniques.
-- Lab Topics: File handling.
+- Lab Topics: OO operations on built-in objects.
 
 **Week 12 (19.12)**
 
 - Lecture Topics: 
   + Engineering and scientific libraries for Python: Libraries and tools for numerical & scientific calculations (arrays, n-D arrays, slicing, basic operations on arrays, commonly used functions, algebraic functions etc.).
-- Lab Topics: No lab.
+- Lab Topics: File handling.
 
 **Week 13 (26.12)**
 
