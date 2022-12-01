@@ -221,25 +221,25 @@ About Exams:
 
 - Lecture Topics: 
   + File handling: Files and Sequential access; Parsing; Termination of Input; Formatting output; binary files.
-- Lab Topics: Repetitive execution & functions.
+- Lab Topics: No lab.
 
 **Week 11 (12.12)**
 
 - Lecture Topics: 
   + Exception handling and Debugging: Kind of errors; Exceptions; Debugging techniques.
-- Lab Topics: OO operations on built-in objects.
+- Lab Topics: Repetitive execution & functions.
 
 **Week 12 (19.12)**
 
 - Lecture Topics: 
   + Engineering and scientific libraries for Python: Libraries and tools for numerical & scientific calculations (arrays, n-D arrays, slicing, basic operations on arrays, commonly used functions, algebraic functions etc.).
-- Lab Topics: File handling.
+- Lab Topics: OO operations on built-in objects.
 
 **Week 13 (26.12)**
 
 - Lecture Topics: 
   + Engineering and scientific libraries for Python [continued]: Data handling & analysis, and plotting. Illustration of these tools with examples.
-- Lab Topics: No lab.
+- Lab Topics: File handling.
 
 **Week 14 (02.01)**
 
