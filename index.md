@@ -117,6 +117,7 @@ About Exams:
   * <a href="https://realpython.com/python-first-steps/">https://realpython.com/python-first-steps/</a>
   * <a href="https://python.swaroopch.com">https://python.swaroopch.com</a>
   * <a href="https://www.learnpython.org">https://www.learnpython.org</a>
+  * <a href="https://www.scaler.com/topics/python/">https://www.scaler.com/topics/python/</a> - Comprehensive Python tutorial for beginners as well as for expeienced learners who want to brush up their skills.
 * **_Interactive Courses_**
   * [CheckiO](http://www.checkio.org/) is a gamified website containing programming tasks that can be solved in Python 3. 
   * [Codecademy (](https://www.codecademy.com/search?query=python)Python) 
