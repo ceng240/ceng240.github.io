@@ -142,15 +142,16 @@ About Exams:
 
 | **DEPT** | **SECTION** | **PLACE** | **LECTURER** | **TIME** |
 | --- | --- | --- | --- | --- |
-| **ME** | **1** | **G111** | **Levent EKSERT** | Monday 15:40-17:30 |
-| **ME** | **2** | **YP-A2** | **Güven FIDAN** | Friday 13:40-15:30 |
-| **METE** | **3** | **U1** | **Alper SERT** | Tuesday 15:40-17:30 |
-| **FDE** | **4** | **YP-A2** | **Hasan ULUSOY** | Friday 15:40-17:30 |
-| **MATH** | **5** | **YP-A3** | **Onur Tolga SEHITOGLU** | Friday 13:40-15:30 |
-| **MHED &amp; EE** | **6** | **U1** | **Hüseyin AYDIN** | Wednesday 08:40-10:30 |
-| **EE &amp; IE** | **7** | **BMB3** | **Gokhan ORHAN** | Thursday 13:40-15:30 |
-| **EE** | **8** | **U1** | **Mehmet Ersan TOPALOGLU** | Thursday 15:40-17:30 |
-| **IE** | **9** | **G111** | **Yunus Emre ESIN** | Monday 13:40-15:30 |
+| **CE** | **1** | **G111** | **Null** | Thursday 08:40-10:30 |
+| **CE &amp; STAT** | **2** | **BMB1** | **Null** | Friday 10:40-12:30 |
+| **STAT &amp; MINE** | **3** | **U1** | **Null** | Wednesday 13:40-15:30 |
+| **ENVE** | **4** | **G111** | **Null** | Friday 08:40-10:30 |
+| **GEOE** | **5** | **BMB3** | **Null** | Friday 08:40-10:30 |
+| **PETE** | **6** | **U2** | **Null** | Thursday 15:40-17:30 |
+| **Irregular** | **7** | **YP-A4** | **Null** | Wednesday 15:40-17:30 |
+| **Irregular** | **8** | **YP-A3** | **Null** | Monday 15:40-17:30 |
+| **CHE** | **9** | **G111** | **Null** | Monday 10:40-12:30 |
+| **AEE** | **10** | **G111** | **Null** | Friday 13:40-15:30 |
 
 
 
