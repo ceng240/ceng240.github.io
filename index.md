@@ -159,7 +159,7 @@ About Exams:
 
 ## Weekly Coverage <!--and Lecture Videos-->
 
-**Week 1 (03.10)**
+**Week 1 (06.03)**
 
 - Lecture Topics: 
   + Introduction: Course content, objectives, outline; Grading; Information about the homeworks, the labs, the exams.
@@ -167,7 +167,7 @@ About Exams:
 - Lab Topics:
   No Lab.
   
-**Week 2 (10.10)**
+**Week 2 (13.03)**
 
 - Lecture Topics: 
   + A Broad Look at Programming and PL: Concept of Algorithm, Comparing algorithms, World of PLs, Low-High level PL, Interpreter vs Compiler, Programming Paradigms, Python as a PL. 
@@ -175,74 +175,74 @@ About Exams:
 - Lab Topics:
   No Lab.
  
-**Week 3 (17.10)**
+**Week 3 (20.03)**
 
 - Lecture Topics: 
   + Introduction to Python: Numbers and Boolean values in Python, Container data in Python (str, tuple, list, dict, set); Mutable - immutable data; aliasing problem.
 - Lab Topics:
   No Lab.
  
-**Week 4 (24.10)**
+**Week 4 (27.03)**
 
 - Lecture Topics: 
   + Introduction to Python [continued]: Operators and Expressions; Type casting; Statement in Python; Variables and Assignment; Basic I/O in Python.
 - Lab Topics: Numbers & Containers.
 
-**Week 5 (31.10)**
+**Week 5 (03.04)**
 
 - Lecture Topics: 
   + Conditional & repetitive execution in Python: if statements; conditional expression; while & for statements; continue & break; List comprehension; Example problems.
 - Lab Topics: No lab.
 
-**Week 6 (07.11)**
+**Week 6 (10.04)**
 
 - Lecture Topics: 
   + Conditional & repetitive execution in Python [continued]: if statements; conditional expression; while & for statements; continue & break; List comprehension; Example problems.
 - Lab Topics: Expressions, Variables, Basic I/O.
 
-**Week 7 (14.11)**
+**Week 7 (17.04)**
 
 - Lecture Topics: 
   + Functions: Defining functions; Passing parameters; Scope of variables; Recursion; Example definitions.
 - Lab Topics: If statement, conditional expression.
 
-**Week 8 (21.11)**
+**Week 8 (24.04)**
 
 - Lecture Topics: 
   + Functions [continued]: Defining functions; Passing parameters; Scope of variables; Recursion; Example definitions.
 - Lab Topics: Conditional and repetitive statements & expressions.
 
-**Week 9 (28.11)**
+**Week 9 (01.05)**
 
 - Lecture Topics: 
   + Object-oriented Programming (OOP) Concepts: Class definition; Member functions & variables; Message passing; Encapsulation; Inheritance; Polymorphism; Basics of OOP in Python.
 - Lab Topics: Functions.
 
-**Week 10 (05.12)**
+**Week 10 (08.05)**
 
 - Lecture Topics: 
   + File handling: Files and Sequential access; Parsing; Termination of Input; Formatting output; binary files.
 - Lab Topics: No lab.
 
-**Week 11 (12.12)**
+**Week 11 (15.05)**
 
 - Lecture Topics: 
   + Exception handling and Debugging: Kind of errors; Exceptions; Debugging techniques.
 - Lab Topics: Repetitive execution & functions.
 
-**Week 12 (19.12)**
+**Week 12 (22.05)**
 
 - Lecture Topics: 
   + Engineering and scientific libraries for Python: Libraries and tools for numerical & scientific calculations (arrays, n-D arrays, slicing, basic operations on arrays, commonly used functions, algebraic functions etc.).
 - Lab Topics: OO operations on built-in objects.
 
-**Week 13 (26.12)**
+**Week 13 (29.05)**
 
 - Lecture Topics: 
   + Engineering and scientific libraries for Python [continued]: Data handling & analysis, and plotting. Illustration of these tools with examples.
 - Lab Topics: File handling.
 
-**Week 14 (02.01)**
+**Week 14 (05.06)**
 
 - Lecture Topics: 
   + An Application: Approximation & optimization.
