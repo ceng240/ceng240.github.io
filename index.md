@@ -142,16 +142,16 @@ About Exams:
 
 | **DEPT** | **SECTION** | **PLACE** | **LECTURER** | **TIME** |
 | --- | --- | --- | --- | --- |
-| **CE** | **1** | **G111** | **Null** | Thursday 08:40-10:30 |
-| **CE &amp; STAT** | **2** | **BMB1** | **Null** | Friday 10:40-12:30 |
-| **STAT &amp; MINE** | **3** | **U1** | **Null** | Wednesday 13:40-15:30 |
-| **ENVE** | **4** | **G111** | **Null** | Friday 08:40-10:30 |
-| **GEOE** | **5** | **BMB3** | **Null** | Friday 08:40-10:30 |
-| **PETE** | **6** | **U2** | **Null** | Thursday 15:40-17:30 |
-| **Irregular** | **7** | **YP-A4** | **Null** | Wednesday 15:40-17:30 |
-| **Irregular** | **8** | **YP-A3** | **Null** | Monday 15:40-17:30 |
-| **CHE** | **9** | **G111** | **Null** | Monday 10:40-12:30 |
-| **AEE** | **10** | **G111** | **Null** | Friday 13:40-15:30 |
+| **CE** | **1** | **G111** | **Alper Tolga KOCATAŞ** | Thursday 08:40-10:30 |
+| **CE &amp; STAT** | **2** | **BMB1** | **Hasan ULUSOY** | Friday 10:40-12:30 |
+| **STAT &amp; MINE** | **3** | **U1** | **Yunus Emre ESİN** | Wednesday 13:40-15:30 |
+| **ENVE** | **4** | **G111** | **Hüseyin SAYIN** | Friday 08:40-10:30 |
+| **GEOE** | **5** | **BMB3** | **Hasan ULUSOY** | Friday 08:40-10:30 |
+| **PETE** | **6** | **U2** | **Güven FİDAN** | Thursday 15:40-17:30 |
+| **Irregular** | **7** | **YP-A4** | **Gönül DEĞİRMENDERELİ** | Wednesday 15:40-17:30 |
+| **Irregular** | **8** | **YP-A3** | **Sinan GENÇOĞLU** | Monday 15:40-17:30 |
+| **CHE** | **9** | **G111** | **Ömer EKMEKÇİ** | Monday 10:40-12:30 |
+| **AEE** | **10** | **G111** | **Gökhan ORHAN** | Friday 13:40-15:30 |
 
 
 
