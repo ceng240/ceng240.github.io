@@ -41,7 +41,7 @@ Weekly:
 
 About Exams:
 
-* Midterm and final exams will be in class.
+* Midterm exam will be online and final exam will be in class.
 
 
 ## Course Material
