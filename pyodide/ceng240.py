@@ -175,1011 +175,2229 @@ def fill_gpa(student_id):
         gpas.append(round((random.random() + 1) * 2, 2)) # gpa's are in [2.0, 4.0]
     return gpas
 
-data_csv = '''Series_Title|Released_Year|Genre|IMDB_Rating|Director|Star1|Star2
-The Shawshank Redemption|1994|Drama|9.3|Frank Darabont|Tim Robbins|Morgan Freeman
-The Godfather|1972|Crime,Drama|9.2|Francis Ford Coppola|Marlon Brando|Al Pacino
-The Dark Knight|2008|Action,Crime,Drama|9.0|Christopher Nolan|Christian Bale|Heath Ledger
-The Godfather: Part II|1974|Crime,Drama|9.0|Francis Ford Coppola|Al Pacino|Robert De Niro
-12 Angry Men|1957|Crime,Drama|9.0|Sidney Lumet|Henry Fonda|Lee J. Cobb
-The Lord of the Rings: The Return of the King|2003|Action,Adventure,Drama|8.9|Peter Jackson|Elijah Wood|Viggo Mortensen
-Pulp Fiction|1994|Crime,Drama|8.9|Quentin Tarantino|John Travolta|Uma Thurman
-Schindler's List|1993|Biography,Drama,History|8.9|Steven Spielberg|Liam Neeson|Ralph Fiennes
-Inception|2010|Action,Adventure,Sci-Fi|8.8|Christopher Nolan|Leonardo DiCaprio|Joseph Gordon-Levitt
-Fight Club|1999|Drama|8.8|David Fincher|Brad Pitt|Edward Norton
-The Lord of the Rings: The Fellowship of the Ring|2001|Action,Adventure,Drama|8.8|Peter Jackson|Elijah Wood|Ian McKellen
-Forrest Gump|1994|Drama,Romance|8.8|Robert Zemeckis|Tom Hanks|Robin Wright
-Il buono, il brutto, il cattivo|1966|Western|8.8|Sergio Leone|Clint Eastwood|Eli Wallach
-The Lord of the Rings: The Two Towers|2002|Action,Adventure,Drama|8.7|Peter Jackson|Elijah Wood|Ian McKellen
-The Matrix|1999|Action,Sci-Fi|8.7|Lana Wachowski|Lilly Wachowski|Keanu Reeves
-Goodfellas|1990|Biography,Crime,Drama|8.7|Martin Scorsese|Robert De Niro|Ray Liotta
-Star Wars: Episode V - The Empire Strikes Back|1980|Action,Adventure,Fantasy|8.7|Irvin Kershner|Mark Hamill|Harrison Ford
-One Flew Over the Cuckoo's Nest|1975|Drama|8.7|Milos Forman|Jack Nicholson|Louise Fletcher
-Hamilton|2020|Biography,Drama,History|8.6|Thomas Kail|Lin-Manuel Miranda|Phillipa Soo
-Gisaengchung|2019|Comedy,Drama,Thriller|8.6|Bong Joon Ho|Kang-ho Song|Lee Sun-kyun
-Soorarai Pottru|2020|Drama|8.6|Sudha Kongara|Suriya|Madhavan
-Interstellar|2014|Adventure,Drama,Sci-Fi|8.6|Christopher Nolan|Matthew McConaughey|Anne Hathaway
-Cidade de Deus|2002|Crime,Drama|8.6|Fernando Meirelles|Kátia Lund|Alexandre Rodrigues
-Sen to Chihiro no kamikakushi|2001|Animation,Adventure,Family|8.6|Hayao Miyazaki|Daveigh Chase|Suzanne Pleshette
-Saving Private Ryan|1998|Drama,War|8.6|Steven Spielberg|Tom Hanks|Matt Damon
-The Green Mile|1999|Crime,Drama,Fantasy|8.6|Frank Darabont|Tom Hanks|Michael Clarke Duncan
-La vita è bella|1997|Comedy,Drama,Romance|8.6|Roberto Benigni|Roberto Benigni|Nicoletta Braschi
-Se7en|1995|Crime,Drama,Mystery|8.6|David Fincher|Morgan Freeman|Brad Pitt
-The Silence of the Lambs|1991|Crime,Drama,Thriller|8.6|Jonathan Demme|Jodie Foster|Anthony Hopkins
-Star Wars|1977|Action,Adventure,Fantasy|8.6|George Lucas|Mark Hamill|Harrison Ford
-Seppuku|1962|Action,Drama,Mystery|8.6|Masaki Kobayashi|Tatsuya Nakadai|Akira Ishihama
-Shichinin no samurai|1954|Action,Adventure,Drama|8.6|Akira Kurosawa|Toshirô Mifune|Takashi Shimura
-It's a Wonderful Life|1946|Drama,Family,Fantasy|8.6|Frank Capra|James Stewart|Donna Reed
-Joker|2019|Crime,Drama,Thriller|8.5|Todd Phillips|Joaquin Phoenix|Robert De Niro
-Whiplash|2014|Drama,Music|8.5|Damien Chazelle|Miles Teller|J.K. Simmons
-The Intouchables|2011|Biography,Comedy,Drama|8.5|Olivier Nakache|Éric Toledano|François Cluzet
-The Prestige|2006|Drama,Mystery,Sci-Fi|8.5|Christopher Nolan|Christian Bale|Hugh Jackman
-The Departed|2006|Crime,Drama,Thriller|8.5|Martin Scorsese|Leonardo DiCaprio|Matt Damon
-The Pianist|2002|Biography,Drama,Music|8.5|Roman Polanski|Adrien Brody|Thomas Kretschmann
-Gladiator|2000|Action,Adventure,Drama|8.5|Ridley Scott|Russell Crowe|Joaquin Phoenix
-American History X|1998|Drama|8.5|Tony Kaye|Edward Norton|Edward Furlong
-The Usual Suspects|1995|Crime,Mystery,Thriller|8.5|Bryan Singer|Kevin Spacey|Gabriel Byrne
-Léon|1994|Action,Crime,Drama|8.5|Luc Besson|Jean Reno|Gary Oldman
-The Lion King|1994|Animation,Adventure,Drama|8.5|Roger Allers|Rob Minkoff|Matthew Broderick
-Terminator 2: Judgment Day|1991|Action,Sci-Fi|8.5|James Cameron|Arnold Schwarzenegger|Linda Hamilton
-Nuovo Cinema Paradiso|1988|Drama,Romance|8.5|Giuseppe Tornatore|Philippe Noiret|Enzo Cannavale
-Hotaru no haka|1988|Animation,Drama,War|8.5|Isao Takahata|Tsutomu Tatsumi|Ayano Shiraishi
-Back to the Future|1985|Adventure,Comedy,Sci-Fi|8.5|Robert Zemeckis|Michael J. Fox|Christopher Lloyd
-Once Upon a Time in the West|1968|Western|8.5|Sergio Leone|Henry Fonda|Charles Bronson
-Psycho|1960|Horror,Mystery,Thriller|8.5|Alfred Hitchcock|Anthony Perkins|Janet Leigh
-Casablanca|1942|Drama,Romance,War|8.5|Michael Curtiz|Humphrey Bogart|Ingrid Bergman
-Modern Times|1936|Comedy,Drama,Family|8.5|Charles Chaplin|Charles Chaplin|Paulette Goddard
-City Lights|1931|Comedy,Drama,Romance|8.5|Charles Chaplin|Charles Chaplin|Virginia Cherrill
-Capharnaüm|2018|Drama|8.4|Nadine Labaki|Zain Al Rafeea|Yordanos Shiferaw
-Ayla: The Daughter of War|2017|Biography,Drama,History|8.4|Can Ulkay|Erdem Can|Çetin Tekindor
-Vikram Vedha|2017|Action,Crime,Drama|8.4|Gayatri|Pushkar|Madhavan
-Kimi no na wa.|2016|Animation,Drama,Fantasy|8.4|Makoto Shinkai|Ryûnosuke Kamiki|Mone Kamishiraishi
-Dangal|2016|Action,Biography,Drama|8.4|Nitesh Tiwari|Aamir Khan|Sakshi Tanwar
-Spider-Man: Into the Spider-Verse|2018|Animation,Action,Adventure|8.4|Bob Persichetti|Peter Ramsey|Rodney Rothman
-Avengers: Endgame|2019|Action,Adventure,Drama|8.4|Anthony Russo|Joe Russo|Robert Downey Jr.
-Avengers: Infinity War|2018|Action,Adventure,Sci-Fi|8.4|Anthony Russo|Joe Russo|Robert Downey Jr.
-Coco|2017|Animation,Adventure,Family|8.4|Lee Unkrich|Adrian Molina|Anthony Gonzalez
-Django Unchained|2012|Drama,Western|8.4|Quentin Tarantino|Jamie Foxx|Christoph Waltz
-The Dark Knight Rises|2012|Action,Adventure|8.4|Christopher Nolan|Christian Bale|Tom Hardy
-3 Idiots|2009|Comedy,Drama|8.4|Rajkumar Hirani|Aamir Khan|Madhavan
-Taare Zameen Par|2007|Drama,Family|8.4|Aamir Khan|Amole Gupte|Darsheel Safary
-WALL·E|2008|Animation,Adventure,Family|8.4|Andrew Stanton|Ben Burtt|Elissa Knight
-The Lives of Others|2006|Drama,Mystery,Thriller|8.4|Florian Henckel von Donnersmarck|Ulrich Mühe|Martina Gedeck
-Oldeuboi|2003|Action,Drama,Mystery|8.4|Chan-wook Park|Choi Min-sik|Yoo Ji-Tae
-Memento|2000|Mystery,Thriller|8.4|Christopher Nolan|Guy Pearce|Carrie-Anne Moss
-Mononoke-hime|1997|Animation,Action,Adventure|8.4|Hayao Miyazaki|Yôji Matsuda|Yuriko Ishida
-Once Upon a Time in America|1984|Crime,Drama|8.4|Sergio Leone|Robert De Niro|James Woods
-Raiders of the Lost Ark|1981|Action,Adventure|8.4|Steven Spielberg|Harrison Ford|Karen Allen
-The Shining|1980|Drama,Horror|8.4|Stanley Kubrick|Jack Nicholson|Shelley Duvall
-Apocalypse Now|1979|Drama,Mystery,War|8.4|Francis Ford Coppola|Martin Sheen|Marlon Brando
-Alien|1979|Horror,Sci-Fi|8.4|Ridley Scott|Sigourney Weaver|Tom Skerritt
-Anand|1971|Drama,Musical|8.4|Hrishikesh Mukherjee|Rajesh Khanna|Amitabh Bachchan
-Tengoku to jigoku|1963|Crime,Drama,Mystery|8.4|Akira Kurosawa|Toshirô Mifune|Yutaka Sada
-Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb|1964|Comedy|8.4|Stanley Kubrick|Peter Sellers|George C. Scott
-Witness for the Prosecution|1957|Crime,Drama,Mystery|8.4|Billy Wilder|Tyrone Power|Marlene Dietrich
-Paths of Glory|1957|Drama,War|8.4|Stanley Kubrick|Kirk Douglas|Ralph Meeker
-Rear Window|1954|Mystery,Thriller|8.4|Alfred Hitchcock|James Stewart|Grace Kelly
-Sunset Blvd.|1950|Drama,Film-Noir|8.4|Billy Wilder|William Holden|Gloria Swanson
-The Great Dictator|1940|Comedy,Drama,War|8.4|Charles Chaplin|Charles Chaplin|Paulette Goddard
-1917|2019|Drama,Thriller,War|8.3|Sam Mendes|Dean-Charles Chapman|George MacKay
-Tumbbad|2018|Drama,Fantasy,Horror|8.3|Rahi Anil Barve|Anand Gandhi|Adesh Prasad
-Andhadhun|2018|Crime,Drama,Music|8.3|Sriram Raghavan|Ayushmann Khurrana|Tabu
-Drishyam|2013|Crime,Drama,Thriller|8.3|Jeethu Joseph|Mohanlal|Meena
-Jagten|2012|Drama|8.3|Thomas Vinterberg|Mads Mikkelsen|Thomas Bo Larsen
-Jodaeiye Nader az Simin|2011|Drama|8.3|Asghar Farhadi|Payman Maadi|Leila Hatami
-Incendies|2010|Drama,Mystery,War|8.3|Denis Villeneuve|Lubna Azabal|Mélissa Désormeaux-Poulin
-Miracle in cell NO.7|2019|Drama|8.3|Mehmet Ada Öztekin|Aras Bulut Iynemli|Nisa Sofiya Aksongur
-Babam ve Oglum|2005|Drama,Family|8.3|Çagan Irmak|Çetin Tekindor|Fikret Kuskan
-Inglourious Basterds|2009|Adventure,Drama,War|8.3|Quentin Tarantino|Brad Pitt|Diane Kruger
-Eternal Sunshine of the Spotless Mind|2004|Drama,Romance,Sci-Fi|8.3|Michel Gondry|Jim Carrey|Kate Winslet
-Amélie|2001|Comedy,Romance|8.3|Jean-Pierre Jeunet|Audrey Tautou|Mathieu Kassovitz
-Snatch|2000|Comedy,Crime|8.3|Guy Ritchie|Jason Statham|Brad Pitt
-Requiem for a Dream|2000|Drama|8.3|Darren Aronofsky|Ellen Burstyn|Jared Leto
-American Beauty|1999|Drama|8.3|Sam Mendes|Kevin Spacey|Annette Bening
-Good Will Hunting|1997|Drama,Romance|8.3|Gus Van Sant|Robin Williams|Matt Damon
-Bacheha-Ye aseman|1997|Drama,Family,Sport|8.3|Majid Majidi|Mohammad Amir Naji|Amir Farrokh Hashemian
-Toy Story|1995|Animation,Adventure,Comedy|8.3|John Lasseter|Tom Hanks|Tim Allen
-Braveheart|1995|Biography,Drama,History|8.3|Mel Gibson|Mel Gibson|Sophie Marceau
-Reservoir Dogs|1992|Crime,Drama,Thriller|8.3|Quentin Tarantino|Harvey Keitel|Tim Roth
-Full Metal Jacket|1987|Drama,War|8.3|Stanley Kubrick|Matthew Modine|R. Lee Ermey
-Idi i smotri|1985|Drama,Thriller,War|8.3|Elem Klimov|Aleksey Kravchenko|Olga Mironova
-Aliens|1986|Action,Adventure,Sci-Fi|8.3|James Cameron|Sigourney Weaver|Michael Biehn
-Amadeus|1984|Biography,Drama,History|8.3|Milos Forman|F. Murray Abraham|Tom Hulce
-Scarface|1983|Crime,Drama|8.3|Brian De Palma|Al Pacino|Michelle Pfeiffer
-Star Wars: Episode VI - Return of the Jedi|1983|Action,Adventure,Fantasy|8.3|Richard Marquand|Mark Hamill|Harrison Ford
-Das Boot|1981|Adventure,Drama,Thriller|8.3|Wolfgang Petersen|Jürgen Prochnow|Herbert Grönemeyer
-Taxi Driver|1976|Crime,Drama|8.3|Martin Scorsese|Robert De Niro|Jodie Foster
-The Sting|1973|Comedy,Crime,Drama|8.3|George Roy Hill|Paul Newman|Robert Redford
-A Clockwork Orange|1971|Crime,Drama,Sci-Fi|8.3|Stanley Kubrick|Malcolm McDowell|Patrick Magee
-2001: A Space Odyssey|1968|Adventure,Sci-Fi|8.3|Stanley Kubrick|Keir Dullea|Gary Lockwood
-Per qualche dollaro in più|1965|Western|8.3|Sergio Leone|Clint Eastwood|Lee Van Cleef
-Lawrence of Arabia|1962|Adventure,Biography,Drama|8.3|David Lean|Peter O'Toole|Alec Guinness
-The Apartment|1960|Comedy,Drama,Romance|8.3|Billy Wilder|Jack Lemmon|Shirley MacLaine
-North by Northwest|1959|Adventure,Mystery,Thriller|8.3|Alfred Hitchcock|Cary Grant|Eva Marie Saint
-Vertigo|1958|Mystery,Romance,Thriller|8.3|Alfred Hitchcock|James Stewart|Kim Novak
-Singin' in the Rain|1952|Comedy,Musical,Romance|8.3|Stanley Donen|Gene Kelly|Gene Kelly
-Ikiru|1952|Drama|8.3|Akira Kurosawa|Takashi Shimura|Nobuo Kaneko
-Ladri di biciclette|1948|Drama|8.3|Vittorio De Sica|Lamberto Maggiorani|Enzo Staiola
-Double Indemnity|1944|Crime,Drama,Film-Noir|8.3|Billy Wilder|Fred MacMurray|Barbara Stanwyck
-Citizen Kane|1941|Drama,Mystery|8.3|Orson Welles|Orson Welles|Joseph Cotten
-M - Eine Stadt sucht einen Mörder|1931|Crime,Mystery,Thriller|8.3|Fritz Lang|Peter Lorre|Ellen Widmann
-Metropolis|1927|Drama,Sci-Fi|8.3|Fritz Lang|Brigitte Helm|Alfred Abel
-The Kid|1921|Comedy,Drama,Family|8.3|Charles Chaplin|Charles Chaplin|Edna Purviance
-Chhichhore|2019|Comedy,Drama|8.2|Nitesh Tiwari|Sushant Singh Rajput|Shraddha Kapoor
-Uri: The Surgical Strike|2018|Action,Drama,War|8.2|Aditya Dhar|Vicky Kaushal|Paresh Rawal
-K.G.F: Chapter 1|2018|Action,Drama|8.2|Prashanth Neel|Yash|Srinidhi Shetty
-Green Book|2018|Biography,Comedy,Drama|8.2|Peter Farrelly|Viggo Mortensen|Mahershala Ali
-Three Billboards Outside Ebbing, Missouri|2017|Comedy,Crime,Drama|8.2|Martin McDonagh|Frances McDormand|Woody Harrelson
-Talvar|2015|Crime,Drama,Mystery|8.2|Meghna Gulzar|Irrfan Khan|Konkona Sen Sharma
-Baahubali 2: The Conclusion|2017|Action,Drama|8.2|S.S. Rajamouli|Prabhas|Rana Daggubati
-Klaus|2019|Animation,Adventure,Comedy|8.2|Sergio Pablos|Carlos Martínez López|Jason Schwartzman
-Drishyam|2015|Crime,Drama,Mystery|8.2|Nishikant Kamat|Ajay Devgn|Shriya Saran
-Queen|2013|Adventure,Comedy,Drama|8.2|Vikas Bahl|Kangana Ranaut|Rajkummar Rao
-Mandariinid|2013|Drama,War|8.2|Zaza Urushadze|Lembit Ulfsak|Elmo Nüganen
-Bhaag Milkha Bhaag|2013|Biography,Drama,Sport|8.2|Rakeysh Omprakash Mehra|Farhan Akhtar|Sonam Kapoor
-Gangs of Wasseypur|2012|Action,Comedy,Crime|8.2|Anurag Kashyap|Manoj Bajpayee|Richa Chadha
-Udaan|2010|Drama|8.2|Vikramaditya Motwane|Rajat Barmecha|Ronit Roy
-Paan Singh Tomar|2012|Action,Biography,Crime|8.2|Tigmanshu Dhulia|Irrfan Khan|Mahie Gill
-El secreto de sus ojos|2009|Drama,Mystery,Romance|8.2|Juan José Campanella|Ricardo Darín|Soledad Villamil
-Warrior|2011|Action,Drama,Sport|8.2|Gavin O'Connor|Tom Hardy|Nick Nolte
-Shutter Island|2010|Mystery,Thriller|8.2|Martin Scorsese|Leonardo DiCaprio|Emily Mortimer
-Up|2009|Animation,Adventure,Comedy|8.2|Pete Docter|Bob Peterson|Edward Asner
-The Wolf of Wall Street|2013|Biography,Crime,Drama|8.2|Martin Scorsese|Leonardo DiCaprio|Jonah Hill
-Chak De! India|2007|Drama,Family,Sport|8.2|Shimit Amin|Shah Rukh Khan|Vidya Malvade
-There Will Be Blood|2007|Drama|8.2|Paul Thomas Anderson|Daniel Day-Lewis|Paul Dano
-Pan's Labyrinth|2006|Drama,Fantasy,War|8.2|Guillermo del Toro|Ivana Baquero|Ariadna Gil
-Toy Story 3|2010|Animation,Adventure,Comedy|8.2|Lee Unkrich|Tom Hanks|Tim Allen
-V for Vendetta|2005|Action,Drama,Sci-Fi|8.2|James McTeigue|Hugo Weaving|Natalie Portman
-Rang De Basanti|2006|Comedy,Crime,Drama|8.2|Rakeysh Omprakash Mehra|Aamir Khan|Soha Ali Khan
-Black|2005|Drama|8.2|Sanjay Leela Bhansali|Amitabh Bachchan|Rani Mukerji
-Batman Begins|2005|Action,Adventure|8.2|Christopher Nolan|Christian Bale|Michael Caine
-Swades: We, the People|2004|Drama|8.2|Ashutosh Gowariker|Shah Rukh Khan|Gayatri Joshi
-Der Untergang|2004|Biography,Drama,History|8.2|Oliver Hirschbiegel|Bruno Ganz|Alexandra Maria Lara
-Hauru no ugoku shiro|2004|Animation,Adventure,Family|8.2|Hayao Miyazaki|Chieko Baishô|Takuya Kimura
-A Beautiful Mind|2001|Biography,Drama|8.2|Ron Howard|Russell Crowe|Ed Harris
-Hera Pheri|2000|Action,Comedy,Crime|8.2|Priyadarshan|Akshay Kumar|Sunil Shetty
-Lock, Stock and Two Smoking Barrels|1998|Action,Comedy,Crime|8.2|Guy Ritchie|Jason Flemyng|Dexter Fletcher
-L.A. Confidential|1997|Crime,Drama,Mystery|8.2|Curtis Hanson|Kevin Spacey|Russell Crowe
-Eskiya|1996|Crime,Drama,Thriller|8.2|Yavuz Turgul|Sener Sen|Ugur Yücel
-Heat|1995|Crime,Drama,Thriller|8.2|Michael Mann|Al Pacino|Robert De Niro
-Casino|1995|Crime,Drama|8.2|Martin Scorsese|Robert De Niro|Sharon Stone
-Andaz Apna Apna|1994|Action,Comedy,Romance|8.2|Rajkumar Santoshi|Aamir Khan|Salman Khan
-Unforgiven|1992|Drama,Western|8.2|Clint Eastwood|Clint Eastwood|Gene Hackman
-Indiana Jones and the Last Crusade|1989|Action,Adventure|8.2|Steven Spielberg|Harrison Ford|Sean Connery
-Dom za vesanje|1988|Comedy,Crime,Drama|8.2|Emir Kusturica|Davor Dujmovic|Bora Todorovic
-Tonari no Totoro|1988|Animation,Family,Fantasy|8.2|Hayao Miyazaki|Hitoshi Takagi|Noriko Hidaka
-Die Hard|1988|Action,Thriller|8.2|John McTiernan|Bruce Willis|Alan Rickman
-Ran|1985|Action,Drama,War|8.2|Akira Kurosawa|Tatsuya Nakadai|Akira Terao
-Raging Bull|1980|Biography,Drama,Sport|8.2|Martin Scorsese|Robert De Niro|Cathy Moriarty
-Stalker|1979|Drama,Sci-Fi|8.2|Andrei Tarkovsky|Alisa Freyndlikh|Aleksandr Kaydanovskiy
-Höstsonaten|1978|Drama,Music|8.2|Ingmar Bergman|Ingrid Bergman|Liv Ullmann
-The Message|1976|Biography,Drama,History|8.2|Moustapha Akkad|Anthony Quinn|Irene Papas
-Sholay|1975|Action,Adventure,Comedy|8.2|Ramesh Sippy|Sanjeev Kumar|Dharmendra
-Monty Python and the Holy Grail|1975|Adventure,Comedy,Fantasy|8.2|Terry Gilliam|Terry Jones|Graham Chapman
-The Great Escape|1963|Adventure,Drama,History|8.2|John Sturges|Steve McQueen|James Garner
-To Kill a Mockingbird|1962|Crime,Drama|8.2|Robert Mulligan|Gregory Peck|John Megna
-Yôjinbô|1961|Action,Drama,Thriller|8.2|Akira Kurosawa|Toshirô Mifune|Eijirô Tôno
-Judgment at Nuremberg|1961|Drama,War|8.2|Stanley Kramer|Spencer Tracy|Burt Lancaster
-Some Like It Hot|1959|Comedy,Music,Romance|8.2|Billy Wilder|Marilyn Monroe|Tony Curtis
-Smultronstället|1957|Drama,Romance|8.2|Ingmar Bergman|Victor Sjöström|Bibi Andersson
-Det sjunde inseglet|1957|Drama,Fantasy,History|8.2|Ingmar Bergman|Max von Sydow|Gunnar Björnstrand
-Du rififi chez les hommes|1955|Crime,Drama,Thriller|8.2|Jules Dassin|Jean Servais|Carl Möhner
-Dial M for Murder|1954|Crime,Thriller|8.2|Alfred Hitchcock|Ray Milland|Grace Kelly
-Tôkyô monogatari|1953|Drama|8.2|Yasujirô Ozu|Chishû Ryû|Chieko Higashiyama
-Rashômon|1950|Crime,Drama,Mystery|8.2|Akira Kurosawa|Toshirô Mifune|Machiko Kyô
-All About Eve|1950|Drama|8.2|Joseph L. Mankiewicz|Bette Davis|Anne Baxter
-The Treasure of the Sierra Madre|1948|Adventure,Drama,Western|8.2|John Huston|Humphrey Bogart|Walter Huston
-To Be or Not to Be|1942|Comedy,War|8.2|Ernst Lubitsch|Carole Lombard|Jack Benny
-The Gold Rush|1925|Adventure,Comedy,Drama|8.2|Charles Chaplin|Charles Chaplin|Mack Swain
-Sherlock Jr.|1924|Action,Comedy,Romance|8.2|Buster Keaton|Buster Keaton|Kathryn McGuire
-Portrait de la jeune fille en feu|2019|Drama,Romance|8.1|Céline Sciamma|Noémie Merlant|Adèle Haenel
-Pink|2016|Drama,Thriller|8.1|Aniruddha Roy Chowdhury|Taapsee Pannu|Amitabh Bachchan
-Koe no katachi|2016|Animation,Drama,Family|8.1|Naoko Yamada|Miyu Irino|Saori Hayami
-Contratiempo|2016|Crime,Drama,Mystery|8.1|Oriol Paulo|Mario Casas|Ana Wagener
-Ah-ga-ssi|2016|Drama,Romance,Thriller|8.1|Chan-wook Park|Kim Min-hee|Jung-woo Ha
-Mommy|2014|Drama|8.1|Xavier Dolan|Anne Dorval|Antoine Olivier Pilon
-Haider|2014|Action,Crime,Drama|8.1|Vishal Bhardwaj|Shahid Kapoor|Tabu
-Logan|2017|Action,Drama,Sci-Fi|8.1|James Mangold|Hugh Jackman|Patrick Stewart
-Room|2015|Drama,Thriller|8.1|Lenny Abrahamson|Brie Larson|Jacob Tremblay
-Relatos salvajes|2014|Comedy,Drama,Thriller|8.1|Damián Szifron|Darío Grandinetti|María Marull
-Soul|2020|Animation,Adventure,Comedy|8.1|Pete Docter|Kemp Powers|Jamie Foxx
-Kis Uykusu|2014|Drama|8.1|Nuri Bilge Ceylan|Haluk Bilginer|Melisa Sözen
-PK|2014|Comedy,Drama,Musical|8.1|Rajkumar Hirani|Aamir Khan|Anushka Sharma
-OMG: Oh My God!|2012|Comedy,Drama,Fantasy|8.1|Umesh Shukla|Paresh Rawal|Akshay Kumar
-The Grand Budapest Hotel|2014|Adventure,Comedy,Crime|8.1|Wes Anderson|Ralph Fiennes|F. Murray Abraham
-Gone Girl|2014|Drama,Mystery,Thriller|8.1|David Fincher|Ben Affleck|Rosamund Pike
-Ôkami kodomo no Ame to Yuki|2012|Animation,Drama,Fantasy|8.1|Mamoru Hosoda|Aoi Miyazaki|Takao Osawa
-Hacksaw Ridge|2016|Biography,Drama,History|8.1|Mel Gibson|Andrew Garfield|Sam Worthington
-Inside Out|2015|Animation,Adventure,Comedy|8.1|Pete Docter|Ronnie Del Carmen|Amy Poehler
-Barfi!|2012|Comedy,Drama,Romance|8.1|Anurag Basu|Ranbir Kapoor|Priyanka Chopra
-12 Years a Slave|2013|Biography,Drama,History|8.1|Steve McQueen|Chiwetel Ejiofor|Michael Kenneth Williams
-Rush|2013|Action,Biography,Drama|8.1|Ron Howard|Daniel Brühl|Chris Hemsworth
-Ford v Ferrari|2019|Action,Biography,Drama|8.1|James Mangold|Matt Damon|Christian Bale
-Spotlight|2015|Biography,Crime,Drama|8.1|Tom McCarthy|Mark Ruffalo|Michael Keaton
-Song of the Sea|2014|Animation,Adventure,Drama|8.1|Tomm Moore|David Rawle|Brendan Gleeson
-Kahaani|2012|Mystery,Thriller|8.1|Sujoy Ghosh|Vidya Balan|Parambrata Chattopadhyay
-Zindagi Na Milegi Dobara|2011|Comedy,Drama|8.1|Zoya Akhtar|Hrithik Roshan|Farhan Akhtar
-Prisoners|2013|Crime,Drama,Mystery|8.1|Denis Villeneuve|Hugh Jackman|Jake Gyllenhaal
-Mad Max: Fury Road|2015|Action,Adventure,Sci-Fi|8.1|George Miller|Tom Hardy|Charlize Theron
-A Wednesday|2008|Action,Crime,Drama|8.1|Neeraj Pandey|Anupam Kher|Naseeruddin Shah
-Gran Torino|2008|Drama|8.1|Clint Eastwood|Clint Eastwood|Bee Vang
-Harry Potter and the Deathly Hallows: Part 2|2011|Adventure,Drama,Fantasy|8.1|David Yates|Daniel Radcliffe|Emma Watson
-Okuribito|2008|Drama,Music|8.1|Yôjirô Takita|Masahiro Motoki|Ryôko Hirosue
-Hachi: A Dog's Tale|2009|Biography,Drama,Family|8.1|Lasse Hallström|Richard Gere|Joan Allen
-Mary and Max|2009|Animation,Comedy,Drama|8.1|Adam Elliot|Toni Collette|Philip Seymour Hoffman
-How to Train Your Dragon|2010|Animation,Action,Adventure|8.1|Dean DeBlois|Chris Sanders|Jay Baruchel
-Into the Wild|2007|Adventure,Biography,Drama|8.1|Sean Penn|Emile Hirsch|Vince Vaughn
-No Country for Old Men|2007|Crime,Drama,Thriller|8.1|Ethan Coen|Joel Coen|Tommy Lee Jones
-Lage Raho Munna Bhai|2006|Comedy,Drama,Romance|8.1|Rajkumar Hirani|Sanjay Dutt|Arshad Warsi
-Million Dollar Baby|2004|Drama,Sport|8.1|Clint Eastwood|Hilary Swank|Clint Eastwood
-Hotel Rwanda|2004|Biography,Drama,History|8.1|Terry George|Don Cheadle|Sophie Okonedo
-Taegukgi hwinalrimyeo|2004|Action,Drama,War|8.1|Je-kyu Kang|Jang Dong-Gun|Won Bin
-Before Sunset|2004|Drama,Romance|8.1|Richard Linklater|Ethan Hawke|Julie Delpy
-Munna Bhai M.B.B.S.|2003|Comedy,Drama,Musical|8.1|Rajkumar Hirani|Sanjay Dutt|Arshad Warsi
-Salinui chueok|2003|Crime,Drama,Mystery|8.1|Bong Joon Ho|Kang-ho Song|Kim Sang-kyung
-Dil Chahta Hai|2001|Comedy,Drama,Romance|8.1|Farhan Akhtar|Aamir Khan|Saif Ali Khan
-Kill Bill: Vol. 1|2003|Action,Crime,Drama|8.1|Quentin Tarantino|Uma Thurman|David Carradine
-Finding Nemo|2003|Animation,Adventure,Comedy|8.1|Andrew Stanton|Lee Unkrich|Albert Brooks
-Catch Me If You Can|2002|Biography,Crime,Drama|8.1|Steven Spielberg|Leonardo DiCaprio|Tom Hanks
-Amores perros|2000|Drama,Thriller|8.1|Alejandro G. Iñárritu|Emilio Echevarría|Gael García Bernal
-Monsters, Inc.|2001|Animation,Adventure,Comedy|8.1|Pete Docter|David Silverman|Lee Unkrich
-Shin seiki Evangelion Gekijô-ban: Air/Magokoro wo, kimi ni|1997|Animation,Action,Drama|8.1|Hideaki Anno|Kazuya Tsurumaki|Megumi Ogata
-Lagaan: Once Upon a Time in India|2001|Adventure,Drama,Musical|8.1|Ashutosh Gowariker|Aamir Khan|Raghuvir Yadav
-The Sixth Sense|1999|Drama,Mystery,Thriller|8.1|M. Night Shyamalan|Bruce Willis|Haley Joel Osment
-La leggenda del pianista sull'oceano|1998|Drama,Music,Romance|8.1|Giuseppe Tornatore|Tim Roth|Pruitt Taylor Vince
-The Truman Show|1998|Comedy,Drama|8.1|Peter Weir|Jim Carrey|Ed Harris
-Crna macka, beli macor|1998|Comedy,Crime,Romance|8.1|Emir Kusturica|Bajram Severdzan|Srdjan 'Zika' Todorovic
-The Big Lebowski|1998|Comedy,Crime,Sport|8.1|Joel Coen|Ethan Coen|Jeff Bridges
-Fa yeung nin wah|2000|Drama,Romance|8.1|Kar-Wai Wong|Tony Chiu-Wai Leung|Maggie Cheung
-Trainspotting|1996|Drama|8.1|Danny Boyle|Ewan McGregor|Ewen Bremner
-Fargo|1996|Crime,Drama,Thriller|8.1|Joel Coen|Ethan Coen|William H. Macy
-Underground|1995|Comedy,Drama,War|8.1|Emir Kusturica|Predrag 'Miki' Manojlovic|Lazar Ristovski
-La haine|1995|Crime,Drama|8.1|Mathieu Kassovitz|Vincent Cassel|Hubert Koundé
-Dilwale Dulhania Le Jayenge|1995|Drama,Romance|8.1|Aditya Chopra|Shah Rukh Khan|Kajol
-Before Sunrise|1995|Drama,Romance|8.1|Richard Linklater|Ethan Hawke|Julie Delpy
-Trois couleurs: Rouge|1994|Drama,Mystery,Romance|8.1|Krzysztof Kieslowski|Irène Jacob|Jean-Louis Trintignant
-Chung Hing sam lam|1994|Comedy,Crime,Drama|8.1|Kar-Wai Wong|Brigitte Lin|Takeshi Kaneshiro
-Jurassic Park|1993|Action,Adventure,Sci-Fi|8.1|Steven Spielberg|Sam Neill|Laura Dern
-In the Name of the Father|1993|Biography,Crime,Drama|8.1|Jim Sheridan|Daniel Day-Lewis|Pete Postlethwaite
-Ba wang bie ji|1993|Drama,Music,Romance|8.1|Kaige Chen|Leslie Cheung|Fengyi Zhang
-Dà hóng denglong gaogao guà|1991|Drama,History,Romance|8.1|Yimou Zhang|Gong Li|Jingwu Ma
-Dead Poets Society|1989|Comedy,Drama|8.1|Peter Weir|Robin Williams|Robert Sean Leonard
-Stand by Me|1986|Adventure,Drama|8.1|Rob Reiner|Wil Wheaton|River Phoenix
-Platoon|1986|Drama,War|8.1|Oliver Stone|Charlie Sheen|Tom Berenger
-Paris, Texas|1984|Drama|8.1|Wim Wenders|Harry Dean Stanton|Nastassja Kinski
-Kaze no tani no Naushika|1984|Animation,Adventure,Fantasy|8.1|Hayao Miyazaki|Sumi Shimamoto|Mahito Tsujimura
-The Thing|1982|Horror,Mystery,Sci-Fi|8.1|John Carpenter|Kurt Russell|Wilford Brimley
-Pink Floyd: The Wall|1982|Drama,Fantasy,Music|8.1|Alan Parker|Bob Geldof|Christine Hargreaves
-Fitzcarraldo|1982|Adventure,Drama|8.1|Werner Herzog|Klaus Kinski|Claudia Cardinale
-Fanny och Alexander|1982|Drama|8.1|Ingmar Bergman|Bertil Guve|Pernilla Allwin
-Blade Runner|1982|Action,Sci-Fi,Thriller|8.1|Ridley Scott|Harrison Ford|Rutger Hauer
-The Elephant Man|1980|Biography,Drama|8.1|David Lynch|Anthony Hopkins|John Hurt
-Life of Brian|1979|Comedy|8.1|Terry Jones|Graham Chapman|John Cleese
-The Deer Hunter|1978|Drama,War|8.1|Michael Cimino|Robert De Niro|Christopher Walken
-Rocky|1976|Drama,Sport|8.1|John G. Avildsen|Sylvester Stallone|Talia Shire
-Network|1976|Drama|8.1|Sidney Lumet|Faye Dunaway|William Holden
-Barry Lyndon|1975|Adventure,Drama,History|8.1|Stanley Kubrick|Ryan O'Neal|Marisa Berenson
-Zerkalo|1975|Biography,Drama|8.1|Andrei Tarkovsky|Margarita Terekhova|Filipp Yankovskiy
-Chinatown|1974|Drama,Mystery,Thriller|8.1|Roman Polanski|Jack Nicholson|Faye Dunaway
-Paper Moon|1973|Comedy,Crime,Drama|8.1|Peter Bogdanovich|Ryan O'Neal|Tatum O'Neal
-Viskningar och rop|1972|Drama|8.1|Ingmar Bergman|Harriet Andersson|Liv Ullmann
-Solaris|1972|Drama,Mystery,Sci-Fi|8.1|Andrei Tarkovsky|Natalya Bondarchuk|Donatas Banionis
-Le samouraï|1967|Crime,Drama,Mystery|8.1|Jean-Pierre Melville|Alain Delon|François Périer
-Cool Hand Luke|1967|Crime,Drama|8.1|Stuart Rosenberg|Paul Newman|George Kennedy
-Persona|1966|Drama,Thriller|8.1|Ingmar Bergman|Bibi Andersson|Liv Ullmann
-Andrei Rublev|1966|Biography,Drama,History|8.1|Andrei Tarkovsky|Anatoliy Solonitsyn|Ivan Lapikov
-La battaglia di Algeri|1966|Drama,War|8.1|Gillo Pontecorvo|Brahim Hadjadj|Jean Martin
-El ángel exterminador|1962|Drama,Fantasy|8.1|Luis Buñuel|Silvia Pinal|Jacqueline Andere
-What Ever Happened to Baby Jane?|1962|Drama,Horror,Thriller|8.1|Robert Aldrich|Bette Davis|Joan Crawford
-Sanjuro|1962|Action,Comedy,Crime|8.1|Akira Kurosawa|Toshirô Mifune|Tatsuya Nakadai
-The Man Who Shot Liberty Valance|1962|Drama,Western|8.1|John Ford|James Stewart|John Wayne
-Ivanovo detstvo|1962|Drama,War|8.1|Andrei Tarkovsky|Eduard Abalov|Nikolay Burlyaev
-Jungfrukällan|1960|Drama|8.1|Ingmar Bergman|Max von Sydow|Birgitta Valberg
-Inherit the Wind|1960|Biography,Drama,History|8.1|Stanley Kramer|Spencer Tracy|Fredric March
-Les quatre cents coups|1959|Crime,Drama|8.1|François Truffaut|Jean-Pierre Léaud|Albert Rémy
-Ben-Hur|1959|Adventure,Drama,History|8.1|William Wyler|Charlton Heston|Jack Hawkins
-Kakushi-toride no san-akunin|1958|Adventure,Drama|8.1|Akira Kurosawa|Toshirô Mifune|Misa Uehara
-Le notti di Cabiria|1957|Drama|8.1|Federico Fellini|Giulietta Masina|François Périer
-Kumonosu-jô|1957|Drama,History|8.1|Akira Kurosawa|Toshirô Mifune|Minoru Chiaki
-The Bridge on the River Kwai|1957|Adventure,Drama,War|8.1|David Lean|William Holden|Alec Guinness
-On the Waterfront|1954|Crime,Drama,Thriller|8.1|Elia Kazan|Marlon Brando|Karl Malden
-Le salaire de la peur|1953|Adventure,Drama,Thriller|8.1|Henri-Georges Clouzot|Yves Montand|Charles Vanel
-Ace in the Hole|1951|Drama,Film-Noir|8.1|Billy Wilder|Kirk Douglas|Jan Sterling
-White Heat|1949|Action,Crime,Drama|8.1|Raoul Walsh|James Cagney|Virginia Mayo
-The Third Man|1949|Film-Noir,Mystery,Thriller|8.1|Carol Reed|Orson Welles|Joseph Cotten
-The Red Shoes|1948|Drama,Music,Romance|8.1|Michael Powell|Emeric Pressburger|Anton Walbrook
-The Shop Around the Corner|1940|Comedy,Drama,Romance|8.1|Ernst Lubitsch|Margaret Sullavan|James Stewart
-Rebecca|1940|Drama,Mystery,Romance|8.1|Alfred Hitchcock|Laurence Olivier|Joan Fontaine
-Mr. Smith Goes to Washington|1939|Comedy,Drama|8.1|Frank Capra|James Stewart|Jean Arthur
-Gone with the Wind|1939|Drama,History,Romance|8.1|Victor Fleming|George Cukor|Sam Wood
-La Grande Illusion|1937|Drama,War|8.1|Jean Renoir|Jean Gabin|Dita Parlo
-It Happened One Night|1934|Comedy,Romance|8.1|Frank Capra|Clark Gable|Claudette Colbert
-La passion de Jeanne d'Arc|1928|Biography,Drama,History|8.1|Carl Theodor Dreyer|Maria Falconetti|Eugene Silvain
-The Circus|1928|Comedy,Romance|8.1|Charles Chaplin|Charles Chaplin|Merna Kennedy
-Sunrise: A Song of Two Humans|1927|Drama,Romance|8.1|F.W. Murnau|George O'Brien|Janet Gaynor
-The General|1926|Action,Adventure,Comedy|8.1|Clyde Bruckman|Buster Keaton|Buster Keaton
-Das Cabinet des Dr. Caligari|1920|Fantasy,Horror,Mystery|8.1|Robert Wiene|Werner Krauss|Conrad Veidt
-Badhaai ho|2018|Comedy,Drama|8.0|Amit Ravindernath Sharma|Ayushmann Khurrana|Neena Gupta
-Togo|2019|Adventure,Biography,Drama|8.0|Ericson Core|Willem Dafoe|Julianne Nicholson
-Airlift|2016|Drama,History|8.0|Raja Menon|Akshay Kumar|Nimrat Kaur
-Bajrangi Bhaijaan|2015|Action,Adventure,Comedy|8.0|Kabir Khan|Salman Khan|Harshaali Malhotra
-Baby|2015|Action,Crime,Thriller|8.0|Neeraj Pandey|Akshay Kumar|Danny Denzongpa
-La La Land|2016|Comedy,Drama,Music|8.0|Damien Chazelle|Ryan Gosling|Emma Stone
-Lion|2016|Biography,Drama|8.0|Garth Davis|Dev Patel|Nicole Kidman
-The Martian|2015|Adventure,Drama,Sci-Fi|8.0|Ridley Scott|Matt Damon|Jessica Chastain
-Zootopia|2016|Animation,Adventure,Comedy|8.0|Byron Howard|Rich Moore|Jared Bush
-Bãhubali: The Beginning|2015|Action,Drama|8.0|S.S. Rajamouli|Prabhas|Rana Daggubati
-Kaguyahime no monogatari|2013|Animation,Adventure,Drama|8.0|Isao Takahata|Chloë Grace Moretz|James Caan
-Wonder|2017|Drama,Family|8.0|Stephen Chbosky|Jacob Tremblay|Owen Wilson
-Gully Boy|2019|Drama,Music,Romance|8.0|Zoya Akhtar|Vijay Varma|Nakul Roshan Sahdev
-Special Chabbis|2013|Crime,Drama,Thriller|8.0|Neeraj Pandey|Akshay Kumar|Anupam Kher
-Short Term 12|2013|Drama|8.0|Destin Daniel Cretton|Brie Larson|Frantz Turner
-Serbuan maut 2: Berandal|2014|Action,Crime,Thriller|8.0|Gareth Evans|Iko Uwais|Yayan Ruhian
-The Imitation Game|2014|Biography,Drama,Thriller|8.0|Morten Tyldum|Benedict Cumberbatch|Keira Knightley
-Guardians of the Galaxy|2014|Action,Adventure,Comedy|8.0|James Gunn|Chris Pratt|Vin Diesel
-Blade Runner 2049|2017|Action,Drama,Mystery|8.0|Denis Villeneuve|Harrison Ford|Ryan Gosling
-Her|2013|Drama,Romance,Sci-Fi|8.0|Spike Jonze|Joaquin Phoenix|Amy Adams
-Bohemian Rhapsody|2018|Biography,Drama,Music|8.0|Bryan Singer|Rami Malek|Lucy Boynton
-The Revenant|2015|Action,Adventure,Drama|8.0|Alejandro G. Iñárritu|Leonardo DiCaprio|Tom Hardy
-The Perks of Being a Wallflower|2012|Drama,Romance|8.0|Stephen Chbosky|Logan Lerman|Emma Watson
-Tropa de Elite 2: O Inimigo Agora é Outro|2010|Action,Crime,Drama|8.0|José Padilha|Wagner Moura|Irandhir Santos
-The King's Speech|2010|Biography,Drama,History|8.0|Tom Hooper|Colin Firth|Geoffrey Rush
-The Help|2011|Drama|8.0|Tate Taylor|Emma Stone|Viola Davis
-Deadpool|2016|Action,Adventure,Comedy|8.0|Tim Miller|Ryan Reynolds|Morena Baccarin
-Darbareye Elly|2009|Drama,Mystery|8.0|Asghar Farhadi|Golshifteh Farahani|Shahab Hosseini
-Dev.D|2009|Drama,Romance|8.0|Anurag Kashyap|Abhay Deol|Mahie Gill
-Yip Man|2008|Action,Biography,Drama|8.0|Wilson Yip|Donnie Yen|Simon Yam
-My Name Is Khan|2010|Drama|8.0|Karan Johar|Shah Rukh Khan|Kajol
-Nefes: Vatan Sagolsun|2009|Action,Drama,Thriller|8.0|Levent Semerci|Erdem Can|Mete Horozoglu
-Slumdog Millionaire|2008|Drama,Romance|8.0|Danny Boyle|Loveleen Tandan|Dev Patel
-Black Swan|2010|Drama,Thriller|8.0|Darren Aronofsky|Natalie Portman|Mila Kunis
-Tropa de Elite|2007|Action,Crime,Drama|8.0|José Padilha|Wagner Moura|André Ramiro
-The Avengers|2012|Action,Adventure,Sci-Fi|8.0|Joss Whedon|Robert Downey Jr.|Chris Evans
-Persepolis|2007|Animation,Biography,Drama|8.0|Vincent Paronnaud|Marjane Satrapi|Chiara Mastroianni
-Dallas Buyers Club|2013|Biography,Drama|8.0|Jean-Marc Vallée|Matthew McConaughey|Jennifer Garner
-The Pursuit of Happyness|2006|Biography,Drama|8.0|Gabriele Muccino|Will Smith|Thandie Newton
-Blood Diamond|2006|Adventure,Drama,Thriller|8.0|Edward Zwick|Leonardo DiCaprio|Djimon Hounsou
-The Bourne Ultimatum|2007|Action,Mystery,Thriller|8.0|Paul Greengrass|Matt Damon|Edgar Ramírez
-Bin-jip|2004|Crime,Drama,Romance|8.0|Ki-duk Kim|Seung-Yun Lee|Hee Jae
-Sin City|2005|Crime,Thriller|8.0|Frank Miller|Quentin Tarantino|Robert Rodriguez
-Le scaphandre et le papillon|2007|Biography,Drama|8.0|Julian Schnabel|Laura Obiols|Mathieu Amalric
-G.O.R.A.|2004|Adventure,Comedy,Sci-Fi|8.0|Ömer Faruk Sorak|Cem Yilmaz|Özge Özberk
-Ratatouille|2007|Animation,Adventure,Comedy|8.0|Brad Bird|Jan Pinkava|Brad Garrett
-Casino Royale|2006|Action,Adventure,Thriller|8.0|Martin Campbell|Daniel Craig|Eva Green
-Kill Bill: Vol. 2|2004|Action,Crime,Thriller|8.0|Quentin Tarantino|Uma Thurman|David Carradine
-Vozvrashchenie|2003|Drama|8.0|Andrey Zvyagintsev|Vladimir Garin|Ivan Dobronravov
-Bom Yeoareum Gaeul Gyeoul Geurigo Bom|2003|Drama,Romance|8.0|Ki-duk Kim|Ki-duk Kim|Yeong-su Oh
-Mar adentro|2014|Biography,Drama|8.0|Alejandro Amenábar|Javier Bardem|Belén Rueda
-Cinderella Man|2005|Biography,Drama,History|8.0|Ron Howard|Russell Crowe|Renée Zellweger
-Kal Ho Naa Ho|2003|Comedy,Drama,Musical|8.0|Nikkhil Advani|Preity Zinta|Shah Rukh Khan
-Mou gaan dou|2002|Action,Crime,Drama|8.0|Andrew Lau|Alan Mak|Andy Lau
-Pirates of the Caribbean: The Curse of the Black Pearl|2003|Action,Adventure,Fantasy|8.0|Gore Verbinski|Johnny Depp|Geoffrey Rush
-Big Fish|2003|Adventure,Drama,Fantasy|8.0|Tim Burton|Ewan McGregor|Albert Finney
-The Incredibles|2004|Animation,Action,Adventure|8.0|Brad Bird|Craig T. Nelson|Samuel L. Jackson
-Yeopgijeogin geunyeo|2001|Comedy,Drama,Romance|8.0|Jae-young Kwak|Tae-Hyun Cha|Jun Ji-Hyun
-Dogville|2003|Crime,Drama|8.0|Lars von Trier|Nicole Kidman|Paul Bettany
-Vizontele|2001|Comedy,Drama|8.0|Yilmaz Erdogan|Ömer Faruk Sorak|Yilmaz Erdogan
-Donnie Darko|2001|Drama,Mystery,Sci-Fi|8.0|Richard Kelly|Jake Gyllenhaal|Jena Malone
-Magnolia|1999|Drama|8.0|Paul Thomas Anderson|Tom Cruise|Jason Robards
-Dancer in the Dark|2000|Crime,Drama,Musical|8.0|Lars von Trier|Björk|Catherine Deneuve
-The Straight Story|1999|Biography,Drama|8.0|David Lynch|Richard Farnsworth|Sissy Spacek
-Pâfekuto burû|1997|Animation,Crime,Mystery|8.0|Satoshi Kon|Junko Iwao|Rica Matsumoto
-Festen|1998|Drama|8.0|Thomas Vinterberg|Ulrich Thomsen|Henning Moritzen
-Central do Brasil|1998|Drama|8.0|Walter Salles|Fernanda Montenegro|Vinícius de Oliveira
-The Iron Giant|1999|Animation,Action,Adventure|8.0|Brad Bird|Eli Marienthal|Harry Connick Jr.
-Knockin' on Heaven's Door|1997|Action,Crime,Comedy|8.0|Thomas Jahn|Til Schweiger|Jan Josef Liefers
-Sling Blade|1996|Drama|8.0|Billy Bob Thornton|Billy Bob Thornton|Dwight Yoakam
-Secrets & Lies|1996|Comedy,Drama|8.0|Mike Leigh|Timothy Spall|Brenda Blethyn
-Twelve Monkeys|1995|Mystery,Sci-Fi,Thriller|8.0|Terry Gilliam|Bruce Willis|Madeleine Stowe
-Kôkaku Kidôtai|1995|Animation,Action,Crime|8.0|Mamoru Oshii|Atsuko Tanaka|Iemasa Kayumi
-The Nightmare Before Christmas|1993|Animation,Family,Fantasy|8.0|Henry Selick|Danny Elfman|Chris Sarandon
-Groundhog Day|1993|Comedy,Fantasy,Romance|8.0|Harold Ramis|Bill Murray|Andie MacDowell
-Bound by Honor|1993|Crime,Drama|8.0|Taylor Hackford|Damian Chapa|Jesse Borrego
-Scent of a Woman|1992|Drama|8.0|Martin Brest|Al Pacino|Chris O'Donnell
-Aladdin|1992|Animation,Adventure,Comedy|8.0|Ron Clements|John Musker|Scott Weinger
-JFK|1991|Drama,History,Thriller|8.0|Oliver Stone|Kevin Costner|Gary Oldman
-Beauty and the Beast|1991|Animation,Family,Fantasy|8.0|Gary Trousdale|Kirk Wise|Paige O'Hara
-Dances with Wolves|1990|Adventure,Drama,Western|8.0|Kevin Costner|Kevin Costner|Mary McDonnell
-Do the Right Thing|1989|Comedy,Drama|8.0|Spike Lee|Danny Aiello|Ossie Davis
-Rain Man|1988|Drama|8.0|Barry Levinson|Dustin Hoffman|Tom Cruise
-Akira|1988|Animation,Action,Sci-Fi|8.0|Katsuhiro Ôtomo|Mitsuo Iwata|Nozomu Sasaki
-The Princess Bride|1987|Adventure,Family,Fantasy|8.0|Rob Reiner|Cary Elwes|Mandy Patinkin
-Der Himmel über Berlin|1987|Drama,Fantasy,Romance|8.0|Wim Wenders|Bruno Ganz|Solveig Dommartin
-Au revoir les enfants|1987|Drama,War|8.0|Louis Malle|Gaspard Manesse|Raphael Fejtö
-Tenkû no shiro Rapyuta|1986|Animation,Adventure,Drama|8.0|Hayao Miyazaki|Mayumi Tanaka|Keiko Yokozawa
-The Terminator|1984|Action,Sci-Fi|8.0|James Cameron|Arnold Schwarzenegger|Linda Hamilton
-Gandhi|1982|Biography,Drama,History|8.0|Richard Attenborough|Ben Kingsley|John Gielgud
-Kagemusha|1980|Drama,History,War|8.0|Akira Kurosawa|Tatsuya Nakadai|Tsutomu Yamazaki
-Being There|1979|Comedy,Drama|8.0|Hal Ashby|Peter Sellers|Shirley MacLaine
-Annie Hall|1977|Comedy,Romance|8.0|Woody Allen|Woody Allen|Diane Keaton
-Jaws|1975|Adventure,Thriller|8.0|Steven Spielberg|Roy Scheider|Robert Shaw
-Dog Day Afternoon|1975|Biography,Crime,Drama|8.0|Sidney Lumet|Al Pacino|John Cazale
-Young Frankenstein|1974|Comedy|8.0|Mel Brooks|Gene Wilder|Madeline Kahn
-Papillon|1973|Biography,Crime,Drama|8.0|Franklin J. Schaffner|Steve McQueen|Dustin Hoffman
-The Exorcist|1973|Horror|8.0|William Friedkin|Ellen Burstyn|Max von Sydow
-Sleuth|1972|Mystery,Thriller|8.0|Joseph L. Mankiewicz|Laurence Olivier|Michael Caine
-The Last Picture Show|1971|Drama,Romance|8.0|Peter Bogdanovich|Timothy Bottoms|Jeff Bridges
-Fiddler on the Roof|1971|Drama,Family,Musical|8.0|Norman Jewison|Topol|Norma Crane
-Il conformista|1970|Drama|8.0|Bernardo Bertolucci|Jean-Louis Trintignant|Stefania Sandrelli
-Butch Cassidy and the Sundance Kid|1969|Biography,Crime,Drama|8.0|George Roy Hill|Paul Newman|Robert Redford
-Rosemary's Baby|1968|Drama,Horror|8.0|Roman Polanski|Mia Farrow|John Cassavetes
-Planet of the Apes|1968|Adventure,Sci-Fi|8.0|Franklin J. Schaffner|Charlton Heston|Roddy McDowall
-The Graduate|1967|Comedy,Drama,Romance|8.0|Mike Nichols|Dustin Hoffman|Anne Bancroft
-Who's Afraid of Virginia Woolf?|1966|Drama|8.0|Mike Nichols|Elizabeth Taylor|Richard Burton
-The Sound of Music|1965|Biography,Drama,Family|8.0|Robert Wise|Julie Andrews|Christopher Plummer
-Doctor Zhivago|1965|Drama,Romance,War|8.0|David Lean|Omar Sharif|Julie Christie
-Per un pugno di dollari|1964|Action,Drama,Western|8.0|Sergio Leone|Clint Eastwood|Gian Maria Volontè
-8½|1963|Drama|8.0|Federico Fellini|Marcello Mastroianni|Anouk Aimée
-Vivre sa vie: Film en douze tableaux|1962|Drama|8.0|Jean-Luc Godard|Anna Karina|Sady Rebbot
-The Hustler|1961|Drama,Sport|8.0|Robert Rossen|Paul Newman|Jackie Gleason
-La dolce vita|1960|Comedy,Drama|8.0|Federico Fellini|Marcello Mastroianni|Anita Ekberg
-Rio Bravo|1959|Action,Drama,Western|8.0|Howard Hawks|John Wayne|Dean Martin
-Anatomy of a Murder|1959|Crime,Drama,Mystery|8.0|Otto Preminger|James Stewart|Lee Remick
-Touch of Evil|1958|Crime,Drama,Film-Noir|8.0|Orson Welles|Charlton Heston|Orson Welles
-Cat on a Hot Tin Roof|1958|Drama|8.0|Richard Brooks|Elizabeth Taylor|Paul Newman
-Sweet Smell of Success|1957|Drama,Film-Noir|8.0|Alexander Mackendrick|Burt Lancaster|Tony Curtis
-The Killing|1956|Crime,Drama,Film-Noir|8.0|Stanley Kubrick|Sterling Hayden|Coleen Gray
-The Night of the Hunter|1955|Crime,Drama,Film-Noir|8.0|Charles Laughton|Robert Mitchum|Shelley Winters
-La Strada|1954|Drama|8.0|Federico Fellini|Anthony Quinn|Giulietta Masina
-Les diaboliques|1955|Crime,Drama,Horror|8.0|Henri-Georges Clouzot|Simone Signoret|Véra Clouzot
-Stalag 17|1953|Comedy,Drama,War|8.0|Billy Wilder|William Holden|Don Taylor
-Roman Holiday|1953|Comedy,Romance|8.0|William Wyler|Gregory Peck|Audrey Hepburn
-A Streetcar Named Desire|1951|Drama|8.0|Elia Kazan|Vivien Leigh|Marlon Brando
-In a Lonely Place|1950|Drama,Film-Noir,Mystery|8.0|Nicholas Ray|Humphrey Bogart|Gloria Grahame
-Kind Hearts and Coronets|1949|Comedy,Crime|8.0|Robert Hamer|Dennis Price|Alec Guinness
-Rope|1948|Crime,Drama,Mystery|8.0|Alfred Hitchcock|James Stewart|John Dall
-Out of the Past|1947|Crime,Drama,Film-Noir|8.0|Jacques Tourneur|Robert Mitchum|Jane Greer
-Brief Encounter|1945|Drama,Romance|8.0|David Lean|Celia Johnson|Trevor Howard
-Laura|1944|Drama,Film-Noir,Mystery|8.0|Otto Preminger|Gene Tierney|Dana Andrews
-The Best Years of Our Lives|1946|Drama,Romance,War|8.0|William Wyler|Myrna Loy|Dana Andrews
-Arsenic and Old Lace|1942|Comedy,Crime,Thriller|8.0|Frank Capra|Cary Grant|Priscilla Lane
-The Maltese Falcon|1941|Film-Noir,Mystery|8.0|John Huston|Humphrey Bogart|Mary Astor
-The Grapes of Wrath|1940|Drama,History|8.0|John Ford|Henry Fonda|Jane Darwell
-The Wizard of Oz|1939|Adventure,Family,Fantasy|8.0|Victor Fleming|George Cukor|Mervyn LeRoy
-La règle du jeu|1939|Comedy,Drama|8.0|Jean Renoir|Marcel Dalio|Nora Gregor
-The Thin Man|1934|Comedy,Crime,Mystery|8.0|W.S. Van Dyke|William Powell|Myrna Loy
-All Quiet on the Western Front|1930|Drama,War|8.0|Lewis Milestone|Lew Ayres|Louis Wolheim
-Bronenosets Potemkin|1925|Drama,History,Thriller|8.0|Sergei M. Eisenstein|Aleksandr Antonov|Vladimir Barskiy
-Knives Out|2019|Comedy,Crime,Drama|7.9|Rian Johnson|Daniel Craig|Chris Evans
-Dil Bechara|2020|Comedy,Drama,Romance|7.9|Mukesh Chhabra|Sushant Singh Rajput|Sanjana Sanghi
-Manbiki kazoku|2018|Crime,Drama|7.9|Hirokazu Koreeda|Lily Franky|Sakura Andô
-Marriage Story|2019|Comedy,Drama,Romance|7.9|Noah Baumbach|Adam Driver|Scarlett Johansson
-Call Me by Your Name|2017|Drama,Romance|7.9|Luca Guadagnino|Armie Hammer|Timothée Chalamet
-I, Daniel Blake|2016|Drama|7.9|Ken Loach|Laura Obiols|Dave Johns
-Isle of Dogs|2018|Animation,Adventure,Comedy|7.9|Wes Anderson|Bryan Cranston|Koyu Rankin
-Hunt for the Wilderpeople|2016|Adventure,Comedy,Drama|7.9|Taika Waititi|Sam Neill|Julian Dennison
-Captain Fantastic|2016|Comedy,Drama|7.9|Matt Ross|Viggo Mortensen|George MacKay
-Sing Street|2016|Comedy,Drama,Music|7.9|John Carney|Ferdia Walsh-Peelo|Aidan Gillen
-Thor: Ragnarok|2017|Action,Adventure,Comedy|7.9|Taika Waititi|Chris Hemsworth|Tom Hiddleston
-Nightcrawler|2014|Crime,Drama,Thriller|7.9|Dan Gilroy|Jake Gyllenhaal|Rene Russo
-Jojo Rabbit|2019|Comedy,Drama,War|7.9|Taika Waititi|Roman Griffin Davis|Thomasin McKenzie
-Arrival|2016|Drama,Sci-Fi|7.9|Denis Villeneuve|Amy Adams|Jeremy Renner
-Star Wars: Episode VII - The Force Awakens|2015|Action,Adventure,Sci-Fi|7.9|J.J. Abrams|Daisy Ridley|John Boyega
-Before Midnight|2013|Drama,Romance|7.9|Richard Linklater|Ethan Hawke|Julie Delpy
-X-Men: Days of Future Past|2014|Action,Adventure,Sci-Fi|7.9|Bryan Singer|Patrick Stewart|Ian McKellen
-Bir Zamanlar Anadolu'da|2011|Crime,Drama|7.9|Nuri Bilge Ceylan|Muhammet Uzuner|Yilmaz Erdogan
-The Artist|2011|Comedy,Drama,Romance|7.9|Michel Hazanavicius|Jean Dujardin|Bérénice Bejo
-Edge of Tomorrow|2014|Action,Adventure,Sci-Fi|7.9|Doug Liman|Tom Cruise|Emily Blunt
-Amour|2012|Drama,Romance|7.9|Michael Haneke|Jean-Louis Trintignant|Emmanuelle Riva
-The Irishman|2019|Biography,Crime,Drama|7.9|Martin Scorsese|Robert De Niro|Al Pacino
-Un prophète|2009|Crime,Drama|7.9|Jacques Audiard|Tahar Rahim|Niels Arestrup
-Moon|2009|Drama,Mystery,Sci-Fi|7.9|Duncan Jones|Sam Rockwell|Kevin Spacey
-Låt den rätte komma in|2008|Crime,Drama,Fantasy|7.9|Tomas Alfredson|Kåre Hedebrant|Lina Leandersson
-District 9|2009|Action,Sci-Fi,Thriller|7.9|Neill Blomkamp|Sharlto Copley|David James
-The Wrestler|2008|Drama,Sport|7.9|Darren Aronofsky|Mickey Rourke|Marisa Tomei
-Jab We Met|2007|Comedy,Drama,Romance|7.9|Imtiaz Ali|Shahid Kapoor|Kareena Kapoor
-Boyhood|2014|Drama|7.9|Richard Linklater|Ellar Coltrane|Patricia Arquette
-4 luni, 3 saptamâni si 2 zile|2007|Drama|7.9|Cristian Mungiu|Anamaria Marinca|Laura Vasiliu
-Star Trek|2009|Action,Adventure,Sci-Fi|7.9|J.J. Abrams|Chris Pine|Zachary Quinto
-In Bruges|2008|Comedy,Crime,Drama|7.9|Martin McDonagh|Colin Farrell|Brendan Gleeson
-The Man from Earth|2007|Drama,Fantasy,Mystery|7.9|Richard Schenkman|David Lee Smith|Tony Todd
-Letters from Iwo Jima|2006|Action,Adventure,Drama|7.9|Clint Eastwood|Ken Watanabe|Kazunari Ninomiya
-The Fall|2006|Adventure,Drama,Fantasy|7.9|Tarsem Singh|Lee Pace|Catinca Untaru
-Life of Pi|2012|Adventure,Drama,Fantasy|7.9|Ang Lee|Suraj Sharma|Irrfan Khan
-Fantastic Mr. Fox|2009|Animation,Adventure,Comedy|7.9|Wes Anderson|George Clooney|Meryl Streep
-C.R.A.Z.Y.|2005|Comedy,Drama|7.9|Jean-Marc Vallée|Michel Côté|Marc-André Grondin
-Les choristes|2004|Drama,Music|7.9|Christophe Barratier|Gérard Jugnot|François Berléand
-Iron Man|2008|Action,Adventure,Sci-Fi|7.9|Jon Favreau|Robert Downey Jr.|Gwyneth Paltrow
-Shaun of the Dead|2004|Comedy,Horror|7.9|Edgar Wright|Simon Pegg|Nick Frost
-Gegen die Wand|2004|Drama,Romance|7.9|Fatih Akin|Birol Ünel|Sibel Kekilli
-Mystic River|2003|Crime,Drama,Mystery|7.9|Clint Eastwood|Sean Penn|Tim Robbins
-Harry Potter and the Prisoner of Azkaban|2004|Adventure,Family,Fantasy|7.9|Alfonso Cuarón|Daniel Radcliffe|Emma Watson
-Ying xiong|2002|Action,Adventure,History|7.9|Yimou Zhang|Jet Li|Tony Chiu-Wai Leung
-Hable con ella|2002|Drama,Mystery,Romance|7.9|Pedro Almodóvar|Rosario Flores|Javier Cámara
-No Man's Land|2001|Comedy,Drama,War|7.9|Danis Tanovic|Branko Djuric|Rene Bitorajac
-Cowboy Bebop: Tengoku no tobira|2001|Animation,Action,Crime|7.9|Shin'ichirô Watanabe|Tensai Okamura|Hiroyuki Okiura
-The Bourne Identity|2002|Action,Mystery,Thriller|7.9|Doug Liman|Franka Potente|Matt Damon
-Nueve reinas|2000|Crime,Drama,Thriller|7.9|Fabián Bielinsky|Ricardo Darín|Gastón Pauls
-Children of Men|2006|Adventure,Drama,Sci-Fi|7.9|Alfonso Cuarón|Julianne Moore|Clive Owen
-Almost Famous|2000|Adventure,Comedy,Drama|7.9|Cameron Crowe|Billy Crudup|Patrick Fugit
-Mulholland Dr.|2001|Drama,Mystery,Thriller|7.9|David Lynch|Naomi Watts|Laura Harring
-Toy Story 2|1999|Animation,Adventure,Comedy|7.9|John Lasseter|Ash Brannon|Lee Unkrich
-Boogie Nights|1997|Drama|7.9|Paul Thomas Anderson|Mark Wahlberg|Julianne Moore
-Mimi wo sumaseba|1995|Animation,Drama,Family|7.9|Yoshifumi Kondô|Yoko Honna|Issey Takahashi
-Once Were Warriors|1994|Crime,Drama|7.9|Lee Tamahori|Rena Owen|Temuera Morrison
-True Romance|1993|Crime,Drama,Romance|7.9|Tony Scott|Christian Slater|Patricia Arquette
-Trois couleurs: Bleu|1993|Drama,Music,Mystery|7.9|Krzysztof Kieslowski|Juliette Binoche|Zbigniew Zamachowski
-Jûbê ninpûchô|1993|Animation,Action,Adventure|7.9|Yoshiaki Kawajiri|Kôichi Yamadera|Emi Shinohara
-Carlito's Way|1993|Crime,Drama,Thriller|7.9|Brian De Palma|Al Pacino|Sean Penn
-Edward Scissorhands|1990|Drama,Fantasy,Romance|7.9|Tim Burton|Johnny Depp|Winona Ryder
-My Left Foot: The Story of Christy Brown|1989|Biography,Drama|7.9|Jim Sheridan|Daniel Day-Lewis|Brenda Fricker
-Crimes and Misdemeanors|1989|Comedy,Drama|7.9|Woody Allen|Martin Landau|Woody Allen
-The Untouchables|1987|Crime,Drama,Thriller|7.9|Brian De Palma|Kevin Costner|Sean Connery
-Hannah and Her Sisters|1986|Comedy,Drama|7.9|Woody Allen|Mia Farrow|Dianne Wiest
-Brazil|1985|Drama,Sci-Fi|7.9|Terry Gilliam|Jonathan Pryce|Kim Greist
-This Is Spinal Tap|1984|Comedy,Music|7.9|Rob Reiner|Rob Reiner|Michael McKean
-A Christmas Story|1983|Comedy,Family|7.9|Bob Clark|Peter Billingsley|Melinda Dillon
-The Blues Brothers|1980|Action,Adventure,Comedy|7.9|John Landis|John Belushi|Dan Aykroyd
-Manhattan|1979|Comedy,Drama,Romance|7.9|Woody Allen|Woody Allen|Diane Keaton
-All That Jazz|1979|Drama,Music,Musical|7.9|Bob Fosse|Roy Scheider|Jessica Lange
-Dawn of the Dead|1978|Action,Adventure,Horror|7.9|George A. Romero|David Emge|Ken Foree
-All the President's Men|1976|Biography,Drama,History|7.9|Alan J. Pakula|Dustin Hoffman|Robert Redford
-La montaña sagrada|1973|Adventure,Drama,Fantasy|7.9|Alejandro Jodorowsky|Alejandro Jodorowsky|Horacio Salinas
-Amarcord|1973|Comedy,Drama,Family|7.9|Federico Fellini|Magali Noël|Bruno Zanin
-Le charme discret de la bourgeoisie|1972|Comedy|7.9|Luis Buñuel|Fernando Rey|Delphine Seyrig
-Aguirre, der Zorn Gottes|1972|Action,Adventure,Biography|7.9|Werner Herzog|Klaus Kinski|Ruy Guerra
-Harold and Maude|1971|Comedy,Drama,Romance|7.9|Hal Ashby|Ruth Gordon|Bud Cort
-Patton|1970|Biography,Drama,War|7.9|Franklin J. Schaffner|George C. Scott|Karl Malden
-The Wild Bunch|1969|Action,Adventure,Western|7.9|Sam Peckinpah|William Holden|Ernest Borgnine
-Night of the Living Dead|1968|Horror,Thriller|7.9|George A. Romero|Duane Jones|Judith O'Dea
-The Lion in Winter|1968|Biography,Drama,History|7.9|Anthony Harvey|Peter O'Toole|Katharine Hepburn
-In the Heat of the Night|1967|Crime,Drama,Mystery|7.9|Norman Jewison|Sidney Poitier|Rod Steiger
-Charade|1963|Comedy,Mystery,Romance|7.9|Stanley Donen|Cary Grant|Audrey Hepburn
-The Manchurian Candidate|1962|Drama,Thriller|7.9|John Frankenheimer|Frank Sinatra|Laurence Harvey
-Spartacus|1960|Adventure,Biography,Drama|7.9|Stanley Kubrick|Kirk Douglas|Laurence Olivier
-L'avventura|1960|Drama,Mystery|7.9|Michelangelo Antonioni|Gabriele Ferzetti|Monica Vitti
-Hiroshima mon amour|1959|Drama,Romance|7.9|Alain Resnais|Emmanuelle Riva|Eiji Okada
-The Ten Commandments|1956|Adventure,Drama|7.9|Cecil B. DeMille|Charlton Heston|Yul Brynner
-The Searchers|1956|Adventure,Drama,Western|7.9|John Ford|John Wayne|Jeffrey Hunter
-East of Eden|1955|Drama|7.9|Elia Kazan|James Dean|Raymond Massey
-High Noon|1952|Drama,Thriller,Western|7.9|Fred Zinnemann|Gary Cooper|Grace Kelly
-Strangers on a Train|1951|Crime,Film-Noir,Thriller|7.9|Alfred Hitchcock|Farley Granger|Robert Walker
-Harvey|1950|Comedy,Drama,Fantasy|7.9|Henry Koster|James Stewart|Wallace Ford
-Miracle on 34th Street|1947|Comedy,Drama,Family|7.9|George Seaton|Edmund Gwenn|Maureen O'Hara
-Notorious|1946|Drama,Film-Noir,Romance|7.9|Alfred Hitchcock|Cary Grant|Ingrid Bergman
-The Big Sleep|1946|Crime,Film-Noir,Mystery|7.9|Howard Hawks|Humphrey Bogart|Lauren Bacall
-The Lost Weekend|1945|Drama,Film-Noir|7.9|Billy Wilder|Ray Milland|Jane Wyman
-The Philadelphia Story|1940|Comedy,Romance|7.9|George Cukor|Cary Grant|Katharine Hepburn
-His Girl Friday|1940|Comedy,Drama,Romance|7.9|Howard Hawks|Cary Grant|Rosalind Russell
-The Adventures of Robin Hood|1938|Action,Adventure,Romance|7.9|Michael Curtiz|William Keighley|Errol Flynn
-A Night at the Opera|1935|Comedy,Music,Musical|7.9|Sam Wood|Edmund Goulding|Groucho Marx
-King Kong|1933|Adventure,Horror,Sci-Fi|7.9|Merian C. Cooper|Ernest B. Schoedsack|Fay Wray
-Freaks|1932|Drama,Horror|7.9|Tod Browning|Wallace Ford|Leila Hyams
-Nosferatu|1922|Fantasy,Horror|7.9|F.W. Murnau|Max Schreck|Alexander Granach
-The Gentlemen|2019|Action,Comedy,Crime|7.8|Guy Ritchie|Matthew McConaughey|Charlie Hunnam
-Raazi|2018|Action,Drama,Thriller|7.8|Meghna Gulzar|Alia Bhatt|Vicky Kaushal
-Sound of Metal|2019|Drama,Music|7.8|Darius Marder|Riz Ahmed|Olivia Cooke
-Forushande|2016|Drama|7.8|Asghar Farhadi|Shahab Hosseini|Taraneh Alidoosti
-Dunkirk|2017|Action,Drama,History|7.8|Christopher Nolan|Fionn Whitehead|Barry Keoghan
-Perfetti sconosciuti|2016|Comedy,Drama|7.8|Paolo Genovese|Giuseppe Battiston|Anna Foglietta
-Hidden Figures|2016|Biography,Drama,History|7.8|Theodore Melfi|Taraji P. Henson|Octavia Spencer
-Paddington 2|2017|Adventure,Comedy,Family|7.8|Paul King|Ben Whishaw|Hugh Grant
-Udta Punjab|2016|Action,Crime,Drama|7.8|Abhishek Chaubey|Shahid Kapoor|Alia Bhatt
-Kubo and the Two Strings|2016|Animation,Action,Adventure|7.8|Travis Knight|Charlize Theron|Art Parkinson
-M.S. Dhoni: The Untold Story|2016|Biography,Drama,Sport|7.8|Neeraj Pandey|Sushant Singh Rajput|Kiara Advani
-Manchester by the Sea|2016|Drama|7.8|Kenneth Lonergan|Casey Affleck|Michelle Williams
-Under sandet|2015|Drama,History,War|7.8|Martin Zandvliet|Roland Møller|Louis Hofmann
-Rogue One|2016|Action,Adventure,Sci-Fi|7.8|Gareth Edwards|Felicity Jones|Diego Luna
-Captain America: Civil War|2016|Action,Adventure,Sci-Fi|7.8|Anthony Russo|Joe Russo|Chris Evans
-The Hateful Eight|2015|Crime,Drama,Mystery|7.8|Quentin Tarantino|Samuel L. Jackson|Kurt Russell
-Little Women|2019|Drama,Romance|7.8|Greta Gerwig|Saoirse Ronan|Emma Watson
-Loving Vincent|2017|Animation,Biography,Crime|7.8|Dorota Kobiela|Hugh Welchman|Douglas Booth
-Pride|2014|Biography,Comedy,Drama|7.8|Matthew Warchus|Bill Nighy|Imelda Staunton
-Le passé|2013|Drama,Mystery|7.8|Asghar Farhadi|Bérénice Bejo|Tahar Rahim
-La grande bellezza|2013|Drama|7.8|Paolo Sorrentino|Toni Servillo|Carlo Verdone
-The Lunchbox|2013|Drama,Romance|7.8|Ritesh Batra|Irrfan Khan|Nimrat Kaur
-Vicky Donor|2012|Comedy,Romance|7.8|Shoojit Sircar|Ayushmann Khurrana|Yami Gautam
-Big Hero 6|2014|Animation,Action,Adventure|7.8|Don Hall|Chris Williams|Ryan Potter
-About Time|2013|Comedy,Drama,Fantasy|7.8|Richard Curtis|Domhnall Gleeson|Rachel McAdams
-English Vinglish|2012|Comedy,Drama,Family|7.8|Gauri Shinde|Sridevi|Adil Hussain
-Kaze tachinu|2013|Animation,Biography,Drama|7.8|Hayao Miyazaki|Hideaki Anno|Hidetoshi Nishijima
-Toy Story 4|2019|Animation,Adventure,Comedy|7.8|Josh Cooley|Tom Hanks|Tim Allen
-La migliore offerta|2013|Crime,Drama,Mystery|7.8|Giuseppe Tornatore|Geoffrey Rush|Jim Sturgess
-Moonrise Kingdom|2012|Comedy,Drama,Romance|7.8|Wes Anderson|Jared Gilman|Kara Hayward
-How to Train Your Dragon 2|2014|Animation,Action,Adventure|7.8|Dean DeBlois|Jay Baruchel|Cate Blanchett
-The Big Short|2015|Biography,Comedy,Drama|7.8|Adam McKay|Christian Bale|Steve Carell
-Kokuhaku|2010|Drama,Thriller|7.8|Tetsuya Nakashima|Takako Matsu|Yoshino Kimura
-Ang-ma-reul bo-at-da|2010|Action,Crime,Drama|7.8|Jee-woon Kim|Lee Byung-Hun|Choi Min-sik
-The Girl with the Dragon Tattoo|2011|Crime,Drama,Mystery|7.8|David Fincher|Daniel Craig|Rooney Mara
-Captain Phillips|2013|Adventure,Biography,Crime|7.8|Paul Greengrass|Tom Hanks|Barkhad Abdi
-Ajeossi|2010|Action,Crime,Drama|7.8|Jeong-beom Lee|Won Bin|Sae-ron Kim
-Straight Outta Compton|2015|Biography,Drama,History|7.8|F. Gary Gray|O'Shea Jackson Jr.|Corey Hawkins
-Madeo|2009|Crime,Drama,Mystery|7.8|Bong Joon Ho|Hye-ja Kim|Won Bin
-Chugyeokja|2008|Action,Crime,Thriller|7.8|Hong-jin Na|Kim Yoon-seok|Jung-woo Ha
-The Hobbit: The Desolation of Smaug|2013|Adventure,Fantasy|7.8|Peter Jackson|Ian McKellen|Martin Freeman
-Das weiße Band - Eine deutsche Kindergeschichte|2009|Drama,History,Mystery|7.8|Michael Haneke|Christian Friedel|Ernst Jacobi
-Män som hatar kvinnor|2009|Crime,Drama,Mystery|7.8|Niels Arden Oplev|Michael Nyqvist|Noomi Rapace
-The Trial of the Chicago 7|2020|Drama,History,Thriller|7.8|Aaron Sorkin|Eddie Redmayne|Alex Sharp
-Druk|2020|Comedy,Drama|7.8|Thomas Vinterberg|Mads Mikkelsen|Thomas Bo Larsen
-The Fighter|2010|Biography,Drama,Sport|7.8|David O. Russell|Mark Wahlberg|Christian Bale
-Taken|2008|Action,Thriller|7.8|Pierre Morel|Liam Neeson|Maggie Grace
-The Boy in the Striped Pyjamas|2008|Drama,History,War|7.8|Mark Herman|Asa Butterfield|David Thewlis
-Once|2007|Drama,Music,Romance|7.8|John Carney|Glen Hansard|Markéta Irglová
-The Hobbit: An Unexpected Journey|2012|Adventure,Fantasy|7.8|Peter Jackson|Martin Freeman|Ian McKellen
-Auf der anderen Seite|2007|Drama|7.8|Fatih Akin|Baki Davrak|Nurgül Yesilçay
-Atonement|2007|Drama,Mystery,Romance|7.8|Joe Wright|Keira Knightley|James McAvoy
-Drive|2011|Crime,Drama|7.8|Nicolas Winding Refn|Ryan Gosling|Carey Mulligan
-American Gangster|2007|Biography,Crime,Drama|7.8|Ridley Scott|Denzel Washington|Russell Crowe
-Avatar|2009|Action,Adventure,Fantasy|7.8|James Cameron|Sam Worthington|Zoe Saldana
-Mr. Nobody|2009|Drama,Fantasy,Romance|7.8|Jaco Van Dormael|Jared Leto|Sarah Polley
-Apocalypto|2006|Action,Adventure,Drama|7.8|Mel Gibson|Gerardo Taracena|Raoul Max Trujillo
-Little Miss Sunshine|2006|Comedy,Drama|7.8|Jonathan Dayton|Valerie Faris|Steve Carell
-Hot Fuzz|2007|Action,Comedy,Mystery|7.8|Edgar Wright|Simon Pegg|Nick Frost
-The Curious Case of Benjamin Button|2008|Drama,Fantasy,Romance|7.8|David Fincher|Brad Pitt|Cate Blanchett
-Veer-Zaara|2004|Drama,Family,Musical|7.8|Yash Chopra|Shah Rukh Khan|Preity Zinta
-Adams æbler|2005|Comedy,Crime,Drama|7.8|Anders Thomas Jensen|Ulrich Thomsen|Mads Mikkelsen
-Pride & Prejudice|2005|Drama,Romance|7.8|Joe Wright|Keira Knightley|Matthew Macfadyen
-The World's Fastest Indian|2005|Biography,Drama,Sport|7.8|Roger Donaldson|Anthony Hopkins|Diane Ladd
-Tôkyô goddofâzâzu|2003|Animation,Adventure,Comedy|7.8|Satoshi Kon|Shôgo Furuya|Tôru Emori
-Serenity|2005|Action,Adventure,Sci-Fi|7.8|Joss Whedon|Nathan Fillion|Gina Torres
-Walk the Line|2005|Biography,Drama,Music|7.8|James Mangold|Joaquin Phoenix|Reese Witherspoon
-Ondskan|2003|Drama|7.8|Mikael Håfström|Andreas Wilson|Henrik Lundström
-The Notebook|2004|Drama,Romance|7.8|Nick Cassavetes|Gena Rowlands|James Garner
-Diarios de motocicleta|2004|Adventure,Biography,Drama|7.8|Walter Salles|Gael García Bernal|Rodrigo De la Serna
-Lilja 4-ever|2002|Crime,Drama|7.8|Lukas Moodysson|Oksana Akinshina|Artyom Bogucharskiy
-Les triplettes de Belleville|2003|Animation,Comedy,Drama|7.8|Sylvain Chomet|Michèle Caucheteux|Jean-Claude Donda
-Gongdong gyeongbi guyeok JSA|2000|Action,Drama,Thriller|7.8|Chan-wook Park|Lee Yeong-ae|Lee Byung-Hun
-The Count of Monte Cristo|2002|Action,Adventure,Drama|7.8|Kevin Reynolds|Jim Caviezel|Guy Pearce
-Waking Life|2001|Animation,Drama,Fantasy|7.8|Richard Linklater|Ethan Hawke|Trevor Jack Brooks
-Remember the Titans|2000|Biography,Drama,Sport|7.8|Boaz Yakin|Denzel Washington|Will Patton
-Wo hu cang long|2000|Action,Adventure,Fantasy|7.8|Ang Lee|Yun-Fat Chow|Michelle Yeoh
-Todo sobre mi madre|1999|Drama|7.8|Pedro Almodóvar|Cecilia Roth|Marisa Paredes
-Cast Away|2000|Adventure,Drama,Romance|7.8|Robert Zemeckis|Tom Hanks|Helen Hunt
-The Boondock Saints|1999|Action,Crime,Thriller|7.8|Troy Duffy|Willem Dafoe|Sean Patrick Flanery
-The Insider|1999|Biography,Drama,Thriller|7.8|Michael Mann|Russell Crowe|Al Pacino
-October Sky|1999|Biography,Drama,Family|7.8|Joe Johnston|Jake Gyllenhaal|Chris Cooper
-Shrek|2001|Animation,Adventure,Comedy|7.8|Andrew Adamson|Vicky Jenson|Mike Myers
-Titanic|1997|Drama,Romance|7.8|James Cameron|Leonardo DiCaprio|Kate Winslet
-Hana-bi|1997|Crime,Drama,Romance|7.8|Takeshi Kitano|Takeshi Kitano|Kayoko Kishimoto
-Gattaca|1997|Drama,Sci-Fi,Thriller|7.8|Andrew Niccol|Ethan Hawke|Uma Thurman
-The Game|1997|Action,Drama,Mystery|7.8|David Fincher|Michael Douglas|Deborah Kara Unger
-Breaking the Waves|1996|Drama|7.8|Lars von Trier|Emily Watson|Stellan Skarsgård
-Ed Wood|1994|Biography,Comedy,Drama|7.8|Tim Burton|Johnny Depp|Martin Landau
-What's Eating Gilbert Grape|1993|Drama|7.8|Lasse Hallström|Johnny Depp|Leonardo DiCaprio
-Tombstone|1993|Action,Biography,Drama|7.8|George P. Cosmatos|Kevin Jarre|Kurt Russell
-The Sandlot|1993|Comedy,Drama,Family|7.8|David Mickey Evans|Tom Guiry|Mike Vitar
-The Remains of the Day|1993|Drama,Romance|7.8|James Ivory|Anthony Hopkins|Emma Thompson
-Naked|1993|Comedy,Drama|7.8|Mike Leigh|David Thewlis|Lesley Sharp
-The Fugitive|1993|Action,Crime,Drama|7.8|Andrew Davis|Harrison Ford|Tommy Lee Jones
-A Bronx Tale|1993|Crime,Drama,Romance|7.8|Robert De Niro|Robert De Niro|Chazz Palminteri
-Batman: Mask of the Phantasm|1993|Animation,Action,Crime|7.8|Kevin Altieri|Boyd Kirkland|Frank Paur
-Lat sau san taam|1992|Action,Crime,Thriller|7.8|John Woo|Yun-Fat Chow|Tony Chiu-Wai Leung
-Night on Earth|1991|Comedy,Drama|7.8|Jim Jarmusch|Winona Ryder|Gena Rowlands
-La double vie de Véronique|1991|Drama,Fantasy,Music|7.8|Krzysztof Kieslowski|Irène Jacob|Wladyslaw Kowalski
-Boyz n the Hood|1991|Crime,Drama|7.8|John Singleton|Cuba Gooding Jr.|Laurence Fishburne
-Misery|1990|Drama,Thriller|7.8|Rob Reiner|James Caan|Kathy Bates
-Awakenings|1990|Biography,Drama|7.8|Penny Marshall|Robert De Niro|Robin Williams
-Majo no takkyûbin|1989|Animation,Adventure,Drama|7.8|Hayao Miyazaki|Kirsten Dunst|Minami Takayama
-Glory|1989|Biography,Drama,History|7.8|Edward Zwick|Matthew Broderick|Denzel Washington
-Dip huet seung hung|1989|Action,Crime,Drama|7.8|John Woo|Yun-Fat Chow|Danny Lee
-Back to the Future Part II|1989|Adventure,Comedy,Sci-Fi|7.8|Robert Zemeckis|Michael J. Fox|Christopher Lloyd
-Mississippi Burning|1988|Crime,Drama,History|7.8|Alan Parker|Gene Hackman|Willem Dafoe
-Predator|1987|Action,Adventure,Sci-Fi|7.8|John McTiernan|Arnold Schwarzenegger|Carl Weathers
-Evil Dead II|1987|Action,Comedy,Fantasy|7.8|Sam Raimi|Bruce Campbell|Sarah Berry
-Ferris Bueller's Day Off|1986|Comedy|7.8|John Hughes|Matthew Broderick|Alan Ruck
-Down by Law|1986|Comedy,Crime,Drama|7.8|Jim Jarmusch|Tom Waits|John Lurie
-The Goonies|1985|Adventure,Comedy,Family|7.8|Richard Donner|Sean Astin|Josh Brolin
-The Color Purple|1985|Drama|7.8|Steven Spielberg|Danny Glover|Whoopi Goldberg
-The Breakfast Club|1985|Comedy,Drama|7.8|John Hughes|Emilio Estevez|Judd Nelson
-The Killing Fields|1984|Biography,Drama,History|7.8|Roland Joffé|Sam Waterston|Haing S. Ngor
-Ghostbusters|1984|Action,Comedy,Fantasy|7.8|Ivan Reitman|Bill Murray|Dan Aykroyd
-The Right Stuff|1983|Adventure,Biography,Drama|7.8|Philip Kaufman|Sam Shepard|Scott Glenn
-The King of Comedy|1982|Comedy,Crime,Drama|7.8|Martin Scorsese|Robert De Niro|Jerry Lewis
-E.T. the Extra-Terrestrial|1982|Family,Sci-Fi|7.8|Steven Spielberg|Henry Thomas|Drew Barrymore
-Kramer vs. Kramer|1979|Drama|7.8|Robert Benton|Dustin Hoffman|Meryl Streep
-Days of Heaven|1978|Drama,Romance|7.8|Terrence Malick|Richard Gere|Brooke Adams
-The Outlaw Josey Wales|1976|Western|7.8|Clint Eastwood|Clint Eastwood|Sondra Locke
-The Man Who Would Be King|1975|Adventure,History,War|7.8|John Huston|Sean Connery|Michael Caine
-The Conversation|1974|Drama,Mystery,Thriller|7.8|Francis Ford Coppola|Gene Hackman|John Cazale
-La planète sauvage|1973|Animation,Sci-Fi|7.8|René Laloux|Barry Bostwick|Jennifer Drake
-The Day of the Jackal|1973|Crime,Drama,Thriller|7.8|Fred Zinnemann|Edward Fox|Terence Alexander
-Badlands|1973|Action,Crime,Drama|7.8|Terrence Malick|Martin Sheen|Sissy Spacek
-Cabaret|1972|Drama,Music,Musical|7.8|Bob Fosse|Liza Minnelli|Michael York
-Willy Wonka & the Chocolate Factory|1971|Family,Fantasy,Musical|7.8|Mel Stuart|Gene Wilder|Jack Albertson
-Midnight Cowboy|1969|Drama|7.8|John Schlesinger|Dustin Hoffman|Jon Voight
-Wait Until Dark|1967|Thriller|7.8|Terence Young|Audrey Hepburn|Alan Arkin
-Guess Who's Coming to Dinner|1967|Comedy,Drama|7.8|Stanley Kramer|Spencer Tracy|Sidney Poitier
-Bonnie and Clyde|1967|Action,Biography,Crime|7.8|Arthur Penn|Warren Beatty|Faye Dunaway
-My Fair Lady|1964|Drama,Family,Musical|7.8|George Cukor|Audrey Hepburn|Rex Harrison
-Mary Poppins|1964|Comedy,Family,Fantasy|7.8|Robert Stevenson|Julie Andrews|Dick Van Dyke
-The Longest Day|1962|Action,Drama,History|7.8|Ken Annakin|Andrew Marton|Gerd Oswald
-Jules et Jim|1962|Drama,Romance|7.8|François Truffaut|Jeanne Moreau|Oskar Werner
-The Innocents|1961|Horror|7.8|Jack Clayton|Deborah Kerr|Peter Wyngarde
-À bout de souffle|1960|Crime,Drama|7.8|Jean-Luc Godard|Jean-Paul Belmondo|Jean Seberg
-Red River|1948|Action,Adventure,Drama|7.8|Howard Hawks|Arthur Rosson|John Wayne
-Key Largo|1948|Action,Crime,Drama|7.8|John Huston|Humphrey Bogart|Edward G. Robinson
-To Have and Have Not|1944|Adventure,Comedy,Film-Noir|7.8|Howard Hawks|Humphrey Bogart|Lauren Bacall
-Shadow of a Doubt|1943|Film-Noir,Thriller|7.8|Alfred Hitchcock|Teresa Wright|Joseph Cotten
-Stagecoach|1939|Adventure,Drama,Western|7.8|John Ford|John Wayne|Claire Trevor
-The Lady Vanishes|1938|Mystery,Thriller|7.8|Alfred Hitchcock|Margaret Lockwood|Michael Redgrave
-Bringing Up Baby|1938|Comedy,Family,Romance|7.8|Howard Hawks|Katharine Hepburn|Cary Grant
-Bride of Frankenstein|1935|Drama,Horror,Sci-Fi|7.8|James Whale|Boris Karloff|Elsa Lanchester
-Duck Soup|1933|Comedy,Musical,War|7.8|Leo McCarey|Groucho Marx|Harpo Marx
-Scarface: The Shame of the Nation|1932|Action,Crime,Drama|7.8|Howard Hawks|Richard Rosson|Paul Muni
-Frankenstein|1931|Drama,Horror,Sci-Fi|7.8|James Whale|Colin Clive|Mae Clarke
-Roma|2018|Drama|7.7|Alfonso Cuarón|Yalitza Aparicio|Marina de Tavira
-God's Own Country|2017|Drama,Romance|7.7|Francis Lee|Josh O'Connor|Alec Secareanu
-Deadpool 2|2018|Action,Adventure,Comedy|7.7|David Leitch|Ryan Reynolds|Josh Brolin
-Wind River|2017|Crime,Drama,Mystery|7.7|Taylor Sheridan|Kelsey Asbille|Jeremy Renner
-Get Out|2017|Horror,Mystery,Thriller|7.7|Jordan Peele|Daniel Kaluuya|Allison Williams
-Mission: Impossible - Fallout|2018|Action,Adventure,Thriller|7.7|Christopher McQuarrie|Tom Cruise|Henry Cavill
-En man som heter Ove|2015|Comedy,Drama,Romance|7.7|Hannes Holm|Rolf Lassgård|Bahar Pars
-What We Do in the Shadows|2014|Comedy,Horror|7.7|Jemaine Clement|Taika Waititi|Jemaine Clement
-Omoide no Mânî|2014|Animation,Drama,Family|7.7|James Simone|Hiromasa Yonebayashi|Sara Takatsuki
-The Theory of Everything|2014|Biography,Drama,Romance|7.7|James Marsh|Eddie Redmayne|Felicity Jones
-Kingsman: The Secret Service|2014|Action,Adventure,Comedy|7.7|Matthew Vaughn|Colin Firth|Taron Egerton
-The Fault in Our Stars|2014|Drama,Romance|7.7|Josh Boone|Shailene Woodley|Ansel Elgort
-Me and Earl and the Dying Girl|2015|Comedy,Drama|7.7|Alfonso Gomez-Rejon|Thomas Mann|RJ Cyler
-Birdman or (The Unexpected Virtue of Ignorance)|2014|Comedy,Drama|7.7|Alejandro G. Iñárritu|Michael Keaton|Zach Galifianakis
-La vie d'Adèle|2013|Drama,Romance|7.7|Abdellatif Kechiche|Léa Seydoux|Adèle Exarchopoulos
-Kai po che!|2013|Drama,Sport|7.7|Abhishek Kapoor|Amit Sadh|Sushant Singh Rajput
-The Broken Circle Breakdown|2012|Drama,Music,Romance|7.7|Felix van Groeningen|Veerle Baetens|Johan Heldenbergh
-Captain America: The Winter Soldier|2014|Action,Adventure,Sci-Fi|7.7|Anthony Russo|Joe Russo|Chris Evans
-Rockstar|2011|Drama,Music,Musical|7.7|Imtiaz Ali|Ranbir Kapoor|Nargis Fakhri
-Nebraska|2013|Adventure,Comedy,Drama|7.7|Alexander Payne|Bruce Dern|Will Forte
-Wreck-It Ralph|2012|Animation,Adventure,Comedy|7.7|Rich Moore|John C. Reilly|Jack McBrayer
-Le Petit Prince|2015|Animation,Adventure,Drama|7.7|Mark Osborne|Jeff Bridges|Mackenzie Foy
-Detachment|2011|Drama|7.7|Tony Kaye|Adrien Brody|Christina Hendricks
-Midnight in Paris|2011|Comedy,Fantasy,Romance|7.7|Woody Allen|Owen Wilson|Rachel McAdams
-The Lego Movie|2014|Animation,Action,Adventure|7.7|Christopher Miller|Phil Lord|Chris Pratt
-Gravity|2013|Drama,Sci-Fi,Thriller|7.7|Alfonso Cuarón|Sandra Bullock|George Clooney
-Star Trek Into Darkness|2013|Action,Adventure,Sci-Fi|7.7|J.J. Abrams|Chris Pine|Zachary Quinto
-Beasts of No Nation|2015|Drama,War|7.7|Cary Joji Fukunaga|Abraham Attah|Emmanuel Affadzi
-The Social Network|2010|Biography,Drama|7.7|David Fincher|Jesse Eisenberg|Andrew Garfield
-X: First Class|2011|Action,Adventure,Sci-Fi|7.7|Matthew Vaughn|James McAvoy|Michael Fassbender
-The Hangover|2009|Comedy|7.7|Todd Phillips|Zach Galifianakis|Bradley Cooper
-Skyfall|2012|Action,Adventure,Thriller|7.7|Sam Mendes|Daniel Craig|Javier Bardem
-Silver Linings Playbook|2012|Comedy,Drama,Romance|7.7|David O. Russell|Bradley Cooper|Jennifer Lawrence
-Argo|2012|Biography,Drama,Thriller|7.7|Ben Affleck|Ben Affleck|Bryan Cranston
-(500) Days of Summer|2009|Comedy,Drama,Romance|7.7|Marc Webb|Zooey Deschanel|Joseph Gordon-Levitt
-Harry Potter and the Deathly Hallows: Part 1|2010|Adventure,Family,Fantasy|7.7|David Yates|Daniel Radcliffe|Emma Watson
-Gake no ue no Ponyo|2008|Animation,Adventure,Comedy|7.7|Hayao Miyazaki|Cate Blanchett|Matt Damon
-Frost/Nixon|2008|Biography,Drama,History|7.7|Ron Howard|Frank Langella|Michael Sheen
-Papurika|2006|Animation,Drama,Fantasy|7.7|Satoshi Kon|Megumi Hayashibara|Tôru Emori
-Changeling|2008|Biography,Crime,Drama|7.7|Clint Eastwood|Angelina Jolie|Colm Feore
-Flipped|2010|Comedy,Drama,Romance|7.7|Rob Reiner|Madeline Carroll|Callan McAuliffe
-Toki o kakeru shôjo|2006|Animation,Adventure,Comedy|7.7|Mamoru Hosoda|Riisa Naka|Takuya Ishida
-Death Note: Desu nôto|2006|Crime,Drama,Fantasy|7.7|Shûsuke Kaneko|Tatsuya Fujiwara|Ken'ichi Matsuyama
-This Is England|2006|Crime,Drama|7.7|Shane Meadows|Thomas Turgoose|Stephen Graham
-Ex Machina|2014|Drama,Sci-Fi,Thriller|7.7|Alex Garland|Alicia Vikander|Domhnall Gleeson
-Efter brylluppet|2006|Drama|7.7|Susanne Bier|Mads Mikkelsen|Sidse Babett Knudsen
-The Last King of Scotland|2006|Biography,Drama,History|7.7|Kevin Macdonald|James McAvoy|Forest Whitaker
-Zodiac|2007|Crime,Drama,Mystery|7.7|David Fincher|Jake Gyllenhaal|Robert Downey Jr.
-Lucky Number Slevin|2006|Action,Crime,Drama|7.7|Paul McGuigan|Josh Hartnett|Ben Kingsley
-Joyeux Noël|2005|Drama,History,Music|7.7|Christian Carion|Diane Kruger|Benno Fürmann
-Control|2007|Biography,Drama,Music|7.7|Anton Corbijn|Sam Riley|Samantha Morton
-Tangled|2010|Animation,Adventure,Comedy|7.7|Nathan Greno|Byron Howard|Mandy Moore
-Zwartboek|2006|Drama,Thriller,War|7.7|Paul Verhoeven|Carice van Houten|Sebastian Koch
-Brokeback Mountain|2005|Drama,Romance|7.7|Ang Lee|Jake Gyllenhaal|Heath Ledger
-3:10 to Yuma|2007|Action,Crime,Drama|7.7|James Mangold|Russell Crowe|Christian Bale
-Crash|2004|Crime,Drama,Thriller|7.7|Paul Haggis|Don Cheadle|Sandra Bullock
-Kung fu|2004|Action,Comedy,Fantasy|7.7|Stephen Chow|Stephen Chow|Wah Yuen
-The Bourne Supremacy|2004|Action,Mystery,Thriller|7.7|Paul Greengrass|Matt Damon|Franka Potente
-The Machinist|2004|Drama,Thriller|7.7|Brad Anderson|Christian Bale|Jennifer Jason Leigh
-Ray|2004|Biography,Drama,Music|7.7|Taylor Hackford|Jamie Foxx|Regina King
-Lost in Translation|2003|Comedy,Drama|7.7|Sofia Coppola|Bill Murray|Scarlett Johansson
-Harry Potter and the Goblet of Fire|2005|Adventure,Family,Fantasy|7.7|Mike Newell|Daniel Radcliffe|Emma Watson
-Man on Fire|2004|Action,Crime,Drama|7.7|Tony Scott|Denzel Washington|Christopher Walken
-Coraline|2009|Animation,Drama,Family|7.7|Henry Selick|Dakota Fanning|Teri Hatcher
-The Last Samurai|2003|Action,Drama|7.7|Edward Zwick|Tom Cruise|Ken Watanabe
-The Magdalene Sisters|2002|Drama|7.7|Peter Mullan|Eileen Walsh|Dorothy Duffy
-Good Bye Lenin!|2003|Comedy,Drama,Romance|7.7|Wolfgang Becker|Daniel Brühl|Katrin Saß
-In America|2002|Drama|7.7|Jim Sheridan|Paddy Considine|Samantha Morton
-I Am Sam|2001|Drama|7.7|Jessie Nelson|Sean Penn|Michelle Pfeiffer
-Adaptation.|2002|Comedy,Drama|7.7|Spike Jonze|Nicolas Cage|Meryl Streep
-Black Hawk Down|2001|Drama,History,War|7.7|Ridley Scott|Josh Hartnett|Ewan McGregor
-Road to Perdition|2002|Crime,Drama,Thriller|7.7|Sam Mendes|Tom Hanks|Tyler Hoechlin
-Das Experiment|2001|Drama,Thriller|7.7|Oliver Hirschbiegel|Moritz Bleibtreu|Christian Berkel
-Billy Elliot|2000|Drama,Music|7.7|Stephen Daldry|Jamie Bell|Julie Walters
-Hedwig and the Angry Inch|2001|Comedy,Drama,Music|7.7|John Cameron Mitchell|John Cameron Mitchell|Miriam Shor
-Ocean's Eleven|2001|Crime,Thriller|7.7|Steven Soderbergh|George Clooney|Brad Pitt
-Vampire Hunter D: Bloodlust|2000|Animation,Action,Fantasy|7.7|Yoshiaki Kawajiri|Andrew Philpot|John Rafter Lee
-O Brother, Where Art Thou?|2000|Adventure,Comedy,Crime|7.7|Joel Coen|Ethan Coen|George Clooney
-Interstate 60: Episodes of the Road|2002|Adventure,Comedy,Drama|7.7|Bob Gale|James Marsden|Gary Oldman
-South Park: Bigger, Longer & Uncut|1999|Animation,Comedy,Fantasy|7.7|Trey Parker|Trey Parker|Matt Stone
-Office Space|1999|Comedy|7.7|Mike Judge|Ron Livingston|Jennifer Aniston
-Happiness|1998|Comedy,Drama|7.7|Todd Solondz|Jane Adams|Jon Lovitz
-Training Day|2001|Crime,Drama,Thriller|7.7|Antoine Fuqua|Denzel Washington|Ethan Hawke
-Rushmore|1998|Comedy,Drama,Romance|7.7|Wes Anderson|Jason Schwartzman|Bill Murray
-Abre los ojos|1997|Drama,Mystery,Sci-Fi|7.7|Alejandro Amenábar|Eduardo Noriega|Penélope Cruz
-Being John Malkovich|1999|Comedy,Drama,Fantasy|7.7|Spike Jonze|John Cusack|Cameron Diaz
-As Good as It Gets|1997|Comedy,Drama,Romance|7.7|James L. Brooks|Jack Nicholson|Helen Hunt
-The Fifth Element|1997|Action,Adventure,Sci-Fi|7.7|Luc Besson|Bruce Willis|Milla Jovovich
-Le dîner de cons|1998|Comedy|7.7|Francis Veber|Thierry Lhermitte|Jacques Villeret
-Donnie Brasco|1997|Biography,Crime,Drama|7.7|Mike Newell|Al Pacino|Johnny Depp
-Shine|1996|Biography,Drama,Music|7.7|Scott Hicks|Geoffrey Rush|Armin Mueller-Stahl
-Primal Fear|1996|Crime,Drama,Mystery|7.7|Gregory Hoblit|Richard Gere|Laura Linney
-Hamlet|1996|Drama|7.7|Kenneth Branagh|Kenneth Branagh|Julie Christie
-A Little Princess|1995|Drama,Family,Fantasy|7.7|Alfonso Cuarón|Liesel Matthews|Eleanor Bron
-Do lok tin si|1995|Comedy,Crime,Drama|7.7|Kar-Wai Wong|Leon Lai|Michelle Reis
-Il postino|1994|Biography,Comedy,Drama|7.7|Michael Radford|Massimo Troisi|Massimo Troisi
-Clerks|1994|Comedy|7.7|Kevin Smith|Brian O'Halloran|Jeff Anderson
-Short Cuts|1993|Comedy,Drama|7.7|Robert Altman|Andie MacDowell|Julianne Moore
-Philadelphia|1993|Drama|7.7|Jonathan Demme|Tom Hanks|Denzel Washington
-The Muppet Christmas Carol|1992|Comedy,Drama,Family|7.7|Brian Henson|Michael Caine|Kermit the Frog
-Malcolm X|1992|Biography,Drama,History|7.7|Spike Lee|Denzel Washington|Angela Bassett
-The Last of the Mohicans|1992|Action,Adventure,Drama|7.7|Michael Mann|Daniel Day-Lewis|Madeleine Stowe
-Kurenai no buta|1992|Animation,Adventure,Comedy|7.7|Hayao Miyazaki|Shûichirô Moriyama|Tokiko Katô
-Glengarry Glen Ross|1992|Crime,Drama,Mystery|7.7|James Foley|Al Pacino|Jack Lemmon
-A Few Good Men|1992|Drama,Thriller|7.7|Rob Reiner|Tom Cruise|Jack Nicholson
-Fried Green Tomatoes|1991|Drama|7.7|Jon Avnet|Kathy Bates|Jessica Tandy
-Barton Fink|1991|Comedy,Drama,Thriller|7.7|Joel Coen|Ethan Coen|John Turturro
-Miller's Crossing|1990|Crime,Drama,Thriller|7.7|Joel Coen|Ethan Coen|Gabriel Byrne
-Who Framed Roger Rabbit|1988|Animation,Adventure,Comedy|7.7|Robert Zemeckis|Bob Hoskins|Christopher Lloyd
-Spoorloos|1988|Mystery,Thriller|7.7|George Sluizer|Bernard-Pierre Donnadieu|Gene Bervoets
-Withnail & I|1987|Comedy,Drama|7.7|Bruce Robinson|Richard E. Grant|Paul McGann
-The Last Emperor|1987|Biography,Drama,History|7.7|Bernardo Bertolucci|John Lone|Joan Chen
-Empire of the Sun|1987|Action,Drama,History|7.7|Steven Spielberg|Christian Bale|John Malkovich
-Der Name der Rose|1986|Crime,Drama,Mystery|7.7|Jean-Jacques Annaud|Sean Connery|Christian Slater
-Blue Velvet|1986|Drama,Mystery,Thriller|7.7|David Lynch|Isabella Rossellini|Kyle MacLachlan
-The Purple Rose of Cairo|1985|Comedy,Fantasy,Romance|7.7|Woody Allen|Mia Farrow|Jeff Daniels
-After Hours|1985|Comedy,Crime,Drama|7.7|Martin Scorsese|Griffin Dunne|Rosanna Arquette
-Zelig|1983|Comedy|7.7|Woody Allen|Woody Allen|Mia Farrow
-The Verdict|1982|Drama|7.7|Sidney Lumet|Paul Newman|Charlotte Rampling
-Star Trek II: The Wrath of Khan|1982|Action,Adventure,Sci-Fi|7.7|Nicholas Meyer|William Shatner|Leonard Nimoy
-First Blood|1982|Action,Adventure|7.7|Ted Kotcheff|Sylvester Stallone|Brian Dennehy
-Ordinary People|1980|Drama|7.7|Robert Redford|Donald Sutherland|Mary Tyler Moore
-Airplane!|1980|Comedy|7.7|Jim Abrahams|David Zucker|Jerry Zucker
-Rupan sansei: Kariosutoro no shiro|1979|Animation,Adventure,Family|7.7|Hayao Miyazaki|Yasuo Yamada|Eiko Masuyama
-Halloween|1978|Horror,Thriller|7.7|John Carpenter|Donald Pleasence|Jamie Lee Curtis
-Le locataire|1976|Drama,Thriller|7.7|Roman Polanski|Roman Polanski|Isabelle Adjani
-Love and Death|1975|Comedy,War|7.7|Woody Allen|Woody Allen|Diane Keaton
-The Taking of Pelham One Two Three|1974|Action,Crime,Thriller|7.7|Joseph Sargent|Walter Matthau|Robert Shaw
-Blazing Saddles|1974|Comedy,Western|7.7|Mel Brooks|Cleavon Little|Gene Wilder
-Serpico|1973|Biography,Crime,Drama|7.7|Sidney Lumet|Al Pacino|John Randolph
-Enter the Dragon|1973|Action,Crime,Drama|7.7|Robert Clouse|Bruce Lee|John Saxon
-Deliverance|1972|Adventure,Drama,Thriller|7.7|John Boorman|Jon Voight|Burt Reynolds
-The French Connection|1971|Action,Crime,Drama|7.7|William Friedkin|Gene Hackman|Roy Scheider
-Dirty Harry|1971|Action,Crime,Thriller|7.7|Don Siegel|Clint Eastwood|Andrew Robinson
-Where Eagles Dare|1968|Action,Adventure,War|7.7|Brian G. Hutton|Richard Burton|Clint Eastwood
-The Odd Couple|1968|Comedy|7.7|Gene Saks|Jack Lemmon|Walter Matthau
-The Dirty Dozen|1967|Action,Adventure,War|7.7|Robert Aldrich|Lee Marvin|Ernest Borgnine
-Belle de jour|1967|Drama,Romance|7.7|Luis Buñuel|Catherine Deneuve|Jean Sorel
-A Man for All Seasons|1966|Biography,Drama,History|7.7|Fred Zinnemann|Paul Scofield|Wendy Hiller
-Repulsion|1965|Drama,Horror,Thriller|7.7|Roman Polanski|Catherine Deneuve|Ian Hendry
-Zulu|1964|Drama,History,War|7.7|Cy Endfield|Stanley Baker|Jack Hawkins
-Goldfinger|1964|Action,Adventure,Thriller|7.7|Guy Hamilton|Sean Connery|Gert Fröbe
-The Birds|1963|Drama,Horror,Mystery|7.7|Alfred Hitchcock|Rod Taylor|Tippi Hedren
-Cape Fear|1962|Drama,Thriller|7.7|J. Lee Thompson|Gregory Peck|Robert Mitchum
-Peeping Tom|1960|Drama,Horror,Thriller|7.7|Michael Powell|Karlheinz Böhm|Anna Massey
-The Magnificent Seven|1960|Action,Adventure,Western|7.7|John Sturges|Yul Brynner|Steve McQueen
-Les yeux sans visage|1960|Drama,Horror|7.7|Georges Franju|Pierre Brasseur|Alida Valli
-Invasion of the Body Snatchers|1956|Drama,Horror,Sci-Fi|7.7|Don Siegel|Kevin McCarthy|Dana Wynter
-Rebel Without a Cause|1955|Drama|7.7|Nicholas Ray|James Dean|Natalie Wood
-The Ladykillers|1955|Comedy,Crime|7.7|Alexander Mackendrick|Alec Guinness|Peter Sellers
-Sabrina|1954|Comedy,Drama,Romance|7.7|Billy Wilder|Humphrey Bogart|Audrey Hepburn
-The Quiet Man|1952|Comedy,Drama,Romance|7.7|John Ford|John Wayne|Maureen O'Hara
-The Day the Earth Stood Still|1951|Drama,Sci-Fi|7.7|Robert Wise|Michael Rennie|Patricia Neal
-The African Queen|1951|Adventure,Drama,Romance|7.7|John Huston|Humphrey Bogart|Katharine Hepburn
-Gilda|1946|Drama,Film-Noir,Romance|7.7|Charles Vidor|Rita Hayworth|Glenn Ford
-Fantasia|1940|Animation,Family,Fantasy|7.7|James Algar|Samuel Armstrong|Ford Beebe Jr.
-The Invisible Man|1933|Horror,Sci-Fi|7.7|James Whale|Claude Rains|Gloria Stuart
-Dark Waters|2019|Biography,Drama,History|7.6|Todd Haynes|Mark Ruffalo|Anne Hathaway
-Searching|2018|Drama,Mystery,Thriller|7.6|Aneesh Chaganty|John Cho|Debra Messing
-Once Upon a Time... in Hollywood|2019|Comedy,Drama|7.6|Quentin Tarantino|Leonardo DiCaprio|Brad Pitt
-Nelyubov|2017|Drama|7.6|Andrey Zvyagintsev|Maryana Spivak|Aleksey Rozin
-The Florida Project|2017|Drama|7.6|Sean Baker|Brooklynn Prince|Bria Vinaite
-Just Mercy|2019|Biography,Crime,Drama|7.6|Destin Daniel Cretton|Michael B. Jordan|Jamie Foxx
-Gifted|2017|Drama|7.6|Marc Webb|Chris Evans|Mckenna Grace
-The Peanut Butter Falcon|2019|Adventure,Comedy,Drama|7.6|Tyler Nilson|Michael Schwartz|Zack Gottsagen
-Victoria|2015|Crime,Drama,Romance|7.6|Sebastian Schipper|Laia Costa|Frederick Lau
-Mustang|2015|Drama|7.6|Deniz Gamze Ergüven|Günes Sensoy|Doga Zeynep Doguslu
-Guardians of the Galaxy Vol. 2|2017|Action,Adventure,Comedy|7.6|James Gunn|Chris Pratt|Zoe Saldana
-Baby Driver|2017|Action,Crime,Drama|7.6|Edgar Wright|Ansel Elgort|Jon Bernthal
-Only the Brave|2017|Action,Biography,Drama|7.6|Joseph Kosinski|Josh Brolin|Miles Teller
-Bridge of Spies|2015|Drama,History,Thriller|7.6|Steven Spielberg|Tom Hanks|Mark Rylance
-Incredibles 2|2018|Animation,Action,Adventure|7.6|Brad Bird|Craig T. Nelson|Holly Hunter
-Moana|2016|Animation,Adventure,Comedy|7.6|Ron Clements|John Musker|Don Hall
-Sicario|2015|Action,Crime,Drama|7.6|Denis Villeneuve|Emily Blunt|Josh Brolin
-Creed|2015|Drama,Sport|7.6|Ryan Coogler|Michael B. Jordan|Sylvester Stallone
-Leviafan|2014|Crime,Drama|7.6|Andrey Zvyagintsev|Aleksey Serebryakov|Elena Lyadova
-Hell or High Water|2016|Action,Crime,Drama|7.6|David Mackenzie|Chris Pine|Ben Foster
-Philomena|2013|Biography,Comedy,Drama|7.6|Stephen Frears|Judi Dench|Steve Coogan
-Dawn of the Planet of the Apes|2014|Action,Adventure,Drama|7.6|Matt Reeves|Gary Oldman|Keri Russell
-El cuerpo|2012|Mystery,Thriller|7.6|Oriol Paulo|Jose Coronado|Hugo Silva
-Serbuan maut|2011|Action,Thriller|7.6|Gareth Evans|Iko Uwais|Ananda George
-End of Watch|2012|Action,Crime,Drama|7.6|David Ayer|Jake Gyllenhaal|Michael Peña
-Kari-gurashi no Arietti|2010|Animation,Adventure,Family|7.6|Hiromasa Yonebayashi|Amy Poehler|Mirai Shida
-A Star Is Born|2018|Drama,Music,Romance|7.6|Bradley Cooper|Lady Gaga|Bradley Cooper
-True Grit|2010|Drama,Western|7.6|Ethan Coen|Joel Coen|Jeff Bridges
-Hævnen|2010|Drama,Romance|7.6|Susanne Bier|Mikael Persbrandt|Trine Dyrholm
-Despicable Me|2010|Animation,Comedy,Crime|7.6|Pierre Coffin|Chris Renaud|Steve Carell
-50/50|2011|Comedy,Drama,Romance|7.6|Jonathan Levine|Joseph Gordon-Levitt|Seth Rogen
-Kick-Ass|2010|Action,Comedy,Crime|7.6|Matthew Vaughn|Aaron Taylor-Johnson|Nicolas Cage
-Celda 211|2009|Action,Adventure,Crime|7.6|Daniel Monzón|Luis Tosar|Alberto Ammann
-Moneyball|2011|Biography,Drama,Sport|7.6|Bennett Miller|Brad Pitt|Robin Wright
-La piel que habito|2011|Drama,Horror,Thriller|7.6|Pedro Almodóvar|Antonio Banderas|Elena Anaya
-Zombieland|2009|Adventure,Comedy,Fantasy|7.6|Ruben Fleischer|Jesse Eisenberg|Emma Stone
-Die Welle|2008|Drama,Thriller|7.6|Dennis Gansel|Jürgen Vogel|Frederick Lau
-Sherlock Holmes|2009|Action,Adventure,Mystery|7.6|Guy Ritchie|Robert Downey Jr.|Jude Law
-The Blind Side|2009|Biography,Drama,Sport|7.6|John Lee Hancock|Quinton Aaron|Sandra Bullock
-The Visitor|2007|Drama|7.6|Tom McCarthy|Richard Jenkins|Haaz Sleiman
-Seven Pounds|2008|Drama|7.6|Gabriele Muccino|Will Smith|Rosario Dawson
-Eastern Promises|2007|Action,Crime,Drama|7.6|David Cronenberg|Naomi Watts|Viggo Mortensen
-Stardust|2007|Adventure,Family,Fantasy|7.6|Matthew Vaughn|Charlie Cox|Claire Danes
-The Secret of Kells|2009|Animation,Adventure,Family|7.6|Tomm Moore|Nora Twomey|Evan McGuire
-Inside Man|2006|Crime,Drama,Mystery|7.6|Spike Lee|Denzel Washington|Clive Owen
-Gone Baby Gone|2007|Crime,Drama,Mystery|7.6|Ben Affleck|Morgan Freeman|Ed Harris
-La Vie En Rose|2007|Biography,Drama,Music|7.6|Olivier Dahan|Marion Cotillard|Sylvie Testud
-Huo Yuan Jia|2006|Action,Biography,Drama|7.6|Ronny Yu|Jet Li|Li Sun
-The Illusionist|2006|Drama,Fantasy,Mystery|7.6|Neil Burger|Edward Norton|Jessica Biel
-Dead Man's Shoes|2004|Crime,Drama,Thriller|7.6|Shane Meadows|Paddy Considine|Gary Stretch
-Harry Potter and the Half-Blood Prince|2009|Action,Adventure,Family|7.6|David Yates|Daniel Radcliffe|Emma Watson
-300|2006|Action,Drama|7.6|Zack Snyder|Gerard Butler|Lena Headey
-Match Point|2005|Drama,Romance,Thriller|7.6|Woody Allen|Scarlett Johansson|Jonathan Rhys Meyers
-Watchmen|2009|Action,Drama,Mystery|7.6|Zack Snyder|Jackie Earle Haley|Patrick Wilson
-Lord of War|2005|Action,Crime,Drama|7.6|Andrew Niccol|Nicolas Cage|Ethan Hawke
-Saw|2004|Horror,Mystery,Thriller|7.6|James Wan|Cary Elwes|Leigh Whannell
-Synecdoche, New York|2008|Drama|7.6|Charlie Kaufman|Philip Seymour Hoffman|Samantha Morton
-Mysterious Skin|2004|Drama|7.6|Gregg Araki|Brady Corbet|Joseph Gordon-Levitt
-Jeux d'enfants|2003|Comedy,Drama,Romance|7.6|Yann Samuell|Guillaume Canet|Marion Cotillard
-Un long dimanche de fiançailles|2004|Drama,Mystery,Romance|7.6|Jean-Pierre Jeunet|Audrey Tautou|Gaspard Ulliel
-The Station Agent|2003|Comedy,Drama|7.6|Tom McCarthy|Peter Dinklage|Patricia Clarkson
-21 Grams|2003|Crime,Drama,Thriller|7.6|Alejandro G. Iñárritu|Sean Penn|Benicio Del Toro
-Boksuneun naui geot|2002|Crime,Drama,Thriller|7.6|Chan-wook Park|Kang-ho Song|Shin Ha-kyun
-Finding Neverland|2004|Biography,Drama,Family|7.6|Marc Forster|Johnny Depp|Kate Winslet
-25th Hour|2002|Drama|7.6|Spike Lee|Edward Norton|Barry Pepper
-The Butterfly Effect|2004|Drama,Sci-Fi,Thriller|7.6|Eric Bress|J. Mackye Gruber|Ashton Kutcher
-28 Days Later...|2002|Drama,Horror,Sci-Fi|7.6|Danny Boyle|Cillian Murphy|Naomie Harris
-Batoru rowaiaru|2000|Action,Adventure,Drama|7.6|Kinji Fukasaku|Tatsuya Fujiwara|Aki Maeda
-The Royal Tenenbaums|2001|Comedy,Drama|7.6|Wes Anderson|Gene Hackman|Gwyneth Paltrow
-Y tu mamá también|2001|Drama|7.6|Alfonso Cuarón|Maribel Verdú|Gael García Bernal
-Harry Potter and the Sorcerer's Stone|2001|Adventure,Family,Fantasy|7.6|Chris Columbus|Daniel Radcliffe|Rupert Grint
-The Others|2001|Horror,Mystery,Thriller|7.6|Alejandro Amenábar|Nicole Kidman|Christopher Eccleston
-Blow|2001|Biography,Crime,Drama|7.6|Ted Demme|Johnny Depp|Penélope Cruz
-Enemy at the Gates|2001|Drama,History,War|7.6|Jean-Jacques Annaud|Jude Law|Ed Harris
-Minority Report|2002|Action,Crime,Mystery|7.6|Steven Spielberg|Tom Cruise|Colin Farrell
-The Hurricane|1999|Biography,Drama,Sport|7.6|Norman Jewison|Denzel Washington|Vicellous Shannon
-American Psycho|2000|Comedy,Crime,Drama|7.6|Mary Harron|Christian Bale|Justin Theroux
-Lola rennt|1998|Crime,Drama,Thriller|7.6|Tom Tykwer|Franka Potente|Moritz Bleibtreu
-The Thin Red Line|1998|Drama,War|7.6|Terrence Malick|Jim Caviezel|Sean Penn
-Mulan|1998|Animation,Adventure,Family|7.6|Tony Bancroft|Barry Cook|Ming-Na Wen
-Fear and Loathing in Las Vegas|1998|Adventure,Comedy,Drama|7.6|Terry Gilliam|Johnny Depp|Benicio Del Toro
-Funny Games|1997|Crime,Drama,Thriller|7.6|Michael Haneke|Susanne Lothar|Ulrich Mühe
-Dark City|1998|Mystery,Sci-Fi,Thriller|7.6|Alex Proyas|Rufus Sewell|Kiefer Sutherland
-Sleepers|1996|Crime,Drama,Thriller|7.6|Barry Levinson|Robert De Niro|Kevin Bacon
-Lost Highway|1997|Mystery,Thriller|7.6|David Lynch|Bill Pullman|Patricia Arquette
-Sense and Sensibility|1995|Drama,Romance|7.6|Ang Lee|Emma Thompson|Kate Winslet
-Die Hard: With a Vengeance|1995|Action,Adventure,Thriller|7.6|John McTiernan|Bruce Willis|Jeremy Irons
-Dead Man|1995|Adventure,Drama,Fantasy|7.6|Jim Jarmusch|Johnny Depp|Gary Farmer
-The Bridges of Madison County|1995|Drama,Romance|7.6|Clint Eastwood|Clint Eastwood|Meryl Streep
-Apollo 13|PG|Adventure,Drama,History|7.6|Ron Howard|Tom Hanks|Bill Paxton
-Trois couleurs: Blanc|1994|Comedy,Drama,Romance|7.6|Krzysztof Kieslowski|Zbigniew Zamachowski|Julie Delpy
-Falling Down|1993|Action,Crime,Drama|7.6|Joel Schumacher|Michael Douglas|Robert Duvall
-Dazed and Confused|1993|Comedy|7.6|Richard Linklater|Jason London|Wiley Wiggins
-My Cousin Vinny|1992|Comedy,Crime|7.6|Jonathan Lynn|Joe Pesci|Marisa Tomei
-Omohide poro poro|1991|Animation,Drama,Romance|7.6|Isao Takahata|Miki Imai|Toshirô Yanagiba
-Delicatessen|1991|Comedy,Crime|7.6|Marc Caro|Jean-Pierre Jeunet|Marie-Laure Dougnac
-Home Alone|1990|Comedy,Family|7.6|Chris Columbus|Macaulay Culkin|Joe Pesci
-The Godfather: Part III|1990|Crime,Drama|7.6|Francis Ford Coppola|Al Pacino|Diane Keaton
-When Harry Met Sally...|1989|Comedy,Drama,Romance|7.6|Rob Reiner|Billy Crystal|Meg Ryan
-The Little Mermaid|1989|Animation,Family,Fantasy|7.6|Ron Clements|John Musker|Jodi Benson
-The Naked Gun: From the Files of Police Squad!|1988|Comedy,Crime|7.6|David Zucker|Leslie Nielsen|Priscilla Presley
-Planes, Trains & Automobiles|1987|Comedy,Drama|7.6|John Hughes|Steve Martin|John Candy
-Lethal Weapon|1987|Action,Crime,Thriller|7.6|Richard Donner|Mel Gibson|Danny Glover
-Blood Simple|1984|Crime,Drama,Thriller|7.6|Joel Coen|Ethan Coen|John Getz
-On Golden Pond|1981|Drama|7.6|Mark Rydell|Katharine Hepburn|Henry Fonda
-Mad Max 2|1981|Action,Adventure,Sci-Fi|7.6|George Miller|Mel Gibson|Bruce Spence
-The Warriors|1979|Action,Crime,Thriller|7.6|Walter Hill|Michael Beck|James Remar
-The Muppet Movie|1979|Adventure,Comedy,Family|7.6|James Frawley|Jim Henson|Frank Oz
-Escape from Alcatraz|1979|Action,Biography,Crime|7.6|Don Siegel|Clint Eastwood|Patrick McGoohan
-Watership Down|1978|Animation,Adventure,Drama|7.6|Martin Rosen|John Hubley|John Hurt
-Midnight Express|1978|Biography,Crime,Drama|7.6|Alan Parker|Brad Davis|Irene Miracle
-Close Encounters of the Third Kind|1977|Drama,Sci-Fi|7.6|Steven Spielberg|Richard Dreyfuss|François Truffaut
-The Long Goodbye|1973|Comedy,Crime,Drama|7.6|Robert Altman|Elliott Gould|Nina van Pallandt
-Giù la testa|1971|Drama,War,Western|7.6|Sergio Leone|Rod Steiger|James Coburn
-Kelly's Heroes|1970|Adventure,Comedy,War|7.6|Brian G. Hutton|Clint Eastwood|Telly Savalas
-The Jungle Book|1967|Animation,Adventure,Family|7.6|Wolfgang Reitherman|Phil Harris|Sebastian Cabot
-Blowup|1966|Drama,Mystery,Thriller|7.6|Michelangelo Antonioni|David Hemmings|Vanessa Redgrave
-A Hard Day's Night|1964|Comedy,Music,Musical|7.6|Richard Lester|John Lennon|Paul McCartney
-Breakfast at Tiffany's|1961|Comedy,Drama,Romance|7.6|Blake Edwards|Audrey Hepburn|George Peppard
-Giant|1956|Drama,Western|7.6|George Stevens|Elizabeth Taylor|Rock Hudson
-From Here to Eternity|1953|Drama,Romance,War|7.6|Fred Zinnemann|Burt Lancaster|Montgomery Clift
-Lifeboat|1944|Drama,War|7.6|Alfred Hitchcock|Tallulah Bankhead|John Hodiak
-The 39 Steps|1935|Crime,Mystery,Thriller|7.6|Alfred Hitchcock|Robert Donat|Madeleine Carroll
+ufo_txt = '''datetime,city,state,country,shape,duration (seconds),latitude,longitude 
+10/10/1949,san marcos,tx,us,cylinder,2700,29.8830556,-97.9411111
+10/10/1984,white plains,ny,us,formation,20,41.0338889,-73.7633333
+10/10/1998,las vegas,nv,us,circle,2700,36.1750000,-115.1363889
+10/10/2002,philomath,or,us,unknown,5,44.5402778,-123.3663889
+10/10/2005,loretto,pa,us,triangle,300,40.5030556,-78.6305556
+10/10/2007,grove city,pa,us,unknown,3600,41.1577778,-80.0888889
+10/10/2010,harrisburg,pa,us,circle,240,40.2736111,-76.8847222
+10/10/2012,san diego,ca,us,sphere,240,32.7152778,-117.1563889
+10/10/2013,lost creek,wv,us,triangle,45,39.1611111,-80.3522222
+10/11/1999,augusta,ks,us,light,600,37.6866667,-96.9763889
+10/11/2004,salinas,ca,us,formation,2700,36.6777778,-121.6544444
+10/11/2007,tega cay,sc,us,light,1800,35.0241667,-81.0280556
+10/11/2011,omaha,il,us,chevron,120,37.8902778,-88.3030556
+10/11/2013,naples,fl,us,light,7200,26.1416667,-81.795
+10/1/1966,anacortes,wa,us,light,1200,48.5127778,-122.6113889
+10/1/1975,maricopa,az,us,changing,1200,33.0580556,-112.0469444
+10/1/1985,lawrence,ks,us,sphere,300,38.9716667,-95.235
+10/1/1994,new york city,ny,us,disk,15,40.7141667,-74.0063889
+10/1/1998,portland,or,us,light,5,45.5236111,-122.675
+10/1/2000,wheaton,md,us,triangle,300,39.0397222,-77.0555556
+10/1/2002,grants,nm,us,fireball,10,35.1472222,-107.8508333
+10/1/2005,oak forest,il,us,light,3600,41.6027778,-87.7438889
+10/1/2005,west palm beach,fl,us,teardrop,60,26.7052778,-80.0366667
+10/1/2006,winslow,az,us,fireball,15,35.0241667,-110.6966667
+10/1/2007,granville,oh,us,sphere,120,40.0680556,-82.5197222
+10/1/2008,garrett,in,us,triangle,4,41.3494444,-85.1355556
+10/1/2011,clinton,ms,us,circle,300,32.3413889,-90.3216667
+10/1/2013,bel air,md,us,flash,4,39.5358333,-76.3486111
+10/12/1995,pueblo,co,us,triangle,10,38.2544444,-104.6086111
+10/12/2001,phoenix,az,us,formation,120,33.4483333,-112.0733333
+10/12/2004,rocklin,ca,us,triangle,3600,38.7908333,-121.2347222
+10/12/2008,reading,pa,us,diamond,300,40.3355556,-75.9272222
+10/12/2011,waco,tx,us,changing,900,31.5491667,-97.1463889
+10/12/2012,cabin creek,wv,us,unknown,40,38.1958333,-81.4777778
+10/12/2013,sundridge (canada),on,ca,sphere,15,45.766667,-79.4
+10/13/2000,newton,ks,us,fireball,90,38.0466667,-97.3447222
+10/13/2003,pocatello,id,us,oval,10,42.8713889,-112.4447222
+10/13/2005,mesa,az,us,light,90,33.4222222,-111.8219444
+10/13/2008,newburyport,ma,us,light,300,42.8125000,-70.8777778
+10/13/2010,allen,tx,us,unknown,10,33.1030556,-96.6702778
+10/13/2012,lemont,il,us,oval,2400,41.6736111,-88.0016667
+10/13/2013,raymond,oh,us,unknown,600,40.3347222,-83.4658333
+10/14/1999,mead  (near spokane),wa,us,light,3,47.7675000,-117.3538889
+10/14/2002,porterville,ca,us,fireball,60,36.0652778,-119.0158333
+10/14/2005,amarillo,tx,us,sphere,420,35.2219444,-101.8308333
+10/14/2008,valparaiso,in,us,formation,5,41.4730556,-87.0611111
+10/14/2011,scottsdale,az,us,triangle,240,33.5091667,-111.8983333
+10/14/2012,lakewood,nj,us,light,180,40.0977778,-74.2180556
+10/15/1954,blanco,tx,us,other,300,30.0977778,-98.4211111
+10/15/1970,westland,mi,us,unknown,20,42.3241667,-83.4002778
+10/15/1976,eveleth,mn,us,light,900,47.4625000,-92.5397222
+10/15/1983,california valley,ca,us,disk,600,35.3200000,-120.0058333
+10/15/1988,ottawa (canada),on,ca,triangle,2700,45.416667,-75.7
+10/15/1993,portsmouth,nh,us,light,60,43.0716667,-70.7630556
+10/15/1997,dallas,tx,us,light,300,32.7833333,-96.8
+10/15/1998,dallas,tx,us,disk,10,32.7833333,-96.8
+10/15/2000,nassau bay,tx,us,oval,4,29.5444444,-95.0908333
+10/15/2001,moses lake,wa,us,fireball,20,47.1302778,-119.2769444
+10/15/2003,granada hills,ca,us,disk,900,34.2647222,-118.5222222
+10/15/2004,mckenzie bridge,or,us,flash,300,44.1752778,-122.1627778
+10/15/2005,seattle,wa,us,cylinder,90,47.6063889,-122.3308333
+10/15/2007,mission,sd,us,light,600,43.3058333,-100.6577778
+10/15/2009,lancaster,sc,us,flash,3,34.7202778,-80.7711111
+10/15/2011,anson,tx,us,changing,10,32.7563889,-99.8958333
+10/15/2013,boise,id,us,chevron,30,43.6136111,-116.2025
+10/16/1999,houston,tx,us,oval,20,29.7630556,-95.3630556
+10/16/2003,sumner,wa,us,changing,6300,47.2033333,-122.2391667
+10/16/2007,ridgefield,ct,us,sphere,15,41.2813889,-73.4986111
+10/16/2010,salem,or,us,sphere,480,44.9430556,-123.0338889
+10/16/2012,st. paul,va,us,sphere,600,36.9052778,-82.3111111
+10/17/1967,cherokee village,ar,us,circle,2100,36.2977778,-91.5158333
+10/17/2000,tucson,az,us,diamond,600,32.2216667,-110.9258333
+10/17/2004,sterling,il,us,formation,12,41.7886111,-89.6961111
+10/17/2008,santa ana,ca,us,disk,900,33.7455556,-117.8669444
+10/17/2010,phoenix,az,us,light,4,33.4483333,-112.0733333
+10/17/2012,san rafael,ca,us,flash,10,37.9736111,-122.53
+10/18/1990,forest city,nc,us,disk,14400,35.3338889,-81.8652778
+10/18/2003,everett,wa,us,sphere,30,47.9791667,-122.2008333
+10/18/2004,ada,ok,us,triangle,180,34.7744444,-96.6780556
+10/18/2008,dallas,tx,us,light,7,32.7833333,-96.8
+10/18/2012,san diego,ca,us,circle,900,32.7152778,-117.1563889
+10/18/2013,lawrenceville,ga,us,other,180,33.9561111,-83.9880556
+10/19/1999,round rock,tx,us,sphere,300,30.5080556,-97.6786111
+10/19/2005,marlboro,ma,us,circle,1200,42.7166667,-70.9736111
+10/19/2008,hilo,hi,us,sphere,600,19.7297222,-155.09
+10/19/2011,hinsdale,ma,us,fireball,120,42.4386111,-73.1258333
+10/19/2013,murphysboro,il,us,other,600,37.7644444,-89.335
+10/19/2013,jupiter,fl,us,light,300,26.9338889,-80.0944444
+10/20/1994,plant city,fl,us,disk,300,28.0183333,-82.1130556
+10/20/1999,kingston,wa,us,light,3,47.7988889,-122.4969444
+10/20/2003,hampton,fl,us,sphere,15,29.8641667,-82.1311111
+10/20/2005,denver,co,us,cigar,60,39.7391667,-104.9841667
+10/20/2007,rock falls,wi,us,light,900,44.7186111,-91.6897222
+10/20/2009,cincinnati,oh,us,light,10,39.1619444,-84.4569444
+10/20/2011,clermont,fl,us,light,3600,28.5491667,-81.7730556
+10/20/2012,cumberland,md,us,light,1800,39.6527778,-78.7627778
+10/21/1998,campbell,ca,us,other,600,37.2872222,-121.9488889
+10/21/2003,waterford,ny,us,triangle,30,42.7925000,-73.6816667
+10/21/2007,holden,la,us,diamond,1800,30.5041667,-90.6691667
+10/21/2010,otis,or,us,light,1800,45.0244444,-123.9452778
+10/21/2012,morris,il,us,formation,300,41.3572222,-88.4211111
+10/21/2013,two rivers,wi,us,oval,900,44.1538889,-87.5691667
+10/2/2001,latrobe,pa,us,fireball,2,40.3211111,-79.3797222
+10/2/2005,providence,ri,us,changing,300,41.8238889,-71.4133333
+10/2/2008,philadelphia,pa,us,egg,30,39.9522222,-75.1641667
+10/2/2012,yelm,wa,us,light,3600,46.9422222,-122.6047222
+10/2/2013,orrington,me,us,changing,600,44.7311111,-68.8269444
+10/22/2001,verona,wi,us,triangle,7,42.9908333,-89.5330556
+10/22/2005,liverpool,ny,us,unknown,1800,43.1063889,-76.2180556
+10/22/2007,hillsborough,nj,us,triangle,300,40.4775000,-74.6272222
+10/22/2010,pittsburgh,pa,us,sphere,120,40.4405556,-79.9961111
+10/22/2012,cincinnati,oh,us,circle,120,39.1619444,-84.4569444
+10/22/2013,ossipee,nh,us,circle,5,43.6852778,-71.1172222
+10/23/1999,norwood,pa,us,triangle,900,39.8916667,-75.3
+10/23/2004,vista,ca,us,sphere,600,33.2000000,-117.2416667
+10/23/2007,hanford,ca,us,cylinder,240,36.3275000,-119.6447222
+10/23/2010,hockessin,de,us,sphere,900,39.7875000,-75.6969444
+10/23/2011,lambertville,nj,us,disk,120,40.3658333,-74.9433333
+10/23/2013,marlboro,nj,us,triangle,90,40.3152778,-74.2466667
+10/24/1977,winnipeg (canada),mb,ca,triangle,60,49.883333,-97.166667
+10/24/2001,evanston,wy,us,oval,18000,41.2683333,-110.9625
+10/24/2005,surprise,az,us,other,120,33.6305556,-112.3325
+10/24/2008,chesapeake,va,us,triangle,60,36.8188889,-76.2752778
+10/24/2011,port angeles,wa,us,light,300,48.1183333,-123.4294444
+10/24/2012,montreal (canada),qc,ca,changing,3,45.5,-73.583333
+10/24/2013,irving,tx,us,cylinder,240,32.8138889,-96.9486111
+10/25/1998,pell city (33.56&#39 52&quot;n - 86.15&#39 00&quot; w),al,us,sphere,3,33.5861111,-86.2861111
+10/25/2003,trotwood,oh,us,other,120,39.7972222,-84.3113889
+10/25/2007,philadelphia,pa,us,oval,60,39.9522222,-75.1641667
+10/25/2009,the woodlands,tx,us,unknown,45,30.1577778,-95.4891667
+10/25/2011,seattle,wa,us,light,60,47.6063889,-122.3308333
+10/25/2013,waukee,ia,us,circle,420,41.6116667,-93.885
+10/26/1999,melbourne beach,fl,us,triangle,7200,28.0680556,-80.5605556
+10/26/2003,allen,tx,us,unknown,120,33.1030556,-96.6702778
+10/26/2007,duluth,mn,us,oval,1800,46.7833333,-92.1063889
+10/26/2009,collingdale,pa,us,light,2,39.9116667,-75.2775
+10/26/2013,brighton,co,us,formation,240,39.9852778,-104.82
+10/27/1999,tucson,az,us,fireball,10,32.2216667,-110.9258333
+10/27/2004,woodside (queens),ny,us,chevron,3,40.7452778,-73.9058333
+10/27/2008,blossom,tx,us,sphere,1200,33.6613889,-95.3855556
+10/27/2011,tuscaloosa,al,us,circle,60,33.2097222,-87.5691667
+10/27/2013,marstons mills,ma,us,formation,1320,41.6561111,-70.4166667
+10/28/1999,phoenix,az,us,changing,1200,33.4483333,-112.0733333
+10/28/2003,pasadena,md,us,unknown,7200,39.1072222,-76.5713889
+10/28/2006,overland park,ks,us,triangle,6,38.9822222,-94.6705556
+10/28/2008,jackson,tn,us,circle,120,35.6144444,-88.8138889
+10/28/2010,tracy,ca,us,circle,900,37.7397222,-121.4241667
+10/28/2011,red hill,pa,us,unknown,240,40.3727778,-75.4813889
+10/29/1997,glen alpine,nc,us,light,60,35.7288889,-81.7794444
+10/29/2001,rancho cucamonga,ca,us,fireball,540,34.1063889,-117.5922222
+10/29/2005,surprise,az,us,light,60,33.6305556,-112.3325
+10/29/2008,abilene,tx,us,light,900,32.4486111,-99.7327778
+10/29/2010,vicksburg,ms,us,other,15,32.3525000,-90.8777778
+10/29/2012,omaha,ne,us,rectangle,180,41.2586111,-95.9375
+10/30/1996,pittsburgh,pa,us,disk,240,40.4405556,-79.9961111
+10/30/2002,santa barbara,ca,us,triangle,4,34.4208333,-119.6972222
+10/30/2005,porterville,ca,us,sphere,30,36.0652778,-119.0158333
+10/30/2008,pound,va,us,triangle,6,37.1236111,-82.6013889
+10/30/2010,tuttle,ok,us,triangle,1200,35.2908333,-97.8119444
+10/30/2012,atwood,ks,us,light,90,39.8066667,-101.0416667
+10/31/1976,garland,tx,us,other,120,32.9125000,-96.6386111
+10/31/1999,san diego  (spring valley) (20 mi. e of sd airport),ca,us,fireball,45,32.7152778,-117.1563889
+10/31/2000,whitmore lake,mi,us,circle,120,42.4394444,-83.7438889
+10/31/2003,hamilton (canada),on,ca,unknown,300,43.25,-79.833333
+10/31/2004,frankfort,il,us,light,1500,41.4958333,-87.8486111
+10/31/2004,tinley park,il,us,sphere,600,41.5733333,-87.7844444
+10/31/2005,charlottesville,va,us,other,120,38.0291667,-78.4769444
+10/31/2005,orland park,il,us,formation,2,41.6302778,-87.8538889
+10/31/2008,springfield,or,us,fireball,600,44.0463889,-123.0208333
+10/31/2010,pittsburgh,pa,us,fireball,60,40.4405556,-79.9961111
+10/31/2011,monroe,mi,us,fireball,120,41.9163889,-83.3977778
+10/31/2013,arcanum,oh,us,unknown,15,39.9900000,-84.5533333
+10/3/2000,los angeles,ca,us,unknown,60,34.0522222,-118.2427778
+10/3/2004,new york city (brooklyn),ny,us,light,3600,40.7141667,-74.0063889
+10/3/2006,lakewood,ca,us,fireball,240,33.8536111,-118.1330556
+10/3/2009,trenton,nc,us,formation,18,35.0669444,-77.3530556
+10/3/2012,san francisco,ca,us,circle,120,37.7750000,-122.4183333
+10/3/2013,diamond springs,ca,us,circle,600,38.6947222,-120.8138889
+10/4/2000,richwood,tx,us,fireball,20,29.0558333,-95.4097222
+10/4/2005,chanute,ks,us,light,120,37.6791667,-95.4569444
+10/4/2007,boyne falls,mi,us,triangle,8,45.1680556,-84.9161111
+10/4/2012,roanoke,va,us,cylinder,30,37.2708333,-79.9416667
+10/4/2013,fairbanks,ak,us,fireball,180,64.8377778,-147.7163889
+10/5/1999,chesapeake,va,us,other,30,36.8188889,-76.2752778
+10/5/2003,wapakoneta,oh,us,light,1200,40.5677778,-84.1936111
+10/5/2007,selah,wa,us,oval,120,46.6541667,-120.5288889
+10/5/2010,livingston,tx,us,light,60,30.7108333,-94.9327778
+10/5/2012,tulsa,ok,us,formation,120,36.1538889,-95.9925
+10/5/2013,spokane,wa,us,sphere,300,47.6588889,-117.425
+10/6/2001,park forest,il,us,triangle,15,41.4913889,-87.6744444
+10/6/2004,oakland,ca,us,other,240,37.8044444,-122.2697222
+10/6/2007,boonville,in,us,light,1800,38.0491667,-87.2741667
+10/6/2010,lexington,ky,us,other,30,37.9886111,-84.4777778
+10/6/2012,ocean beach,ca,us,disk,120,32.7444444,-117.2611111
+10/6/2013,ashford,ct,us,fireball,900,41.8730556,-72.1219444
+10/7/2001,kennett,mo,us,triangle,3,36.2361111,-90.0555556
+10/7/2004,chandler,az,us,light,600,33.3061111,-111.8405556
+10/7/2008,ronkonkoma,ny,us,egg,5400,40.8152778,-73.1127778
+10/7/2011,topsail beach,nc,us,circle,180,34.3650000,-77.6308333
+10/8/1987,wytheville,va,us,light,720,36.9483333,-81.085
+10/8/2003,rising sun,md,us,other,600,39.6977778,-76.0630556
+10/8/2006,grosse pointe woods,mi,us,light,5400,42.4436111,-82.9069444
+10/8/2009,gila bend,az,us,formation,600,32.9477778,-112.7161111
+10/8/2011,binghamton,ny,us,unknown,900,42.0986111,-75.9183333
+10/8/2013,burlington,vt,us,light,30,44.4758333,-73.2125
+10/9/1998,pikeville (farmingdale drive),nc,us,disk,60,35.4969444,-77.9822222
+10/9/2004,lancaster,sc,us,rectangle,1800,34.7202778,-80.7711111
+10/9/2008,santa maria,ca,us,other,15,34.9530556,-120.4347222
+10/9/2010,san angelo,tx,us,fireball,5,31.4636111,-100.4366667
+10/9/2011,new bedford,ma,us,fireball,1680,41.6361111,-70.9347222
+10/9/2013,tempe,az,us,unknown,600,33.4147222,-111.9086111
+1/10/1987,el centro (approaching from west),ca,us,sphere,300,32.7919444,-115.5622222
+1/10/2001,bellingham,wa,us,triangle,180,48.7597222,-122.4869444
+1/10/2005,savannah,ga,us,sphere,15,32.0833333,-81.1
+1/10/2008,clearwater beach,fl,us,other,10,27.9769444,-82.8280556
+1/10/2010,butler,mo,us,chevron,120,38.2538000,-94.3356
+1/10/2013,milford,ma,us,triangle,60,42.1397222,-71.5166667
+11/10/1995,brownsville,tx,us,circle,600,25.9013889,-97.4972222
+11/10/2002,ivesdale,il,us,light,30,39.9433333,-88.4552778
+11/10/2005,eastpointe,mi,us,teardrop,30,42.4683333,-82.9555556
+11/10/2008,oakland,tn,us,fireball,15,35.2288889,-89.515
+11/10/2011,stockbridge,ga,us,formation,600,33.5441667,-84.2338889
+11/10/2012,moncton (canada),nb,ca,circle,300,46.083333,-64.766667
+11/10/2013,irving,tx,us,fireball,40,32.8138889,-96.9486111
+11/11/1999,el centro (50 miles west of&#44 on hwy 8),ca,us,cigar,120,32.7919444,-115.5622222
+11/11/2003,brandon,fl,us,disk,900,27.9375000,-82.2861111
+11/11/2006,redwood city,ca,us,light,15,37.4852778,-122.2352778
+11/11/2010,wallkill,ny,us,other,240,41.6055556,-74.1844444
+11/11/2012,leesburg,va,us,cylinder,30,39.1155556,-77.5638889
+11/1/1962,valparaiso,fl,us,cigar,300,30.5083333,-86.5027778
+11/1/1984,honey grove,tx,us,disk,300,33.5833333,-95.9097222
+11/1/1996,federal way,wa,us,circle,2,47.3225000,-122.3113889
+11/1/1999,san diego,ca,us,egg,600,32.7152778,-117.1563889
+11/1/2001,huntington,wv,us,unknown,60,38.4191667,-82.4452778
+1/11/2001,rockford,il,us,light,600,42.2711111,-89.0938889
+11/1/2002,williamsburg,va,us,chevron,10,37.2705556,-76.7077778
+1/11/2004,stony point,ny,us,light,300,41.2294444,-73.9875
+11/1/2006,galveston,tx,us,cigar,2,29.3011111,-94.7975
+11/1/2007,mars hill,nc,us,circle,2,35.8263889,-82.5494444
+1/11/2009,dover,de,us,circle,2700,39.1580556,-75.5247222
+11/1/2010,marietta,ga,us,chevron,30,33.9525000,-84.55
+11/1/2011,washingtonville,ny,us,triangle,300,41.4277778,-74.1663889
+11/1/2012,omaha,ne,us,rectangle,300,41.2586111,-95.9375
+11/1/2013,lake elsinore,ca,us,sphere,600,33.6680556,-117.3263889
+1/11/2014,new york city (queens),ny,us,light,60,40.7141667,-74.0063889
+11/12/2000,orlando,fl,us,circle,5,28.5380556,-81.3794444
+11/12/2004,memphis,tn,us,triangle,30,35.1494444,-90.0488889
+11/12/2008,quail valley,ca,us,circle,600,33.7069444,-117.2441667
+11/12/2010,san francisco,ca,us,other,20,37.7750000,-122.4183333
+11/12/2012,lancaster,pa,us,changing,120,40.0377778,-76.3058333
+11/13/1974,new orleans,la,us,disk,25,29.9544444,-90.075
+11/13/2002,chillicothe,oh,us,other,60,39.3330556,-82.9825
+11/13/2006,charlotte,nc,us,circle,300,35.2269444,-80.8433333
+11/13/2009,celina,tx,us,circle,180,33.3244444,-96.7841667
+11/13/2011,crandall,tx,us,disk,30,32.6277778,-96.4555556
+11/13/2013,wadsworth,oh,us,cigar,7200,41.0255556,-81.73
+11/14/1996,corvallis,mt,us,sphere,3,46.3141667,-114.1119444
+11/14/1997,olympia,wa,us,fireball,30,47.0380556,-122.8994444
+11/14/2002,kennesaw,ga,us,sphere,60,34.0233333,-84.6155556
+11/14/2005,mandeville,la,us,fireball,10,30.3580556,-90.0655556
+11/14/2009,rockingham,nc,us,triangle,10,34.9391667,-79.7741667
+11/14/2012,lake ronkonkoma,ny,us,sphere,60,40.8350000,-73.1316667
+11/14/2013,north conway,nh,us,formation,10,44.0536111,-71.1288889
+11/15/1974,cordova,ak,us,disk,18000,60.5427778,-145.7575
+11/15/1986,girdwood,ak,us,sphere,120,60.9425000,-149.1663889
+11/15/1994,mountain city,tn,us,triangle,1200,36.4744444,-81.805
+11/15/1998,cranston,ri,us,light,5,41.7797222,-71.4377778
+11/15/2001,boyne city,mi,us,diamond,1800,45.2166667,-85.0138889
+11/15/2003,athens,al,us,triangle,15,34.8027778,-86.9716667
+11/15/2005,phoenix,az,us,circle,420,33.4483333,-112.0733333
+11/15/2007,hurst,tx,us,circle,12,32.8233333,-97.1702778
+11/15/2010,lakewood,wa,us,changing,1200,47.1719444,-122.5172222
+11/15/2012,coral springs,fl,us,light,120,26.2708333,-80.2708333
+11/15/2013,ocala,fl,us,diamond,300,29.1869444,-82.1402778
+11/16/1999,griffith,in,us,flash,120,41.5283333,-87.4236111
+11/16/1999,cookeville,tn,us,oval,20,36.1627778,-85.5016667
+11/16/1999,chillicothe,oh,us,light,30,39.3330556,-82.9825
+11/16/1999,springfield,oh,us,fireball,60,39.9241667,-83.8088889
+11/16/1999,columbus,oh,us,light,120,39.9611111,-82.9988889
+11/16/1999,burlingame,ca,us,other,1,37.5841667,-122.365
+11/16/2003,wentzville,mo,us,light,3,38.8113889,-90.8527778
+11/16/2006,panama city,fl,us,light,40,30.1586111,-85.6602778
+11/16/2009,ventura,ca,us,formation,7,34.2783333,-119.2922222
+11/16/2012,brainard (6 mi. e of; on hwy. 92),ne,us,unknown,300,41.1838889,-97.0036111
+11/16/2013,jamestown,ri,us,fireball,480,41.4969444,-71.3677778
+11/17/1997,clearwater beach,fl,us,oval,3600,27.9769444,-82.8280556
+11/17/1999,sumrall,ms,us,unknown,120,31.4172222,-89.5422222
+11/17/2004,salinas,ca,us,circle,60,36.6777778,-121.6544444
+11/17/2008,alvin,tx,us,other,10,29.4236111,-95.2438889
+11/17/2009,salt lake city,ut,us,unknown,1,40.7608333,-111.8902778
+11/17/2011,houston,tx,us,other,10,29.7630556,-95.3630556
+11/17/2012,phoenix,az,us,light,60,33.4483333,-112.0733333
+11/18/1998,gainesville,fl,us,triangle,90,29.6513889,-82.325
+11/18/2001,kahului,hi,us,disk,7200,20.8947222,-156.47
+11/18/2001,miami beach,fl,us,sphere,10,25.7902778,-80.1302778
+11/18/2004,mendham,nj,us,light,1200,40.7758333,-74.6011111
+11/18/2007,sudbury (canada),on,ca,circle,300,46.5,-80.966667
+11/18/2010,olivehurst,ca,us,formation,420,39.0955556,-121.5511111
+11/18/2012,russell springs,ky,us,fireball,600,37.0561111,-85.0886111
+11/19/1988,sunnyvale,ca,us,other,3600,37.3688889,-122.0352778
+11/19/2002,stover,mo,us,circle,14400,38.4408333,-92.9916667
+11/19/2003,chicago (west suburbs),il,us,light,300,41.8500000,-87.65
+11/19/2006,center valley,pa,us,disk,60,40.5291667,-75.3936111
+11/19/2009,sidney,tx,us,light,3,31.9491667,-98.7369444
+11/19/2012,houlton,me,us,teardrop,1800,46.1261111,-67.8408333
+11/19/2013,laguna niguel,ca,us,rectangle,600,33.5225000,-117.7066667
+1/1/1974,kent,wa,us,cigar,300,47.3811111,-122.2336111
+1/1/1995,travelers rest,sc,us,triangle,8,34.9675000,-82.4436111
+1/1/2000,gurnee,il,us,light,60.3,42.3702778,-87.9019444
+1/1/2003,burbank,ca,us,triangle,300,34.1808333,-118.3080556
+1/1/2005,brentwood,ca,us,rectangle,600,37.9319444,-121.6947222
+1/1/2007,lake station,in,us,light,300,41.5750000,-87.2388889
+1/1/2008,jacksonville,fl,us,fireball,600,30.3319444,-81.6558333
+1/1/2009,markle,in,us,circle,120,40.8291667,-85.3355556
+1/1/2010,walworth,wi,us,sphere,420,42.5311111,-88.5994444
+1/1/2011,miami,fl,us,other,600,25.7738889,-80.1938889
+1/1/2012,port charlotte,fl,us,changing,900,26.9758333,-82.0908333
+1/1/2012,lynchburg,va,us,light,420,37.4136111,-79.1425
+1/1/2013,bristol,pa,us,oval,420,40.1005556,-74.8522222
+1/1/2013,jacksonville beach,fl,us,disk,900,30.2944444,-81.3933333
+1/1/2014,trussville,al,us,light,300,33.6197222,-86.6088889
+1/1/2014,spanish fork,ut,us,unknown,900,40.1150000,-111.6541667
+1/1/2014,gilroy,ca,us,formation,300,37.0058333,-121.5672222
+11/20/1987,uvalde,tx,us,circle,3,29.2094444,-99.7858333
+11/20/1999,sudbury (canada),on,ca,cylinder,90,46.5,-80.966667
+11/20/2003,riverside,ca,us,circle,15,33.9533333,-117.3952778
+11/20/2006,peabody,ma,us,circle,60,42.5277778,-70.9291667
+11/20/2009,leavenworth,ks,us,sphere,60,39.3111111,-94.9222222
+11/20/2013,fresno,ca,us,light,180,36.7477778,-119.7713889
+11/21/1995,washburn,nd,us,triangle,20,47.2891667,-101.0286111
+11/21/2003,mesa,az,us,egg,2,33.4222222,-111.8219444
+11/21/2007,denton,tx,us,circle,60,33.2147222,-97.1327778
+11/21/2010,albuquerque,nm,us,other,360,35.0844444,-106.6505556
+11/21/2012,lake jackson,tx,us,circle,900,29.0336111,-95.4341667
+11/2/1997,lyons,co,us,unknown,240,40.2247222,-105.2708333
+1/12/2001,covington,va,us,circle,180,37.7933333,-79.9941667
+11/2/2003,dallas,tx,us,flash,3,32.7833333,-96.8
+1/12/2005,lancaster,ca,us,triangle,1200,34.6980556,-118.1358333
+1/12/2007,meriden,ct,us,circle,20,41.5380556,-72.8075
+11/2/2008,gregory,sd,us,sphere,600,43.2322222,-99.43
+11/2/2009,madison,oh,us,triangle,1800,41.7711111,-81.05
+1/12/2011,winter springs,fl,us,rectangle,1200,28.6986111,-81.3083333
+1/12/2012,rosemount,mn,us,triangle,60,44.7394444,-93.1255556
+1/12/2013,clayton,ga,us,oval,300,34.8780556,-83.4011111
+1/12/2014,marion,sc,us,disk,180,34.1780556,-79.4008333
+11/22/2000,delta (canada),bc,ca,cigar,120,50.183333,-98.316667
+11/22/2003,airdrie (canada),ab,ca,unknown,1200,51.266667,-114.016667
+11/22/2006,price,ut,us,teardrop,1800,39.5994444,-110.81
+11/22/2010,topeka,ks,us,fireball,3,39.0483333,-95.6777778
+11/22/2012,medford,or,us,diamond,240,42.3266667,-122.8744444
+11/22/2013,anacortes,wa,us,light,600,48.5127778,-122.6113889
+11/23/1998,sycamore,il,us,triangle,5,41.9888889,-88.6866667
+11/23/2002,swaledale,ia,us,circle,300,42.9786111,-93.3166667
+11/23/2005,bertram,tx,us,light,120,30.7436111,-98.0552778
+11/23/2008,summerville,sc,us,light,900,33.0183333,-80.1758333
+11/23/2012,brockton,ma,us,sphere,2,42.0833333,-71.0188889
+11/24/1984,columbus,wi,us,cigar,10,43.3380556,-89.0152778
+11/24/2002,santa fe,nm,us,chevron,10,35.6869444,-105.9372222
+11/24/2006,wakeeney (near; trego county) (e on interstate 70),ks,us,other,6,39.0250000,-99.8791667
+11/24/2009,canoga park,ca,us,other,40,34.2011111,-118.5972222
+11/24/2012,salt lake city,ut,us,light,1200,40.7608333,-111.8902778
+11/24/2013,greenville,nc,us,light,60,35.6125000,-77.3666667
+11/25/2000,camarillo,ca,us,light,10,34.2163889,-119.0366667
+11/25/2005,bloomington,in,us,cone,10800,39.1652778,-86.5263889
+11/25/2009,chinle,az,us,other,420,36.1544444,-109.5519444
+11/25/2012,las vegas,nv,us,unknown,3,36.1750000,-115.1363889
+11/26/1976,houston,tx,us,circle,900,29.7630556,-95.3630556
+11/26/2003,the dalles,or,us,light,10,45.5947222,-121.1775
+11/26/2006,olympia,wa,us,light,3,47.0380556,-122.8994444
+11/26/2009,mesa,az,us,fireball,120,33.4222222,-111.8219444
+11/26/2013,amber,ok,us,disk,3600,35.1602778,-97.8788889
+11/27/1998,standale,mi,us,triangle,5,42.9725000,-85.7763889
+11/27/2003,ridgefield,wa,us,unknown,60,45.8152778,-122.7413889
+11/27/2006,ocklawaha,fl,us,changing,900,29.0425000,-81.9294444
+11/27/2010,tuttle,ok,us,teardrop,5,35.2908333,-97.8119444
+11/27/2013,phoenix,az,us,triangle,30,33.4483333,-112.0733333
+11/28/2001,redwood city,ca,us,light,15,37.4852778,-122.2352778
+11/28/2003,bismarck,nd,us,other,1200,46.8083333,-100.7833333
+11/28/2006,franklin,nc,us,light,3,35.1822222,-83.3816667
+11/28/2007,boiling springs,pa,us,triangle,180,40.1497222,-77.1286111
+11/28/2010,monroe,ct,us,other,180,41.3325000,-73.2077778
+11/28/2013,polk city,fl,us,sphere,10,28.1822222,-81.8241667
+11/28/2013,sobieski,wi,us,fireball,120,44.7208333,-88.0719444
+11/29/2001,golden,co,us,light,3,39.7555556,-105.2205556
+11/29/2005,grove hill,al,us,triangle,5,31.7086111,-87.7772222
+11/29/2011,glendora,ca,us,circle,2700,34.1361111,-117.8644444
+11/29/2013,shelby,oh,us,formation,60,40.8813889,-82.6619444
+11/30/1999,jackson (west of),mi,us,fireball,3,42.2458333,-84.4013889
+11/30/2003,st. louis,mo,us,unknown,600,38.6272222,-90.1977778
+11/30/2007,heath,oh,us,unknown,900,40.0227778,-82.4447222
+11/30/2012,union city,ca,us,light,600,37.5958333,-122.0180556
+11/30/2013,kearneysville,wv,us,fireball,300,39.3880556,-77.8858333
+11/3/2000,bend,or,us,circle,300,44.0583333,-121.3141667
+11/3/2003,everett,wa,us,circle,300,47.9791667,-122.2008333
+1/13/2005,milwaukee,wi,us,formation,20,43.0388889,-87.9063889
+11/3/2005,concord,ca,us,flash,2,37.9780556,-122.03
+11/3/2007,corona,ca,us,other,120,33.8752778,-117.5655556
+11/3/2009,laurel,md,us,sphere,20,39.0991667,-76.8486111
+11/3/2010,albany,ny,us,light,10800,42.6525000,-73.7566667
+11/3/2012,denton,tx,us,disk,7200,33.2147222,-97.1327778
+11/3/2012,florissant,mo,us,sphere,120,38.7891667,-90.3225
+1/13/2013,candler,nc,us,triangle,900,35.5363889,-82.6930556
+1/14/1991,derry,nh,us,disk,120,42.8805556,-71.3277778
+11/4/2001,dublin,oh,us,cigar,625,40.0991667,-83.1141667
+1/14/2003,grandview,mo,us,oval,300,38.8858333,-94.5327778
+1/14/2006,mendenhall,ms,us,diamond,180,31.9616667,-89.87
+1/14/2007,walnut creek,ca,us,unknown,180,37.9063889,-122.0638889
+1/14/2009,argyle,tx,us,disk,360,33.1211111,-97.1830556
+11/4/2010,reno,nv,us,formation,2,39.5297222,-119.8127778
+1/14/2012,fort mill,sc,us,light,480,35.0072222,-80.9452778
+1/14/2013,scottsdale,az,us,fireball,3600,33.5091667,-111.8983333
+1/14/2014,west kelowna (canada),bc,ca,other,900,49.9,-119.483333
+1/15/1981,davenport,ia,us,cigar,1260,41.5236111,-90.5775
+1/15/1997,columbia,sc,us,light,4,34.0005556,-81.035
+11/5/1999,springfield (14 mi. s of&#44 near highlandville),mo,us,fireball,240,37.2152778,-93.2980556
+1/15/2002,st. albert (canada),ab,ca,light,120,53.633333,-113.633333
+11/5/2003,alexandria,va,us,unknown,2,38.8047222,-77.0472222
+11/5/2004,grand prairie,tx,us,unknown,3600,32.7458333,-96.9975
+11/5/2005,laramie,wy,us,light,2,41.3113889,-105.5905556
+11/5/2007,kansas city,ks,us,circle,60,39.1141667,-94.6272222
+1/15/2008,dixon,il,us,unknown,30,41.8388889,-89.4794444
+11/5/2009,grapevine,tx,us,light,300,32.9341667,-97.0777778
+11/5/2010,jackson,ca,us,oval,30,38.3488889,-120.7730556
+11/5/2012,kenilworth,nj,us,unknown,600,40.6763889,-74.2911111
+11/5/2012,del mar,ca,us,triangle,10,32.9594444,-117.2644444
+11/5/2013,mayflower,ar,us,triangle,1300,34.9569444,-92.4272222
+11/6/1989,kingman (north of&#44 mt. tipton area),az,us,sphere,60,35.1894444,-114.0522222
+1/16/2001,kent,wa,us,light,3600,47.3811111,-122.2336111
+1/16/2003,escondido,ca,us,cone,600,33.1191667,-117.0855556
+11/6/2005,ellsinore,mo,us,fireball,20,36.9341667,-90.7466667
+1/16/2007,burbank,ca,us,disk,4,34.1808333,-118.3080556
+1/16/2008,denver,in,us,triangle,2700,40.8661111,-86.0775
+1/16/2010,corona,ca,us,triangle,300,33.8752778,-117.5655556
+1/16/2011,new york,ny,us,light,300,40.7141667,-74.0063889
+1/16/2012,surrey (canada),bc,ca,cylinder,30,49.136353351,-122.821343315
+1/16/2014,cary,nc,us,triangle,600,35.7913889,-78.7813889
+11/7/1999,northbrook,il,us,diamond,300,42.1275000,-87.8288889
+1/17/2002,indianola,ia,us,light,5,41.3580556,-93.5572222
+1/17/2003,panorama city,ca,us,circle,900,34.2247222,-118.4488889
+11/7/2005,bastrop,tx,us,light,900,30.1102778,-97.315
+11/7/2006,aurora,il,us,unknown,30,41.7605556,-88.32
+1/17/2008,st. catharines (canada),on,ca,sphere,600,43.166667,-79.233333
+11/7/2009,reno,nv,us,cylinder,2,39.5297222,-119.8127778
+1/17/2011,coeur d&#39alene,id,us,circle,25,47.6777778,-116.7794444
+11/7/2012,orlando,fl,us,light,5,28.5380556,-81.3794444
+11/7/2013,longmont,co,us,sphere,10,40.1672222,-105.1013889
+11/8/1997,saugus,ca,us,other,1800,34.4113889,-118.5391667
+11/8/2001,barrington,il,us,oval,300,42.1538889,-88.1361111
+11/8/2003,west bloomfield,mi,us,fireball,6,42.5377778,-83.2330556
+11/8/2003,portland,me,us,other,4,43.6613889,-70.2558333
+11/8/2005,enterprise,al,us,light,10,31.3150000,-85.8552778
+11/8/2006,new braunfels,tx,us,fireball,10,29.7027778,-98.1241667
+1/18/2008,new hampton,ny,us,circle,1200,41.4108333,-74.4075
+1/18/2009,fremont,ca,us,fireball,3,37.5483333,-121.9875
+1/18/2010,whitehall,mt,us,sphere,2,45.8708333,-112.0966667
+11/8/2012,mckinleyville,ca,us,circle,300,40.9466667,-124.0994444
+1/18/2012,ceres,ca,us,fireball,180,37.5950000,-120.9566667
+11/8/2013,tomball,tx,us,triangle,1080,30.0969444,-95.6158333
+1/18/2014,lake havasu city,az,us,fireball,300,34.4838889,-114.3216667
+11/9/1999,cave spring,ga,us,disk,180,34.1075000,-85.3363889
+11/9/2002,tempe,az,us,sphere,4,33.4147222,-111.9086111
+11/9/2005,newborn,ga,us,triangle,600,33.5169444,-83.6961111
+11/9/2007,destin,fl,us,rectangle,180,30.3933333,-86.4958333
+11/9/2008,mcdonough,ga,us,other,2,33.4472222,-84.1469444
+11/9/2010,lexington,ky,us,unknown,180,37.9886111,-84.4777778
+11/9/2012,kutztown,pa,us,unknown,40,40.5172222,-75.7777778
+11/9/2012,ketchikan,ak,us,light,7200,55.3422222,-131.6461111
+11/9/2013,ralston,ne,us,chevron,10,41.2052778,-96.0422222
+1/20/1969,lake wales,fl,us,disk,300,27.9011111,-81.5861111
+1/20/2001,poughquag,ny,us,circle,300,41.6088889,-73.6822222
+1/20/2007,elizabeth,wv,us,circle,420,39.0633333,-81.3952778
+1/20/2008,oak lawn,il,us,oval,20,41.7108333,-87.7580556
+1/20/2012,tonawanda,ny,us,other,600,43.0202778,-78.8805556
+1/20/2014,morganton,nc,us,circle,300,35.7452778,-81.685
+12/10/1999,sherman oaks,ca,us,other,300,34.1511111,-118.4483333
+12/10/2004,adrian,mi,us,triangle,120,41.8975000,-84.0372222
+12/10/2007,smyrna,ga,us,other,1200,33.8838889,-84.5144444
+12/10/2008,edwardsville,il,us,oval,2,38.8113889,-89.9530556
+12/10/2012,omaha,ne,us,sphere,900,41.2586111,-95.9375
+12/10/2013,fairbanks,ak,us,unknown,14,64.8377778,-147.7163889
+12/11/2004,coconut creek,fl,us,diamond,300,26.2513889,-80.1791667
+12/11/2007,madison,al,us,circle,540,34.6991667,-86.7483333
+12/11/2011,avalon,ca,us,light,10,33.3427778,-118.3269444
+12/11/2013,powell,wy,us,chevron,10,44.7538889,-108.7566667
+12/1/1989,grand canyon (north rim),az,us,formation,1800,36.0544444,-112.1386111
+12/1/2000,kilauea,hi,us,fireball,10,22.2119444,-159.4122222
+12/1/2001,sneads ferry,nc,us,disk,86400,34.5525000,-77.3975
+12/1/2002,warren,or,us,sphere,900,45.8191667,-122.8477778
+12/1/2003,baltimore,md,us,chevron,2,39.2902778,-76.6125
+1/21/2005,sentinel,az,us,teardrop,300,32.8580556,-113.2125
+12/1/2007,tupper lake,ny,us,circle,30,44.1669444,-74.5383333
+12/1/2009,woodbridge,nj,us,rectangle,420,40.5575000,-74.285
+12/1/2010,carterville,il,us,triangle,180,37.7600000,-89.0772222
+12/1/2011,manassas,va,us,formation,180,38.7508333,-77.4755556
+12/1/2013,lake ariel,pa,us,fireball,60,41.4538889,-75.3830556
+12/12/1973,kirkland,wa,us,triangle,180,47.6816667,-122.2075
+12/12/2004,phoenix,az,us,sphere,120,33.4483333,-112.0733333
+12/12/2007,charlotte,nc,us,changing,600,35.2269444,-80.8433333
+12/12/2009,daly city,ca,us,triangle,1800,37.7058333,-122.4608333
+12/12/2012,nashua,nh,us,sphere,120,42.7652778,-71.4680556
+12/12/2013,grovetown,ga,us,light,1200,33.4502778,-82.1983333
+12/13/2002,centreville,va,us,teardrop,120,38.8402778,-77.4291667
+12/13/2005,harrisburg,pa,us,formation,900,40.2736111,-76.8847222
+12/13/2008,new hope,mn,us,diamond,900,45.0380556,-93.3863889
+12/13/2012,abington,pa,us,triangle,90,40.1205556,-75.1183333
+12/13/2013,princeton,wv,us,circle,180,37.3661111,-81.1027778
+12/14/1991,tell city,in,us,circle,30,37.9513889,-86.7677778
+12/14/2003,rocklin,ca,us,circle,1,38.7908333,-121.2347222
+12/14/2007,kingsland,ga,us,triangle,900,30.7997222,-81.69
+12/14/2011,rocklin,ca,us,formation,30,38.7908333,-121.2347222
+12/14/2013,phoenix,az,us,fireball,5,33.4483333,-112.0733333
+12/15/1993,laguna beach,ca,us,oval,45,33.5422222,-117.7822222
+12/15/1998,oroville,ca,us,light,1200,39.5138889,-121.5552778
+12/15/2002,hazelton (17 km north) (canada),bc,ca,light,240,55.25,-127.666667
+12/15/2004,charleston,mo,us,unknown,600,36.9208333,-89.3505556
+12/15/2007,newark,de,us,circle,900,39.6836111,-75.75
+12/15/2011,st. petersburg,fl,us,other,3,27.7705556,-82.6794444
+12/15/2013,escondido,ca,us,sphere,180,33.1191667,-117.0855556
+12/16/2002,coral springs,fl,us,oval,180,26.2708333,-80.2708333
+12/16/2006,port huron,mi,us,sphere,600,42.9708333,-82.425
+12/16/2008,chino,ca,us,fireball,240,34.0122222,-117.6880556
+12/16/2012,haleiwa,hi,us,oval,3,21.5902778,-158.1125
+12/17/1997,burlington,vt,us,diamond,180,44.4758333,-73.2125
+12/17/2003,austell,ga,us,light,2700,33.8125000,-84.6344444
+12/17/2010,rio rico,az,us,circle,720,31.4713889,-110.9758333
+12/17/2012,delray beach,fl,us,fireball,300,26.4611111,-80.0730556
+12/18/2000,spokane,wa,us,light,7200,47.6588889,-117.425
+12/18/2005,warwick,ri,us,triangle,360,41.7000000,-71.4166667
+12/18/2008,pompano beach,fl,us,cylinder,1,26.2375000,-80.125
+12/18/2012,attalla,al,us,light,30,34.0216667,-86.0886111
+12/19/1999,santa fe,nm,us,circle,10,35.6869444,-105.9372222
+12/19/2005,lockport,il,us,circle,660,41.5894444,-88.0577778
+12/19/2011,billings,mt,us,light,7,45.7833333,-108.5
+12/19/2013,santa paula,ca,us,light,1800,34.3541667,-119.0583333
+1/2/2002,fort mcmurray (canada),ab,ca,cone,7200,56.733333,-111.383333
+1/2/2007,chicago,il,us,formation,120,41.8500000,-87.65
+1/2/2009,ballinger,tx,us,other,5400,31.7380556,-99.9469444
+1/2/2012,san francisco,ca,us,unknown,75,37.7750000,-122.4183333
+12/20/1970,meriden,ct,us,unknown,600,41.5380556,-72.8075
+12/20/2000,monroe,ct,us,triangle,300,41.3325000,-73.2077778
+12/20/2006,corydon,in,us,light,20,38.2119444,-86.1219444
+12/20/2010,newark,nj,us,light,600,40.7355556,-74.1727778
+12/20/2012,yelm,wa,us,oval,420,46.9422222,-122.6047222
+12/21/2001,bellevue,ne,us,sphere,180,41.1366667,-95.8905556
+12/21/2006,maricopa,az,us,light,600,33.0580556,-112.0469444
+12/21/2012,webster,tx,us,changing,5400,29.5375000,-95.1180556
+12/21/2013,burbank,ca,us,light,300,34.1808333,-118.3080556
+12/2/2001,springfield,oh,us,light,5,39.9241667,-83.8088889
+1/22/2003,salisbury,md,us,light,10,38.3605556,-75.5997222
+12/2/2005,lexington,ky,us,circle,60,37.9886111,-84.4777778
+12/2/2008,borrego springs,ca,us,disk,60,33.2558333,-116.3741667
+1/22/2009,las vegas,nv,us,diamond,30,36.1750000,-115.1363889
+12/2/2011,redding,ca,us,light,10,40.5866667,-122.3905556
+1/22/2013,arlington,tx,us,triangle,240,32.7355556,-97.1077778
+12/22/1965,houston (west of),tx,us,formation,180,29.7630556,-95.3630556
+12/22/2003,pahoa,hi,us,circle,240,19.4975000,-154.9508333
+12/22/2008,hammonton,nj,us,triangle,300,39.6363889,-74.8027778
+12/22/2012,sanbornton,nh,us,triangle,600,43.4891667,-71.5827778
+12/23/1987,ocala,fl,us,triangle,120,29.1869444,-82.1402778
+12/23/2003,gasport,ny,us,light,10800,43.1991667,-78.5763889
+12/23/2006,ventura,ca,us,light,3,34.2783333,-119.2922222
+12/23/2010,manteno,il,us,egg,300,41.2505556,-87.8313889
+12/23/2012,venice,fl,us,fireball,300,27.0994444,-82.4544444
+12/24/1972,colorado springs,co,us,disk,120,38.8338889,-104.8208333
+12/24/2001,las vegas,nv,us,rectangle,120,36.1750000,-115.1363889
+12/24/2005,plantation,fl,us,fireball,90,26.1272222,-80.2333333
+12/24/2008,rochester,ny,us,other,120,43.1547222,-77.6158333
+12/24/2011,clarks green,pa,us,unknown,120,41.4927778,-75.7
+12/24/2012,lake barrington,il,us,triangle,480,42.2125000,-88.1525
+12/24/2013,bethel park,pa,us,circle,180,40.3275000,-80.0397222
+12/24/2013,rapid city,sd,us,cylinder,2400,44.0805556,-103.2305556
+12/25/2000,miami,fl,us,egg,600,25.7738889,-80.1938889
+12/25/2004,saskatoon (canada),sk,ca,triangle,600,52.133333,-106.666667
+12/25/2008,south burlington,vt,us,light,1800,44.4669444,-73.1713889
+12/25/2011,cedar rapids,ia,us,fireball,50,42.0083333,-91.6438889
+12/25/2012,landover,md,us,light,25,38.9338889,-76.8969444
+12/25/2013,mccordsville,in,us,sphere,300,39.9080556,-85.9227778
+12/26/1999,vancouver,wa,us,unknown,15,45.6388889,-122.6602778
+12/26/2003,sicamous (canada),bc,ca,light,37800,50.833333,-119.0
+12/26/2010,fort lauderdale,fl,us,other,5,26.1219444,-80.1436111
+12/26/2013,little rock,ar,us,cigar,180,34.7463889,-92.2894444
+12/27/2000,saco,me,us,triangle,180,43.5008333,-70.4433333
+12/27/2005,manhattan,ks,us,cross,180,39.1836111,-96.5713889
+12/27/2010,chatham (canada),on,ca,circle,300,42.4,-82.183333
+12/27/2013,marietta,mn,us,light,120,45.0083333,-96.4172222
+12/28/1998,kure beach,nc,us,cone,300,33.9966667,-77.9075
+12/28/2004,terre haute,in,us,light,900,39.4666667,-87.4138889
+12/28/2008,peoria,il,us,other,600,40.6936111,-89.5888889
+12/28/2012,edwards,il,us,light,6,40.7458333,-89.7441667
+12/28/2013,orlando,fl,us,unknown,1800,28.5380556,-81.3794444
+12/29/2002,santa rosa,ca,us,circle,6,38.4405556,-122.7133333
+12/29/2007,silverdale,wa,us,triangle,300,47.6447222,-122.6936111
+12/29/2010,elmhurst,il,us,sphere,30,41.8994444,-87.9402778
+12/29/2012,edmond,ok,us,circle,40,35.6527778,-97.4777778
+12/30/1999,gansevoort,ny,us,sphere,5,43.1961111,-73.6522222
+12/30/2005,great bend,ks,us,fireball,900,38.3644444,-98.7644444
+12/30/2010,cayucos,ca,us,oval,10,35.4427778,-120.8911111
+12/30/2013,coloma,mi,us,formation,180,42.1861111,-86.3083333
+12/31/1999,las vegas,nv,us,circle,600,36.1750000,-115.1363889
+12/31/2003,olive branch,ms,us,disk,300,34.9616667,-89.8294444
+12/31/2006,brawley,ca,us,circle,120,32.9786111,-115.5294444
+12/31/2008,carver,ma,us,unknown,20,41.8833333,-70.7630556
+12/31/2010,temecula,ca,us,fireball,240,33.4936111,-117.1475
+12/31/2011,alton bay,nh,us,sphere,120,43.4686111,-71.2325
+12/31/2011,pasadena,ca,us,circle,300,34.1477778,-118.1436111
+12/31/2012,londonderry,nh,us,light,180,42.8650000,-71.3744444
+12/31/2012,hollywood,ca,us,fireball,300,34.0983333,-118.3258333
+12/31/2013,new port richey,fl,us,disk,1200,28.2438889,-82.7194444
+12/31/2013,magna,ut,us,circle,2700,40.7091667,-112.1008333
+1/23/1980,virginia beach,va,us,cylinder,1200,36.8527778,-75.9783333
+12/3/2001,brock,tx,us,fireball,300,32.6761111,-97.9405556
+12/3/2003,whitmore lake,mi,us,unknown,2700,42.4394444,-83.7438889
+12/3/2005,norwalk,ca,us,light,300,33.9022222,-118.0808333
+1/23/2007,hoover,al,us,triangle,120,33.4052778,-86.8113889
+1/23/2009,hightstown,nj,us,triangle,60,40.2694444,-74.5236111
+12/3/2011,st. louis (afton),mo,us,circle,180,38.6272222,-90.1977778
+12/3/2012,scituate,ma,us,light,2700,42.1958333,-70.7263889
+1/23/2014,tabernacle,nj,us,unknown,240,39.8438889,-74.7105556
+1/24/1998,san bernardino,ca,us,sphere,1800,34.1083333,-117.2888889
+12/4/2003,whitehouse station,nj,us,circle,2,40.6152778,-74.7708333
+12/4/2005,west los angeles,ca,us,light,3600,34.0522222,-118.2427778
+1/24/2007,spokane,wa,us,triangle,60,47.6588889,-117.425
+1/24/2008,hammond,in,us,unknown,180,41.5833333,-87.5
+1/24/2009,pipe creek,tx,us,light,1800,29.7233333,-98.9355556
+12/4/2012,albuquerque,nm,us,diamond,1800,35.0844444,-106.6505556
+12/4/2013,jacksonville,fl,us,cigar,600,30.3319444,-81.6558333
+1/24/2014,lubbock,tx,us,light,180,33.5777778,-101.8547222
+12/5/1999,coolidge,az,us,triangle,40,32.9777778,-111.5169444
+12/5/2001,ferrum,va,us,oval,60,36.9227778,-80.0136111
+12/5/2003,sedona,az,us,disk,360,34.8697222,-111.7602778
+12/5/2005,cheyenne,wy,us,unknown,5,41.1400000,-104.8197222
+1/25/2007,aurora,co,us,light,30,39.7294444,-104.8313889
+12/5/2008,south hiram,me,us,teardrop,5,43.8127778,-70.8780556
+12/5/2010,milford,ct,us,circle,30,41.2222222,-73.0569444
+12/5/2012,hamilton (canada),on,ca,light,600,43.25,-79.833333
+1/25/2013,hope,me,us,triangle,60,44.2650000,-69.1594444
+1/25/2014,calgary (canada),ab,ca,changing,300,51.083333,-114.083333
+12/6/2000,roswell,nm,us,triangle,360,33.3941667,-104.5225
+12/6/2002,san diego,ca,us,chevron,60,32.7152778,-117.1563889
+12/6/2006,warrington,pa,us,triangle,180,40.2491667,-75.1344444
+12/6/2008,marana,az,us,sphere,20,32.4366667,-111.2247222
+1/26/2009,owasso,ok,us,triangle,600,36.2694444,-95.8544444
+1/26/2011,lehi,ut,us,formation,600,40.3916667,-111.85
+1/26/2012,beaumont,tx,us,triangle,120,30.0858333,-94.1016667
+1/26/2014,wetumpka,al,us,sphere,60,32.5436111,-86.2119444
+12/7/1999,emory,tx,us,sphere,3,32.8744444,-95.7652778
+12/7/2003,toms river,nj,us,unknown,1440,39.9536111,-74.1983333
+12/7/2005,parsippany,nj,us,other,300,40.8577778,-74.4263889
+1/27/2008,tazewell,tn,us,light,10,36.4541667,-83.5694444
+12/7/2010,santee,ca,us,oval,300,32.8383333,-116.9730556
+12/7/2012,houston,tx,us,unknown,2,29.7630556,-95.3630556
+12/7/2013,charleston (james island),sc,us,other,60,32.7763889,-79.9311111
+1/27/2014,alameda,ca,us,diamond,5,37.7652778,-122.2405556
+1/28/2000,rohnert park,ca,us,light,15,38.3397222,-122.7
+1/28/2003,national city,ca,us,unknown,60,32.6780556,-117.0983333
+1/28/2005,waianae,hi,us,triangle,1,21.4447222,-158.19
+12/8/2006,griffithsville,wv,us,cylinder,45,38.2386111,-81.9894444
+1/28/2008,waynesburg,oh,us,triangle,10,40.6677778,-81.2575
+1/28/2010,stillwater,mn,us,light,900,45.0563889,-92.8058333
+12/8/2012,spindale,nc,us,circle,300,35.3600000,-81.9294444
+12/8/2013,homosassa,fl,us,light,900,28.7811111,-82.6152778
+1/29/1989,montgomery,il,us,unknown,5,41.7305556,-88.3458333
+12/9/2000,mesa,az,us,light,900,33.4222222,-111.8219444
+1/29/2003,los angeles,ca,us,egg,30,34.0522222,-118.2427778
+1/29/2006,el paso,tx,us,circle,900,31.7586111,-106.4863889
+1/29/2008,tilton,nh,us,formation,300,43.4422222,-71.5894444
+1/29/2010,madison county,nc,us,diamond,60,36.3852778,-79.9597222
+12/9/2011,sarasota,fl,us,unknown,300,27.3361111,-82.5308333
+12/9/2013,buffalo,wy,us,light,1800,44.3483333,-106.6983333
+1/30/1987,kenai,ak,us,light,5,60.5544444,-151.2583333
+1/30/2005,ottawa (canada),on,ca,oval,300,45.416667,-75.7
+1/30/2009,baker,la,us,light,600,30.5880556,-91.1680556
+1/30/2014,boscawen,nh,us,circle,300,43.3150000,-71.6213889
+1/31/2002,helotes,tx,us,sphere,30,29.5777778,-98.6894444
+1/31/2007,burlington,ia,us,triangle,720,40.8075000,-91.1127778
+1/31/2009,canyon lake,tx,us,fireball,4,29.8750000,-98.2622222
+1/31/2014,moncton (canada),nb,ca,fireball,2,46.083333,-64.766667
+1/3/2001,portland,or,us,sphere,20,45.5236111,-122.675
+1/3/2007,charlotte,nc,us,light,1800,35.2269444,-80.8433333
+1/3/2009,st. petersburg,fl,us,oval,300,27.7705556,-82.6794444
+1/3/2012,oswego,il,us,sphere,3600,41.6827778,-88.3513889
+1/3/2014,morton,il,us,other,900,40.6127778,-89.4591667
+1/4/2003,elsberry,mo,us,flash,2,39.1666667,-90.7808333
+1/4/2006,gulf breeze,fl,us,fireball,600,30.3569444,-87.1638889
+1/4/2009,ventura,ca,us,chevron,1200,34.2783333,-119.2922222
+1/4/2012,keene,nh,us,cone,14400,42.9336111,-72.2786111
+1/4/2014,berea,oh,us,fireball,4,41.3661111,-81.8544444
+1/5/1999,alamogordo,nm,us,disk,900,32.8994444,-105.9597222
+1/5/2002,new york city (brooklyn),ny,us,disk,15,40.7141667,-74.0063889
+1/5/2007,douglas,mi,us,other,240,42.6433333,-86.2005556
+1/5/2011,guymon,ok,us,circle,180,36.6827778,-101.4811111
+1/5/2014,columbia,mo,us,light,25,38.9516667,-92.3338889
+1/6/2003,montclair,ca,us,fireball,10,34.0775000,-117.6888889
+1/6/2009,rancho cucamonga,ca,us,light,1380,34.1063889,-117.5922222
+1/6/2012,new york city (queens),ny,us,fireball,15,40.7141667,-74.0063889
+1/6/2013,whitefish,mt,us,other,120,48.4111111,-114.3366667
+1/7/1999,charlotte,nc,us,triangle,300,35.2269444,-80.8433333
+1/7/2003,palos heights,il,us,cross,600,41.6680556,-87.7963889
+1/7/2007,cleveland,oh,us,unknown,7200,41.4994444,-81.6955556
+1/7/2010,southampton,ny,us,formation,30,40.8841667,-72.39
+1/7/2014,savannah,ga,us,light,7,32.0833333,-81.1
+1/8/2001,crookston,mn,us,other,2,47.7741667,-96.6077778
+1/8/2006,palm springs,ca,us,rectangle,22,33.8302778,-116.5444444
+1/8/2008,san jose,ca,us,triangle,7200,37.3394444,-121.8938889
+1/8/2012,parkville,mo,us,light,120,39.1950000,-94.6819444
+1/8/2014,westfield,wi,us,light,300,43.8836111,-89.4933333
+1/9/2002,duncan (canada),bc,ca,light,180,48.783333,-123.7
+1/9/2008,valdosta,ga,us,diamond,10,30.8325000,-83.2786111
+1/9/2011,terrebonne,or,us,circle,109800,44.3530556,-121.1766667
+1/9/2014,scottsdale,az,us,light,900,33.5091667,-111.8983333
+2/10/2001,san diego,ca,us,fireball,600,32.7152778,-117.1563889
+2/10/2005,waukesha,wi,us,sphere,10,43.0116667,-88.2313889
+2/10/2010,eaton rapids,mi,us,other,3,42.5091667,-84.6558333
+2/10/2014,wilmington,nc,us,triangle,300,34.2255556,-77.945
+2/11/2002,milton,wv,us,cylinder,900,38.4344444,-82.1325
+2/11/2006,erwinna,pa,us,light,3600,40.5005556,-75.0730556
+2/11/2009,kelso,wa,us,light,20,46.1469444,-122.9072222
+2/11/2014,st. louis,mo,us,cigar,180,38.6272222,-90.1977778
+2/1/1997,elizabeth,nj,us,sphere,30,40.6638889,-74.2111111
+2/1/2003,crown point,in,us,oval,3,41.4169444,-87.3652778
+2/1/2007,los angeles,ca,us,fireball,45,34.0522222,-118.2427778
+2/1/2010,marana,az,us,light,180,32.4366667,-111.2247222
+2/1/2012,fullerton,ca,us,fireball,300,33.8702778,-117.9244444
+2/1/2014,portland,or,us,light,3,45.5236111,-122.675
+2/12/2002,concord,nc,us,light,240,35.4086111,-80.5797222
+2/12/2007,lynn haven,fl,us,disk,15,30.2452778,-85.6483333
+2/12/2010,yakima,wa,us,fireball,15,46.6022222,-120.5047222
+2/12/2014,missoula,mt,us,fireball,300,46.8722222,-113.9930556
+2/13/2003,south paris,me,us,sphere,14400,44.2236111,-70.5138889
+2/13/2008,phoenix,az,us,light,780,33.4483333,-112.0733333
+2/13/2010,sunnyvale,ca,us,formation,15,37.3688889,-122.0352778
+2/13/2014,chapmansboro,tn,us,other,900,36.3122222,-87.1413889
+2/14/2000,hermitage,ar,us,sphere,60,33.4463889,-92.1738889
+2/14/2004,newtown,pa,us,oval,2,40.2291667,-74.9372222
+2/14/2007,stone mountain,ga,us,disk,240,33.8080556,-84.1702778
+2/14/2011,iron mountain,mi,us,circle,300,45.8202778,-88.0658333
+2/14/2013,connersville,in,us,light,20,39.6411111,-85.1411111
+2/15/1931,holyoke (6-8 miles southwest of),co,us,oval,60,40.5844444,-102.3019444
+2/15/1990,brockton,ma,us,other,600,42.0833333,-71.0188889
+2/15/1999,worcester,ma,us,unknown,30,42.2625000,-71.8027778
+2/15/2003,surrey (canada),bc,ca,sphere,1800,49.136353351,-122.821343315
+2/15/2005,seattle,wa,us,other,300,47.6063889,-122.3308333
+2/15/2008,los angeles,ca,us,light,1200,34.0522222,-118.2427778
+2/15/2011,salisbury,nc,us,light,240,35.6708333,-80.4744444
+2/15/2014,las vegas,nv,us,fireball,120,36.1750000,-115.1363889
+2/16/2001,china,tx,us,light,1800,30.0477778,-94.3355556
+2/16/2004,terre haute,in,us,flash,5,39.4666667,-87.4138889
+2/16/2008,edmonton (canada),ab,ca,light,3600,53.55,-113.5
+2/16/2011,santa maria,ca,us,circle,12,34.9530556,-120.4347222
+2/16/2014,cambria,ca,us,circle,240,35.5641667,-121.0797222
+2/17/2003,price,ut,us,fireball,10,39.5994444,-110.81
+2/17/2006,san manuel,tx,us,circle,180,26.5641667,-98.1208333
+2/17/2009,madison,nj,us,light,600,40.7597222,-74.4175
+2/17/2013,forest grove,or,us,fireball,1200,45.5200000,-123.1094444
+2/18/2001,cabazon,ca,us,cigar,300,33.9175000,-116.7863889
+2/18/2006,silverdale,wa,us,unknown,150,47.6447222,-122.6936111
+2/18/2011,lebanon,oh,us,other,600,39.4352778,-84.2030556
+2/18/2014,houston,tx,us,disk,480,29.7630556,-95.3630556
+2/19/2001,sedalia,mo,us,changing,1,38.7044444,-93.2280556
+2/19/2008,cheney,wa,us,flash,3,47.4875000,-117.5747222
+2/19/2011,snohomish,wa,us,light,5,47.9130556,-122.0969444
+2/19/2014,tucson,az,us,light,3,32.2216667,-110.9258333
+2/20/2000,athens,oh,us,cylinder,90,39.3291667,-82.1013889
+2/20/2004,phoenix,az,us,disk,900,33.4483333,-112.0733333
+2/20/2008,myrtle beach,sc,us,light,30,33.6888889,-78.8869444
+2/20/2009,egan,la,us,diamond,30,30.2366667,-92.5058333
+2/20/2013,huber heights,oh,us,unknown,300,39.8438889,-84.1247222
+2/21/2000,corvallis,or,us,fireball,10,44.5647222,-123.2608333
+2/21/2006,north kingstown,ri,us,other,60,41.5500000,-71.4666667
+2/21/2009,corona,ca,us,circle,40,33.8752778,-117.5655556
+2/21/2014,anchorage,ak,us,oval,4,61.2180556,-149.9002778
+2/2/1980,georgetown,de,us,triangle,1200,38.6900000,-75.3858333
+2/2/2002,martinsville,il,us,triangle,1800,39.3355556,-87.8819444
+2/2/2005,west covina,ca,us,other,600,34.0900000,-117.8894444
+2/2/2009,maryville,tn,us,light,60,35.7563889,-83.9705556
+2/2/2012,orem,ut,us,light,60,40.2969444,-111.6938889
+2/2/2014,ann arbor,mi,us,triangle,30,42.2708333,-83.7263889
+2/22/2002,belleville,il,us,cylinder,900,38.5200000,-89.9838889
+2/22/2007,durham,nh,us,changing,900,43.1338889,-70.9269444
+2/22/2011,gillsville,ga,us,oval,180,34.3077778,-83.6336111
+2/22/2014,savannah,mo,us,other,5,39.9416667,-94.83
+2/23/1998,ossipee,nh,us,light,60,43.6852778,-71.1172222
+2/23/2003,college station,tx,us,circle,60,30.6277778,-96.3341667
+2/23/2007,denver,co,us,unknown,2,39.7391667,-104.9841667
+2/23/2011,cathedral city,ca,us,sphere,3600,33.7797222,-116.4644444
+2/23/2014,fritch,tx,us,light,300,35.6397222,-101.6027778
+2/24/2001,kettering,oh,us,light,45,39.6894444,-84.1688889
+2/24/2005,coal hill,ar,us,light,1800,35.4372222,-93.6727778
+2/24/2008,elizabeth,nj,us,sphere,30,40.6638889,-74.2111111
+2/24/2013,marion,in,us,cigar,900,40.5583333,-85.6591667
+2/25/1998,harrisburg,pa,us,cigar,1380,40.2736111,-76.8847222
+2/25/2005,seeley lake,mt,us,light,1800,47.1794444,-113.4836111
+2/25/2009,marlborough,ct,us,triangle,600,41.6313889,-72.4602778
+2/25/2012,charlotte,nc,us,cross,3,35.2269444,-80.8433333
+2/26/2000,goshen,in,us,light,600,41.5822222,-85.8344444
+2/26/2006,tampa,fl,us,unknown,1800,27.9472222,-82.4586111
+2/26/2011,gillam (canada),mb,ca,rectangle,900,56.35,-94.7
+2/26/2014,seattle,wa,us,triangle,300,47.6063889,-122.3308333
+2/27/1999,chloride,az,us,light,900,35.4144444,-114.1986111
+2/27/2005,reno,nv,us,unknown,5100,39.5297222,-119.8127778
+2/27/2008,lake havasu city,az,us,oval,30,34.4838889,-114.3216667
+2/27/2012,coventry,ri,us,fireball,2,41.7000000,-71.6833333
+2/27/2014,attica,ny,us,circle,300,42.8641667,-78.2805556
+2/28/2003,farmington,ct,us,unknown,240,41.7197222,-72.8325
+2/28/2007,madison,al,us,triangle,720,34.6991667,-86.7483333
+2/28/2011,fresno,ca,us,oval,600,36.7477778,-119.7713889
+2/28/2014,saco,me,us,fireball,30,43.5008333,-70.4433333
+2/29/2008,broken arrow,ok,us,light,2820,36.0525000,-95.7905556
+2/3/2002,baltimore,md,us,circle,22,39.2902778,-76.6125
+2/3/2007,pomona,ca,us,disk,180,34.0552778,-117.7513889
+2/3/2012,merlin,or,us,circle,1200,42.5175000,-123.4186111
+2/4/2000,houston,tx,us,triangle,120,29.7630556,-95.3630556
+2/4/2004,san marcos,tx,us,teardrop,30,29.8830556,-97.9411111
+2/4/2007,cole camp,mo,us,fireball,15,38.4600000,-93.2025
+2/4/2011,libertyville,il,us,circle,2,42.2830556,-87.9530556
+2/4/2013,remsen,ny,us,cylinder,300,43.3269444,-75.1872222
+2/5/2003,concord,nc,us,changing,3600,35.4086111,-80.5797222
+2/5/2009,maple valley,wa,us,triangle,180,47.4066667,-122.0375
+2/5/2011,fayetteville,nc,us,light,14400,35.0525000,-78.8786111
+2/5/2014,columbia falls,mt,us,light,600,48.3725000,-114.1805556
+2/6/2002,irmo,sc,us,triangle,240,34.0858333,-81.1833333
+2/6/2007,chandler,az,us,triangle,180,33.3061111,-111.8405556
+2/6/2010,vernon,nj,us,triangle,180,41.1983333,-74.4836111
+2/6/2013,blossvale,ny,us,light,180,43.2797222,-75.6438889
+2/7/2000,sebring,fl,us,light,1800,27.4952778,-81.4411111
+2/7/2005,biggs,ca,us,diamond,900,39.4125000,-121.7116667
+2/7/2010,modesto,ca,us,sphere,1200,37.6391667,-120.9958333
+2/7/2014,houma,la,us,circle,20,29.5955556,-90.7194444
+2/8/2001,ventura,ca,us,other,300,34.2783333,-119.2922222
+2/8/2005,san jose,ca,us,unknown,8,37.3394444,-121.8938889
+2/8/2009,grand rapids,mi,us,triangle,20,42.9633333,-85.6680556
+2/8/2012,marana,az,us,light,600,32.4366667,-111.2247222
+2/8/2014,coral springs,fl,us,oval,120,26.2708333,-80.2708333
+2/9/2002,belleville,mi,us,formation,3,42.2047222,-83.4852778
+2/9/2005,san diego,ca,us,disk,180,32.7152778,-117.1563889
+2/9/2009,penticton (canada),bc,ca,sphere,1800,49.5,-119.583333
+2/9/2014,jacksonville,fl,us,fireball,300,30.3319444,-81.6558333
+3/10/1999,glen burnie,md,us,unknown,1800,39.1625000,-76.625
+3/10/2004,marietta,ga,us,cigar,180,33.9525000,-84.55
+3/10/2006,tulsa,ok,us,changing,2400,36.1538889,-95.9925
+3/10/2010,west liberty,il,us,triangle,2700,39.8794444,-91.1077778
+3/10/2012,pendleton,in,us,triangle,2700,39.9975000,-85.7466667
+3/10/2014,hagerstown,md,us,unknown,5,39.6416667,-77.7202778
+3/11/2001,fort erie (canada),on,ca,triangle,5,42.9,-78.933333
+3/11/2006,rockport,wv,us,light,600,39.0741667,-81.5533333
+3/11/2008,upper saddle river (woodcliff lake),nj,us,fireball,4,41.0583333,-74.0988889
+3/11/2013,maricopa,az,us,light,300,33.0580556,-112.0469444
+3/1/1979,medford,or,us,unknown,300,42.3266667,-122.8744444
+3/1/1996,byron,ny,us,formation,10800,43.0797222,-78.0641667
+3/1/2001,madison,al,us,circle,20,34.6991667,-86.7483333
+3/1/2005,manassas,va,us,sphere,2,38.7508333,-77.4755556
+3/1/2008,indianapolis,in,us,disk,900,39.7683333,-86.1580556
+3/1/2011,worthington,oh,us,circle,3,40.0930556,-83.0180556
+3/1/2014,apollo beach,fl,us,oval,600,27.7727778,-82.4077778
+3/12/1997,santa fe,nm,us,other,120,35.6869444,-105.9372222
+3/12/2001,granite falls,wa,us,light,40,48.0841667,-121.9675
+3/12/2005,joyce,wa,us,light,6,48.1366667,-123.7327778
+3/12/2009,boise,id,us,sphere,300,43.6136111,-116.2025
+3/12/2012,palmer,ak,us,sphere,40,61.5997222,-149.1127778
+3/13/1997,scottsdale,az,us,triangle,1800,33.5091667,-111.8983333
+3/13/1997,phoenix,az,us,formation,300,33.4483333,-112.0733333
+3/13/1999,fowlerville (east south east of),mi,us,fireball,3,42.6605556,-84.0730556
+3/13/2002,lac du bonnet (canada),mb,ca,sphere,1800,50.266667,-96.05
+3/13/2006,san diego,ca,us,circle,7200,32.7152778,-117.1563889
+3/13/2008,simi valley,ca,us,sphere,180,34.2694444,-118.7805556
+3/13/2012,newark,oh,us,circle,240,40.0580556,-82.4013889
+3/13/2014,jupiter,fl,us,triangle,300,26.9338889,-80.0944444
+3/14/2002,hartland,me,us,circle,1800,44.8833333,-69.4480556
+3/14/2005,bluefield,wv,us,other,20,37.2697222,-81.2225
+3/14/2008,denver,co,us,other,120,39.7391667,-104.9841667
+3/14/2012,orleans,ma,us,flash,14400,41.7897222,-69.9902778
+3/14/2013,dallas,tx,us,oval,10,32.7833333,-96.8
+3/15/1974,tula,ms,us,circle,1800,34.2327778,-89.3622222
+3/15/1990,farmville,nc,us,disk,1800,35.5952778,-77.5855556
+3/15/1998,gunnison (30 miles ne of),co,us,disk,30,38.5458333,-106.9247222
+3/15/2001,san francisco (golden gate bridge),ca,us,other,10,37.7750000,-122.4183333
+3/15/2003,arvada,co,us,egg,120,39.8027778,-105.0869444
+3/15/2005,hanceville,al,us,triangle,10,34.0605556,-86.7675
+3/15/2007,easley,sc,us,unknown,300,34.8297222,-82.6016667
+3/15/2009,muscatine,ia,us,triangle,20,41.4244444,-91.0430556
+3/15/2013,montoursville,pa,us,circle,7200,41.2541667,-76.9208333
+3/16/1997,yuma (desert&#44 on olgiby rd.&#44 16 mi. ne. of  yuma),az,us,triangle,2700,32.7252778,-114.6236111
+3/16/2004,san luis obispo,ca,us,flash,3,35.2827778,-120.6586111
+3/16/2008,prineville,or,us,other,10,44.3000000,-120.8333333
+3/16/2011,wayland,mi,us,oval,45,42.6738889,-85.6447222
+3/16/2013,belmont,nc,us,other,50,35.2427778,-81.0375
+3/17/1999,chicago,il,us,triangle,3600,41.8500000,-87.65
+3/17/2004,san diego,ca,us,circle,10800,32.7152778,-117.1563889
+3/17/2009,simi valley,ca,us,triangle,300,34.2694444,-118.7805556
+3/17/2012,airway heights,wa,us,sphere,40,47.6447222,-117.5922222
+3/18/2001,orangevale,ca,us,fireball,5,38.6786111,-121.2247222
+3/18/2005,antioch,il,us,circle,120,42.4772222,-88.0955556
+3/18/2009,webster city,ia,us,light,10,42.4694444,-93.8158333
+3/18/2012,reading,mo,us,circle,40,39.4913889,-91.1322222
+3/18/2014,medford,or,us,disk,4260,42.3266667,-122.8744444
+3/19/2003,parma,oh,us,triangle,600,41.4047222,-81.7230556
+3/19/2007,matteson,il,us,light,1080,41.5038889,-87.7130556
+3/19/2011,ewing,nj,us,oval,120,40.2697222,-74.8002778
+3/19/2013,new paltz,ny,us,fireball,180,41.7475000,-74.0872222
+3/20/1995,fayetteville,nc,us,cylinder,300,35.0525000,-78.8786111
+3/20/2003,hampden,ma,us,disk,180,42.0638889,-72.4138889
+3/20/2008,beaverton,or,us,oval,10,45.4872222,-122.8025
+3/20/2011,lafayette,co,us,light,2700,39.9936111,-105.0891667
+3/20/2013,shelby,ia,us,unknown,300,41.5161111,-95.45
+3/21/1978,medford,or,us,disk,480,42.3266667,-122.8744444
+3/21/2004,champlin,mn,us,fireball,10,45.1888889,-93.3972222
+3/21/2006,kokomo,in,us,light,7,40.4863889,-86.1336111
+3/21/2009,riverton,ut,us,other,3600,40.5219444,-111.9383333
+3/21/2014,kennesaw,ga,us,triangle,120,34.0233333,-84.6155556
+3/2/2002,redwood valley,ca,us,unknown,2400,39.2655556,-123.2033333
+3/2/2007,churchton,md,us,oval,3,38.8025000,-76.5372222
+3/2/2011,phoenix,az,us,unknown,15,33.4483333,-112.0733333
+3/2/2013,sudbury,ma,us,chevron,60,42.3833333,-71.4166667
+3/22/1998,doylestown,pa,us,disk,300,40.3100000,-75.1302778
+3/22/2006,fontana,ca,us,unknown,900,34.0922222,-117.4341667
+3/22/2010,fountain inn,sc,us,disk,540,34.6888889,-82.1958333
+3/22/2013,alexandria,va,us,unknown,3,38.8047222,-77.0472222
+3/23/1999,chesapeake,va,us,oval,10,36.8188889,-76.2752778
+3/23/2004,porterville,ca,us,circle,20,36.0652778,-119.0158333
+3/23/2009,south zanesville,oh,us,sphere,10,39.8991667,-82.0063889
+3/23/2012,davenport,wa,us,other,120,47.6541667,-118.1488889
+3/24/1997,manassas,va,us,formation,25,38.7508333,-77.4755556
+3/24/2006,lubbock,tx,us,circle,30,33.5777778,-101.8547222
+3/24/2010,eden,nc,us,circle,600,36.4883333,-79.7669444
+3/24/2012,fresh meadows,ny,us,light,300,40.7347222,-73.7938889
+3/25/1998,alexandria,la,us,triangle,120,31.3111111,-92.445
+3/25/2005,rogers,ar,us,rectangle,1,36.3319444,-94.1183333
+3/25/2008,los angeles,ca,us,cone,120,34.0522222,-118.2427778
+3/25/2012,orlando,fl,us,triangle,3,28.5380556,-81.3794444
+3/26/1996,irvine,ca,us,cone,300,33.6694444,-117.8222222
+3/26/2004,bradenton,fl,us,other,240,27.4986111,-82.575
+3/26/2009,mills river,nc,us,formation,600,35.3883333,-82.5669444
+3/26/2013,lake oswego,or,us,triangle,360,45.4208333,-122.6694444
+3/27/1998,clifton park (30 min north of albany),ny,us,other,900,42.8655556,-73.7713889
+3/27/2005,los alamitos,ca,us,formation,2700,33.8030556,-118.0716667
+3/27/2010,los angeles,ca,us,unknown,45,34.0522222,-118.2427778
+3/27/2013,columbia,tn,us,formation,360,35.6150000,-87.0352778
+3/28/2000,bouse,az,us,light,10,33.9325000,-114.005
+3/28/2004,chesapeake,oh,us,light,600,38.4277778,-82.4572222
+3/28/2009,east wenatchee,wa,us,cylinder,3,47.4158333,-120.2919444
+3/28/2014,laveen,az,us,light,300,33.3627778,-112.1686111
+3/29/2001,apollo,pa,us,light,900,40.5813889,-79.5666667
+3/29/2005,austin,tx,us,triangle,300,30.2669444,-97.7427778
+3/29/2009,white lake,nc,us,fireball,15,34.6402778,-78.4841667
+3/29/2012,morehead,ky,us,light,1800,38.1838889,-83.4327778
+3/29/2014,altoona,ks,us,sphere,1800,37.5238889,-95.6611111
+3/30/2002,salome,az,us,cylinder,10800,33.7811111,-113.6138889
+3/30/2007,rockville,md,us,cigar,15,39.0838889,-77.1530556
+3/30/2010,wise,va,us,light,600,36.9758333,-82.5758333
+3/30/2013,tyler,tx,us,fireball,60,32.3511111,-95.3008333
+3/31/1980,canoga park,ca,us,disk,60,34.2011111,-118.5972222
+3/31/2004,naples,fl,us,sphere,2400,26.1416667,-81.795
+3/31/2008,eagle river,ak,us,light,1200,61.3213889,-149.5677778
+3/31/2011,russellville,ar,us,triangle,180,35.2783333,-93.1336111
+3/31/2014,virginia beach,va,us,disk,30,36.8527778,-75.9783333
+3/3/2001,pontotoc,ms,us,light,3600,34.2477778,-88.9986111
+3/3/2006,mcminnville,tn,us,fireball,3,35.6833333,-85.77
+3/3/2011,uintah,ut,us,light,60,41.1441667,-111.9225
+3/3/2013,medford,ma,us,cylinder,5,42.4183333,-71.1066667
+3/4/1999,colville,wa,us,fireball,2,48.5466667,-117.9044444
+3/4/2005,sacramento,ca,us,sphere,10,38.5816667,-121.4933333
+3/4/2009,tacoma,wa,us,light,180,47.2530556,-122.4430556
+3/4/2014,tucson,az,us,triangle,300,32.2216667,-110.9258333
+3/5/2001,duluth,mn,us,triangle,300,46.7833333,-92.1063889
+3/5/2007,bremerton,wa,us,light,600,47.5675000,-122.6313889
+3/5/2010,new hartford,ct,us,light,300,41.8822222,-72.9775
+3/5/2012,mccaysville,ga,us,light,900,34.9861111,-84.3713889
+3/6/1993,pittsburgh,pa,us,triangle,1800,40.4405556,-79.9961111
+3/6/2004,perth amboy,nj,us,formation,15,40.5066667,-74.2658333
+3/6/2008,quaker hill,ct,us,disk,480,41.4033333,-72.1063889
+3/6/2011,las vegas,nv,us,circle,300,36.1750000,-115.1363889
+3/7/1995,geneva (canada),ny,us,light,2700,42.8688889,-76.9780556
+3/7/1999,champaign,il,us,formation,300,40.1163889,-88.2433333
+3/7/2004,winter springs,fl,us,egg,15,28.6986111,-81.3083333
+3/7/2007,ellensburg,wa,us,triangle,30,46.9966667,-120.5466667
+3/7/2011,culpeper,va,us,triangle,7200,38.4730556,-77.9969444
+3/7/2014,houma,la,us,sphere,180,29.5955556,-90.7194444
+3/8/2003,englewood,co,us,unknown,1800,39.6477778,-104.9872222
+3/8/2006,bordentown,nj,us,circle,20,40.1461111,-74.7122222
+3/8/2008,salisbury,nc,us,cylinder,120,35.6708333,-80.4744444
+3/8/2012,blue bell,pa,us,triangle,180,40.1522222,-75.2666667
+3/9/2000,portland,me,us,light,120,43.6613889,-70.2558333
+3/9/2004,warthen,ga,us,triangle,120,33.1019444,-82.8038889
+3/9/2007,san dimas,ca,us,oval,600,34.1066667,-117.8058333
+3/9/2012,mesa,az,us,rectangle,300,33.4222222,-111.8219444
+3/9/2013,portland,or,us,triangle,45,45.5236111,-122.675
+4/10/1993,omaha,ne,us,egg,30,41.2586111,-95.9375
+4/10/2002,phoenixville,pa,us,light,1800,40.1302778,-75.5152778
+4/10/2008,dandridge,tn,us,light,600,36.0152778,-83.415
+4/10/2010,fargo,nd,us,formation,15,46.8772222,-96.7894444
+4/10/2014,oakland park,fl,us,triangle,14400,26.1719444,-80.1322222
+4/11/1997,houma,la,us,circle,10,29.5955556,-90.7194444
+4/11/2004,truro (canada),ns,ca,light,78,45.366667,-63.3
+4/11/2008,wauseon,oh,us,circle,30,41.5491667,-84.1416667
+4/11/2012,seneca,il,us,light,3,41.3111111,-88.6097222
+4/11/2014,campbell,ca,us,oval,360,37.2872222,-121.9488889
+4/1/1972,indianapolis,in,us,disk,3600,39.7683333,-86.1580556
+4/1/1994,megargel,tx,us,unknown,600,33.4508333,-98.9241667
+4/1/2000,lake havasu city,az,us,light,600,34.4838889,-114.3216667
+4/1/2003,phoenix,az,us,triangle,60,33.4483333,-112.0733333
+4/1/2006,miami,fl,us,circle,35,25.7738889,-80.1938889
+4/1/2010,reynoldsburg,oh,us,other,300,39.9547222,-82.8122222
+4/1/2013,colorado springs,co,us,circle,1800,38.8338889,-104.8208333
+4/12/1986,oak lawn,il,us,other,1200,41.7108333,-87.7580556
+4/12/2004,ajax (canada),on,ca,other,900,43.85,-79.016667
+4/12/2008,spring,tx,us,light,10,30.0797222,-95.4169444
+4/12/2012,marion,oh,us,unknown,300,40.5886111,-83.1286111
+4/12/2014,lenwood,ca,us,other,60,34.8766667,-117.1030556
+4/13/2001,rothschild,wi,us,unknown,30,44.8872222,-89.62
+4/13/2005,bentonville,ar,us,light,1800,36.3727778,-94.2086111
+4/13/2010,mahomet,il,us,triangle,900,40.1952778,-88.4041667
+4/13/2013,los angeles,ca,us,fireball,360,34.0522222,-118.2427778
+4/14/1999,oak ridge,tn,us,oval,120,36.0102778,-84.2697222
+4/14/2005,guelph (canada),on,ca,triangle,10,43.55,-80.25
+4/14/2008,minneapolis,mn,us,light,900,44.9800000,-93.2636111
+4/14/2011,carrollton,oh,us,oval,120,40.5727778,-81.0858333
+4/14/2013,new castle,pa,us,light,3600,41.0036111,-80.3472222
+4/15/1953,los angeles,ca,us,fireball,5,34.0522222,-118.2427778
+4/15/1976,winchester,ky,us,disk,300,37.9900000,-84.1797222
+4/15/1990,thornwood,ny,us,light,300,41.1233333,-73.7794444
+4/15/1997,charlotte,nc,us,unknown,10,35.2269444,-80.8433333
+4/15/2000,tokeland,wa,us,unknown,600,46.7066667,-123.9805556
+4/15/2004,hayden,id,us,light,60,47.7661111,-116.7855556
+4/15/2006,irvine,pa,us,unknown,300,41.8391667,-79.2686111
+4/15/2008,holbrook,az,us,sphere,60,34.9022222,-110.1575
+4/15/2012,bohemia,ny,us,oval,180,40.7691667,-73.1155556
+4/15/2014,lordsburg,nm,us,cylinder,900,32.3502778,-108.7080556
+4/16/2002,highlands ranch,co,us,cylinder,120,39.5538889,-104.9688889
+4/16/2005,lafayette,in,us,flash,60,40.4166667,-86.8752778
+4/16/2008,durham,nc,us,disk,10,35.9938889,-78.8988889
+4/16/2009,newark,oh,us,light,3600,40.0580556,-82.4013889
+4/16/2012,bethpage,ny,us,flash,1,40.7441667,-73.4825
+4/17/1991,new boston,tx,us,oval,240,33.4597222,-94.4152778
+4/17/2002,san antonio,tx,us,light,180,29.4238889,-98.4933333
+4/17/2007,goodlettsville,tn,us,circle,60,36.3230556,-86.7133333
+4/17/2009,york,pa,us,light,10,39.9625000,-76.7280556
+4/17/2012,myrtle beach,sc,us,light,15,33.6888889,-78.8869444
+4/18/1981,long beach,ca,us,formation,5,33.7669444,-118.1883333
+4/18/2004,pinson,tn,us,other,7,35.4900000,-88.7205556
+4/18/2008,venice,ca,us,light,30,33.9908333,-118.4591667
+4/18/2012,virginia beach,va,us,sphere,20,36.8527778,-75.9783333
+4/18/2014,chico,ca,us,disk,1080,39.7286111,-121.8363889
+4/19/2003,lafayette,ky,us,sphere,30,36.6811111,-87.6202778
+4/19/2006,morinville (canada),ab,ca,other,180,53.8,-113.65
+4/19/2009,oak harbor,wa,us,unknown,60,48.2933333,-122.6419444
+4/19/2013,bay point,ca,us,light,180,38.0291667,-121.9605556
+4/20/1980,dayton,oh,us,cigar,300,39.7588889,-84.1916667
+4/20/2001,owings mills,md,us,flash,7,39.4194444,-76.7805556
+4/20/2004,toronto (canada),on,ca,disk,600,43.666667,-79.416667
+4/20/2008,schererville,in,us,triangle,3480,41.4788889,-87.4547222
+4/20/2010,philadelphia,pa,us,triangle,600,39.9522222,-75.1641667
+4/20/2013,hercules,ca,us,sphere,30,38.0172222,-122.2875
+4/20/2014,seattle,wa,us,formation,5,47.6063889,-122.3308333
+4/21/2003,houston (canada),bc,ca,triangle,10,54.4,-126.65
+4/21/2007,tacoma,wa,us,light,300,47.2530556,-122.4430556
+4/21/2009,embarrass,mn,us,light,15,47.6591667,-92.1977778
+4/21/2012,paris,mi,us,unknown,1500,43.7733333,-85.5025
+4/2/1974,birmingham (wisteria dr.&#44 .5 mi down),al,us,disk,180,33.5205556,-86.8025
+4/2/2005,phoenix,az,us,triangle,10,33.4483333,-112.0733333
+4/2/2008,incline village,nv,us,light,1395,39.2513889,-119.9719444
+4/2/2012,lloydminster (canada),sk,ca,disk,14400,53.283333,-110.0
+4/22/1967,gibson,ny,us,oval,180,42.1400000,-77.0311111
+4/22/2001,fairhaven,ma,us,sphere,300,41.6375000,-70.9041667
+4/22/2006,pismo beach,ca,us,light,360,35.1427778,-120.6402778
+4/22/2009,west chester,pa,us,cigar,5,39.8494444,-75.3561111
+4/22/2012,royse city,tx,us,formation,600,32.9750000,-96.3322222
+4/22/2014,fletcher,nc,us,triangle,20,35.4305556,-82.5013889
+4/23/2000,scarborough (toronto) (canada),on,ca,disk,10,43.75,-79.2
+4/23/2006,bluefield,wv,us,fireball,40,37.2697222,-81.2225
+4/23/2009,lake charles,la,us,triangle,120,30.2263889,-93.2172222
+4/23/2012,rio rancho,nm,us,light,60,35.2333333,-106.6638889
+4/24/1997,new brighton,mn,us,triangle,2700,45.0655556,-93.2016667
+4/24/2003,conyers,ga,us,fireball,2,33.6675000,-84.0177778
+4/24/2007,loveland,oh,us,unknown,40,39.2688889,-84.2638889
+4/24/2009,ottawa (canada),on,ca,disk,60,45.416667,-75.7
+4/24/2012,cedar rapids,ia,us,light,420,42.0083333,-91.6438889
+4/24/2014,debary,fl,us,light,60,28.8827778,-81.3088889
+4/25/1999,ann arbor,mi,us,formation,15,42.2708333,-83.7263889
+4/25/2005,lexington,ky,us,disk,1200,37.9886111,-84.4777778
+4/25/2009,batavia,oh,us,triangle,60,39.0769444,-84.1769444
+4/25/2013,indianapolis,in,us,light,30,39.7683333,-86.1580556
+4/26/1996,mcallen,tx,us,disk,300,26.2030556,-98.2297222
+4/26/2004,lincoln,ne,us,circle,15,40.8000000,-96.6666667
+4/26/2008,henning,tn,us,triangle,30,35.6727778,-89.5733333
+4/26/2012,bremen,in,us,oval,3600,41.4463889,-86.1480556
+4/26/2014,gilbert,az,us,triangle,60,33.3527778,-111.7883333
+4/27/2001,spokane,wa,us,sphere,12,47.6588889,-117.425
+4/27/2007,kaneohe,hi,us,sphere,15,21.4180556,-157.8036111
+4/27/2009,tuxedo (on us hwy 25&#44 between tuxedo and i-26 exit),nc,us,other,300,35.2252778,-82.4297222
+4/27/2013,crown point,in,us,sphere,120,41.4169444,-87.3652778
+4/27/2014,chatsworth,ca,us,circle,120,34.2572222,-118.6002778
+4/28/2000,bossier city,la,us,chevron,10,32.5158333,-93.7319444
+4/28/2004,bakersfield,ca,us,light,2700,35.3733333,-119.0177778
+4/28/2010,virginia beach,va,us,light,3600,36.8527778,-75.9783333
+4/28/2012,algoma,wi,us,unknown,60,44.6088889,-87.4325
+4/29/2000,floral park,ny,us,disk,15,40.7236111,-73.7052778
+4/29/2005,pembroke pines,fl,us,fireball,180,26.0027778,-80.2241667
+4/29/2006,college place,wa,us,circle,180,46.0494444,-118.3872222
+4/29/2007,elwood,il,us,unknown,15,41.4038889,-88.1116667
+4/29/2011,altamonte springs,fl,us,fireball,7,28.6608333,-81.3658333
+4/29/2014,stanford,ca,us,circle,1200,37.4241667,-122.165
+4/30/2001,baltimore,md,us,light,1500,39.2902778,-76.6125
+4/30/2005,murrieta,ca,us,circle,60,33.5538889,-117.2130556
+4/30/2009,frisco,tx,us,unknown,300,33.1505556,-96.8233333
+4/30/2013,batavia,il,us,circle,45,41.8500000,-88.3125
+4/3/1999,converse,tx,us,light,120,29.5177778,-98.3158333
+4/3/2006,tidewater,or,us,fireball,3,44.4113889,-123.8991667
+4/3/2010,las vegas,nv,us,light,10,36.1750000,-115.1363889
+4/3/2014,muscle shoals,al,us,cylinder,120,34.7447222,-87.6675
+4/4/2000,fort wayne,in,us,oval,300,41.1305556,-85.1288889
+4/4/2004,south bend,in,us,sphere,15,41.6833333,-86.25
+4/4/2008,lake havasu city,az,us,other,300,34.4838889,-114.3216667
+4/4/2012,orlando,fl,us,changing,180,28.5380556,-81.3794444
+4/5/1995,rio grande (puerto rico),pr,us,unknown,18000,18.3822222,-65.8316667
+4/5/2003,los alamos,ca,us,cigar,60,34.7444444,-120.2772222
+4/5/2006,graham,wa,us,disk,1800,47.0530556,-122.2930556
+4/5/2011,new castle,pa,us,other,30,41.0036111,-80.3472222
+4/5/2014,wakefield,ma,us,other,300,42.5063889,-71.0733333
+4/6/1994,grosse pointe,mi,us,light,5,42.3861111,-82.9119444
+4/6/2006,mccamey (near),tx,us,oval,120,31.1358333,-102.2238889
+4/6/2010,san marcos,ca,us,oval,30,33.1433333,-117.1652778
+4/6/2013,mesa,az,us,formation,600,33.4222222,-111.8219444
+4/6/2014,edison,nj,us,flash,300,40.5186111,-74.4125
+4/7/2004,columbia falls,mt,us,light,240,48.3725000,-114.1805556
+4/7/2007,arlington,va,us,light,1200,38.8902778,-77.0844444
+4/7/2010,montmagny (canada),qc,ca,disk,7200,46.966667,-70.55
+4/7/2013,williamsport,md,us,light,7200,39.6005556,-77.8208333
+4/8/2002,middletown (suburb),oh,us,triangle,6,39.5150000,-84.3983333
+4/8/2005,hagerstown,md,us,unknown,600,39.6416667,-77.7202778
+4/8/2010,downey,ca,us,sphere,3600,33.9400000,-118.1316667
+4/8/2012,seattle,wa,us,sphere,300,47.6063889,-122.3308333
+4/9/1998,colorado springs,co,us,other,4,38.8338889,-104.8208333
+4/9/2004,ford city,pa,us,disk,15,40.7722222,-79.53
+4/9/2006,orland,ca,us,sphere,60,39.7475000,-122.1952778
+4/9/2010,plainview,ny,us,unknown,300,40.7763889,-73.4677778
+4/9/2012,dysart,ia,us,light,120,42.1716667,-92.3061111
+4/9/2014,newport,or,us,oval,3600,44.6369444,-124.0522222
+5/10/1997,neoga (6 mi. west),il,us,triangle,300,39.3194444,-88.4527778
+5/10/2002,indianapolis,in,us,fireball,5,39.7683333,-86.1580556
+5/10/2006,denver,co,us,cigar,30,39.7391667,-104.9841667
+5/10/2010,oak lawn,il,us,circle,600,41.7108333,-87.7580556
+5/11/1982,piscataway,nj,us,disk,300,40.4991667,-74.3994444
+5/11/2004,los angeles,ca,us,oval,600,34.0522222,-118.2427778
+5/11/2007,memphis,tn,us,disk,120,35.1494444,-90.0488889
+5/11/2011,harrington,wa,us,unknown,600,47.4811111,-118.2533333
+5/11/2013,orlando,fl,us,light,240,28.5380556,-81.3794444
+5/1/1969,estill,sc,us,cigar,2700,32.7547222,-81.2422222
+5/1/1979,gainesville,fl,us,fireball,600,29.6513889,-82.325
+5/1/1991,garden grove,ca,us,sphere,2700,33.7738889,-117.9405556
+5/1/1998,cleveland,oh,us,light,15,41.4994444,-81.6955556
+5/1/2001,noble,ok,us,rectangle,120,35.1391667,-97.3944444
+5/1/2004,cotati,ca,us,light,30,38.3269444,-122.7061111
+5/1/2007,crosby,mn,us,circle,180,46.4822222,-93.9575
+5/1/2011,pocatello,id,us,light,180,42.8713889,-112.4447222
+5/1/2014,honolulu,hi,us,other,5,21.3069444,-157.8583333
+5/12/1976,grapevine,ca,us,egg,40,34.9416667,-118.9291667
+5/12/2001,susanville,ca,us,sphere,15,40.4163889,-120.6519444
+5/12/2005,truckee,ca,us,other,1800,39.3280556,-120.1822222
+5/12/2010,chesapeake,va,us,fireball,8,36.8188889,-76.2752778
+5/12/2012,north sioux city,sd,us,fireball,300,42.5272222,-96.4827778
+5/13/1995,seattle (west side),wa,us,triangle,120,47.6063889,-122.3308333
+5/13/2002,mosinee,wi,us,triangle,900,44.7930556,-89.7030556
+5/13/2006,baltimore,md,us,light,1200,39.2902778,-76.6125
+5/13/2012,cleveland,oh,us,triangle,420,41.4994444,-81.6955556
+5/14/1999,dixon,il,us,triangle,300,41.8388889,-89.4794444
+5/14/2004,jacksonville,nc,us,other,300,34.7538889,-77.4305556
+5/14/2008,chesterland,oh,us,light,2,41.5222222,-81.3380556
+5/14/2012,ottawa (canada),on,ca,flash,120,45.416667,-75.7
+5/15/1966,mentone,al,us,egg,10,34.5794444,-85.5905556
+5/15/1977,salem,or,us,cigar,900,44.9430556,-123.0338889
+5/15/1987,temple,tx,us,cigar,120,31.0980556,-97.3425
+5/15/1996,willard,mo,us,cigar,2700,37.3050000,-93.4283333
+5/15/2000,bushkill,pa,us,circle,180,41.0933333,-75.0022222
+5/15/2002,morrow,ga,us,light,900,33.5830556,-84.3394444
+5/15/2004,los angeles,ca,us,light,900,34.0522222,-118.2427778
+5/15/2006,littleton,co,us,other,600,39.6133333,-105.0161111
+5/15/2009,willamina,or,us,formation,10,45.0788889,-123.4847222
+5/15/2011,sun city,az,us,triangle,300,33.5975000,-112.2711111
+5/15/2013,mashpee,ma,us,other,600,41.6483333,-70.4816667
+5/16/2003,round rock,tx,us,other,3600,30.5080556,-97.6786111
+5/16/2007,mesquite,tx,us,unknown,10,32.7666667,-96.5988889
+5/16/2012,lozeau,mt,us,triangle,480,47.1166667,-114.7791667
+5/17/1998,belle vernon,pa,us,other,2400,40.1250000,-79.8666667
+5/17/2004,batesville,ar,us,light,240,35.7697222,-91.6408333
+5/17/2009,fargo,nd,us,other,15,46.8772222,-96.7894444
+5/17/2013,bellport,ny,us,triangle,1800,40.7569444,-72.9397222
+5/18/2001,dania beach (fishing pier),fl,us,light,120,26.0519444,-80.1441667
+5/18/2006,jacumba,ca,us,cigar,120,32.6175000,-116.1888889
+5/18/2009,golden valley,az,us,cone,1800,35.2233333,-114.2222222
+5/18/2013,dallas,tx,us,sphere,15,32.7833333,-96.8
+5/19/1999,union city,tn,us,other,37800,36.4241667,-89.0569444
+5/19/2005,ledgewood,nj,us,egg,6,40.8811111,-74.6563889
+5/19/2009,villa rica,ga,us,sphere,1800,33.7319444,-84.9191667
+5/19/2012,grayson,ga,us,changing,1200,33.8941667,-83.9558333
+5/19/2013,carol stream,il,us,triangle,7,41.9125000,-88.1347222
+5/20/1995,san diego (ocean beach),ca,us,light,180,32.7152778,-117.1563889
+5/20/2000,santa clarita,ca,us,light,180,34.3916667,-118.5416667
+5/20/2004,montrose,co,us,circle,3,38.4783333,-107.8755556
+5/20/2007,sacramento,ca,us,fireball,5,38.5816667,-121.4933333
+5/20/2010,ashton,id,us,other,1,44.0716667,-111.4475
+5/20/2012,port dover (canada),on,ca,sphere,40,42.783333,-80.2
+5/21/2000,new smyrna beach,fl,us,unknown,10,29.0255556,-80.9272222
+5/21/2004,harrison,oh,us,changing,6660,39.2619444,-84.82
+5/21/2008,cuba,mo,us,light,45,38.0627778,-91.4033333
+5/21/2011,royal oak,mi,us,oval,300,42.4894444,-83.1447222
+5/2/1998,los angeles,ca,us,triangle,20,34.0522222,-118.2427778
+5/2/2005,big lake,tx,us,light,37800,31.1913889,-101.46
+5/2/2009,heidenheimer,tx,us,triangle,180,31.0180556,-97.3025
+5/2/2014,camden,tn,us,sphere,5,36.0588889,-88.0977778
+5/22/2001,encino,ca,us,sphere,10,34.1591667,-118.5002778
+5/22/2005,santa ana,ca,us,light,45,33.7455556,-117.8669444
+5/22/2010,san francisco,ca,us,oval,60,37.7750000,-122.4183333
+5/22/2012,florence,al,us,light,5,34.7997222,-87.6772222
+5/23/2002,sacramento,ca,us,unknown,900,38.5816667,-121.4933333
+5/23/2006,tranquillity,ca,us,circle,180,36.6488889,-120.2516667
+5/23/2010,algonac,mi,us,fireball,420,42.6183333,-82.5311111
+5/23/2013,morrisville,vt,us,light,300,44.5616667,-72.5988889
+5/24/2003,littleton,co,us,other,720,39.6133333,-105.0161111
+5/24/2009,las cruces,nm,us,circle,900,32.3122222,-106.7777778
+5/24/2012,burlington,ia,us,light,60,40.8075000,-91.1127778
+5/25/1991,hampstead,nh,us,disk,120,42.8744444,-71.1816667
+5/25/2004,omaha (near),ne,us,cone,75,41.2586111,-95.9375
+5/25/2008,scarborough,me,us,triangle,25,43.5780556,-70.3222222
+5/25/2011,delafield,wi,us,formation,492,43.0608333,-88.4036111
+5/25/2013,redford,mi,us,fireball,900,42.3833333,-83.2966667
+5/26/2001,olympia,wa,us,disk,240,47.0380556,-122.8994444
+5/26/2007,wilmington,nc,us,oval,1200,34.2255556,-77.945
+5/26/2012,mason city,ia,us,other,240,43.1536111,-93.2008333
+5/26/2013,jacksonville,nc,us,light,300,34.7538889,-77.4305556
+5/26/2013,kalamazoo,mi,us,light,120,42.2916667,-85.5872222
+5/27/2003,joplin,mo,us,unknown,10,37.0841667,-94.5130556
+5/27/2007,maple grove,mn,us,disk,7200,45.0725000,-93.4555556
+5/27/2011,englewood,co,us,cigar,45,39.6477778,-104.9872222
+5/27/2013,north tonawanda,ny,us,other,120,43.0386111,-78.8644444
+5/28/2002,bakersfield,ca,us,unknown,20,35.3733333,-119.0177778
+5/28/2007,chilliwack (canada),bc,ca,triangle,60,49.166667,-121.95
+5/28/2010,green bay,wi,us,unknown,45,44.5191667,-88.0197222
+5/28/2012,kaysville,ut,us,light,1200,41.0352778,-111.9377778
+5/29/1999,cheraw,co,us,triangle,1200,38.1069444,-103.5097222
+5/29/2005,riverview,fl,us,unknown,15,27.8658333,-82.3266667
+5/29/2010,commerce,ca,us,circle,180,34.0005556,-118.1588889
+5/29/2012,buffalo,mo,us,triangle,45,37.6459000,-93.0942
+5/30/1999,el paso,tx,us,sphere,900,31.7586111,-106.4863889
+5/30/2004,nipomo,ca,us,fireball,1200,35.0427778,-120.475
+5/30/2008,gold bar,wa,us,unknown,300,47.8569444,-121.6958333
+5/30/2011,austin,tx,us,light,600,30.2669444,-97.7427778
+5/31/1965,shasta lake,ca,us,disk,3600,40.6805556,-122.3697222
+5/31/2004,baton rouge,la,us,circle,90,30.4505556,-91.1544444
+5/31/2009,lithia springs,ga,us,sphere,600,33.7938889,-84.6605556
+5/31/2013,green island,ny,us,triangle,4,42.7441667,-73.6919444
+5/3/2000,surprise (witnessed from),az,us,unknown,2700,33.6305556,-112.3325
+5/3/2006,hollywood,fl,us,triangle,7200,26.0108333,-80.1497222
+5/3/2010,whitman,ma,us,triangle,30,42.0805556,-70.9361111
+5/3/2013,seattle,wa,us,other,3,47.6063889,-122.3308333
+5/3/2014,parkersburg,wv,us,light,300,39.2666667,-81.5616667
+5/4/2001,richmond,va,us,other,120,37.5536111,-77.4605556
+5/4/2006,westminster,ca,us,fireball,40,33.7591667,-118.0058333
+5/4/2011,san francisco,ca,us,light,1200,37.7750000,-122.4183333
+5/4/2013,joliet,il,us,fireball,2400,41.5250000,-88.0816667
+5/5/1970,new york city,ny,us,changing,300,40.7141667,-74.0063889
+5/5/1999,orlando,fl,us,other,300,28.5380556,-81.3794444
+5/5/2004,bellingham,wa,us,light,900,48.7597222,-122.4869444
+5/5/2007,beaverton,or,us,triangle,600,45.4872222,-122.8025
+5/5/2011,ovalo,tx,us,oval,20,32.1727778,-99.8075
+5/5/2012,granada hills,ca,us,oval,300,34.2647222,-118.5222222
+5/5/2014,santa rosa beach,fl,us,fireball,480,30.3958333,-86.2288889
+5/6/2001,santa rosa,ca,us,unknown,10,38.4405556,-122.7133333
+5/6/2006,westminster,co,us,light,15,39.8366667,-105.0366667
+5/6/2010,jacksonville,fl,us,triangle,73800,30.3319444,-81.6558333
+5/6/2013,florence,sc,us,changing,180,34.1952778,-79.7627778
+5/7/1999,roy,ut,us,changing,1440,41.1616667,-112.0255556
+5/7/2005,laconia,nh,us,disk,10,43.5277778,-71.4708333
+5/7/2008,calhoun,ga,us,disk,240,34.5025000,-84.9511111
+5/7/2013,coatesville,pa,us,circle,120,39.9830556,-75.8241667
+5/8/1999,everett,wa,us,light,600,47.9791667,-122.2008333
+5/8/2005,black canyon city,az,us,unknown,600,34.0708333,-112.15
+5/8/2009,reedville,va,us,unknown,3600,37.8419444,-76.2761111
+5/8/2012,clovis,ca,us,light,600,36.8252778,-119.7019444
+5/9/2000,lawton,ok,us,sphere,10,34.6086111,-98.39
+5/9/2006,fayetteville,ar,us,cigar,600,36.0625000,-94.1572222
+5/9/2010,edmonton (canada),ab,ca,fireball,8,53.55,-113.5
+6/10/1952,chicago (south suburb),il,us,circle,600,41.8500000,-87.65
+6/10/1977,stockton,ca,us,disk,1800,37.9577778,-121.2897222
+6/10/1997,knoxville,tn,us,triangle,60,35.9605556,-83.9208333
+6/10/2001,anchorage,ak,us,egg,900,61.2180556,-149.9002778
+6/10/2005,moose jaw (canada),sk,ca,oval,1200,50.4,-105.55
+6/10/2008,houston,tx,us,light,60,29.7630556,-95.3630556
+6/10/2011,red oak,tx,us,triangle,300,32.5175000,-96.8041667
+6/11/1953,vancouver (canada),bc,ca,disk,30,49.25,-123.133333
+6/11/2001,saginaw,mi,us,triangle,600,43.4194444,-83.9508333
+6/11/2007,middleton,wi,us,sphere,90,43.0972222,-89.5041667
+6/11/2011,lake stevens,wa,us,unknown,1,48.0152778,-122.0625
+6/11/2013,myrtle beach,sc,us,formation,15,33.6888889,-78.8869444
+6/1/1958,middlesex,nc,us,circle,3600,35.7900000,-78.2041667
+6/1/1963,waukegan,il,us,formation,900,42.3636111,-87.8447222
+6/1/1966,pleasantville,ny,us,disk,3600,41.1327778,-73.7930556
+6/1/1968,columbia,sc,us,triangle,10,34.0005556,-81.035
+6/1/1971,holliday,tx,us,disk,14400,33.8161111,-98.6947222
+6/1/1973,landis,nc,us,light,60,35.5455556,-80.6111111
+6/1/1975,nashville,tn,us,triangle,300,36.1658333,-86.7844444
+6/1/1976,orlando,fl,us,cylinder,600,28.5380556,-81.3794444
+6/1/1977,shelby,oh,us,circle,2,40.8813889,-82.6619444
+6/1/1978,sterling park (near dulles airport),va,us,disk,1800,39.0036111,-77.4008333
+6/1/1980,auxvasse,mo,us,disk,600,39.0180556,-91.8969444
+6/1/1982,tullahoma county,tn,us,formation,120,35.3619444,-86.2094444
+6/1/1984,ravenna,mi,us,circle,1500,43.1894444,-85.9369444
+6/1/1987,iowa,la,us,unknown,15,30.2366667,-93.0136111
+6/1/1989,mansfield,oh,us,other,120,40.7583333,-82.5155556
+6/1/1990,fullerton,ca,us,disk,600,33.8702778,-117.9244444
+6/1/1993,wolcott,ny,us,unknown,900,43.2205556,-76.8152778
+6/1/1994,scottville,mi,us,changing,300,43.9547222,-86.28
+6/1/1995,pensacola,fl,us,flash,300,30.4211111,-87.2169444
+6/1/1997,houston,tx,us,chevron,300,29.7630556,-95.3630556
+6/1/1998,winston-salem (north of),nc,us,circle,180,36.0997222,-80.2444444
+6/1/1999,georgetown,il,us,other,600,39.9752778,-87.6358333
+6/1/2000,san francisco,ca,us,fireball,10,37.7750000,-122.4183333
+6/1/2003,cullman,al,us,oval,300,34.1747222,-86.8436111
+6/1/2006,bodie (near),ca,us,circle,7200,38.2122222,-119.0111111
+6/1/2008,dora,mo,us,light,3,36.7769444,-92.2172222
+6/1/2010,chesterfield,va,us,unknown,7200,37.3769444,-77.5061111
+6/1/2012,st. paul,mn,us,cylinder,120,44.9444444,-93.0930556
+6/1/2013,cottage grove,mn,us,changing,7,44.8277778,-92.9436111
+6/12/1998,montebello,ca,us,light,3,34.0094444,-118.1044444
+6/12/2005,chicago,il,us,triangle,180,41.8500000,-87.65
+6/12/2009,palm coast,fl,us,light,120,29.5847222,-81.2080556
+6/12/2012,new york city,ny,us,other,5,40.7141667,-74.0063889
+6/13/1991,st. petersburg,fl,us,other,10,27.7705556,-82.6794444
+6/13/2002,omaha,ne,us,light,120,41.2586111,-95.9375
+6/13/2005,bertram,tx,us,oval,300,30.7436111,-98.0552778
+6/13/2009,doswell,va,us,circle,120,37.8600000,-77.4644444
+6/13/2012,columbus,oh,us,oval,15,39.9611111,-82.9988889
+6/14/1986,new rochelle,ny,us,triangle,300,40.9113889,-73.7827778
+6/14/2002,glendale,ca,us,disk,60,34.1425000,-118.2541667
+6/14/2007,three rocks,ca,us,light,600,36.5025000,-120.3905556
+6/14/2008,edmonds,wa,us,circle,5,47.8108333,-122.3761111
+6/14/2011,pinole,ca,us,sphere,960,38.0044444,-122.2977778
+6/14/2012,cranston,ri,us,fireball,60,41.7797222,-71.4377778
+6/15/1955,daytona beach,fl,us,fireball,120,29.2105556,-81.0230556
+6/15/1963,newaygo,mi,us,sphere,7200,43.4197222,-85.8
+6/15/1966,mcclellandtown,pa,us,disk,10800,39.8869444,-79.8669444
+6/15/1969,little rock,ar,us,cylinder,60,34.7463889,-92.2894444
+6/15/1973,whitesburg,ky,us,light,1200,37.1183333,-82.8269444
+6/15/1975,florence,sc,us,rectangle,2700,34.1952778,-79.7627778
+6/15/1977,newport,or,us,light,600,44.6369444,-124.0522222
+6/15/1979,san jose,ca,us,disk,2400,37.3394444,-121.8938889
+6/15/1982,new york city (staten island),ny,us,cigar,300,40.7141667,-74.0063889
+6/15/1985,seward,ak,us,disk,5,60.1041667,-149.4422222
+6/15/1990,springfield,or,us,oval,1200,44.0463889,-123.0208333
+6/15/1993,memphis,tn,us,fireball,2,35.1494444,-90.0488889
+6/15/1995,washington,ut,us,unknown,180,37.1305556,-113.5075
+6/15/1996,coeur d&#39alene,id,us,formation,180,47.6777778,-116.7794444
+6/15/1997,silver city,nm,us,unknown,30,32.7700000,-108.2797222
+6/15/1999,silverton,tx,us,cigar,1200,34.4741667,-101.3041667
+6/15/2001,naperville,il,us,sphere,480,41.7858333,-88.1472222
+6/15/2002,corona,ca,us,fireball,900,33.8752778,-117.5655556
+6/15/2004,palm beach,fl,us,other,600,26.7052778,-80.0366667
+6/15/2005,lagrange,ny,us,light,2,41.4486111,-74.2858333
+6/15/2007,monroe,mi,us,fireball,8,41.9163889,-83.3977778
+6/15/2010,burlington (canada),on,ca,light,300,43.316667,-79.8
+6/15/2012,pittsburgh (general area),pa,us,oval,120,40.4405556,-79.9961111
+6/15/2013,garden plain,ks,us,light,180,37.6583333,-97.6833333
+6/16/1998,meadville,pa,us,teardrop,2,41.6413889,-80.1516667
+6/16/2004,milan,tn,us,sphere,10,35.9197222,-88.7588889
+6/16/2008,jefferson city,mo,us,unknown,1800,38.5766667,-92.1733333
+6/16/2011,green river,wy,us,sphere,45,41.5286111,-109.4655556
+6/16/2012,san diego,ca,us,light,600,32.7152778,-117.1563889
+6/17/1977,columbia,nc,us,oval,900,35.9175000,-76.2525
+6/17/2001,tampa,fl,us,diamond,60,27.9472222,-82.4586111
+6/17/2005,palm springs,ca,us,other,60,33.8302778,-116.5444444
+6/17/2008,phoenix,az,us,formation,5,33.4483333,-112.0733333
+6/17/2011,burlington,vt,us,light,300,44.4758333,-73.2125
+6/17/2013,bangor,me,us,light,60,44.8011111,-68.7783333
+6/18/2000,monroe,ny,us,rectangle,60,41.3305556,-74.1872222
+6/18/2004,blountville,tn,us,other,55,36.5330556,-82.3269444
+6/18/2006,paulsboro,nj,us,flash,20,39.8302778,-75.2408333
+6/18/2009,arlington,ia,us,light,240,42.7491667,-91.6711111
+6/18/2012,loveland,oh,us,light,180,39.2688889,-84.2638889
+6/19/1996,tampa,fl,us,disk,240,27.9472222,-82.4586111
+6/19/2003,reston,va,us,sphere,10,38.9686111,-77.3413889
+6/19/2005,silverdale,wa,us,rectangle,30,47.6447222,-122.6936111
+6/19/2007,seattle,wa,us,light,180,47.6063889,-122.3308333
+6/19/2009,azle,tx,us,fireball,2,32.8950000,-97.5455556
+6/19/2011,albany,ny,us,fireball,60,42.6525000,-73.7566667
+6/19/2013,stuart,ia,us,light,4,41.5033333,-94.3183333
+6/20/1979,orlando,fl,us,circle,600,28.5380556,-81.3794444
+6/20/1994,oroville,wa,us,triangle,180,48.9391667,-119.4344444
+6/20/1999,las vegas,nv,us,oval,300,36.1750000,-115.1363889
+6/20/2003,chicago (over lake michigan),il,us,teardrop,120,41.8500000,-87.65
+6/20/2006,santa fe springs,ca,us,egg,120,33.9472222,-118.0844444
+6/20/2007,wheatland,nd,us,circle,120,46.9075000,-97.345
+6/20/2009,boulder,co,us,light,300,40.0150000,-105.27
+6/20/2012,laramie,wy,us,circle,300,41.3113889,-105.5905556
+6/20/2013,north myrtle beach,sc,us,fireball,60,33.8158333,-78.6802778
+6/21/1998,waveland,ms,us,oval,300,30.2866667,-89.3761111
+6/21/2003,candler,nc,us,unknown,900,35.5363889,-82.6930556
+6/21/2007,mobile,al,us,fireball,2,30.6941667,-88.0430556
+6/21/2009,worcester,vt,us,other,900,44.3736111,-72.5502778
+6/21/2012,loveland,co,us,light,300,40.3977778,-105.0744444
+6/21/2013,grand rapids,mi,us,fireball,360,42.9633333,-85.6680556
+6/2/2004,pahrump,nv,us,formation,3600,36.2083333,-115.9830556
+6/2/2008,minneapolis,mn,us,light,1200,44.9800000,-93.2636111
+6/2/2011,carthage,tn,us,light,5,36.2522222,-85.9516667
+6/2/2013,morden (canada),mb,ca,light,120,45.1,-64.933333
+6/22/1998,belgrade (outside&#44 dry creekroad),mt,us,unknown,3600,45.7761111,-111.1761111
+6/22/2003,baltimore,md,us,diamond,120,39.2902778,-76.6125
+6/22/2007,pottsville,pa,us,sphere,60,40.6855556,-76.1958333
+6/22/2010,prescott,az,us,light,1800,34.5400000,-112.4677778
+6/22/2012,marine city,mi,us,light,900,42.7194444,-82.4922222
+6/22/2013,northampton,ma,us,oval,300,42.3250000,-72.6416667
+6/23/1985,hinton (canada),ab,ca,other,40,53.4,-117.583333
+6/23/2001,fernandina beach,fl,us,circle,300,30.6694444,-81.4627778
+6/23/2005,italy,tx,us,light,30,32.1838889,-96.8844444
+6/23/2007,old station,ca,us,light,60,40.6752778,-121.4297222
+6/23/2009,curtisville,pa,us,triangle,300,40.6422222,-79.8511111
+6/23/2012,downey,ca,us,oval,20,33.9400000,-118.1316667
+6/23/2013,las vegas,nv,us,triangle,3600,36.1750000,-115.1363889
+6/24/1999,bouse,az,us,cylinder,600,33.9325000,-114.005
+6/24/2004,gilroy,ca,us,light,240,37.0058333,-121.5672222
+6/24/2006,mcallen,tx,us,light,3600,26.2030556,-98.2297222
+6/24/2009,tomball,tx,us,light,1800,30.0969444,-95.6158333
+6/24/2011,seminary,ms,us,circle,600,31.5622222,-89.4975
+6/24/2012,ypsilanti,mi,us,triangle,900,42.2411111,-83.6130556
+6/25/1976,phoenix,az,us,disk,37800,33.4483333,-112.0733333
+6/25/2001,mount vernon,wa,us,triangle,180,48.4213889,-122.3327778
+6/25/2002,aberdeen,wa,us,circle,15,46.9755556,-123.8144444
+6/25/2006,allen park,mi,us,other,60,42.2575000,-83.2111111
+6/25/2010,dade city,fl,us,teardrop,2,28.3644444,-82.1961111
+6/25/2012,north cove,nc,us,oval,10,35.8358333,-81.9891667
+6/25/2013,miami,fl,us,light,600,25.7738889,-80.1938889
+6/26/2002,sabina,oh,us,sphere,2,39.4886111,-83.6369444
+6/26/2004,sagamore hills,oh,us,fireball,600,41.3116667,-81.5683333
+6/26/2008,cuchara,co,us,light,1800,37.3791667,-105.0997222
+6/26/2010,seattle,wa,us,light,120,47.6063889,-122.3308333
+6/26/2013,cinnaminson,nj,us,light,30,39.9966667,-74.9930556
+6/27/2001,missoula,mt,us,changing,5,46.8722222,-113.9930556
+6/27/2004,wheeling,wv,us,light,5,40.0638889,-80.7211111
+6/27/2009,fairborn,oh,us,triangle,300,39.8208333,-84.0194444
+6/27/2012,o&#39fallon,mo,us,circle,180,38.8105556,-90.6997222
+6/28/1964,alexandria,va,us,disk,600,38.8047222,-77.0472222
+6/28/2002,wisconsin dells,wi,us,egg,120,43.6275000,-89.7708333
+6/28/2006,crescent city,ca,us,unknown,2,41.7561111,-124.2005556
+6/28/2009,phoenix,az,us,diamond,1800,33.4483333,-112.0733333
+6/28/2011,hermitage,tn,us,triangle,180,36.1961111,-86.6225
+6/28/2013,oak harbor,wa,us,cylinder,85,48.2933333,-122.6419444
+6/29/2000,jefferson city,mo,us,triangle,1200,38.5766667,-92.1733333
+6/29/2005,harbor springs,mi,us,light,5,45.4316667,-84.9919444
+6/29/2009,sarasota,fl,us,unknown,540,27.3361111,-82.5308333
+6/29/2012,alexandria,mn,us,triangle,30,45.8852778,-95.3772222
+6/29/2013,stanton,ia,us,sphere,90,40.9816667,-95.1038889
+6/30/1951,jackson heights,ny,us,disk,5,40.7555556,-73.8858333
+6/30/1959,campbellsport,wi,us,circle,1200,43.5977778,-88.2788889
+6/30/1966,mendota,ca,us,disk,300,36.7536111,-120.3805556
+6/30/1968,stockton,ca,us,disk,600,37.9577778,-121.2897222
+6/30/1974,new york city (bronx),ny,us,circle,600,40.7141667,-74.0063889
+6/30/1977,whittier,ca,us,triangle,7200,33.9791667,-118.0319444
+6/30/1981,sharon springs,ny,us,circle,14400,42.7958333,-74.6175
+6/30/1987,st. cloud,fl,us,other,120,28.2486111,-81.2813889
+6/30/1995,canton,oh,us,unknown,300,40.7988889,-81.3786111
+6/30/1998,jackson,ms,us,cylinder,180,32.2986111,-90.1847222
+6/30/2001,st. thomas (canada),on,ca,formation,300,42.783333,-81.183333
+6/30/2003,syracuse,ny,us,fireball,1800,43.0480556,-76.1477778
+6/30/2005,beaverton,or,us,light,120,45.4872222,-122.8025
+6/30/2006,raddle,il,us,triangle,480,37.7788889,-89.5866667
+6/30/2008,wolf point,mt,us,sphere,120,48.0905556,-105.64
+6/30/2011,fort collins,co,us,flash,3,40.5852778,-105.0838889
+6/30/2012,mesa,az,us,triangle,120,33.4222222,-111.8219444
+6/30/2013,prescott,az,us,fireball,30,34.5400000,-112.4677778
+6/3/2001,denver,co,us,disk,420,39.7391667,-104.9841667
+6/3/2005,englewood,co,us,circle,60,39.6477778,-104.9872222
+6/3/2011,kenefic,ok,us,other,120,34.1480556,-96.3619444
+6/3/2013,los angeles,ca,us,fireball,900,34.0522222,-118.2427778
+6/4/2001,fresno,ca,us,sphere,7200,36.7477778,-119.7713889
+6/4/2006,santa ana,ca,us,formation,1200,33.7455556,-117.8669444
+6/4/2011,avon,ct,us,disk,4,41.8097222,-72.8311111
+6/4/2013,twin falls,id,us,sphere,1438,42.5630556,-114.46
+6/5/2000,sargent,ga,us,unknown,300,33.4322222,-84.8694444
+6/5/2004,jasper,ar,us,triangle,30,36.0080556,-93.1863889
+6/5/2007,bloomington,in,us,unknown,10,39.1652778,-86.5263889
+6/5/2010,sacramento,ca,us,light,20,38.5816667,-121.4933333
+6/5/2013,roanoke,va,us,light,60,37.2708333,-79.9416667
+6/6/1971,victorville,ca,us,light,1800,34.5361111,-117.2902778
+6/6/1998,elba,ny,us,light,20,43.0772222,-78.1872222
+6/6/2002,las vegas,nv,us,sphere,180,36.1750000,-115.1363889
+6/6/2006,boise,id,us,triangle,60,43.6136111,-116.2025
+6/6/2008,smithville,mo,us,oval,60,39.3869444,-94.5808333
+6/6/2010,lake elsinore,ca,us,oval,2700,33.6680556,-117.3263889
+6/6/2013,commerce city,co,us,fireball,120,39.8083333,-104.9333333
+6/7/2000,modesto,ca,us,sphere,240,37.6391667,-120.9958333
+6/7/2004,christmas valley,or,us,other,2400,43.2363889,-120.6358333
+6/7/2008,annapolis,md,us,changing,3600,38.9783333,-76.4925
+6/7/2010,oak lawn,il,us,light,60,41.7108333,-87.7580556
+6/7/2013,elkhart,in,us,fireball,180,41.6819444,-85.9766667
+6/8/1999,pasco,wa,us,light,600,46.2397222,-119.0994444
+6/8/2005,neosho,mo,us,sphere,3600,36.8688889,-94.3677778
+6/8/2008,minneapolis,mn,us,light,60,44.9800000,-93.2636111
+6/8/2012,baldwin park,ca,us,fireball,240,34.0852778,-117.96
+6/8/2013,emmett,id,us,sphere,120,43.8736111,-116.4983333
+6/9/2000,germantown,md,us,triangle,60,39.1730556,-77.2719444
+6/9/2003,avondale,az,us,sphere,180,33.4355556,-112.3488889
+6/9/2008,miami,fl,us,rectangle,2,25.7738889,-80.1938889
+6/9/2012,portland,or,us,formation,60,45.5236111,-122.675
+6/9/2013,west hartford,ct,us,light,4,41.7636111,-72.6855556
+7/10/1978,grand rapids,mi,us,triangle,300,42.9633333,-85.6680556
+7/10/1997,lafayette,in,us,fireball,900,40.4166667,-86.8752778
+7/10/2002,tooele,ut,us,fireball,60,40.5308333,-112.2975
+7/10/2004,los angeles,ca,us,light,10,34.0522222,-118.2427778
+7/10/2008,jasper,in,us,circle,900,38.3913889,-86.9311111
+7/10/2010,cougar,wa,us,other,600,46.0516667,-122.2983333
+7/10/2010,millville,pa,us,light,3600,41.1202778,-76.5302778
+7/10/2012,baltimore,md,us,sphere,600,39.2902778,-76.6125
+7/11/1997,allison park (hampton twp.),pa,us,cylinder,360,40.5594444,-79.9588889
+7/11/2002,newark,oh,us,circle,2700,40.0580556,-82.4013889
+7/11/2005,niagara falls (canada),on,ca,teardrop,600,43.1,-79.05
+7/11/2008,lansing,il,us,triangle,120,41.5647222,-87.5388889
+7/11/2010,everett,wa,us,circle,900,47.9791667,-122.2008333
+7/11/2012,redding,ca,us,light,120,40.5866667,-122.3905556
+7/1/1947,maywood,ca,us,disk,120,33.9866667,-118.1844444
+7/1/1965,moberly,mo,us,light,900,39.4183333,-92.4380556
+7/1/1972,provo (south of),ut,us,disk,1800,40.2338889,-111.6577778
+7/1/1977,burnet,tx,us,light,1800,30.7580556,-98.2280556
+7/1/1981,indian springs,nv,us,light,2700,36.5697222,-115.6697222
+7/1/1988,tucson,az,us,triangle,600,32.2216667,-110.9258333
+7/1/1991,mulliken,mi,us,disk,1325,42.7622222,-84.8963889
+7/1/1995,wenksville,pa,us,light,1200,39.9900000,-77.3108333
+7/1/1999,morganton,nc,us,diamond,30,35.7452778,-81.685
+7/1/2000,stockton,ca,us,disk,900,37.9577778,-121.2897222
+7/1/2003,moses lake,wa,us,other,7200,47.1302778,-119.2769444
+7/1/2006,decatur,mi,us,light,1200,42.1080556,-85.9744444
+7/1/2009,irving,tx,us,oval,10,32.8138889,-96.9486111
+7/1/2011,mount forest (canada),on,ca,fireball,600,43.966667,-80.733333
+7/1/2011,niagara falls (canada),on,ca,flash,1,43.1,-79.05
+7/1/2013,shorewood,il,us,other,60,41.5200000,-88.2016667
+7/12/1995,salt lake city,ut,us,disk,1200,40.7608333,-111.8902778
+7/12/2001,arlington,wa,us,light,3,48.1988889,-122.1238889
+7/12/2004,st. cloud,mn,us,sphere,60,45.5608333,-94.1622222
+7/12/2007,hesperia,ca,us,light,4,34.4263889,-117.3
+7/12/2009,pittsburgh,pa,us,sphere,180,40.4405556,-79.9961111
+7/12/2012,viola,de,us,other,120,39.0427778,-75.5722222
+7/12/2013,new castle,va,us,triangle,300,37.5000000,-80.1111111
+7/13/2000,gilbert,az,us,circle,900,33.3527778,-111.7883333
+7/13/2002,paramus,nj,us,formation,70,40.9444444,-74.0758333
+7/13/2005,longville,mn,us,light,600,46.9863889,-94.2111111
+7/13/2007,st. louis,mo,us,triangle,240,38.6272222,-90.1977778
+7/13/2009,cathedral city,ca,us,oval,1200,33.7797222,-116.4644444
+7/13/2011,dunbar,wv,us,light,1800,38.3605556,-81.7375
+7/13/2012,winnipeg (canada),mb,ca,oval,240,49.883333,-97.166667
+7/13/2013,hudson,oh,us,fireball,120,41.2400000,-81.4408333
+7/14/1987,sacramento,ca,us,other,60,38.5816667,-121.4933333
+7/14/2001,new holland,pa,us,light,240,40.1016667,-76.0855556
+7/14/2005,palm harbor (clearwater),fl,us,light,1320,28.0777778,-82.7638889
+7/14/2007,mahwah,nj,us,sphere,7,41.0886111,-74.1441667
+7/14/2009,three rivers,ca,us,light,30,36.4388889,-118.9036111
+7/14/2012,airway heights,wa,us,light,180,47.6447222,-117.5922222
+7/14/2013,georgetown,ky,us,sphere,300,38.2097222,-84.5588889
+7/15/1947,morehouse,mo,us,cylinder,1140,36.8472222,-89.6852778
+7/15/1960,goldsboro,nc,us,sphere,120,35.3847222,-77.9930556
+7/15/1965,whitesburg,ky,us,light,2700,37.1183333,-82.8269444
+7/15/1969,fairfax,ca,us,disk,60,37.9872222,-122.5877778
+7/15/1974,live oak,ca,us,triangle,300,39.2758333,-121.6588889
+7/15/1975,summerside (canada),pe,ca,rectangle,300,46.4,-63.783333
+7/15/1978,santa fe (pecos wilderness),nm,us,light,900,35.6869444,-105.9372222
+7/15/1981,fayetteville,ar,us,other,180,36.0625000,-94.1572222
+7/15/1986,elmvale (canada),on,ca,light,1200,44.583333,-79.866667
+7/15/1991,mckinney,tx,us,unknown,600,33.1975000,-96.615
+7/15/1995,hesperia,ca,us,fireball,600,34.4263889,-117.3
+7/15/1997,reedsville,wv,us,triangle,60,39.5105556,-79.7986111
+7/15/1998,sterling,va,us,disk,900,39.0061111,-77.4288889
+7/15/2000,los angeles,ca,us,triangle,60,34.0522222,-118.2427778
+7/15/2001,wilmington,ca,us,fireball,1200,33.7800000,-118.2616667
+7/15/2002,bothell,wa,us,oval,900,47.7625000,-122.2041667
+7/15/2003,taylorsville,ut,us,flash,120,40.6677778,-111.9380556
+7/15/2005,iowa city (near&#44 on i-380),ia,us,sphere,600,41.6611111,-91.53
+7/15/2006,port dover (canada),on,ca,disk,120,42.783333,-80.2
+7/15/2007,yuba city,ca,us,triangle,120,39.1405556,-121.6158333
+7/15/2009,manchester,tn,us,other,30,35.4816667,-86.0886111
+7/15/2010,ocoee,tn,us,circle,3600,35.1222222,-84.7188889
+7/15/2012,florence,mt,us,triangle,60,46.6316667,-114.0780556
+7/16/1981,mont-tremblant (canada),pq,ca,disk,2700,46.2,-74.633333
+7/16/2001,new york city (manhattan) (great lawn),ny,us,diamond,60,40.7141667,-74.0063889
+7/16/2006,chicago,il,us,circle,30,41.8500000,-87.65
+7/16/2009,oakwood,tx,us,light,30,31.5847222,-95.8488889
+7/16/2011,sarasota,fl,us,diamond,300,27.3361111,-82.5308333
+7/16/2013,prior lake,mn,us,sphere,600,44.7133333,-93.4225
+7/17/1999,sewell,nj,us,triangle,15,39.7663889,-75.1447222
+7/17/2003,kirkland,wa,us,other,3,47.6816667,-122.2075
+7/17/2005,loveland,co,us,light,120,40.3977778,-105.0744444
+7/17/2008,colfax,wi,us,light,30,44.9975000,-91.7269444
+7/17/2010,seattle,wa,us,formation,600,47.6063889,-122.3308333
+7/17/2012,dade city,fl,us,sphere,300,28.3644444,-82.1961111
+7/18/1970,custer,mt,us,light,1200,46.1291667,-107.5544444
+7/18/1999,robbins,tx,us,circle,1200,31.2552778,-96.1225
+7/18/2004,kirkland,wa,us,sphere,600,47.6816667,-122.2075
+7/18/2008,federalsburg,md,us,disk,120,38.6941667,-75.7725
+7/18/2009,pound ridge,ny,us,other,10,41.2086111,-73.5752778
+7/18/2011,vancouver,wa,us,sphere,600,45.6388889,-122.6602778
+7/18/2012,myrtle beach,sc,us,light,300,33.6888889,-78.8869444
+7/19/1978,mojave,ca,us,light,300,35.0525000,-118.1730556
+7/19/2003,charleston,sc,us,circle,900,32.7763889,-79.9311111
+7/19/2006,murfreesboro,tn,us,cylinder,15,35.8455556,-86.3902778
+7/19/2009,ocean city,nj,us,light,240,39.2775000,-74.575
+7/19/2012,seaside,or,us,sphere,120,45.9933333,-123.9213889
+7/20/1962,springdale,ar,us,light,1200,36.1866667,-94.1286111
+7/20/1977,milwaukee,wi,us,formation,300,43.0388889,-87.9063889
+7/20/1996,clear lake,tx,us,teardrop,300,33.0780556,-96.495
+7/20/2001,middletown,oh,us,light,15,39.5150000,-84.3983333
+7/20/2004,federal way,wa,us,unknown,30,47.3225000,-122.3113889
+7/20/2006,shoreview,mn,us,cigar,60,45.0791667,-93.1469444
+7/20/2008,west bloomfield,mi,us,sphere,120,42.5377778,-83.2330556
+7/20/2010,ida,mi,us,fireball,600,41.9108333,-83.5736111
+7/20/2012,princeton,in,us,circle,2700,38.3552778,-87.5675
+7/21/1998,houston,tx,us,other,900,29.7630556,-95.3630556
+7/21/2003,port angeles,wa,us,sphere,300,48.1183333,-123.4294444
+7/21/2007,nashville,tn,us,sphere,1800,36.1658333,-86.7844444
+7/21/2008,pueblo,co,us,rectangle,10800,38.2544444,-104.6086111
+7/21/2011,rochester,ny,us,changing,60,43.1547222,-77.6158333
+7/21/2012,vacaville,ca,us,light,1140,38.3566667,-121.9866667
+7/2/1977,glen head,ny,us,cigar,240,40.8352778,-73.6241667
+7/2/2002,kansas city,mo,us,oval,180,39.0997222,-94.5783333
+7/2/2005,portsmouth,oh,us,triangle,7200,38.7316667,-82.9977778
+7/2/2009,vergas,mn,us,formation,120,46.6566667,-95.805
+7/2/2011,hilo,hi,us,light,2400,19.7297222,-155.09
+7/2/2012,fairborn,oh,us,flash,2,39.8208333,-84.0194444
+7/22/1977,atwater,ca,us,disk,180,37.3477778,-120.6080556
+7/22/2001,wellington county (canada),on,ca,other,300,46.433333,-64.0
+7/22/2005,jacksonville,fl,us,light,1800,30.3319444,-81.6558333
+7/22/2008,lake charles,la,us,circle,480,30.2263889,-93.2172222
+7/22/2011,custer,sd,us,circle,300,43.7666667,-103.5983333
+7/22/2012,frederick,md,us,circle,900,39.4141667,-77.4108333
+7/23/1999,marietta,oh,us,cigar,45,39.4152778,-81.455
+7/23/2002,montreal (canada),pq,ca,triangle,7200,45.5,-73.583333
+7/23/2004,los angeles,ca,us,flash,900,34.0522222,-118.2427778
+7/23/2008,lafayette,in,us,light,2400,40.4166667,-86.8752778
+7/23/2011,ursa,il,us,light,3600,40.0747222,-91.3672222
+7/23/2012,chico,ca,us,circle,480,39.7286111,-121.8363889
+7/24/1999,philadelphia,pa,us,flash,60,39.9522222,-75.1641667
+7/24/2004,frostburg,md,us,unknown,900,39.6580556,-78.9286111
+7/24/2008,phoenix,az,us,unknown,35,33.4483333,-112.0733333
+7/24/2010,oklahoma city,ok,us,circle,10800,35.4675000,-97.5161111
+7/24/2012,brighton,mi,us,unknown,1,42.5294444,-83.7802778
+7/25/1971,allentown,pa,us,light,180,40.6083333,-75.4905556
+7/25/1999,moses lake,wa,us,sphere,300,47.1302778,-119.2769444
+7/25/2002,shirley,ny,us,formation,180,40.8013889,-72.8680556
+7/25/2005,vancouver (canada),bc,ca,formation,1380,49.25,-123.133333
+7/25/2008,phoenix,az,us,light,30,33.4483333,-112.0733333
+7/25/2009,union,ms,us,light,10,32.5713889,-89.1213889
+7/25/2012,leroy,mi,us,oval,7200,45.2200000,-83.5208333
+7/25/2013,hagerstown,md,us,oval,2,39.6416667,-77.7202778
+7/26/1999,bricktown,nj,us,rectangle,20,40.0591667,-74.1375
+7/26/2003,cranbrook (canada),bc,ca,light,120,49.516667,-115.766667
+7/26/2006,phoenix,az,us,cigar,300,33.4483333,-112.0733333
+7/26/2009,plains,pa,us,circle,900,41.2752778,-75.8505556
+7/26/2012,arcata,ca,us,formation,240,40.8666667,-124.0816667
+7/27/1983,san antonio,tx,us,cigar,900,29.4238889,-98.4933333
+7/27/2001,new york city,ny,us,oval,15,40.7141667,-74.0063889
+7/27/2004,woodinville,wa,us,teardrop,2100,47.7544444,-122.1622222
+7/27/2007,north myrtle beach,sc,us,fireball,5,33.8158333,-78.6802778
+7/27/2010,shelbyville,in,us,light,1800,39.5213889,-85.7769444
+7/27/2012,stevensville,md,us,light,900,38.9805556,-76.3147222
+7/27/2013,pawtucket,ri,us,circle,120,41.8786111,-71.3830556
+7/28/1992,sioux falls,sd,us,light,1800,43.5500000,-96.7
+7/28/2002,sedona,az,us,oval,20,34.8697222,-111.7602778
+7/28/2005,oshkosh,wi,us,disk,900,44.0247222,-88.5425
+7/28/2007,austin,tx,us,circle,180,30.2669444,-97.7427778
+7/28/2010,lansing,mi,us,light,600,42.7325000,-84.5555556
+7/28/2012,olathe,ks,us,light,360,38.8813889,-94.8188889
+7/29/1987,edmonton (canada),ab,ca,triangle,180,53.55,-113.5
+7/29/2004,puyallup,wa,us,fireball,600,47.1855556,-122.2916667
+7/29/2006,myrtle beach,sc,us,flash,5400,33.6888889,-78.8869444
+7/29/2010,canton,oh,us,fireball,2700,40.7988889,-81.3786111
+7/29/2012,ann arbor,mi,us,cylinder,1200,42.2708333,-83.7263889
+7/29/2013,tacoma (northeast area),wa,us,sphere,5,47.2530556,-122.4430556
+7/30/1997,corpus christi,tx,us,oval,300,27.8002778,-97.3961111
+7/30/2003,bushkill,pa,us,formation,120,41.0933333,-75.0022222
+7/30/2006,indialantic,fl,us,fireball,900,28.0891667,-80.5658333
+7/30/2008,russellville,ar,us,formation,10800,35.2783333,-93.1336111
+7/30/2011,new york city (staten island),ny,us,fireball,60,40.7141667,-74.0063889
+7/30/2012,ypsilanti,mi,us,oval,300,42.2411111,-83.6130556
+7/31/1984,middlebury,ct,us,other,900,41.5277778,-73.1280556
+7/31/2002,liberty,oh,us,other,900,39.7200000,-84.325
+7/31/2005,eugene,or,us,rectangle,60,44.0522222,-123.0855556
+7/31/2008,santa fe,nm,us,light,2400,35.6869444,-105.9372222
+7/31/2010,wichita,ks,us,diamond,300,37.6922222,-97.3372222
+7/31/2011,lakeside,ca,us,fireball,900,32.8572222,-116.9213889
+7/31/2013,elk grove,ca,us,circle,5,38.4088889,-121.3705556
+7/3/2000,kewaunee,wi,us,disk,180,44.4583333,-87.5030556
+7/3/2004,madison,in,us,light,60,38.7358333,-85.38
+7/3/2007,stanwood,wa,us,disk,10,48.2413889,-122.3694444
+7/3/2008,elkhart,in,us,oval,120,41.6819444,-85.9766667
+7/3/2010,baltimore,oh,us,oval,240,39.8452778,-82.6008333
+7/3/2010,lancaster,pa,us,circle,600,40.0377778,-76.3058333
+7/3/2011,mableton,ga,us,sphere,300,33.8186111,-84.5825
+7/3/2011,crystal lake,il,us,unknown,180,42.2411111,-88.3161111
+7/3/2012,grayling,mi,us,circle,300,44.6613889,-84.7147222
+7/3/2013,eugene,or,us,flash,300,44.0522222,-123.0855556
+7/4/1977,toppenish,wa,us,disk,300,46.3775000,-120.3075
+7/4/1995,woodlake,ca,us,cylinder,60,36.4136111,-119.0977778
+7/4/1997,chesterfield,mo,us,light,2,38.6630556,-90.5769444
+7/4/1997,frontenac,mo,us,light,5,38.6355556,-90.415
+7/4/2000,windsor heights,ia,us,light,3600,41.5977778,-93.7080556
+7/4/2002,sherman,ny,us,cigar,45,42.1591667,-79.5955556
+7/4/2003,ottawa (canada),on,ca,light,10,45.416667,-75.7
+7/4/2004,casselberry,fl,us,light,180,28.6775000,-81.3280556
+7/4/2005,granite falls,wa,us,sphere,60,48.0841667,-121.9675
+7/4/2007,kalispell,mt,us,unknown,10,48.1958333,-114.3119444
+7/4/2008,athens,ga,us,light,240,33.9608333,-83.3780556
+7/4/2008,albuquerque,nm,us,sphere,4,35.0844444,-106.6505556
+7/4/2009,el cajon,ca,us,light,960,32.7947222,-116.9616667
+7/4/2009,fond du lac,wi,us,fireball,300,43.7730556,-88.4469444
+7/4/2009,alpena,mi,us,oval,120,45.0616667,-83.4327778
+7/4/2010,huntsville,al,us,other,7200,34.7302778,-86.5861111
+7/4/2010,mulberry,ar,us,circle,360,35.5005556,-94.0513889
+7/4/2010,great falls,mt,us,unknown,120,47.5002778,-111.3
+7/4/2010,portsmouth,oh,us,light,180,38.7316667,-82.9977778
+7/4/2010,womelsdorf,pa,us,other,120,40.3616667,-76.1844444
+7/4/2010,hellertown,pa,us,teardrop,120,40.5794444,-75.3411111
+7/4/2011,antigo,wi,us,light,20,45.1402778,-89.1522222
+7/4/2011,hawthorne,ca,us,fireball,180,33.9163889,-118.3516667
+7/4/2011,portland,tn,us,circle,60,36.5816667,-86.5163889
+7/4/2011,star,id,us,fireball,120,43.6922222,-116.4925
+7/4/2012,ocean city,md,us,cylinder,20,38.3363889,-75.0852778
+7/4/2012,cedar park,tx,us,circle,300,30.5050000,-97.82
+7/4/2012,pottstown,pa,us,fireball,300,40.2452778,-75.65
+7/4/2012,tacoma,wa,us,fireball,3600,47.2530556,-122.4430556
+7/4/2012,medical lake,wa,us,fireball,300,47.5730556,-117.6811111
+7/4/2012,birmingham,al,us,oval,540,33.5205556,-86.8025
+7/4/2013,aiken,sc,us,circle,60,33.5602778,-81.7197222
+7/4/2013,heyworth,il,us,circle,600,40.3133333,-88.9736111
+7/4/2013,boise,id,us,circle,60,43.6136111,-116.2025
+7/4/2013,black rock,ar,us,light,240,36.1083333,-91.0972222
+7/4/2013,miami,fl,us,fireball,900,25.7738889,-80.1938889
+7/5/1985,peekskill,ny,us,triangle,480,41.2900000,-73.9208333
+7/5/2000,kingman,az,us,other,120,35.1894444,-114.0522222
+7/5/2003,sedona,az,us,triangle,120,34.8697222,-111.7602778
+7/5/2006,tucson,az,us,light,180,32.2216667,-110.9258333
+7/5/2008,ashland,ky,us,circle,300,38.4783333,-82.6380556
+7/5/2010,east greenville,pa,us,fireball,180,40.4063889,-75.5022222
+7/5/2012,tacoma,wa,us,light,300,47.2530556,-122.4430556
+7/5/2013,valdosta,ga,us,fireball,180,30.8325000,-83.2786111
+7/6/1981,ellwood city,pa,us,sphere,20,40.8616667,-80.2866667
+7/6/2002,salt lake city,ut,us,other,4,40.7608333,-111.8902778
+7/6/2004,cleveland,oh,us,unknown,20,41.4994444,-81.6955556
+7/6/2008,new glasgow (canada),ns,ca,changing,2,45.583333,-62.633333
+7/6/2010,dorchester,ma,us,sphere,60,42.2972222,-71.075
+7/6/2012,allentown,pa,us,unknown,60,40.6083333,-75.4905556
+7/6/2013,st. petersburg,fl,us,fireball,120,27.7705556,-82.6794444
+7/6/2013,bristol,nh,us,formation,480,43.5911111,-71.7372222
+7/7/1968,houston,tx,us,disk,900,29.7630556,-95.3630556
+7/7/1995,west milford,nj,us,triangle,900,40.5686111,-75.095
+7/7/2000,los angeles,ca,us,light,600,34.0522222,-118.2427778
+7/7/2001,rockford,il,us,light,3,42.2711111,-89.0938889
+7/7/2004,conyers,ga,us,other,2,33.6675000,-84.0177778
+7/7/2007,fort wayne,in,us,fireball,1200,41.1305556,-85.1288889
+7/7/2009,london,ky,us,circle,180,37.1288889,-84.0833333
+7/7/2011,milton,vt,us,unknown,60,44.6397222,-73.1108333
+7/7/2012,altoona,pa,us,circle,180,40.5186111,-78.395
+7/7/2013,lindenhurst,ny,us,circle,120,40.6866667,-73.3738889
+7/8/1995,ravenna,oh,us,unknown,600,41.1575000,-81.2422222
+7/8/2003,clermont,in,us,disk,300,39.8097222,-86.3225
+7/8/2006,mansfield,tx,us,oval,13,32.5630556,-97.1413889
+7/8/2009,etobicoke (canada),on,ca,unknown,90,43.7,-79.566667
+7/8/2012,oakland,ca,us,circle,600,37.8044444,-122.2697222
+7/9/1964,chicago,il,us,disk,30,41.8500000,-87.65
+7/9/2001,spring valley,ca,us,sphere,300,32.7447222,-116.9980556
+7/9/2004,elizabethton,tn,us,circle,30,36.3486111,-82.2108333
+7/9/2007,sarasota,fl,us,cigar,120,27.3361111,-82.5308333
+7/9/2010,springfield,mo,us,disk,300,37.2152778,-93.2980556
+7/9/2011,san fernando,ca,us,oval,2,34.2819444,-118.4380556
+7/9/2013,buckeye,az,us,light,1350,33.3702778,-112.5830556
+8/10/1981,salinas,ca,us,disk,600,36.6777778,-121.6544444
+8/10/1996,seattle,wa,us,triangle,600,47.6063889,-122.3308333
+8/10/2001,cedar hill,tx,us,light,3600,32.5883333,-96.9558333
+8/10/2002,ashland,or,us,unknown,120,42.1947222,-122.7083333
+8/10/2005,lake city,mi,us,disk,120,44.3352778,-85.215
+8/10/2008,madison,wi,us,other,120,43.0730556,-89.4011111
+8/10/2011,yakima,wa,us,light,120,46.6022222,-120.5047222
+8/10/2012,franklin,tn,us,fireball,180,35.9250000,-86.8688889
+8/10/2013,bristol,nh,us,circle,30,43.5911111,-71.7372222
+8/11/1999,ettersburg,ca,us,rectangle,120,40.1386111,-123.9961111
+8/11/2002,san rafael,ca,us,light,5,37.9736111,-122.53
+8/11/2005,goleta,ca,us,flash,1,34.4358333,-119.8266667
+8/11/2007,tiskilwa,il,us,light,1200,41.2922222,-89.5061111
+8/11/2010,el paso,tx,us,light,120,31.7586111,-106.4863889
+8/11/2011,annapolis,md,us,rectangle,5,38.9783333,-76.4925
+8/11/2012,san diego,ca,us,circle,600,32.7152778,-117.1563889
+8/1/1948,new york city (brooklyn),ny,us,circle,600,40.7141667,-74.0063889
+8/1/1965,st. louis,mo,us,sphere,120,38.6272222,-90.1977778
+8/1/1973,scituate,ma,us,triangle,900,42.1958333,-70.7263889
+8/1/1978,reading,pa,us,formation,300,40.3355556,-75.9272222
+8/1/1988,north hampton,nh,us,rectangle,300,42.9725000,-70.8302778
+8/1/1994,beloit,wi,us,triangle,45,42.5083333,-89.0316667
+8/1/1998,st. louis,mo,us,light,120,38.6272222,-90.1977778
+8/1/2000,turkey,tx,us,circle,86400,34.3925000,-100.8972222
+8/1/2002,parma,oh,us,sphere,300,41.4047222,-81.7230556
+8/1/2005,bowmanville (canada),on,ca,teardrop,5,43.9,-78.683333
+8/1/2008,palestine,tx,us,teardrop,180,31.7619444,-95.6305556
+8/1/2009,vero beach,fl,us,light,300,27.6383333,-80.3975
+8/1/2011,newport news,va,us,light,20,36.9786111,-76.4283333
+8/1/2013,coeur d&#39alene,id,us,sphere,120,47.6777778,-116.7794444
+8/12/1995,arlington,wa,us,triangle,600,48.1988889,-122.1238889
+8/12/2000,wallingford,ct,us,triangle,10,41.4569444,-72.8236111
+8/12/2002,beaver falls,pa,us,light,15,40.7519444,-80.3194444
+8/12/2004,boulder,mt,us,light,45,46.2366667,-112.12
+8/12/2007,van wert,oh,us,sphere,30,40.8694444,-84.5841667
+8/12/2007,orlando,fl,us,triangle,60,28.5380556,-81.3794444
+8/12/2010,ingonish (canada),ns,ca,light,3600,46.683333,-60.366667
+8/12/2011,cheektowaga (buffalo),ny,us,light,120,42.9033333,-78.755
+8/12/2012,red bay (canada),on,ca,circle,120.0,51.733333,-56.416667
+8/12/2013,menomonee  falls,wi,us,triangle,90.0,43.1788889,-88.1172222
+8/13/2000,bothell,wa,us,rectangle,60.0,47.7625,-122.2041667
+8/13/2003,houston (canada),bc,ca,other,300.0,54.4,-126.65
+8/13/2006,socastee,sc,us,sphere,180.0,33.6833333,-78.9986111
+8/13/2009,keswick (canada),on,ca,unknown,3600.0,44.25,-79.466667
+8/13/2010,kingston,wa,us,triangle,300.0,47.7988889,-122.4969444
+8/13/2011,truckee,ca,us,diamond,120.0,39.3280556,-120.1822222
+8/13/2013,mchenry,il,us,unknown,60.0,42.3333333,-88.2666667
+8/14/1984,buckingham (canada),pq,ca,unknown,1200.0,45.583333,-75.416667
+8/14/2001,strathroy (canada),on,ca,triangle,900.0,42.95,-81.616667
+8/14/2005,blairsville,ga,us,sphere,10.0,34.8761111,-83.9583333
+8/14/2008,tumwater,wa,us,light,300.0,47.0075,-122.9080556
+8/14/2010,mt. pleasant,pa,us,triangle,90.0,40.1488889,-79.5413889
+8/14/2011,dixon,il,us,disk,20.0,41.8388889,-89.4794444
+8/14/2013,key west,fl,us,cigar,300.0,24.5552778,-81.7827778
+8/15/1955,eagle pass,tx,us,cigar,600.0,28.7088889,-100.4991667
+8/15/1967,westford,ma,us,unknown,1200.0,42.5791667,-71.4383333
+8/15/1973,farmers branch,tx,us,disk,900.0,32.9263889,-96.8958333
+8/15/1977,rockford,mn,us,unknown,7200.0,45.0883333,-93.7341667
+8/15/1980,apollo,pa,us,sphere,900.0,40.5813889,-79.5666667
+8/15/1985,sagamore hills,oh,us,rectangle,300.0,41.3116667,-81.5683333
+8/15/1988,buchanan,ny,us,circle,60.0,41.2619444,-73.9386111
+8/15/1994,denver,co,us,other,5.0,39.7391667,-104.9841667
+8/15/1996,lexington,va,us,light,5.0,37.7838889,-79.4430556
+8/15/1998,simi valley,ca,us,light,120.0,34.2694444,-118.7805556
+8/15/1999,jenks,ok,us,light,30.0,36.0227778,-95.9680556
+8/15/2000,burke,va,us,circle,1200.0,38.7933333,-77.2719444
+8/15/2002,ocean city,md,us,fireball,3600.0,38.3363889,-75.0852778
+8/15/2003,ogdensburg,nj,us,light,300.0,41.0816667,-74.5927778
+8/15/2004,niagara falls (canada),on,ca,light,600.0,43.1,-79.05
+8/15/2006,trout lake,wa,us,flash,240.0,45.9975,-121.5269444
+8/15/2007,santa rosa,ca,us,chevron,480.0,38.4405556,-122.7133333
+8/15/2009,chicago,il,us,triangle,20.0,41.85,-87.65
+8/15/2010,portland,or,us,sphere,180.0,45.5236111,-122.675
+8/15/2012,omak,wa,us,teardrop,1200.0,48.4111111,-119.5263889
+8/15/2013,coeur d&#39alene,id,us,light,60.0,47.6777778,-116.7794444
+8/16/1999,bentonville,in,us,fireball,60.0,39.7452778,-85.1941667
+8/16/2003,wheaton,il,us,cylinder,120.0,41.8661111,-88.1069444
+8/16/2005,leander,tx,us,light,15.0,30.5786111,-97.8527778
+8/16/2008,grand island,ne,us,oval,300.0,40.925,-98.3416667
+8/16/2011,kingsport,tn,us,cylinder,10.0,36.5483333,-82.5619444
+8/16/2013,fenton,mo,us,circle,20.0,38.5130556,-90.4358333
+8/17/1982,vacaville,ca,us,fireball,480.0,38.3566667,-121.9866667
+8/17/2001,vail,co,us,unknown,5.0,39.6402778,-106.3736111
+8/17/2003,wichita,ks,us,cigar,20.0,37.6922222,-97.3372222
+8/17/2006,florence,or,us,light,540.0,43.9827778,-124.0986111
+8/17/2010,arlington,tx,us,triangle,1800.0,32.7355556,-97.1077778
+8/17/2012,kansas city,ks,us,cigar,45.0,39.1141667,-94.6272222
+8/17/2013,gloucester,ma,us,circle,180.0,42.6158333,-70.6625
+8/18/1987,lincoln (near),il,us,disk,30.0,40.1483333,-89.3647222
+8/18/2001,errol,nh,us,triangle,20.0,44.7813889,-71.1383333
+8/18/2004,whitesboro,ny,us,light,240.0,43.1219444,-75.2919444
+8/18/2007,sacramento,ca,us,cigar,60.0,38.5816667,-121.4933333
+8/18/2010,bellevue,wa,us,other,5.0,47.6105556,-122.1994444
+8/18/2012,binghamton,ny,us,unknown,120.0,42.0986111,-75.9183333
+8/18/2012,pentwater,mi,us,sphere,600.0,43.7816667,-86.4330556
+8/19/1989,cleveland,oh,us,disk,20.0,41.4994444,-81.6955556
+8/19/2001,victoria (canada),bc,ca,light,30.0,46.216667,-63.483333
+8/19/2004,st. louis park,mn,us,sphere,7200.0,44.9483333,-93.3477778
+8/19/2006,point roberts,wa,us,circle,900.0,48.9855556,-123.0766667
+8/19/2008,sylacauga,al,us,unknown,10.0,33.1730556,-86.2516667
+8/19/2010,halifax (canada),ns,ca,light,1200.0,44.65,-63.6
+8/19/2012,virginia beach,va,us,other,25.0,36.8527778,-75.9783333
+8/20/1960,pittsburgh,pa,us,sphere,300.0,40.4405556,-79.9961111
+8/20/1983,peoria county,il,us,cigar,60.0,40.6936111,-89.5888889
+8/20/1994,carthage,mo,us,unknown,180.0,37.1763889,-94.31
+8/20/2000,bellevue (capehart),ne,us,teardrop,10.0,41.1366667,-95.8905556
+8/20/2002,prestonsburg,ky,us,other,2.0,37.6655556,-82.7716667
+8/20/2004,new haven,in,us,teardrop,120.0,41.0705556,-85.0144444
+8/20/2006,bend,or,us,oval,2700.0,44.0583333,-121.3141667
+8/20/2007,greece,ny,us,cylinder,3600.0,43.2097222,-77.6933333
+8/20/2010,nampa,id,us,cigar,300.0,43.5408333,-116.5625
+8/20/2011,independence,mo,us,light,600.0,39.0911111,-94.4152778
+8/20/2013,boston,ma,us,light,120.0,42.3583333,-71.0602778
+8/21/2000,angus (canada),on,ca,unknown,7200.0,44.316667,-79.883333
+8/21/2003,essexville,mi,us,light,240.0,43.6152778,-83.8419444
+8/21/2004,peterborough (canada),on,ca,oval,120.0,44.3,-78.333333
+8/21/2005,rockford,il,us,other,180.0,42.2711111,-89.0938889
+8/21/2008,halifax (canada),ns,ca,formation,60.0,44.65,-63.6
+8/21/2010,felton,de,us,changing,60.0,39.0083333,-75.5783333
+8/21/2012,myrtle beach,sc,us,fireball,240.0,33.6888889,-78.8869444
+8/2/1997,sikeston,mo,us,light,2.0,36.8766667,-89.5877778
+8/2/2002,camarillo,ca,us,other,15.0,34.2163889,-119.0366667
+8/2/2006,klamath falls,or,us,flash,180.0,42.225,-121.7805556
+8/2/2008,chehalis,wa,us,unknown,30.0,46.6622222,-122.9627778
+8/2/2011,silver spring,md,us,sphere,3600.0,38.9905556,-77.0263889
+8/2/2013,flagstaff,az,us,formation,180.0,35.1980556,-111.6505556
+8/22/1989,grahamsville,ny,us,rectangle,300.0,41.8477778,-74.5483333
+8/22/2002,river falls,wi,us,disk,1800.0,44.8613889,-92.6236111
+8/22/2004,woodbury,ct,us,disk,10.0,41.5444444,-73.2094444
+8/22/2007,marfa,tx,us,cigar,600.0,30.3077778,-104.0186111
+8/22/2009,flowery branch,ga,us,light,30.0,34.185,-83.9252778
+8/22/2012,merrick,ny,us,triangle,1200.0,40.6627778,-73.5519444
+8/22/2013,lehi,ut,us,unknown,180.0,40.3916667,-111.85
+8/23/2002,louisville,ky,us,light,1800.0,38.2541667,-85.7594444
+8/23/2005,marietta,ga,us,triangle,45.0,33.9525,-84.55
+8/23/2008,hickory,nc,us,flash,2.0,35.7330556,-81.3413889
+8/23/2010,gahanna,oh,us,oval,1800.0,40.0191667,-82.8794444
+8/23/2012,chicago,il,us,fireball,30.0,41.85,-87.65
+8/23/2013,davenport,ia,us,sphere,180.0,41.5236111,-90.5775
+8/24/2001,kennebunk,me,us,formation,120.0,43.3838889,-70.5452778
+8/24/2003,littleton,ma,us,sphere,90.0,42.5375,-71.5125
+8/24/2006,farmington,mn,us,flash,1.0,44.6402778,-93.1433333
+8/24/2009,toronto (canada),on,ca,light,2.0,43.666667,-79.416667
+8/24/2012,northport,ny,us,fireball,600.0,40.9008333,-73.3436111
+8/24/2013,elmira,ny,us,sphere,180.0,42.0897222,-76.8080556
+8/24/2013,lake wales,fl,us,fireball,20.0,27.9011111,-81.5861111
+8/25/1995,cheektowaga (near),ny,us,unknown,6.0,42.9033333,-78.755
+8/25/2001,deer park,wa,us,light,5.0,47.9544444,-117.4758333
+8/25/2004,social hill,ar,us,cigar,15.0,34.3319444,-92.9130556
+8/25/2008,guelph (canada),on,ca,sphere,45.0,43.55,-80.25
+8/25/2010,nashville,tn,us,fireball,1800.0,36.1658333,-86.7844444
+8/25/2012,joliet,il,us,light,300.0,41.525,-88.0816667
+8/25/2012,parkersburg,wv,us,light,30.0,39.2666667,-81.5616667
+8/26/1990,punxsutawney,pa,us,sphere,900.0,40.9436111,-78.9711111
+8/26/2003,orlando,fl,us,circle,180.0,28.5380556,-81.3794444
+8/26/2006,fall city,wa,us,light,15.0,47.5675,-121.8875
+8/26/2010,springdale,ar,us,cigar,5.0,36.1866667,-94.1286111
+8/26/2012,mineral,va,us,changing,1800.0,38.0105556,-77.9088889
+8/26/2013,greensburg,pa,us,fireball,120.0,40.3013889,-79.5391667
+8/27/2003,westminster,co,us,triangle,15.0,39.8366667,-105.0366667
+8/27/2005,mitchell,sd,us,circle,240.0,43.7094444,-98.0294444
+8/27/2007,davie,fl,us,unknown,60.0,26.0625,-80.2333333
+8/27/2010,cabot,ar,us,light,2.0,34.9744444,-92.0163889
+8/27/2011,howard,oh,us,fireball,60.0,40.4075,-82.3269444
+8/27/2013,garland,tx,us,fireball,600.0,32.9125,-96.6386111
+8/28/2000,lenexa,ks,us,light,600.0,38.9536111,-94.7333333
+8/28/2003,eunice,la,us,light,300.0,30.4941667,-92.4175
+8/28/2007,moreno valley,ca,us,triangle,120.0,33.9375,-117.2297222
+8/28/2009,trenton,nj,us,rectangle,1200.0,40.2169444,-74.7433333
+8/28/2011,east brunswick,nj,us,sphere,3600.0,40.4277778,-74.4163889
+8/28/2013,kapoho,hi,us,light,600.0,19.5061111,-154.8486111
+8/29/2001,newmarket (canada),on,ca,triangle,10.0,44.05,-79.45
+8/29/2004,new york city (brooklyn),ny,us,circle,180.0,40.7141667,-74.0063889
+8/29/2008,south elgin,il,us,sphere,30.0,41.9941667,-88.2922222
+8/29/2010,irondequoit,ny,us,cylinder,40.0,43.2133333,-77.58
+8/29/2012,columbus,oh,us,fireball,60.0,39.9611111,-82.9988889
+8/30/1967,lansing,ks,us,unknown,300.0,39.2486111,-94.9
+8/30/2001,owatonna,mn,us,unknown,1200.0,44.0838889,-93.2258333
+8/30/2003,rome,pa,us,circle,5.0,41.8583333,-76.3411111
+8/30/2004,albuquerque,nm,us,unknown,180.0,35.0844444,-106.6505556
+8/30/2008,appleton,wi,us,other,60.0,44.2619444,-88.4152778
+8/30/2011,white house,tn,us,fireball,60.0,36.4702778,-86.6513889
+8/30/2013,corpus christi,tx,us,circle,60.0,27.8002778,-97.3961111
+8/31/1994,stockton (south of),ca,us,circle,120.0,37.9577778,-121.2897222
+8/31/2003,barrie (canada),on,ca,unknown,5.0,44.383333,-79.7
+8/31/2004,bristol,tn,us,other,1200.0,36.595,-82.1888889
+8/31/2004,bellefonte,pa,us,other,900.0,40.9133333,-77.7786111
+8/31/2008,waterloo,ia,us,light,2100.0,42.4927778,-92.3427778
+8/31/2010,sacramento,ca,us,rectangle,180.0,38.5816667,-121.4933333
+8/31/2012,spring hill,tn,us,cigar,10.0,35.7511111,-86.93
+8/31/2013,bowmanville (canada),on,ca,light,120.0,43.9,-78.683333
+8/3/1999,blue ridge summit (area),pa,us,unknown,720.0,39.7241667,-77.4716667
+8/3/2002,sullivan,il,us,light,10.0,39.5994444,-88.6077778
+8/3/2006,south pasadena,ca,us,fireball,5.0,34.1161111,-118.1494444
+8/3/2008,scotch plains,nj,us,cigar,2.0,40.6552778,-74.3902778
+8/3/2011,south point,oh,us,light,2400.0,38.4177778,-82.5863889
+8/3/2012,lyndhurst,nj,us,fireball,28.0,40.8119444,-74.1247222
+8/3/2013,fresno,ca,us,light,420.0,36.7477778,-119.7713889
+8/4/2000,gilbert,az,us,light,120.0,33.3527778,-111.7883333
+8/4/2003,ouray,co,us,other,180.0,38.0227778,-107.6708333
+8/4/2006,hazard,ky,us,unknown,300.0,37.2494444,-83.1933333
+8/4/2008,davie,fl,us,formation,300.0,26.0625,-80.2333333
+8/4/2011,kingman,az,us,oval,600.0,35.1894444,-114.0522222
+8/4/2012,exeter,nh,us,light,600.0,42.9813889,-70.9483333
+8/4/2013,west jordan,ut,us,light,600.0,40.5,-111.95
+8/5/1999,meridian,id,us,light,30.0,43.6122222,-116.3905556
+8/5/2003,ashland,or,us,oval,5.0,42.1947222,-122.7083333
+8/5/2006,corpus christi,tx,us,disk,7.0,27.8002778,-97.3961111
+8/5/2008,phoenix,az,us,triangle,120.0,33.4483333,-112.0733333
+8/5/2011,hialeah,fl,us,fireball,3.0,25.8572222,-80.2783333
+8/5/2012,burlington (canada),on,ca,circle,20.0,43.316667,-79.8
+8/6/1986,hutchinson,ks,us,triangle,2700.0,38.0608333,-97.9294444
+8/6/2002,ahwahnee,ca,us,light,240.0,37.3655556,-119.7252778
+8/6/2005,los angeles (sw of),ca,us,light,60.0,34.0522222,-118.2427778
+8/6/2008,hartwell,ga,us,light,180.0,34.3527778,-82.9322222
+8/6/2011,canyon lake,ca,us,triangle,5.0,33.685,-117.2722222
+8/6/2012,thousand oaks,ca,us,light,5.0,34.1705556,-118.8366667
+8/6/2013,clarkston,wa,us,light,240.0,46.4163889,-117.0441667
+8/7/1994,port richey,fl,us,egg,15.0,28.2713889,-82.7197222
+8/7/2002,richardson,tx,us,unknown,18000.0,32.9480556,-96.7294444
+8/7/2005,medicine bow,wy,us,light,2040.0,41.8955556,-106.2041667
+8/7/2008,lancaster,oh,us,unknown,120.0,39.7136111,-82.5994444
+8/7/2011,big sur,ca,us,formation,10800.0,36.2702778,-121.8063889
+8/7/2012,johnson city,tn,us,cigar,180.0,36.3133333,-82.3536111
+8/7/2013,desert center,ca,us,unknown,72000.0,33.7125,-115.4013889
+8/8/1974,mentor,oh,us,disk,600.0,41.6661111,-81.3397222
+8/8/1998,houston (canada),bc,ca,disk,600.0,54.4,-126.65
+8/8/2003,manchester,nh,us,diamond,30.0,42.9955556,-71.4552778
+8/8/2006,vancouver (canada),bc,ca,light,2.0,49.25,-123.133333
+8/8/2009,buena vista,co,us,light,900.0,38.8422222,-106.1305556
+8/8/2011,commerce city,co,us,light,60.0,39.8083333,-104.9333333
+8/8/2012,myrtle beach,sc,us,sphere,30.0,33.6888889,-78.8869444
+8/8/2013,belmont,nh,us,unknown,240.0,43.4452778,-71.4783333
+8/9/2000,houston county,tn,us,sphere,60.0,35.2413889,-87.9177778
+8/9/2004,sacramento,ca,us,light,600.0,38.5816667,-121.4933333
+8/9/2007,mcallen,tx,us,sphere,600.0,26.2030556,-98.2297222
+8/9/2010,new york city (central park),ny,us,circle,30.0,40.7141667,-74.0063889
+8/9/2013,battle ground,wa,us,fireball,300.0,45.7811111,-122.5322222
+9/10/1976,albany,ny,us,circle,120.0,42.6525,-73.7566667
+9/10/1999,pollock pines,ca,us,light,1200.0,38.7613889,-120.5855556
+9/10/2003,valley springs,ca,us,circle,120.0,38.1916667,-120.8280556
+9/10/2004,mount cobb,pa,us,unknown,900.0,41.4133333,-75.4936111
+9/10/2007,loveland,co,us,triangle,35.0,40.3977778,-105.0744444
+9/10/2010,bend,or,us,triangle,300.0,44.0583333,-121.3141667
+9/10/2011,landers,ca,us,circle,2.0,34.2661111,-116.3922222
+9/10/2012,lebanon,pa,us,sphere,10.0,40.3408333,-76.4116667
+9/11/1999,vernal,ut,us,chevron,360.0,40.4555556,-109.5280556
+9/11/2001,albuquerque,nm,us,sphere,600.0,35.0844444,-106.6505556
+9/11/2003,mandeville,la,us,triangle,1200.0,30.3580556,-90.0655556
+9/11/2005,chapel hill,nc,us,unknown,310.0,35.9130556,-79.0561111
+9/11/2009,mesa,az,us,light,1800.0,33.4222222,-111.8219444
+9/11/2011,wasilla,ak,us,triangle,2.0,61.5813889,-149.4394444
+9/11/2012,newport,mi,us,fireball,2700.0,42.0022222,-83.3086111
+9/1/1962,seattle,wa,us,circle,180.0,47.6063889,-122.3308333
+9/1/1976,ahwahnee,ca,us,fireball,120.0,37.3655556,-119.7252778
+9/1/1981,port jervis,ny,us,triangle,1200.0,41.375,-74.6930556
+9/1/1991,st. louis,mo,us,rectangle,180.0,38.6272222,-90.1977778
+9/1/1998,jonesville,il,us,cigar,600.0,41.3113889,-89.0713889
+9/1/1999,eugene,or,us,light,5.0,44.0522222,-123.0855556
+9/1/2001,crete,il,us,oval,120.0,41.4444444,-87.6313889
+9/1/2003,springfield,va,us,teardrop,120.0,38.7891667,-77.1875
+9/1/2005,jefferson city,tn,us,light,25.0,36.1222222,-83.4925
+9/1/2007,crestone,co,us,triangle,1800.0,37.9963889,-105.6991667
+9/1/2009,omaha,ne,us,sphere,240.0,41.2586111,-95.9375
+9/1/2011,aurora,co,us,cylinder,120.0,39.7294444,-104.8313889
+9/1/2012,grove city,pa,us,light,300.0,41.1577778,-80.0888889
+9/1/2013,salt lake city,ut,us,sphere,1800.0,40.7608333,-111.8902778
+9/12/1982,mason city,ia,us,sphere,60.0,43.1536111,-93.2008333
+9/12/2001,los angeles,ca,us,circle,60.0,34.0522222,-118.2427778
+9/12/2003,beach city,tx,us,light,420.0,29.6619444,-94.8897222
+9/12/2005,tucson,az,us,other,1200.0,32.2216667,-110.9258333
+9/12/2009,miamisburg,oh,us,triangle,600.0,39.6427778,-84.2866667
+9/12/2011,la porte,tx,us,circle,300.0,29.6655556,-95.0191667
+9/12/2012,murrells inlet,sc,us,circle,15.0,33.5508333,-79.0416667
+9/13/1998,weed,ca,us,fireball,8.0,41.4227778,-122.385
+9/13/2001,tulsa,ok,us,unknown,240.0,36.1538889,-95.9925
+9/13/2004,south phoenix,az,us,light,900.0,33.4066667,-112.0727778
+9/13/2007,loveland,oh,us,fireball,180.0,39.2688889,-84.2638889
+9/13/2010,quakertown,pa,us,light,300.0,40.4416667,-75.3419444
+9/13/2013,owensboro,ky,us,fireball,15.0,37.7741667,-87.1133333
+9/14/1996,battle mountain,nv,us,disk,300.0,40.6422222,-116.9333333
+9/14/2002,jacksonville beach,fl,us,triangle,30.0,30.2944444,-81.3933333
+9/14/2005,shoreview,mn,us,sphere,40.0,45.0791667,-93.1469444
+9/14/2008,san juan capistrano,ca,us,circle,300.0,33.5016667,-117.6616667
+9/14/2010,concord,ca,us,cylinder,2100.0,37.9780556,-122.03
+9/14/2012,ponca,ne,us,cylinder,6.0,42.5625,-96.7052778
+9/14/2013,grosse ile,mi,us,fireball,120.0,42.1291667,-83.1444444
+9/15/1961,wahoo,ne,us,egg,300.0,41.2113889,-96.62
+9/15/1972,tupelo,ms,us,oval,180.0,34.2575,-88.7033333
+9/15/1978,shelby,oh,us,triangle,600.0,40.8813889,-82.6619444
+9/15/1987,liverpool,ny,us,cigar,3.0,43.1063889,-76.2180556
+9/15/1995,wyoming,pa,us,unknown,600.0,41.3116667,-75.8377778
+9/15/1998,gladwin,mi,us,unknown,3600.0,43.9808333,-84.4863889
+9/15/2000,belfield,nd,us,disk,900.0,46.8852778,-103.1991667
+9/15/2002,rockford,il,us,disk,120.0,42.2711111,-89.0938889
+9/15/2003,trenton,oh,us,fireball,0.7,39.4808333,-84.4577778
+9/15/2005,laconia,nh,us,light,600.0,43.5277778,-71.4708333
+9/15/2007,springfield,mo,us,triangle,7200.0,37.2152778,-93.2980556
+9/15/2009,loleta,ca,us,light,1200.0,40.6411111,-124.2241667
+9/15/2012,ft. myers,fl,us,changing,1200.0,26.6402778,-81.8725
+9/15/2012,chicago,il,us,light,300.0,41.85,-87.65
+9/16/1998,san diego (point loma/ocean beach area),ca,us,light,900.0,32.7152778,-117.1563889
+9/16/2002,brea,ca,us,disk,2.0,33.9166667,-117.8991667
+9/16/2005,maypearl,tx,us,unknown,1440.0,32.3130556,-97.0113889
+9/16/2008,ingleside,il,us,teardrop,300.0,42.3811111,-88.1397222
+9/16/2012,wildomar,ca,us,circle,3.0,33.5988889,-117.2791667
+9/17/1994,elizabeth,nj,us,disk,180.0,40.6638889,-74.2111111
+9/17/2002,chowchilla,ca,us,unknown,8.0,37.1230556,-120.2591667
+9/17/2005,griffin,ga,us,light,2700.0,33.2466667,-84.2641667
+9/17/2007,oroville,ca,us,triangle,30.0,39.5138889,-121.5552778
+9/17/2009,oshawa (canada),on,ca,flash,12.0,43.9,-78.866667
+9/17/2011,bartlett,il,us,disk,180.0,41.995,-88.1855556
+9/17/2012,sumter,sc,us,light,240.0,33.9202778,-80.3416667
+9/18/1999,john day (clyde holliday camp ground&#44 7 miles west of),or,us,light,1200.0,44.4161111,-118.9519444
+9/18/2003,kamloops (canada),bc,ca,sphere,60.0,50.666667,-120.333333
+9/18/2005,plantation,fl,us,light,300.0,26.1272222,-80.2333333
+9/18/2009,boise,id,us,light,1200.0,43.6136111,-116.2025
+9/18/2011,la barge,wy,us,circle,900.0,42.2619444,-110.1938889
+9/18/2013,boise,id,us,formation,35.0,43.6136111,-116.2025
+9/19/2000,houston,tx,us,sphere,1800.0,29.7630556,-95.3630556
+9/19/2002,rancho santa margarita,ca,us,unknown,15.0,33.6408333,-117.6022222
+9/19/2003,hutchinson,ks,us,triangle,20.0,38.0608333,-97.9294444
+9/19/2007,ireland,in,us,cylinder,20.0,38.4147222,-86.9994444
+9/19/2009,hanover,pa,us,light,60.0,39.8005556,-76.9833333
+9/19/2009,glens falls,ny,us,circle,40.0,43.3094444,-73.6444444
+9/19/2009,neptune city,nj,us,light,15.0,40.2,-74.0283333
+9/19/2009,lancaster,pa,us,light,15.0,40.0377778,-76.3058333
+9/19/2012,pittsburgh,pa,us,circle,300.0,40.4405556,-79.9961111
+9/20/1973,mansfield,oh,us,oval,6.0,40.7583333,-82.5155556
+9/20/1995,wilberforce,oh,us,oval,309.0,39.7161111,-83.8777778
+9/20/2002,danville,ca,us,disk,120.0,37.8216667,-121.9988889
+9/20/2005,belfair,wa,us,circle,300.0,47.4508333,-122.8261111
+9/20/2007,mount sterling,ky,us,rectangle,120.0,38.0563889,-83.9433333
+9/20/2009,mahanoy city,pa,us,light,3.0,40.8125,-76.1419444
+9/20/2011,sioux falls,sd,us,light,393.0,43.55,-96.7
+9/20/2013,calgary (canada),ab,ca,other,300.0,51.083333,-114.083333
+9/21/1999,hamilton,mt,us,disk,300.0,46.2469444,-114.1594444
+9/21/2003,san francisco,ca,us,other,600.0,37.775,-122.4183333
+9/21/2005,winnisquam,nh,us,light,300.0,43.5013889,-71.5125
+9/21/2007,west chester,oh,us,triangle,180.0,39.0875,-81.9227778
+9/21/2010,cicero,ny,us,circle,1.0,43.1755556,-76.1197222
+9/21/2012,sharpsville,pa,us,circle,1200.0,41.2591667,-80.4722222
+9/21/2013,medina,oh,us,fireball,600.0,41.1383333,-81.8638889
+9/2/1998,schaumburg,il,us,oval,30.0,42.0333333,-88.0833333
+9/2/2003,edmonds,wa,us,light,600.0,47.8108333,-122.3761111
+9/2/2005,lisbon,oh,us,cigar,180.0,40.7719444,-80.7683333
+9/2/2007,modesto (on i-5; 130 miles south of sacramento),ca,us,triangle,40.0,37.6391667,-120.9958333
+9/2/2009,winnipeg (canada),mb,ca,triangle,7200.0,49.883333,-97.166667
+9/2/2011,san antonio,tx,us,triangle,10.0,29.4238889,-98.4933333
+9/2/2012,white rock (canada),bc,ca,other,7200.0,49.033333,-122.816667
+9/22/1986,fredericksburg,va,us,triangle,180.0,38.3030556,-77.4608333
+9/22/2000,tacoma (northeast),wa,us,disk,5.0,47.2530556,-122.4430556
+9/22/2004,memphis,tx,us,sphere,1800.0,34.7247222,-100.5336111
+9/22/2005,yorba linda,ca,us,triangle,120.0,33.8886111,-117.8122222
+9/22/2007,toledo,oh,us,triangle,10800.0,41.6638889,-83.5552778
+9/22/2010,lakewood,il,us,oval,240.0,41.9166667,-88.1975
+9/22/2012,mesa,az,us,circle,600.0,33.4222222,-111.8219444
+9/22/2013,auburn,me,us,fireball,15.0,44.0977778,-70.2316667
+9/23/1997,denison,ia,us,disk,300.0,42.0177778,-95.355
+9/23/1998,everett,wa,us,fireball,2.0,47.9791667,-122.2008333
+9/23/2002,springfield,mo,us,fireball,2.0,37.2152778,-93.2980556
+9/23/2005,vancouver (canada),bc,ca,triangle,10.0,49.25,-123.133333
+9/23/2008,lake orion,mi,us,circle,60.0,42.7844444,-83.2397222
+9/23/2011,indian rocks beach,fl,us,other,60.0,27.875,-82.8513889
+9/23/2013,conway,sc,us,disk,1080.0,33.8358333,-79.0480556
+9/24/1998,vancouver (canada),bc,ca,circle,5.0,49.25,-123.133333
+9/24/2003,fort lauderdale,fl,us,triangle,120.0,26.1219444,-80.1436111
+9/24/2007,corona,ca,us,circle,15.0,33.8752778,-117.5655556
+9/24/2011,kimball,wi,us,diamond,540.0,46.4819444,-90.3058333
+9/24/2013,virginia beach,va,us,formation,300.0,36.8527778,-75.9783333
+9/25/1998,milwaukee (80 miles nw of&#44 6000ft msl),wi,us,oval,20.0,43.0388889,-87.9063889
+9/25/2002,fayette,mo,us,disk,2.0,39.1458333,-92.6836111
+9/25/2004,st. louis park,mn,us,oval,600.0,44.9483333,-93.3477778
+9/25/2007,wilmington,nc,us,light,60.0,34.2255556,-77.945
+9/25/2010,cedar rapids,ia,us,circle,180.0,42.0083333,-91.6438889
+9/25/2011,ft. smith,ar,us,light,10.0,35.3858333,-94.3983333
+9/25/2013,olathe,ks,us,light,1800.0,38.8813889,-94.8188889
+9/26/2000,ankeny,ia,us,triangle,60.0,41.7297222,-93.6055556
+9/26/2004,englewood,co,us,sphere,1200.0,39.6477778,-104.9872222
+9/26/2007,aloha,or,us,diamond,300.0,45.4944444,-122.8658333
+9/26/2010,sayville,ny,us,other,20.0,40.7358333,-73.0825
+9/26/2012,middlebury,in,us,light,120.0,41.6752778,-85.7061111
+9/26/2013,franksville,wi,us,fireball,180.0,42.76,-87.9133333
+9/27/2001,tallahassee,fl,us,triangle,60.0,30.4380556,-84.2808333
+9/27/2006,torrance,ca,us,oval,60.0,33.8358333,-118.3397222
+9/27/2009,key west,fl,us,oval,5.0,24.5552778,-81.7827778
+9/27/2012,bellingham,wa,us,sphere,300.0,48.7597222,-122.4869444
+9/27/2013,fairborn,oh,us,flash,180.0,39.8208333,-84.0194444
+9/28/2002,seattle,wa,us,fireball,120.0,47.6063889,-122.3308333
+9/28/2004,davenport,fl,us,disk,20.0,28.1611111,-81.6019444
+9/28/2008,new columbia,pa,us,circle,60.0,41.0408333,-76.8672222
+9/28/2010,san francisco,ca,us,light,300.0,37.775,-122.4183333
+9/28/2012,los angeles,ca,us,unknown,300.0,34.0522222,-118.2427778
+9/28/2013,athens,ga,us,circle,300.0,33.9608333,-83.3780556
+9/28/2013,osprey,fl,us,chevron,30.0,27.1958333,-82.4905556
+9/29/2001,las vegas,nv,us,other,1200.0,36.175,-115.1363889
+9/29/2005,spring valley,ca,us,egg,10.0,32.7447222,-116.9980556
+9/29/2008,okmulgee,ok,us,light,60.0,35.6233333,-95.9602778
+9/29/2011,memphis,tn,us,light,420.0,35.1494444,-90.0488889
+9/29/2012,erie,pa,us,fireball,600.0,42.1291667,-80.0852778
+9/30/1966,huntington,wv,us,circle,60.0,38.4191667,-82.4452778
+9/30/2000,canoga park,ca,us,sphere,300.0,34.2011111,-118.5972222
+9/30/2003,yukon,ok,us,disk,40.0,35.5066667,-97.7622222
+9/30/2005,ventura,ca,us,sphere,8.0,34.2783333,-119.2922222
+9/30/2005,tinley park,il,us,circle,600.0,41.5733333,-87.7844444
+9/30/2007,mercersburg,pa,us,unknown,240.0,39.8277778,-77.9036111
+9/30/2010,terrebonne (rural area),mn,us,light,3600.0,47.8325,-96.1330556
+9/30/2012,honokowai,hi,us,cone,18000.0,20.9541667,-156.6897222
+9/3/1999,san jose,ca,us,other,2.0,37.3394444,-121.8938889
+9/3/2003,arlington,tx,us,light,105.0,32.7355556,-97.1077778
+9/3/2006,mount olive,nc,us,sphere,30.0,35.1963889,-78.0666667
+9/3/2009,healy,ak,us,light,3600.0,63.8569444,-148.9661111
+9/3/2011,katy,tx,us,rectangle,3000.0,29.7855556,-95.8241667
+9/3/2012,marlboro,ma,us,fireball,600.0,42.7166667,-70.9736111
+9/4/1999,indianapolis,in,us,cylinder,300.0,39.7683333,-86.1580556
+9/4/2003,mariposa,ca,us,fireball,2.0,37.485,-119.9652778
+9/4/2005,boonville,nc,us,cigar,10800.0,36.2325,-80.7083333
+9/4/2009,seven hills,oh,us,fireball,60.0,41.3952778,-81.6763889
+9/4/2011,carrollton,tx,us,unknown,120.0,32.9536111,-96.89
+9/4/2013,clarksville,ar,us,flash,1.0,35.4713889,-93.4663889
+9/5/1998,charleston,sc,us,fireball,5.0,32.7763889,-79.9311111
+9/5/2002,madison,wi,us,other,600.0,43.0730556,-89.4011111
+9/5/2006,mar vista (west los angeles),ca,us,light,20.0,34.0047222,-118.43
+9/5/2009,aurora,co,us,unknown,120.0,39.7294444,-104.8313889
+9/5/2011,miami,fl,us,circle,20.0,25.7738889,-80.1938889
+9/5/2013,bellingham,ma,us,circle,25.0,42.0866667,-71.475
+9/6/1999,minneapolis,mn,us,unknown,2.0,44.98,-93.2636111
+9/6/2002,fraser,co,us,triangle,60.0,39.945,-105.8166667
+9/6/2005,morgan hill,ca,us,light,60.0,37.1305556,-121.6533333
+9/6/2008,quincy,mi,us,formation,240.0,41.9441667,-84.8838889
+9/6/2012,cogar,ok,us,circle,180.0,35.3338889,-98.1302778
+9/7/1981,solomon,ks,us,other,120.0,38.9194444,-97.3708333
+9/7/2000,syracuse,ny,us,triangle,300.0,43.0480556,-76.1477778
+9/7/2003,cypress,tx,us,circle,1.5,29.9688889,-95.6969444
+9/7/2007,doyline,la,us,triangle,20.0,32.5355556,-93.4108333
+9/7/2010,chelmsford,ma,us,light,600.0,42.5997222,-71.3677778
+9/7/2013,tomball,tx,us,disk,30.0,30.0969444,-95.6158333
+9/8/1999,prairie view,il,us,light,5.0,42.1991667,-87.9555556
+9/8/2002,granby,ct,us,oval,300.0,41.9538889,-72.7891667
+9/8/2006,hampton,nh,us,light,300.0,42.9375,-70.8394444
+9/8/2009,santa clara,ca,us,sphere,20.0,37.3541667,-121.9541667
+9/8/2011,north wilkesboro,nc,us,light,3.0,36.1583333,-81.1477778
+9/8/2012,wichita,ks,us,cylinder,30.0,37.6922222,-97.3372222
+9/9/1968,tracy,ca,us,unknown,1200.0,37.7397222,-121.4241667
+9/9/2001,detroit,mi,us,disk,300.0,42.3313889,-83.0458333
+9/9/2003,tallahassee,fl,us,other,900.0,30.4380556,-84.2808333
+9/9/2007,antelope,ca,us,other,900.0,38.7083333,-121.3288889
+9/9/2009,colebrook,nh,us,other,120.0,44.8944444,-71.4963889
+9/9/2011,chula vista,ca,us,light,480.0,32.64,-117.0833333
+9/9/2013,struthers,oh,us,unknown,120.0,41.0525,-80.6080556
 '''
+with open("ufo_rep.txt","w") as f : f.write(ufo_txt)
 
-with open("data.csv","w") as f : f.write(data_csv)
-with open("movie.csv","w") as f : f.write(data_csv)
+
 
 
 
