@@ -7,8 +7,8 @@
 
 ## Announcements
 
-* Midterm date: May 16, 18:30
-* Final date: June 22, 09:30
+* Midterm date: TBA
+* Final date: TBA
 ------
 
 ## Objectives
@@ -140,6 +140,8 @@ About Exams:
 
 ## Schedules
 
+TBA
+<!--
 | **DEPT** | **SECTION** | **PLACE** | **LECTURER** | **TIME** |
 | --- | --- | --- | --- | --- |
 | **CE** | **1** | **G111** | **Alper Tolga KOCATAŞ** | Thursday 08:40-10:30 |
@@ -153,13 +155,13 @@ About Exams:
 | **CHE** | **9** | **G111** | **Ömer EKMEKÇİ** | Monday 10:40-12:30 |
 | **AEE** | **10** | **G111** | **Gökhan ORHAN** | Friday 13:40-15:30 |
 
-
+-->
 
 <!-- Virtual Office Hours: Thursday 19:00-21:00 and Friday 19:00-21:00. -->
 
 ## Weekly Coverage <!--and Lecture Videos-->
 
-**Week 1 (06.03)**
+**Week 1 ()**
 
 - Lecture Topics: 
   + Introduction: Course content, objectives, outline; Grading; Information about the homeworks, the labs, the exams.
@@ -167,7 +169,7 @@ About Exams:
 - Lab Topics:
   No Lab.
   
-**Week 2 (13.03)**
+**Week 2 ( )**
 
 - Lecture Topics: 
   + A Broad Look at Programming and PL: Concept of Algorithm, Comparing algorithms, World of PLs, Low-High level PL, Interpreter vs Compiler, Programming Paradigms, Python as a PL. 
@@ -175,74 +177,74 @@ About Exams:
 - Lab Topics:
   No Lab.
  
-**Week 3 (20.03)**
+**Week 3 ( )**
 
 - Lecture Topics: 
   + Introduction to Python: Numbers and Boolean values in Python, Container data in Python (str, tuple, list, dict, set); Mutable - immutable data; aliasing problem.
 - Lab Topics: Demo Lab.
   
  
-**Week 4 (27.03)**
+**Week 4 ( )**
 
 - Lecture Topics: 
   + Introduction to Python [continued]: Operators and Expressions; Type casting; Statement in Python; Variables and Assignment; Basic I/O in Python.
 - Lab Topics: Numbers & Containers.
 
-**Week 5 (03.04)**
+**Week 5 ( )**
 
 - Lecture Topics: 
   + Conditional & repetitive execution in Python: if statements; conditional expression; while & for statements; continue & break; List comprehension; Example problems.
 - Lab Topics: Expressions, Variables, Basic I/O.
 
-**Week 6 (10.04)**
+**Week 6 ( )**
 
 - Lecture Topics: 
   + Conditional & repetitive execution in Python [continued]: if statements; conditional expression; while & for statements; continue & break; List comprehension; Example problems.
 - Lab Topics: If statement, conditional expression.
 
-**Week 7 (17.04)(21st is holiday)**
+**Week 7 ( )**
 
 - Lecture Topics: 
   + Functions: Defining functions; Passing parameters; Scope of variables; Recursion; Example definitions.
 - Lab Topics: Conditional and repetitive statements & expressions.
 
-**Week 8 (24.04)**
+**Week 8 ( )**
 
 - Lecture Topics: 
   + Functions [continued]: Defining functions; Passing parameters; Scope of variables; Recursion; Example definitions.
 - Lab Topics: No lab.
 
-**Week 9 (01.05)(1st is holiday)**
+**Week 9 ( ) **
 
 - Lecture Topics: 
   + Object-oriented Programming (OOP) Concepts: Class definition; Member functions & variables; Message passing; Encapsulation; Inheritance; Polymorphism; Basics of OOP in Python.
 - Lab Topics: No lab.
 
-**Week 10 (08.05)**
+**Week 10 ( )**
 
 - Lecture Topics: 
   + File handling: Files and Sequential access; Parsing; Termination of Input; Formatting output; binary files.
 - Lab Topics: Functions.
 
-**Week 11 (15.05)(19th is holiday)**
+**Week 11 ( ) **
 
 - Lecture Topics: 
   + Exception handling and Debugging: Kind of errors; Exceptions; Debugging techniques.
 - Lab Topics: No lab. 
 
-**Week 12 (22.05)**
+**Week 12 ( )**
 
 - Lecture Topics: 
   + Engineering and scientific libraries for Python: Libraries and tools for numerical & scientific calculations (arrays, n-D arrays, slicing, basic operations on arrays, commonly used functions, algebraic functions etc.).
 - Lab Topics: Repetitive execution & functions.
 
-**Week 13 (29.05)**
+**Week 13 ( )**
 
 - Lecture Topics: 
   + Engineering and scientific libraries for Python [continued]: Data handling & analysis, and plotting. Illustration of these tools with examples.
 - Lab Topics: OO operations on built-in objects.
 
-**Week 14 (05.06)**
+**Week 14 ( )**
 
 - Lecture Topics: 
   + An Application: Approximation & optimization.
