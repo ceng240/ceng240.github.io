@@ -8,7 +8,7 @@
 ## Announcements
 
 * Midterm date: April 30, 18:00.
-* Final date: TBA
+* Final date: June 13, 09:30.
 ------
 
 ## Objectives
