@@ -9,8 +9,7 @@
 
 * Midterm date: April 30, 18:00.
 * Final date: June 13, 09:30.
-------
-
+  
 ## Objectives
 
 This course gives a brief introduction to a working understanding of basic computer organization, data representation, programming language constructs, and algorithmic thinking. It is designed as a first course of programming and supported by laboratory sessions for students outside of the Computer Engineering major.
@@ -145,13 +144,14 @@ About Exams:
 | --- | --- | --- | --- | --- |
 | **CE** | **1** | **G111** | **Kadir EKMEKÇİ** | Thursday 08:40-10:30 |
 | **CE &amp; STAT** | **2** | **BMB1** | **Hazal MOĞULTAY** | Friday 10:40-12:30 |
-| **STAT &amp; MINE** | **3** | **YP-A4*** | **Gökhan ORHAN** | Wednesday 13:40-15:30 |
+| **STAT &amp; MINE** | **3** | **YP-A4** | **Gökhan ORHAN** | Wednesday 13:40-15:30 |
 | **ENVE** | **4** | **G111** | **Alaettin ZUBAROĞLU** | Friday 08:40-10:30 |
 | **GEOE** | **5** | **BMB3** | **Hüseyin SAYIN** | Friday 08:40-10:30 |
 | **PETE** | **6** | **U2** | **Alper KOCATAŞ** | Thursday 15:40-17:30 |
 | **Irregular** | **7** | **YP-A4** | **Çiğdem AVCI** | Wednesday 15:40-17:30 |
 | **Irregular** | **8** | **YP-A3** | **Ahmet COŞAR** | Monday 15:40-17:30 |
-| **CHE** | **9** | **G111** | **Hazal MOĞULTAY** | Monday 10:40-12:30 |
+| **CHE** | **9** | **G111** | **Hazal MOĞULTAY** | Monday 10:40-12:30 |------
+
 | **AEE** | **10** | **G111** | **Çağrı ESER** | Friday 13:40-15:30 |
 
 
