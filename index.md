@@ -150,8 +150,7 @@ About Exams:
 | **PETE** | **6** | **U2** | **Alper KOCATAŞ** | Thursday 15:40-17:30 |
 | **Irregular** | **7** | **YP-A4** | **Çiğdem AVCI** | Wednesday 15:40-17:30 |
 | **Irregular** | **8** | **YP-A3** | **Ahmet COŞAR** | Monday 15:40-17:30 |
-| **CHE** | **9** | **G111** | **Hazal MOĞULTAY** | Monday 10:40-12:30 |------
-
+| **CHE** | **9** | **G111** | **Hazal MOĞULTAY** | Monday 10:40-12:30 |
 | **AEE** | **10** | **G111** | **Çağrı ESER** | Friday 13:40-15:30 |
 
 
