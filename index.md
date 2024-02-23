@@ -143,7 +143,7 @@ About Exams:
 | **DEPT** | **SECTION** | **PLACE** | **LECTURER** | **TIME** |
 | --- | --- | --- | --- | --- |
 | **CE** | **1** | **G111** | **Kadir EKMEKÇİ** | Thursday 08:40-10:30 |
-| **CE &amp; STAT** | **2** | **BMB1** | **Hazal MOĞULTAY** | Friday 10:40-12:30 |
+| **CE &amp; STAT** | **2** | **G111** | **Hazal MOĞULTAY** | Friday 10:40-12:30 |
 | **STAT &amp; MINE** | **3** | **YP-A4** | **Gökhan ORHAN** | Wednesday 13:40-15:30 |
 | **ENVE** | **4** | **G111** | **Alaettin ZUBAROĞLU** | Friday 08:40-10:30 |
 | **GEOE** | **5** | **BMB3** | **Hüseyin SAYIN** | Friday 08:40-10:30 |
