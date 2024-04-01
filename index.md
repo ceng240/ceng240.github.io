@@ -22,9 +22,10 @@ Available at: [https://pp4e-book.github.io/](https://pp4e-book.github.io/)
 
 | <!-- -->      | <!-- --> |
 | ------------- | -------- |
+| Attendance    | 5%       |
 | Midterm       | 30%      |
 | Labs          | 35%      |
-| Final         | 35%      |
+| Final         | 30%      |
 
 
 ## Course Conduct
