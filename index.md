@@ -143,16 +143,15 @@ About Exams:
 
 | **DEPT** | **SECTION** | **PLACE** | **LECTURER** | **TIME** |
 | --- | --- | --- | --- | --- |
-| **CE** | **1** | **G111** | **Kadir EKMEKÇİ** | Thursday 08:40-10:30 |
-| **CE &amp; STAT** | **2** | **G111** | **Hazal MOĞULTAY** | Friday 10:40-12:30 |
-| **STAT &amp; MINE** | **3** | **YP-A4** | **Gökhan ORHAN** | Wednesday 13:40-15:30 |
-| **ENVE** | **4** | **G111** | **Alaettin ZUBAROĞLU** | Friday 08:40-10:30 |
-| **GEOE** | **5** | **BMB3** | **Hüseyin SAYIN** | Friday 08:40-10:30 |
-| **PETE** | **6** | **U2** | **Alper KOCATAŞ** | Thursday 15:40-17:30 |
-| **Irregular** | **7** | **YP-A4** | **Çiğdem AVCI** | Wednesday 15:40-17:30 |
-| **Irregular** | **8** | **YP-A3** | **Ahmet COŞAR** | Monday 15:40-17:30 |
-| **CHE** | **9** | **G111** | **Hazal MOĞULTAY** | Monday 10:40-12:30 |
-| **AEE** | **10** | **G111** | **Çağrı ESER** | Friday 13:40-15:30 |
+| **ME** | **1** | **G111** | **Kadir EKMEKÇİ** | Monday 15:40-17:30 |
+| **ME** | **2** | **YP-A2** | **Hazal MOĞULTAY** | Friday 13:40-15:30 |
+| **METE** | **3** | **U2** | **Gökhan ORHAN** | Tuesday 15:40-17:30 |
+| **FDE** | **4** | **YP-A2** | **Alaettin ZUBAROĞLU** | Friday 15:40-17:30 |
+| **MATH** | **5** | **BMB1** | **Hüseyin SAYIN** | Friday 13:40-15:30 |
+| **MHED &amp; EE** | **6** | **U1** | **Alper KOCATAŞ** | Wednesday 08:40-10:30 |
+| **EE &amp; IE** | **7** | **BMB3** | **Çiğdem AVCI** | Thursday 13:40-15:30 |
+| **EE** | **8** | **U1** | **Ahmet COŞAR** | Thursday 15:40-17:30 |
+| **IE** | **9** | **G111** | **Hazal MOĞULTAY** | Monday 13:40-15:30 |
 
 
 
