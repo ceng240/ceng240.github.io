@@ -155,92 +155,89 @@ About Exams:
 
 
 
-<!-- Virtual Office Hours: Thursday 19:00-21:00 and Friday 19:00-21:00. -->
-
 ## Weekly Coverage <!--and Lecture Videos-->
 
-**Week 1 (19.02)**
+**Week 1 (30.09)**
 
 - Lecture Topics: 
   + Introduction: Course content, objectives, outline; Grading; Information about the homeworks, the labs, the exams.
   + Basic computer organization: Von Neumann arch, CPU, RAM and their interaction during program execution, stored program, Peripherals, OS.
 - Lab Topics: No Lab.
   
-**Week 2 (26.02)**
+**Week 2 (07.10)**
 
 - Lecture Topics: 
   + A Broad Look at Programming and PL: Concept of Algorithm, Comparing algorithms, World of PLs, Low-High level PL, Interpreter vs Compiler, Programming Paradigms, Python as a PL. 
   + Representation of data in computers: Two's complement representation of integers, IEEE floating-point representation, Information loss with Floating Points, representation of characters, text and Boolean.
 - Lab Topics: No Lab.
  
-**Week 3 (04.03)**
+**Week 3 (14.10)**
 
 - Lecture Topics: 
   + Introduction to Python: Numbers and Boolean values in Python, Container data in Python (str, tuple, list, dict, set); Mutable - immutable data; aliasing problem.
 - Lab Topics: No Lab.
   
- 
-**Week 4 (11.03)**
+**Week 4 (21.10)**
 
 - Lecture Topics: 
   + Introduction to Python [continued]: Operators and Expressions; Type casting; Statement in Python; Variables and Assignment; Basic I/O in Python.
 - Lab Topics: Demo Lab.
 
-**Week 5 (18.03)**
+**Week 5 (28.10)**
 
 - Lecture Topics: 
   + Conditional & repetitive execution in Python: if statements; conditional expression; while & for statements; continue & break; List comprehension; Example problems.
-- Lab Topics: Numbers & Containers.
+- Lab Topics: No Lab.
 
-**Week 6 (25.03)**
+**Week 6 (04.11)**
 
 - Lecture Topics: 
   + Conditional & repetitive execution in Python [continued]: if statements; conditional expression; while & for statements; continue & break; List comprehension; Example problems.
-- Lab Topics: Expressions, Variables, Basic I/O.
+- Lab Topics: Numbers & Containers.
 
-**Week 7 (01.04)**
+**Week 7 (11.11)**
 
 - Lecture Topics: 
   + Functions: Defining functions; Passing parameters; Scope of variables; Recursion; Example definitions.
-- Lab Topics: If statement, conditional expression.
+- Lab Topics: Expressions, Variables, Basic I/O.
 
-**Week 8 (15.04)**
+**Week 8 (18.11)**
 
 - Lecture Topics: 
   + Functions [continued]: Defining functions; Passing parameters; Scope of variables; Recursion; Example definitions.
-- Lab Topics: Conditional and repetitive statements & expressions.
+- Lab Topics: If statement, conditional expression.
 
-**Week 9 (22.04)**
+**Week 9 (25.11)**
 
 - Lecture Topics: 
   + Object-oriented Programming (OOP) Concepts: Class definition; Member functions & variables; Message passing; Encapsulation; Inheritance; Polymorphism; Basics of OOP in Python.
-- Lab Topics: No lab.
+- Lab Topics: Conditional and repetitive statements & expressions.
 
-**Week 10 (29.04)**
+**Week 10 (02.12)**
 
 - Lecture Topics: 
   + File handling: Files and Sequential access; Parsing; Termination of Input; Formatting output; binary files.
 - Lab Topics: No lab.
 
-**Week 11 (06.05)**
+**Week 11 (09.12)**
 
 - Lecture Topics: 
   + Exception handling and Debugging: Kind of errors; Exceptions; Debugging techniques.
 - Lab Topics: Repetitive execution & functions.
 
-**Week 12 (13.05)**
+**Week 12 (16.12)**
 
 - Lecture Topics: 
   + Engineering and scientific libraries for Python: Libraries and tools for numerical & scientific calculations (arrays, n-D arrays, slicing, basic operations on arrays, commonly used functions, algebraic functions etc.).
 - Lab Topics: OO operations on built-in objects.
 
-**Week 13 (20.05)**
+**Week 13 (23.12)**
 
 - Lecture Topics: 
   + Engineering and scientific libraries for Python [continued]: Data handling & analysis, and plotting. Illustration of these tools with examples.
 - Lab Topics: File handling.
 
-**Week 14 (27.05)**
+**Week 14 (30.12)**
 
 - Lecture Topics: 
   + An Application: Approximation & optimization.
@@ -251,4 +248,4 @@ About Exams:
 
 ## Contact
 
-Please use the following email address for course related issues: 2xx [@] ceng [dot] metu [dot] edu [dot] tr
+Please use the following email address for course related issues: ceng240 [@] ceng [dot] metu [dot] edu [dot] tr
