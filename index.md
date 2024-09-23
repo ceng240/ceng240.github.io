@@ -7,8 +7,8 @@
 
 ## Announcements
 
-* Midterm date: April 30, 18:00.
-* Final date: June 13, 09:30.
+* Midterm date: December 03, 18:00.
+* Final date: TBA.
   
 ## Objectives
 
@@ -22,9 +22,9 @@ Available at: [https://pp4e-book.github.io/](https://pp4e-book.github.io/)
 
 | <!-- -->      | <!-- --> |
 | ------------- | -------- |
-| Attendance    | 5%       |
+| Attendance    | 10%       |
 | Midterm       | 30%      |
-| Labs          | 35%      |
+| Labs          | 30%      |
 | Final         | 30%      |
 
 
