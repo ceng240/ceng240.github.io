@@ -143,15 +143,15 @@ About Exams:
 
 | **DEPT** | **SECTION** | **PLACE** | **LECTURER** | **TIME** |
 | --- | --- | --- | --- | --- |
-| **ME** | **1** | **G111** | **Kadir EKMEKÇİ** | Monday 15:40-17:30 |
-| **ME** | **2** | **YP-A2** | **Hazal MOĞULTAY** | Friday 13:40-15:30 |
-| **METE** | **3** | **U2** | **Gökhan ORHAN** | Tuesday 15:40-17:30 |
-| **FDE** | **4** | **YP-A2** | **Alaettin ZUBAROĞLU** | Friday 15:40-17:30 |
-| **MATH** | **5** | **BMB1** | **Hüseyin SAYIN** | Friday 13:40-15:30 |
-| **MHED &amp; EE** | **6** | **U1** | **Alper KOCATAŞ** | Wednesday 08:40-10:30 |
-| **EE &amp; IE** | **7** | **BMB3** | **Çiğdem AVCI** | Thursday 13:40-15:30 |
-| **EE** | **8** | **U1** | **Ahmet COŞAR** | Thursday 15:40-17:30 |
-| **IE** | **9** | **G111** | **Hazal MOĞULTAY** | Monday 13:40-15:30 |
+| **ME** | **1** | **G111** | **Jiaee Cheong** | Monday 15:40-17:30 |
+| **ME** | **2** | **YP-A2** | **Cemil Ulu** | Friday 13:40-15:30 |
+| **METE** | **3** | **U2** | **Gökhan Orhan** | Tuesday 15:40-17:30 |
+| **FDE** | **4** | **YP-A2** | **Hüseyin Sayın** | Friday 15:40-17:30 |
+| **MATH** | **5** | **BMB1** | **İbrahim Taşyurt** | Friday 13:40-15:30 |
+| **MHED &amp; EE** | **6** | **U1** | **Narin Işık** | Wednesday 08:40-10:30 |
+| **EE &amp; IE** | **7** | **BMB3** | **Alper Koca** | Thursday 13:40-15:30 |
+| **EE** | **8** | **U1** | **Ahmet Coşar** | Thursday 15:40-17:30 |
+| **IE** | **9** | **G111** | **Hazal Moğultay Özcan** | Monday 13:40-15:30 |
 
 
 
