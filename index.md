@@ -149,7 +149,7 @@ About Exams:
 | **FDE** | **4** | **YP-A2** | **Hüseyin Sayın** | Friday 15:40-17:30 |
 | **MATH** | **5** | **BMB1** | **İbrahim Taşyurt** | Friday 13:40-15:30 |
 | **MHED &amp; EE** | **6** | **U1** | **Narin Işık** | Wednesday 08:40-10:30 |
-| **EE &amp; IE** | **7** | **BMB3** | **Alper Koca** | Thursday 13:40-15:30 |
+| **EE &amp; IE** | **7** | **BMB1** | **Alper Tolga Kocataş** | Thursday 13:40-15:30 |
 | **EE** | **8** | **U1** | **Ahmet Coşar** | Thursday 15:40-17:30 |
 | **IE** | **9** | **G111** | **Hazal Moğultay Özcan** | Monday 13:40-15:30 |
 
@@ -193,25 +193,25 @@ About Exams:
 
 - Lecture Topics: 
   + Conditional & repetitive execution in Python [continued]: if statements; conditional expression; while & for statements; continue & break; List comprehension; Example problems.
-- Lab Topics: Numbers & Containers.
+- Lab Topics: Expressions, Variables, Basic I/O.
 
 **Week 7 (11.11)**
 
 - Lecture Topics: 
   + Functions: Defining functions; Passing parameters; Scope of variables; Recursion; Example definitions.
-- Lab Topics: Expressions, Variables, Basic I/O.
+- Lab Topics: If statement, conditional expression.  
 
 **Week 8 (18.11)**
 
 - Lecture Topics: 
   + Functions [continued]: Defining functions; Passing parameters; Scope of variables; Recursion; Example definitions.
-- Lab Topics: If statement, conditional expression.
+- Lab Topics: Conditional and repetitive statements & expressions.
 
 **Week 9 (25.11)**
 
 - Lecture Topics: 
   + Object-oriented Programming (OOP) Concepts: Class definition; Member functions & variables; Message passing; Encapsulation; Inheritance; Polymorphism; Basics of OOP in Python.
-- Lab Topics: Conditional and repetitive statements & expressions.
+- Lab Topics: Repetitive execution & functions (I)  
 
 **Week 10 (02.12)**
 
@@ -223,19 +223,19 @@ About Exams:
 
 - Lecture Topics: 
   + Exception handling and Debugging: Kind of errors; Exceptions; Debugging techniques.
-- Lab Topics: Repetitive execution & functions.
+- Lab Topics: Repetitive execution & functions (II)   
 
 **Week 12 (16.12)**
 
 - Lecture Topics: 
   + Engineering and scientific libraries for Python: Libraries and tools for numerical & scientific calculations (arrays, n-D arrays, slicing, basic operations on arrays, commonly used functions, algebraic functions etc.).
-- Lab Topics: OO operations on built-in objects.
+- Lab Topics: OO operations on built-in objects.   
 
 **Week 13 (23.12)**
 
 - Lecture Topics: 
   + Engineering and scientific libraries for Python [continued]: Data handling & analysis, and plotting. Illustration of these tools with examples.
-- Lab Topics: File handling.
+- Lab Topics: File handling.   
 
 **Week 14 (30.12)**
 
