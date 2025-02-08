@@ -143,16 +143,16 @@ About Exams:
 
 | **DEPT** | **SECTION** | **PLACE** | **LECTURER** | **TIME** |
 | --- | --- | --- | --- | --- |
-| **ME** | **1** | **G111** | **Jiaee Cheong** | Monday 15:40-17:30 |
-| **ME** | **2** | **YP-A2** | **Cemil Ulu** | Friday 13:40-15:30 |
-| **METE** | **3** | **U2** | **Gökhan Orhan** | Tuesday 15:40-17:30 |
-| **FDE** | **4** | **YP-A2** | **Hüseyin Sayın** | Friday 15:40-17:30 |
-| **MATH** | **5** | **BMB1** | **İbrahim Taşyurt** | Friday 13:40-15:30 |
-| **MHED &amp; EE** | **6** | **U1** | **Narin Işık** | Wednesday 08:40-10:30 |
-| **EE &amp; IE** | **7** | **BMB1** | **Alper Tolga Kocataş** | Thursday 13:40-15:30 |
-| **EE** | **8** | **U1** | **Ahmet Coşar** | Thursday 15:40-17:30 |
-| **IE** | **9** | **G111** | **Hazal Moğultay Özcan** | Monday 13:40-15:30 |
-
+| **CE** | **1** | **G111** | **Burçin Sapaz** | Thursday 08:40-10:30 |
+| **CE &amp; STAT** | **2** | **G111** | **Merve Asiler** | Friday 10:40-12:30 |
+| **MINE &amp; STAT** | **3** | **YP-A4** | **Narin Işık** | Wednesday 13:40-15:30 |
+| **ENVE** | **4** | **G111** | **Kadir Ekmekçi** | Friday 08:40-10:30 |
+| **GEOE** | **5** | **BMB3** | **Hüseyin Sayın** | Friday 08:40-10:30 |
+| **PETE** | **6** | **U2** | **Hakan Gürsoy** | Thursday 15:40-17:30 |
+| **EE** | **7** | **YP-A4** | **Gökhan Orhan** | Wednesday 15:40-17:30 |
+| **MATH** | **8** | **YP-A3** | **Hazal Moğultay Özcan** | Monday 15:40-17:30 |
+| **CHE** | **9** | **G111** | **Hazal Moğultay Özcan** | Monday 10:40-12:30 |
+| **AEE** | **10** | **G111** | **Cemil Ulu** | Friday 13:40-15:30 |
 
 
 ## Weekly Coverage <!--and Lecture Videos-->
