@@ -175,13 +175,13 @@ About Exams:
 
 - Lecture Topics: 
   + Introduction to Python: Numbers and Boolean values in Python, Container data in Python (str, tuple, list, dict, set); Mutable - immutable data; aliasing problem.
-- Lab Topics: No Lab.
+- Lab Topics: Demo Lab.
   
 **Week 4 (10.03)**
 
 - Lecture Topics: 
   + Introduction to Python [continued]: Operators and Expressions; Type casting; Statement in Python; Variables and Assignment; Basic I/O in Python.
-- Lab Topics: Demo Lab.
+- Lab Topics: No Lab.
 
 **Week 5 (17.03)**
 
