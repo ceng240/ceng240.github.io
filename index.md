@@ -149,8 +149,8 @@ About Exams:
 | **ENVE** | **4** | **G111** | **Kadir Ekmekçi** | Friday 08:40-10:30 |
 | **GEOE** | **5** | **BMB3** | **Hüseyin Sayın** | Friday 08:40-10:30 |
 | **PETE** | **6** | **U2** | **Hakan Gürsoy** | Thursday 15:40-17:30 |
-| **TBA** | **7** | **YP-A4** | **Gökhan Orhan** | Wednesday 15:40-17:30 |
-| **TBA** | **8** | **YP-A3** | **Hazal Moğultay Özcan** | Monday 15:40-17:30 |
+| **Irregular** | **7** | **YP-A4** | **Gökhan Orhan** | Wednesday 15:40-17:30 |
+| **Irregular** | **8** | **YP-A3** | **Hazal Moğultay Özcan** | Monday 15:40-17:30 |
 | **CHE** | **9** | **G111** | **Hazal Moğultay Özcan** | Monday 10:40-12:30 |
 | **AEE** | **10** | **G111** | **Cemil Ulu** | Friday 13:40-15:30 |
 
