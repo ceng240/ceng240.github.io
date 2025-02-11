@@ -162,26 +162,26 @@ About Exams:
 - Lecture Topics: 
   + Introduction: Course content, objectives, outline; Grading; Information about the homeworks, the labs, the exams.
   + Basic computer organization: Von Neumann arch, CPU, RAM and their interaction during program execution, stored program, Peripherals, OS.
-- Lab Topics: No Lab.
+- Lab Topics: No Labs.
   
 **Week 2 (24.02)**
 
 - Lecture Topics: 
   + A Broad Look at Programming and PL: Concept of Algorithm, Comparing algorithms, World of PLs, Low-High level PL, Interpreter vs Compiler, Programming Paradigms, Python as a PL. 
   + Representation of data in computers: Two's complement representation of integers, IEEE floating-point representation, Information loss with Floating Points, representation of characters, text and Boolean.
-- Lab Topics: No Lab.
+- Lab Topics: No Labs.
  
 **Week 3 (03.03)**
 
 - Lecture Topics: 
   + Introduction to Python: Numbers and Boolean values in Python, Container data in Python (str, tuple, list, dict, set); Mutable - immutable data; aliasing problem.
-- Lab Topics: No Lab.
+- Lab Topics: No Labs.
   
 **Week 4 (10.03)**
 
 - Lecture Topics: 
   + Introduction to Python [continued]: Operators and Expressions; Type casting; Statement in Python; Variables and Assignment; Basic I/O in Python.
-- Lab Topics: Demo Lab.
+- Lab Topics: Demo Labs.
 
 **Week 5 (17.03)**
 
@@ -198,7 +198,7 @@ About Exams:
 **Week 7 (31.03)**
 
 - Lecture Topics: No lectures.
-- Lab Topics: No Lab.
+- Lab Topics: No Labs.
 
 **Week 8 (07.04)**
 
@@ -217,13 +217,13 @@ About Exams:
 
 - Lecture Topics: 
   + Object-oriented Programming (OOP) Concepts: Class definition; Member functions & variables; Message passing; Encapsulation; Inheritance; Polymorphism; Basics of OOP in Python.
-- Lab Topics: No Lab. 
+- Lab Topics: No Labs. 
 
 **Week 11 (28.04)**
 
 - Lecture Topics: 
   + File handling: Files and Sequential access; Parsing; Termination of Input; Formatting output; binary files.
-- Lab Topics: No Lab. 
+- Lab Topics: No Labs. 
 
 **Week 12 (05.05)**
 
@@ -241,7 +241,7 @@ About Exams:
 
 - Lecture Topics: 
   + Engineering and scientific libraries for Python [continued]: Data handling & analysis, and plotting. Illustration of these tools with examples.
-- Lab Topics: No Lab.
+- Lab Topics: No Labs.
 
 **Week 15 (26.05)**
 
