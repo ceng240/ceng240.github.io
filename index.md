@@ -7,7 +7,7 @@
 
 ## Announcements
 
-#### About Registration: Due to capacity limitations, this course is available only to students enrolled in the following departments: Civil Engineering (CE), Statistics (STAT), Mining Engineering (MINE), Environmental Engineering (ENVE), Geological Engineering (GEOE), Petroleum Engineering (PETE), Chemical Engineering (CHE), and Aerospace Engineering (AEE). Students from other departments, including those on probation, must wait until the Add-Drop period, during which there may be a slight increase in course capacity.
+### About Registration: Due to capacity limitations, this course is available only to students enrolled in the following departments: Civil Engineering (CE), Statistics (STAT), Mining Engineering (MINE), Environmental Engineering (ENVE), Geological Engineering (GEOE), Petroleum Engineering (PETE), Chemical Engineering (CHE), and Aerospace Engineering (AEE). Students from other departments, including those on probation, must wait until the Add-Drop period, during which there may be a slight increase in course capacity.
 
 * Midterm date: TBA.
 * Final date: TBA.
