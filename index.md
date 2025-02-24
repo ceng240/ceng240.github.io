@@ -7,6 +7,14 @@
 
 ## Announcements
 
+* **Section capacities will start to be updated tomorrow at 1:00 PM.**  
+  Students from all departments who are **on probation** and meet **at least one** of the following conditions will be eligible to register for the course:  
+  - Received a grade of **DD, FD, FF, or NA**  
+  - Have **not taken the course before**  
+  - Have **taken the course and withdrawn**
+
+  Please make sure to check the registration system accordingly.
+  
 * Midterm date: TBA.
 * Final date: TBA.
   
