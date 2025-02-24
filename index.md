@@ -7,7 +7,9 @@
 
 ## Announcements
 
+### About Registration: Students in probation status must wait for add-drop period where there will be a small increase in course capacity. You won't be able to take the course by visiting the course coordinators. 
 * **Section capacities will start to be updated tomorrow at 1:00 PM.**  
+
   Students from all departments who are **on probation** and meet **at least one** of the following conditions will be eligible to register for the course:  
   - Received a grade of **DD, FD, FF, or NA**  
   - Have **not taken the course before**  
@@ -157,8 +159,8 @@ About Exams:
 | **ENVE** | **4** | **G111** | **Kadir Ekmekçi** | Friday 08:40-10:30 |
 | **GEOE** | **5** | **BMB3** | **Hüseyin Sayın** | Friday 08:40-10:30 |
 | **PETE** | **6** | **U2** | **Hakan Gürsoy** | Thursday 15:40-17:30 |
-| **TBA** | **7** | **YP-A4** | **Gökhan Orhan** | Wednesday 15:40-17:30 |
-| **TBA** | **8** | **YP-A3** | **Hazal Moğultay Özcan** | Monday 15:40-17:30 |
+| **Irregular** | **7** | **YP-A4** | **Gökhan Orhan** | Wednesday 15:40-17:30 |
+| **Irregular** | **8** | **YP-A3** | **Hazal Moğultay Özcan** | Monday 15:40-17:30 |
 | **CHE** | **9** | **G111** | **Hazal Moğultay Özcan** | Monday 10:40-12:30 |
 | **AEE** | **10** | **G111** | **Cemil Ulu** | Friday 13:40-15:30 |
 
