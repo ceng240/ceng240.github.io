@@ -8,7 +8,7 @@
 ## Announcements
 
 ### About Registration: Students in probation status must wait for add-drop period where there will be a small increase in course capacity. You won't be able to take the course by visiting the course coordinators. 
-* **Section capacities will start to be updated tomorrow at 1:00 PM.**  
+* **Section capacities will start to be updated on 25th of February, 2025 at 1:00 PM.**  
 
   Students from all departments who are **on probation** and meet **at least one** of the following conditions will be eligible to register for the course:  
   - Received a grade of **DD, FD, FF, or NA**  
