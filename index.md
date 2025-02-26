@@ -7,13 +7,8 @@
 
 ## Announcements
 
-### About Registration: Students in probation status must wait for add-drop period where there will be a small increase in course capacity. You won't be able to take the course by visiting the course coordinators. 
+### About Registration: We will remove the cGPA criteria on 27th of February at 2:00 PM meaning that anyone who wants to register the course will be able to take it as long as the desired section is not full. However, register only to those sections that fully fits your schedule since we will not provide any assistance with course clashes.  
 * **Section capacities will start to be updated on 25th of February, 2025 at 1:00 PM.**  
-
-  Students from all departments who are **on probation** and meet **at least one** of the following conditions will be eligible to register for the course:  
-  - Received a grade of **DD, FD, FF, or NA**  
-  - Have **not taken the course before**  
-  - Have **taken the course and withdrawn**
 
   Please make sure to check the registration system accordingly.
   
