@@ -8,7 +8,6 @@
 ## Announcements
 
 ### About Registration: We will remove the cGPA criteria on 27th of February at 2:00 PM meaning that anyone who wants to register the course will be able to take it as long as the desired section is not full. However, register only to those sections that fully fits your schedule since we will not provide any assistance with course clashes.  
-* **Section capacities will start to be updated on 25th of February, 2025 at 1:00 PM.**  
 
   Please make sure to check the registration system accordingly.
   
