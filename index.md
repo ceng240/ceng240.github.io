@@ -7,8 +7,8 @@
 
 ## Announcements
   
-* Midterm date: **29th of April 17:40 - 19:30**.
-* Final date: TBA.
+* Midterm date: **29th of April, 2025 17:40 - 19:30**.
+* Final date:  **23th of June, 2025 9:30 - 10:45**.
   
 ## Objectives
 
