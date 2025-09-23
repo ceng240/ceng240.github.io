@@ -6,9 +6,12 @@
 ------
 
 ## Announcements
-  
-* Midterm date: **29th of April, 2025 17:40 - 19:30**.
-* Final date:  **23rd of June, 2025 9:30 - 10:45**.
+
+### About Registration: Due to capacity limitations, this course is available only to students enrolled in the following departments: Mechanical Engineering (ME), Metallurgical and Materials Engineering (METE), Food Engineering (FDE), Mathematics (MATH), Mathematics Education (MHED), Electrical - Electronics Engineering (EEE), and Industrial Engineering (IE). Students from other departments, including those on probation, must wait until the Add-Drop period, during which there may be a slight increase in course capacity. During registration periods you may find us in **A202 in between 14-16**.
+
+* Midterm date: **TBA**.
+* Final date:  **TBA**.
+* 
   
 ## Objectives
 
@@ -143,16 +146,15 @@ About Exams:
 
 | **DEPT** | **SECTION** | **PLACE** | **LECTURER** | **TIME** |
 | --- | --- | --- | --- | --- |
-| **CE** | **1** | **G111** | **Burçin Sapaz** | Thursday 08:40-10:30 |
-| **CE &amp; STAT** | **2** | **G111** | **Merve Asiler** | Friday 10:40-12:30 |
-| **MINE &amp; STAT** | **3** | **YP-A4** | **Narin Işık** | Wednesday 13:40-15:30 |
-| **ENVE** | **4** | **G111** | **Kadir Ekmekçi** | Friday 08:40-10:30 |
-| **GEOE** | **5** | **BMB3** | **Hüseyin Sayın** | Friday 08:40-10:30 |
-| **PETE** | **6** | **U2** | **Hakan Gürsoy** | Thursday 15:40-17:30 |
-| **Irregular** | **7** | **YP-A4** | **Gökhan Orhan** | Wednesday 15:40-17:30 |
-| **Irregular** | **8** | **YP-A3** | **Hazal Moğultay Özcan** | Monday 15:40-17:30 |
-| **CHE** | **9** | **G111** | **Hazal Moğultay Özcan** | Monday 10:40-12:30 |
-| **AEE** | **10** | **G111** | **Cemil Ulu** | Friday 13:40-15:30 |
+| **ME** | **1** | **G111** | **TBA** | Thursday 08:40-10:30 |
+| **ME** | **2** | **YP-A2** | **TBA** | Friday 10:40-12:30 |
+| **METE** | **3** | **U2** | **TBA** | Wednesday 13:40-15:30 |
+| **FDE** | **4** | **YP-A2** | **TBA** | Friday 08:40-10:30 |
+| **MATH** | **5** | **BMB1** | **TBA** | Friday 08:40-10:30 |
+| **MHED \& EE** | **6** | **U1** | **TBA** | Thursday 15:40-17:30 |
+| **EE \& IE** | **7** | **BMB3** | **TBA** | Wednesday 15:40-17:30 |
+| **EE** | **8** | **U1** | **TBA** | Monday 15:40-17:30 |
+| **IE** | **9** | **G111** | **TBA** | Monday 10:40-12:30 |
 
 
 ## Weekly Coverage <!--and Lecture Videos-->
