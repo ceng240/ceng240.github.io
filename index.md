@@ -11,7 +11,6 @@
 
 * Midterm date: **TBA**.
 * Final date:  **TBA**.
-* 
   
 ## Objectives
 
