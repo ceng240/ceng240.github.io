@@ -188,39 +188,40 @@ About Exams:
 
 - Lecture Topics: 
   + Conditional & repetitive execution in Python: if statements; conditional expression; while & for statements; continue & break; List comprehension; Example problems.
-- Lab Topics: Expressions, Variables, Basic I/O.
+- Lab Topics: No Labs. 
 
 **Week 6 (03.11)**
 
 - Lecture Topics: 
   + Conditional & repetitive execution in Python [continued]: if statements; conditional expression; while & for statements; continue & break; List comprehension; Example problems.
-- Lab Topics: If statement, conditional expression.
+- Lab Topics: Expressions, Variables, Basic I/O.
   
 **Week 7 (10.11)**
 
 - Lecture Topics: 
   + Functions: Defining functions; Passing parameters; Scope of variables; Recursion; Example definitions.
 
-- Lab Topics: Conditional and repetitive statements & expressions.
-
 **Week 8 (17.11)**
 
 - Lecture Topics: 
   + Functions [continued]: Defining functions; Passing parameters; Scope of variables; Recursion; Example definitions.
-- Lab Topics: Repetitive execution & functions (I)  
+- Lab Topics: If statement, conditional expression.
 
 **Week 9 (24.11)**
 
 - Lecture Topics: 
   + Object-oriented Programming (OOP) Concepts: Class definition; Member functions & variables; Message passing; Encapsulation; Inheritance; Polymorphism; Basics of OOP in Python.
-- Lab Topics: No Labs. 
+
+- Lab Topics: Conditional and repetitive statements & expressions.
+
+
 
 **Week 10 (01.12)**
 
 - Lecture Topics: 
   + File handling: Files and Sequential access; Parsing; Termination of Input; Formatting output; binary files.
-- Lab Topics: No Labs.
-- 
+- Lab Topics: Repetitive execution & functions (I)  
+  
 **Week 11 (08.12)**
 
 - Lecture Topics: 
@@ -237,14 +238,15 @@ About Exams:
 
 - Lecture Topics: 
   + Engineering and scientific libraries for Python [continued]: Data handling & analysis, and plotting. Illustration of these tools with examples.
-- Lab Topics: No Labs.
+- Lab Topics: File handling.
 
 **Week 14 (29.12)**
 
 - Lecture Topics:
   + An Application: Approximation & optimization.
   + An Application: Solving a simple regression problem.
-- Lab Topics: File handling.
+- Lab Topics: No Labs.
+
 
 
 
