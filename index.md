@@ -150,8 +150,8 @@ About Exams:
 | **METE** | **3** | **U2** | **TBA** | Wednesday 13:40-15:30 |
 | **FDE** | **4** | **YP-A2** | **TBA** | Friday 08:40-10:30 |
 | **MATH** | **5** | **BMB1** | **TBA** | Friday 08:40-10:30 |
-| **MHED \& EE** | **6** | **U1** | **TBA** | Thursday 15:40-17:30 |
-| **EE \& IE** | **7** | **BMB3** | **TBA** | Wednesday 15:40-17:30 |
+| **MHED & EE** | **6** | **U1** | **TBA** | Thursday 15:40-17:30 |
+| **EE & IE** | **7** | **BMB3** | **TBA** | Wednesday 15:40-17:30 |
 | **EE** | **8** | **U1** | **TBA** | Monday 15:40-17:30 |
 | **IE** | **9** | **G111** | **TBA** | Monday 10:40-12:30 |
 
