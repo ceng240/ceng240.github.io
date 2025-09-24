@@ -7,7 +7,7 @@
 
 ## Announcements
 
-### About Registration: Due to capacity limitations, this course is available only to students enrolled in the following departments: Mechanical Engineering (ME), Metallurgical and Materials Engineering (METE), Food Engineering (FDE), Mathematics (MATH), Mathematics Education (MHED), Electrical - Electronics Engineering (EEE), and Industrial Engineering (IE). Students from other departments, including those on probation, must wait until the Add-Drop period, during which there may be a slight increase in course capacity. During registration periods you may find us in **A202 in between 10-12**.
+### About Registration: Due to capacity limitations, this course is available only to students enrolled in the following departments: Mechanical Engineering (ME), Metallurgical and Materials Engineering (METE), Food Engineering (FDE), Mathematics (MATH), Mathematics Education (MHED), Electrical - Electronics Engineering (EEE), and Industrial Engineering (IE). Students from other departments, including those on probation, must wait until the Add-Drop period, during which there may be a slight increase in course capacity. During registration periods you may find us in **A202 in between 14-16**.
 
 * Midterm date: **TBA**.
 * Final date:  **TBA**.
