@@ -200,6 +200,7 @@ About Exams:
 
 - Lecture Topics: 
   + Functions: Defining functions; Passing parameters; Scope of variables; Recursion; Example definitions.
+- Lab Topics: No Labs.
 
 **Week 8 (17.11)**
 
