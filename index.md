@@ -139,6 +139,9 @@ About Exams:
 * **_Tools_**
   * [Thonny, Python IDE for beginners](http://thonny.org/)
 
+**_Interesting links on WEB_**
+ * https://thinkygames.com/games/the-farmer-was-replaced/
+
 
 ## Schedules
 
