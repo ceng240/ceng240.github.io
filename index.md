@@ -7,7 +7,7 @@
 
 ## Announcements
 
-### About Registration: The course is currently offered to students that satisfy both of the following conditions: i) The students from departments that should take the course in Spring Semester ii) The students that either failed the course (FF,FD,NA) or taking it for the first time. Others must wait for Add-drop period during which there may be updates to section criterias to allow other students to take the course depending on the capacity of the course. Note that course capacity is directly related to lab capacity which is fixed.
+### About Registration: The course is currently offered to students that satisfy both of the following conditions: i) The students from departments that should take the course in Spring Semester ii) The students that either failed the course (FF,FD,NA) or taking it for the first time. Others must wait for Add-drop period during which there may be updates to section criteria to allow other students to take the course depending on the capacity of the course. Note that course capacity is directly related to lab capacity which is fixed.
 
 * Midterm date: **TBA**.
 * Final date:  **TBA**.
