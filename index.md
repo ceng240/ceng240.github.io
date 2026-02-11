@@ -7,10 +7,10 @@
 
 ## Announcements
 
-### About Add-drop Period: Tomorrow at 3 pm the course will be open for all students who are on probation. Please find a section that is both empty and suits your schedule fully (in terms of both lecture hours and especially lab hours). We are not going to change your sections even if you mistakenly register and create a scheduling conflict. 
+### About Registration: The course is currently offered to students that satisfy both of the following conditions: i) The students from departments that should take the course in Spring Semester ii) The students that either failed the course (FF,FD,NA) or taking it for the first time. Others must wait for Add-drop period during which there may be updates to section criterias to allow other students to take the course depending on the capacity of the course. Note that course capacity is directly related to lab capacity which is fixed.
 
-* Midterm date: **2nd of December 17:40**.
-* Final date:  **6th of January 13:30**.
+* Midterm date: **TBA**.
+* Final date:  **TBA**.
   
 ## Objectives
 
