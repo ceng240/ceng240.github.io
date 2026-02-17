@@ -148,8 +148,8 @@ About Exams:
 
 | **DEPT** | **SECTION** | **PLACE** | **LECTURER** | **TIME** |
 | --- | --- | --- | --- | --- |
-| **ALL** | **1** | **U3** | **Hazal Mogultay Ozcan** | Monday 15:40-17:30 |
-| **ALL** | **2** | **U3** | **Hazal Mogultay Ozcan** | Friday 13:40-15:30 |
+| **ALL** | **1 - 18** | **U3** | **Hazal Mogultay Ozcan** | Monday 15:40-17:30 |
+| **ALL** | **19 - 36** | **U3** | **Hazal Mogultay Ozcan** | Friday 13:40-15:30 |
 
 
 ## Weekly Coverage <!--and Lecture Videos-->
