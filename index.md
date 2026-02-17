@@ -148,15 +148,8 @@ About Exams:
 
 | **DEPT** | **SECTION** | **PLACE** | **LECTURER** | **TIME** |
 | --- | --- | --- | --- | --- |
-| **ME** | **1** | **G111** | **Hazal Mogultay Ozcan** | Monday 15:40-17:30 |
-| **ME** | **2** | **YP-A2** | **Sercan Pekin** | Friday 13:40-15:30 |
-| **METE** | **3** | **U2** | **Guven Fidan** | Tuesday 15:40-17:30 |
-| **FDE** | **4** | **YP-A2** | **Hakan Gursoy** | Friday 15:40-17:30 |
-| **MATH** | **5** | **BMB1** | **Kadir Ekmekci** | Friday 13:40-15:30 |
-| **MHED & EE** | **6** | **U1** | **Huseyin Sayin** | Wednesday 08:40-10:30 |
-| **EE & IE** | **7** | **BMB3** | **Gokhan Orhan** | Thursday 13:40-15:30 |
-| **EE** | **8** | **U1** | **Furkan Murat** | Thursday 15:40-17:30 |
-| **IE** | **9** | **G111** | **Hazal Mogultay Ozcan** | Monday 13:40-15:30 |
+| **ALL** | **1** | **U3** | **Hazal Mogultay Ozcan** | Monday 15:40-17:30 |
+| **ALL** | **2** | **U3** | **Hazal Mogultay Ozcan** | Friday 13:40-15:30 |
 
 
 ## Weekly Coverage <!--and Lecture Videos-->
