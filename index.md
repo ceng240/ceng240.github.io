@@ -7,7 +7,9 @@
 
 ## Announcements
 
-### About Add-drop Period: On Monday the students on probation status, regardless of their departments, will be able to take the course. Other students should not try to change their sections since the course criteria only allows students on probation status to take the course. Please note that if you are willing to take the course make sure you do not have any conflicting courses, otherwise we will not change your sections manually. 
+### About Add-drop Period: Starting from Tuesday 3 pm, we will change the section criteria to allow students that are automatically assigned to the sections to change their sections through the system in case they have clashes. This does not include students that took the course during add drop period. Those students needs to register sections that do not clash with any other course.
+
+### About Lecture/Lab Clashes: Dear all, in case of a conflict in your schedule: i) If conflict happens because of lecture hours, you can either follow other lecture hour and submit your attendance there or follow online lectures/materials which will allow you to submit your attendance. ii) If conflict happens because of lab hours, you must register to a suitable section.
 
 * Midterm date: **TBA**.
 * Final date:  **TBA**.
