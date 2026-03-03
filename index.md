@@ -11,8 +11,8 @@
 
 ### About Lecture/Lab Clashes: Dear all, in case of a conflict in your schedule: i) If conflict happens because of lecture hours, you can either follow other lecture hour and submit your attendance there or follow online lectures/materials which will allow you to submit your attendance. ii) If conflict happens because of lab hours, you must register to a suitable section.
 
-* Midterm date: **TBA**.
-* Final date:  **TBA**.
+* Midterm date: **28th of April**.
+* Final date:  **18th of June**.
   
 ## Objectives
 
