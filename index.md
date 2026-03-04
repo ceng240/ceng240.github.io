@@ -7,8 +7,8 @@
 
 ## Announcements
 
-* Midterm date: **28th of April**.
-* Final date:  **18th of June**.
+* Midterm date: **28th of April 18:00**.
+* Final date:  **18th of June 9:30**.
   
 ## Objectives
 
