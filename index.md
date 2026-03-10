@@ -219,7 +219,7 @@ About Exams:
 **Week 11 (27.04)**
 
 - Lecture Topics: 
-  + No Lectures.
+  + Previous lecture contd.
 - Lab Topics: No Labs.
   
 **Week 12 (4.05)**
