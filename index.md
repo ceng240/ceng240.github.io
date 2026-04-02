@@ -1,260 +1,602 @@
-{:.no_toc}
-
-* TOC 
-{:toc}
-
-------
-
-## Announcements
-
-* Midterm date: **28th of April 18:00**.
-* Final date:  **18th of June 9:30**.
-  
-## Objectives
-
-This course gives a brief introduction to a working understanding of basic computer organization, data representation, programming language constructs, and algorithmic thinking. It is designed as a first course of programming and supported by laboratory sessions for students outside of the Computer Engineering major.
-
-## Textbook
-*Programming with Python for Engineers,* by S. Kalkan, O. T. Şehitoğlu and G. Üçoluk. 
-Available at: [https://pp4e-book.github.io/](https://pp4e-book.github.io/)
-
-## Grading
-
-| <!-- -->      | <!-- --> |
-| ------------- | -------- |
-| Attendance    | 10%      |
-| Midterm       | 30%      |
-| Labs          | 30%      |
-| Final         | 30%      |
-
-
-## Course Conduct
-
-The flow of this course has 2 hours of in-class (theoretical) lectures + 2 hours of laboratory work. In addition, the theoretical part has Midterm and Final exams.
-
-This has been altered as follows:
-
-Weekly:
-
-* In a pre-scheduled (see: Schedule section below) session, the lecturer will perform the subject review and a recitation (going over programming examples) of that week’s topics.
-* Starting with the 4th week, there will be a lab session held at MM-14. Here the students will be given a programming  environment and a task that they will code in a given duration.
-
-About Exams:
-
-* Midterm exam and final exam will be in class.
-
-
-## Course Material
-
-* **_Course Textbook_**  [Available at: [https://pp4e-book.github.io/](https://pp4e-book.github.io/)]
-  This is an 'interactive' book with a rather 'minimalist' approach: Some details or specialized subjects are not emphasized and instead, direct interaction with examples and problems are encouraged. Therefore, rather than being a 'complete reference manual', this book is a 'first things first' and 'hands on' book. The pointers to skipped details will be provided by links in the book. Bearing this in mind, the reader is strongly encouraged to read and interact <u>all</u> contents of the book thoroughly. 
-
-  The book's interactivity is thanks to <a href="https://jupyter.org/">Jupyter notebook</a>. Therefore, the book differs from a conventional book by providing some dynamic content. This content can appear in audio-visual form as well as some applets (small applications) embedded in the book. It is also possible that the book asks the reader to complete/write a piece of Python program, run it, and inspect the result, from time to time. The reader is encouraged to complete these minor tasks. Such tasks and interactions are of great assistance in gaining acquaintance with Python and building up a self-confidence in solving problems with Python. 
-
-  You can download the PDF of the course textbook from [https://pp4e-book.github.io/](https://pp4e-book.github.io/).
-
-  Of course, the PDF does not provide the dynamic content. 
-
-* **_Course Workbook_**  [Available at: [https://pp4e-workbook.github.io/](https://pp4e-workbook.github.io/)]
-  This is also a Jupyter book that is coherent with the course textbook. It contains solved and unsolved exercises in Python which are tagged with difficulty levels [between ★ and ★★★★★]. Students are strongly advised to work, level by level, through the solved exercises then proceed to the unsolved ones.
-
-* **_Python Interpreter_**
-
-  There are two alternatives to practice Python:
-  
-  1. Installing a _Python 3 Interpreter_ on your personal computer.
-
-  2. Using an interpreter accessible on the Web. 
-
-     * This alternative is the environment the book is written on, i.e. Google Colab: <a href="https://colab.research.google.com"> https://colab.research.google.com</a>.
-     
-       <img src="https://github.com/sinankalkan/CENG240/blob/master/figures/colabEntryPage.png?raw=true" alt="gg" style="zoom:70%;" />
-
-       After cancelling the entry page, you arrive at a page which looks like the one above. Click "+ Code" tab and you will see at the bottom a freshly created cell. You can type in that cell your Python code and run it by hitting the small arrow  <img src="https://github.com/sinankalkan/CENG240/blob/master/figures/rightarrowincircle.png?raw=true" alt="gg" style="zoom:50%;" />  at the left top of that cell. 
-
-     * Another alternative is to use another online interpreter:
-
-       * <a href="https://www.python.org/shell/">https://www.python.org/shell/</a>
-       * <a href="http://www.pythontutor.com/visualize.html#mode=edit">http://www.pythontutor.com/visualize.html#mode=edit</a>
-       * <a href="https://www.programiz.com/python-programming/online-compiler/">https://www.programiz.com/python-programming/online-compiler/</a>
-       * <a href="https://repl.it/repls/TechnicalOverjoyedDesignmethod#main.py">https://repl.it/repls/TechnicalOverjoyedDesignmethod#main.py</a>
-       * <a href="http://pythonfiddle.com">http://pythonfiddle.com</a>
-       * <a href="https://www.ideone.com">https://www.ideone.com</a>
-       * <a href="https://www.programiz.com/python-programming/online-compiler/">https://www.programiz.com/python-programming/online-compiler/</a>
-       * <a href="https://rextester.com/runcode">https://rextester.com/runcode</a>
-       * <a href="https://www.onlinegdb.com/online_python_interpreter">https://www.onlinegdb.com/online_python_interpreter</a>
-       * <a href="https://mathcs.holycross.edu/~kwalsh/python/">https://mathcs.holycross.edu/~kwalsh/python/</a>
-       * <a href="http://techmums.co/python.html">http://techmums.co/python.html</a>
-     
-## Supplementary  Material
-
-**_Useful links on WEB_**  [mostly from wiki.python.org]
-
-* **_Tutorials and Websites_**
-  * [A Byte of Python](http://swaroopch.com/notes/python/), by Swaroop C.H., is also an introductory text for people with no previous programming experience. 
-  * [After Hours Programming Python 3 Tutorial](http://www.afterhoursprogramming.com/tutorial/Python/Overview/) 
-  * [An App to Learn Python](https://www.programiz.com/learn-python) - A beginner-friendly app on Android and iOS to learn Python step by step with in-built interpreter and quizzes. 
-  * [Ask Python](http://askpython.com/) Absolute Beginners Python Tutorial 
-  * [Beginner-friendly guide to Python](https://python3.guide/), that starts with the absolute basics but goes on to more advanced stuff as well 
-  * [Classpert - Python](https://classpert.com/python-programming) - A large collection of free and paid Python online courses, from a wide range of providers. 
-  * [Hackr.io - Python](https://hackr.io/tutorials/learn-python): Programming community-recommended best Python tutorials and courses 
-  * [Hands-on Python Tutorial](http://www.cs.luc.edu/~anh/python/hands-on/3.0/) Beginners' Python, graphics, and simple client/server introduction, with videos 
-  * [Learning to Program](http://www.alan-g.me.uk/) An introduction to programming for those who have never programmed before, by Alan Gauld. It introduces several programming languages but has a strong emphasis on Python. (Python 2 and 3) 
-  * [Letsfindcourse - Python](http://letsfindcourse.com/python): Best Python tutorials and courses recommended by experts. 
-  * [The Wikibooks Non-Programmer's Tutorial for Python by Josh Cogliati](http://en.wikibooks.org/wiki/Non-Programmer's_Tutorial_for_Python_3.0) 
-  * [Learn Python](https://overiq.com/python/3.4/intro-to-python/) An Introductory yet in-depth tutorial for Python beginners. 
-  * [Learning to Program](http://www.alan-g.me.uk/l2p/) by Alan Gauld 
-  * The [Python tips](http://pythontips.com/) blog includes Python tips and tutorials for beginners and professional programmers. 
-  * [Python Tutorial in Python's documentation set](http://docs.python.org/py3k/tutorial/). It's not written with non-programmers in mind, but it will give you an idea of the language's flavor and style. 
-  * [The Python-Course.eu's extensive tutorial for complete beginners](http://www.python-course.eu/python3_course.php), with lots of illustrations. 
-  * [Pythonspot Tutorials](https://www.pythonspot.com/) Python tutorials. 
-  * [The Python Guru](http://thepythonguru.com/) A beginner-friendly guide for aspiring programmers. 
-  * [CodersLegacy](https://coderslegacy.com/) A website + blog geared towards both new and experienced programmers. Mainly focused on teaching Python. 
-  * [The Codezine](https://thecodezine.com/) A python programming blog built for beginners. 
-  * [Top Courses to Learn Python - gitconnected.com](https://gitconnected.com/learn/python) Python tutorials submitted and ranked by Python developers with the best rising to the top 
-  * [Coursesity - Python](https://coursesity.com/best-tutorials-learn/python) - Curated list of the best python courses and tutorials for beginners.
-  * [BeginnersGuide/Programmers](https://wiki.python.org/moin/BeginnersGuide/Programmers) 
-  * <a href="https://realpython.com/python-first-steps/">https://realpython.com/python-first-steps/</a>
-  * <a href="https://python.swaroopch.com">https://python.swaroopch.com</a>
-  * <a href="https://www.learnpython.org">https://www.learnpython.org</a>
-* **_Interactive Courses_**
-  * [CheckiO](http://www.checkio.org/) is a gamified website containing programming tasks that can be solved in Python 3. 
-  * [Codecademy (](https://www.codecademy.com/search?query=python)Python) 
-  * [Code the blocks](https://codetheblocks.com/) combines Python programming with a 3D environment where you "place blocks" and construct structures. It also comes with Python tutorials that teach you how to create progressively elaborate 3D structures. 
-  * [Computer Science Circles](http://cscircles.cemc.uwaterloo.ca/) has 30 lessons, 100 exercises, and a message system where you can ask for help. Teachers can use it with their students. It is also available in Dutch, French, German, and Lithuanian. 
-  * [DataCamp Python Tutorial](https://www.datacamp.com/courses/intro-to-python-for-data-science) Unlike most other Python tutorials, this 4 hour tutorial by [DataCamp](https://www.datacamp.com/) focuses on Python specifically for Data Science. It has 57 interactive exercises and 11 videos. 
-  * [Finxter](https://finxter.com/) - How good are your Python skills? Test and Training with >300 hand-picked Python puzzles. 
-  * [HackInScience](https://hackinscience.org/) - 50+ Python exercises on a free, adless, simple, and open-source platform. 
-  * [How to Think Like a Computer Scientist: Interactive Edition](http://interactivepython.org/runestone/static/thinkcspy/index.html) is an interactive reimagination of Elkner, Downey and Meyer's book with visualizations and audio explanations.
-* **_Books_**
-  * **Automate the Boring Stuff with Python - Practical Programming for Total Beginners** by *Al Sweigart* is "written for office workers, students, administrators, and anyone who uses a computer to learn how to code small, practical programs to automate tasks on their computer." ||[website](https://automatetheboringstuff.com/) ||[print version](http://www.amazon.com/gp/product/1593275994/) || 
-  * **How To Think Like a Computer Scientist** is a classic open-source book by *Allen Downey* with contributions from *Jeffrey Elkner* and *Chris Meyers*. It was updated to Python 3 by *Peter Wentworth.* ||[website](http://openbookproject.net/thinkcs/python/english3e/) ||[print version](http://openbookproject.net/thinkcs/python/english3e/) || 
-  * **Making Games with Python & Pygame** by *Al Sweigart* introduces the Pygame framework for novices and intermediate programmers to make graphical games. ||[website](http://inventwithpython.com/pygame) ||[print version](http://www.amazon.com/Making-Games-Python-Pygame-Sweigart/dp/1469901730?ie=UTF8&tag=playwithpyth-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0982106017) ||
-* **_Videos_**
-  * [Python Programming Tutorials for Beginners](https://youtu.be/uCzFUKWtzgA?list=PLboXykqtm8dy_DNg1NZiS08Dnyj35PWXw): Installation, IDE, variables, functions, strings, lists, OOP 
-  * The [Young Programmers Podcast](http://young-programmers.blogspot.com/search/label/python) contains video lessons on Python, Pygame, Jython, Scratch, Alice, Java, and Scala. 
-
-* **_Tools_**
-  * [Thonny, Python IDE for beginners](http://thonny.org/)
-
-**_Interesting links on WEB_**
- * https://thinkygames.com/games/the-farmer-was-replaced/
-
-
-## Schedules
-
-
-| **DEPT** | **SECTION** | **PLACE** | **LECTURER** | **TIME** |
-| --- | --- | --- | --- | --- |
-| **ALL** | **1 - 18** | **U3** | **Hazal Mogultay Ozcan** | Monday 15:40-17:30 |
-| **ALL** | **19 - 36** | **U3** | **Hazal Mogultay Ozcan** | Friday 13:40-15:30 |
-
-
-## Weekly Coverage <!--and Lecture Videos-->
-
-**Week 1 (16.02)**
-
-- Lecture Topics: 
-  + Introduction: Course content, objectives, outline; Grading; Information about the homeworks, the labs, the exams.
-  + Basic computer organization: Von Neumann arch, CPU, RAM and their interaction during program execution, stored program, Peripherals, OS.
-- Lab Topics: No Labs.
-  
-**Week 2 (23.02)**
-
-- Lecture Topics: 
-  + A Broad Look at Programming and PL: Concept of Algorithm, Comparing algorithms, World of PLs, Low-High level PL, Interpreter vs Compiler, Programming Paradigms, Python as a PL. 
-  + Representation of data in computers: Two's complement representation of integers, IEEE floating-point representation, Information loss with Floating Points, representation of characters, text and Boolean.
-- Lab Topics: No Labs.
- 
-**Week 3 (2.03)**
-
-- Lecture Topics: 
-  + Introduction to Python: Numbers and Boolean values in Python, Container data in Python (str, tuple, list, dict, set); Mutable - immutable data; aliasing problem.
-- Lab Topics: No Labs.
-  
-**Week 4 (9.03)**
-
-- Lecture Topics: 
-  + Introduction to Python [continued]: Operators and Expressions; Type casting; Statement in Python; Variables and Assignment; Basic I/O in Python.
-- Lab Topics: Demo Labs.
-
-**Week 5 (16.03)**
-
-- Lecture Topics: 
-  + Conditional & repetitive execution in Python: if statements; conditional expression; while & for statements; continue & break; List comprehension; Example problems.
-- Lab Topics: No Labs. 
-
-**Week 6 (23.03)**
-
-- Lecture Topics: 
-  + Conditional & repetitive execution in Python [continued]: if statements; conditional expression; while & for statements; continue & break; List comprehension; Example problems.
-- Lab Topics: Expressions, Variables, Basic I/O.
-  
-**Week 7 (30.03)**
-
-- Lecture Topics: 
-  + Functions: Defining functions; Passing parameters; Scope of variables; Recursion; Example definitions.
-- Lab Topics: If statement, conditional expression.
-
-**Week 8 (6.04)**
-
-- Lecture Topics: 
-  + Functions [continued]: Defining functions; Passing parameters; Scope of variables; Recursion; Example definitions.
-- Lab Topics: Conditional and repetitive statements & expressions.
-
-**Week 9 (13.04)**
-
-- Lecture Topics: 
-  + Object-oriented Programming (OOP) Concepts: Class definition; Member functions & variables; Message passing; Encapsulation; Inheritance; Polymorphism; Basics of OOP in Python.
-- Lab Topics: Repetitive execution & functions (I).
-
-
-
-**Week 10 (20.04)**
-
-- Lecture Topics: 
-  + File handling: Files and Sequential access; Parsing; Termination of Input; Formatting output; binary files.
-- Lab Topics: No Labs.
-  
-**Week 11 (27.04)**
-
-- Lecture Topics: 
-  + Previous lecture contd.
-- Lab Topics: No Labs.
-  
-**Week 12 (4.05)**
-
-- Lecture Topics: 
-  + Exception handling and Debugging: Kind of errors; Exceptions; Debugging techniques.algebraic functions etc.).
-- Lab Topics: Repetitive execution & functions (II)     
-
-**Week 13 (11.05)**
-
-- Lecture Topics: 
-  + Engineering and scientific libraries for Python: Libraries and tools for numerical & scientific calculations (arrays, n-D arrays, slicing, basic operations on arrays, commonly used functions, 
-- Lab Topics: OO operations on built-in objects.    
-
-**Week 14 (18.05)**
-
-- Lecture Topics:
-  + Engineering and scientific libraries for Python [continued]: Data handling & analysis, and plotting. Illustration of these tools with examples.
-- Lab Topics: No Labs.
-
-**Week 15 (25.05)**
-
-- Lecture Topics:
-  + No Lectures.
-- Lab Topics: No Labs
-
-**Week 16 (1.06)**
-
-- Lecture Topics:
-  + An Application: Approximation & optimization.
-  + An Application: Solving a simple regression problem.
-- Lab Topics: File handling.
-
-
-
-## Contact
-
-Please use the following email address for course related issues: ceng240 [@] ceng [dot] metu [dot] edu [dot] tr
+---
+layout: home
+title: CENG240
+---
+
+<section class="hero-panel" id="top">
+  <div class="hero-copy">
+    <p class="eyebrow">CENG240 course page</p>
+    <h1>Programming with Python for Engineers</h1>
+    <p class="hero-lead">
+      Official course page for announcements, materials, schedule, weekly coverage, grading, and
+      supplementary reference links.
+    </p>
+
+    <div class="hero-actions">
+      <a class="button-primary" href="#announcements">
+        <span>Announcements</span>
+        <small>Exam dates and current course updates</small>
+      </a>
+      <a class="button-secondary" href="#materials">
+        <span>Materials</span>
+        <small>Textbook, workbook, and interpreter options</small>
+      </a>
+      <a class="button-tertiary" href="#weekly-coverage">
+        <span>Weekly coverage</span>
+        <small>Lecture topics and lab flow by week</small>
+      </a>
+    </div>
+
+    <div class="hero-pill-row">
+      <span class="hero-pill">2 hours lecture + 2 hours lab</span>
+      <span class="hero-pill">Python foundations for engineers</span>
+      <span class="hero-pill">CENG240 official course hub</span>
+    </div>
+  </div>
+</section>
+
+<section class="info-strip">
+  <article>
+    <span class="info-kicker">Course Focus</span>
+    <strong>Python for Engineers</strong>
+    <p>Programming fundamentals, computer organization, problem solving, and scientific tools.</p>
+  </article>
+  <article>
+    <span class="info-kicker">Structure</span>
+    <strong>Theory + Laboratory</strong>
+    <p>Weekly subject review, recitation, and lab practice starting from the fourth week.</p>
+  </article>
+  <article>
+    <span class="info-kicker">Audience</span>
+    <strong>First-course programming</strong>
+    <p>Designed for engineering students, including those outside the Computer Engineering major.</p>
+  </article>
+</section>
+
+<section id="announcements" class="content-section">
+  <div class="section-heading section-heading-card">
+    <p class="section-kicker">Updates</p>
+    <h2>Announcements</h2>
+    <p class="section-summary">
+      Current course notices and exam dates listed on this page.
+    </p>
+  </div>
+
+  <div class="announcement-grid">
+    <article class="announcement-card">
+      <span class="announcement-tag">Exam</span>
+      <h3>Midterm Date</h3>
+      <p><strong>28th of April, 18:00</strong></p>
+      <p>This is the currently listed midterm date on the course page.</p>
+    </article>
+    <article class="announcement-card">
+      <span class="announcement-tag">Exam</span>
+      <h3>Final Date</h3>
+      <p><strong>18th of June, 09:30</strong></p>
+      <p>This is the currently listed final date on the course page.</p>
+    </article>
+    <article class="announcement-card announcement-card-wide">
+      <span class="announcement-tag">Course Channel</span>
+      <h3>Official Course Communication</h3>
+      <p>
+        The course page lists schedules, weekly coverage, textbook links, and future updates.
+      </p>
+    </article>
+  </div>
+</section>
+
+<section id="objectives" class="content-section content-grid">
+  <article class="content-card">
+    <div class="section-heading">
+      <p class="section-kicker">Course Overview</p>
+      <h2>Objectives</h2>
+    </div>
+    <p>
+      This course introduces basic computer organization, data representation, programming language
+      constructs, and algorithmic thinking. It is designed as a first programming course and is
+      supported by laboratory sessions for students outside of the Computer Engineering major.
+    </p>
+  </article>
+
+  <article class="content-card">
+    <div class="section-heading">
+      <p class="section-kicker">Assessment</p>
+      <h2>Grading</h2>
+    </div>
+    <div class="grading-grid">
+      <div><span>Attendance</span><strong>10%</strong></div>
+      <div><span>Midterm</span><strong>30%</strong></div>
+      <div><span>Labs</span><strong>30%</strong></div>
+      <div><span>Final</span><strong>30%</strong></div>
+    </div>
+  </article>
+</section>
+
+<section id="course-conduct" class="content-section">
+  <article class="content-card">
+    <div class="section-heading">
+      <p class="section-kicker">Course Flow</p>
+      <h2>Course Conduct</h2>
+      <p class="section-summary">
+        The course combines theory and hands-on work, with an emphasis on regular review,
+        recitation, and structured programming practice.
+      </p>
+    </div>
+
+    <div class="feature-list">
+      <div>
+        <h3>Weekly</h3>
+        <p>
+          In the scheduled lecture session, the lecturer reviews the subject and gives a recitation
+          using programming examples from that week’s topics.
+        </p>
+      </div>
+      <div>
+        <h3>Laboratory</h3>
+        <p>
+          Starting with the 4th week, there is a lab session at MM-14 where students are given a
+          programming environment and a task to solve within a limited time.
+        </p>
+      </div>
+      <div>
+        <h3>Exams</h3>
+        <p>Both the midterm exam and the final exam are conducted in class.</p>
+      </div>
+    </div>
+  </article>
+</section>
+
+<section id="materials" class="content-section">
+  <div class="section-heading section-heading-card">
+    <p class="section-kicker">Resources</p>
+    <h2>Course Materials</h2>
+    <p class="section-summary">
+      Core course resources, followed by the original notes and interpreter links.
+    </p>
+  </div>
+
+  <div class="resource-grid">
+    <article class="resource-card">
+      <p class="card-kicker">Primary Text</p>
+      <h3>Course Textbook</h3>
+      <p><em>Programming with Python for Engineers</em>, by S. Kalkan, O. T. Sehitoglu and G. Ucoluk.</p>
+      <p><a href="https://pp4e-book.github.io/">Open the textbook</a></p>
+      <p>
+        The course page presents this as an interactive book built around examples, direct
+        experimentation, and problem solving.
+      </p>
+    </article>
+
+    <article class="resource-card">
+      <p class="card-kicker">Companion Practice</p>
+      <h3>Course Workbook</h3>
+      <p><a href="https://pp4e-workbook.github.io/">Open the workbook</a></p>
+      <p>
+        This Jupyter Book companion includes solved and unsolved exercises tagged by difficulty
+        between ★ and ★★★★★.
+      </p>
+    </article>
+
+    <article class="resource-card">
+      <p class="card-kicker">Practice Options</p>
+      <h3>Python Interpreter</h3>
+      <p>Students can either install a Python 3 interpreter locally or use a browser-based environment.</p>
+      <ul class="resource-list">
+        <li><a href="https://colab.research.google.com">Google Colab</a></li>
+        <li><a href="https://www.python.org/shell/">Python Shell</a></li>
+        <li><a href="https://www.programiz.com/python-programming/online-compiler/">Programiz Online Compiler</a></li>
+        <li><a href="https://www.onlinegdb.com/online_python_interpreter">OnlineGDB Python Interpreter</a></li>
+      </ul>
+    </article>
+  </div>
+
+  <div class="material-notes-grid">
+    <details class="archive-card" open>
+      <summary>Textbook notes from the original course page</summary>
+      <div class="archive-body">
+        <p>
+          The book is described as an interactive textbook. Rather than presenting every detail as
+          a reference manual, it focuses on direct interaction with examples and problems. Students
+          are encouraged to read and interact with its contents thoroughly.
+        </p>
+        <p>
+          Its interactivity comes from Jupyter notebook style content. Dynamic elements may appear
+          as audiovisual content, applets, or short tasks where the reader completes and runs a
+          piece of Python code, then inspects the result.
+        </p>
+        <p>
+          These interactions are meant to help students build familiarity with Python and problem
+          solving. The PDF version is also available through the textbook site, although the PDF
+          does not include the dynamic content.
+        </p>
+      </div>
+    </details>
+
+    <details class="archive-card" open>
+      <summary>Google Colab quick start from the original course page</summary>
+      <div class="archive-body">
+        <ol class="step-list">
+          <li>Open <a href="https://colab.research.google.com">Google Colab</a>.</li>
+          <li>Cancel the entry page if it appears.</li>
+          <li>Click the <strong>+ Code</strong> tab to create a new code cell.</li>
+          <li>Type your Python code into the cell and run it using the arrow button on the left of the cell.</li>
+        </ol>
+        <p>
+          The original page also illustrates this workflow visually and uses Colab as the
+          environment that the textbook is written around.
+        </p>
+      </div>
+    </details>
+
+    <details class="archive-card">
+      <summary>Additional online interpreters listed on the original site</summary>
+      <div class="archive-body">
+        <ul class="resource-list resource-list-columns">
+          <li><a href="http://www.pythontutor.com/visualize.html#mode=edit">Python Tutor</a></li>
+          <li><a href="https://repl.it/repls/TechnicalOverjoyedDesignmethod#main.py">Repl.it example</a></li>
+          <li><a href="http://pythonfiddle.com">PythonFiddle</a></li>
+          <li><a href="https://www.ideone.com">Ideone</a></li>
+          <li><a href="https://rextester.com/runcode">Rextester</a></li>
+          <li><a href="https://mathcs.holycross.edu/~kwalsh/python/">HC Python Interpreter</a></li>
+          <li><a href="http://techmums.co/python.html">Techmums Python</a></li>
+        </ul>
+      </div>
+    </details>
+  </div>
+</section>
+
+<section id="schedule" class="content-section">
+  <div class="section-heading section-heading-card">
+    <p class="section-kicker">Planning</p>
+    <h2>Schedule</h2>
+  </div>
+
+  <article class="content-card">
+    <div class="section-heading section-heading-compact">
+      <p class="section-kicker">Planning</p>
+      <h3>Section Schedule</h3>
+    </div>
+    <div class="schedule-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Dept</th>
+            <th>Section</th>
+            <th>Place</th>
+            <th>Lecturer</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>ALL</td>
+            <td>1 - 18</td>
+            <td>U3</td>
+            <td>Hazal Mogultay Ozcan</td>
+            <td>Monday 15:40 - 17:30</td>
+          </tr>
+          <tr>
+            <td>ALL</td>
+            <td>19 - 36</td>
+            <td>U3</td>
+            <td>Hazal Mogultay Ozcan</td>
+            <td>Friday 13:40 - 15:30</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </article>
+</section>
+
+<section id="weekly-coverage" class="content-section">
+  <div class="section-heading section-heading-card">
+    <p class="section-kicker">Timeline</p>
+    <h2>Weekly Coverage</h2>
+    <p class="section-summary">
+      Week-by-week lecture and lab topics from the course page.
+    </p>
+  </div>
+
+  <div class="week-grid">
+    <details class="week-card" open>
+      <summary><span>Week 1</span><small>16.02</small></summary>
+      <div class="week-card-body">
+        <p class="week-label">Lecture Topics</p>
+        <ul class="resource-list">
+          <li>Introduction: Course content, objectives, outline; grading; information about the homeworks, the labs, the exams.</li>
+          <li>Basic computer organization: Von Neumann arch, CPU, RAM and their interaction during program execution, stored program, peripherals, OS.</li>
+        </ul>
+        <p class="week-label">Lab Topics</p>
+        <p>No Labs.</p>
+      </div>
+    </details>
+
+    <details class="week-card">
+      <summary><span>Week 2</span><small>23.02</small></summary>
+      <div class="week-card-body">
+        <p class="week-label">Lecture Topics</p>
+        <ul class="resource-list">
+          <li>A Broad Look at Programming and PL: Concept of Algorithm, Comparing algorithms, World of PLs, Low-High level PL, Interpreter vs Compiler, Programming Paradigms, Python as a PL.</li>
+          <li>Representation of data in computers: Two's complement representation of integers, IEEE floating-point representation, Information loss with Floating Points, representation of characters, text and Boolean.</li>
+        </ul>
+        <p class="week-label">Lab Topics</p>
+        <p>No Labs.</p>
+      </div>
+    </details>
+
+    <details class="week-card">
+      <summary><span>Week 3</span><small>2.03</small></summary>
+      <div class="week-card-body">
+        <p class="week-label">Lecture Topics</p>
+        <ul class="resource-list">
+          <li>Introduction to Python: Numbers and Boolean values in Python, Container data in Python (str, tuple, list, dict, set); Mutable - immutable data; aliasing problem.</li>
+        </ul>
+        <p class="week-label">Lab Topics</p>
+        <p>No Labs.</p>
+      </div>
+    </details>
+
+    <details class="week-card">
+      <summary><span>Week 4</span><small>9.03</small></summary>
+      <div class="week-card-body">
+        <p class="week-label">Lecture Topics</p>
+        <ul class="resource-list">
+          <li>Introduction to Python [continued]: Operators and Expressions; Type casting; Statement in Python; Variables and Assignment; Basic I/O in Python.</li>
+        </ul>
+        <p class="week-label">Lab Topics</p>
+        <p>Demo Labs.</p>
+      </div>
+    </details>
+
+    <details class="week-card">
+      <summary><span>Week 5</span><small>16.03</small></summary>
+      <div class="week-card-body">
+        <p class="week-label">Lecture Topics</p>
+        <ul class="resource-list">
+          <li>Conditional &amp; repetitive execution in Python: if statements; conditional expression; while &amp; for statements; continue &amp; break; List comprehension; Example problems.</li>
+        </ul>
+        <p class="week-label">Lab Topics</p>
+        <p>No Labs.</p>
+      </div>
+    </details>
+
+    <details class="week-card">
+      <summary><span>Week 6</span><small>23.03</small></summary>
+      <div class="week-card-body">
+        <p class="week-label">Lecture Topics</p>
+        <ul class="resource-list">
+          <li>Conditional &amp; repetitive execution in Python [continued]: if statements; conditional expression; while &amp; for statements; continue &amp; break; List comprehension; Example problems.</li>
+        </ul>
+        <p class="week-label">Lab Topics</p>
+        <p>Expressions, Variables, Basic I/O.</p>
+      </div>
+    </details>
+
+    <details class="week-card">
+      <summary><span>Week 7</span><small>30.03</small></summary>
+      <div class="week-card-body">
+        <p class="week-label">Lecture Topics</p>
+        <ul class="resource-list">
+          <li>Functions: Defining functions; Passing parameters; Scope of variables; Recursion; Example definitions.</li>
+        </ul>
+        <p class="week-label">Lab Topics</p>
+        <p>If statement, conditional expression.</p>
+      </div>
+    </details>
+
+    <details class="week-card">
+      <summary><span>Week 8</span><small>6.04</small></summary>
+      <div class="week-card-body">
+        <p class="week-label">Lecture Topics</p>
+        <ul class="resource-list">
+          <li>Functions [continued]: Defining functions; Passing parameters; Scope of variables; Recursion; Example definitions.</li>
+        </ul>
+        <p class="week-label">Lab Topics</p>
+        <p>Conditional and repetitive statements &amp; expressions.</p>
+      </div>
+    </details>
+
+    <details class="week-card">
+      <summary><span>Week 9</span><small>13.04</small></summary>
+      <div class="week-card-body">
+        <p class="week-label">Lecture Topics</p>
+        <ul class="resource-list">
+          <li>Object-oriented Programming (OOP) Concepts: Class definition; Member functions &amp; variables; Message passing; Encapsulation; Inheritance; Polymorphism; Basics of OOP in Python.</li>
+        </ul>
+        <p class="week-label">Lab Topics</p>
+        <p>Repetitive execution &amp; functions (I).</p>
+      </div>
+    </details>
+
+    <details class="week-card">
+      <summary><span>Week 10</span><small>20.04</small></summary>
+      <div class="week-card-body">
+        <p class="week-label">Lecture Topics</p>
+        <ul class="resource-list">
+          <li>File handling: Files and Sequential access; Parsing; Termination of Input; Formatting output; binary files.</li>
+        </ul>
+        <p class="week-label">Lab Topics</p>
+        <p>No Labs.</p>
+      </div>
+    </details>
+
+    <details class="week-card">
+      <summary><span>Week 11</span><small>27.04</small></summary>
+      <div class="week-card-body">
+        <p class="week-label">Lecture Topics</p>
+        <ul class="resource-list">
+          <li>Previous lecture contd.</li>
+        </ul>
+        <p class="week-label">Lab Topics</p>
+        <p>No Labs.</p>
+      </div>
+    </details>
+
+    <details class="week-card">
+      <summary><span>Week 12</span><small>4.05</small></summary>
+      <div class="week-card-body">
+        <p class="week-label">Lecture Topics</p>
+        <ul class="resource-list">
+          <li>Exception handling and Debugging: Kind of errors; Exceptions; Debugging techniques.algebraic functions etc.).</li>
+        </ul>
+        <p class="week-label">Lab Topics</p>
+        <p>Repetitive execution &amp; functions (II)</p>
+      </div>
+    </details>
+
+    <details class="week-card">
+      <summary><span>Week 13</span><small>11.05</small></summary>
+      <div class="week-card-body">
+        <p class="week-label">Lecture Topics</p>
+        <ul class="resource-list">
+          <li>Engineering and scientific libraries for Python: Libraries and tools for numerical &amp; scientific calculations (arrays, n-D arrays, slicing, basic operations on arrays, commonly used functions,</li>
+        </ul>
+        <p class="week-label">Lab Topics</p>
+        <p>OO operations on built-in objects.</p>
+      </div>
+    </details>
+
+    <details class="week-card">
+      <summary><span>Week 14</span><small>18.05</small></summary>
+      <div class="week-card-body">
+        <p class="week-label">Lecture Topics</p>
+        <ul class="resource-list">
+          <li>Engineering and scientific libraries for Python [continued]: Data handling &amp; analysis, and plotting. Illustration of these tools with examples.</li>
+        </ul>
+        <p class="week-label">Lab Topics</p>
+        <p>No Labs.</p>
+      </div>
+    </details>
+
+    <details class="week-card">
+      <summary><span>Week 15</span><small>25.05</small></summary>
+      <div class="week-card-body">
+        <p class="week-label">Lecture Topics</p>
+        <ul class="resource-list">
+          <li>No Lectures.</li>
+        </ul>
+        <p class="week-label">Lab Topics</p>
+        <p>No Labs.</p>
+      </div>
+    </details>
+
+    <details class="week-card">
+      <summary><span>Week 16</span><small>1.06</small></summary>
+      <div class="week-card-body">
+        <p class="week-label">Lecture Topics</p>
+        <ul class="resource-list">
+          <li>An Application: Approximation &amp; optimization.</li>
+          <li>An Application: Solving a simple regression problem.</li>
+        </ul>
+        <p class="week-label">Lab Topics</p>
+        <p>File handling.</p>
+      </div>
+    </details>
+  </div>
+</section>
+
+<section id="reference" class="content-section">
+  <div class="section-heading section-heading-card">
+    <p class="section-kicker">Complete Archive</p>
+    <h2>Supplementary Reference Library</h2>
+    <p class="section-summary">
+      Supplementary links grouped under the same categories used on the course page.
+    </p>
+  </div>
+
+  <div class="archive-grid">
+    <details class="archive-card" open>
+      <summary>Tutorials and Websites</summary>
+      <div class="archive-body">
+        <ul class="resource-list resource-list-columns">
+          <li><a href="http://swaroopch.com/notes/python/">A Byte of Python</a>, by Swaroop C.H.</li>
+          <li><a href="http://www.afterhoursprogramming.com/tutorial/Python/Overview/">After Hours Programming Python 3 Tutorial</a></li>
+          <li><a href="https://www.programiz.com/learn-python">An App to Learn Python</a></li>
+          <li><a href="http://askpython.com/">Ask Python</a></li>
+          <li><a href="https://python3.guide/">Beginner-friendly guide to Python</a></li>
+          <li><a href="https://classpert.com/python-programming">Classpert - Python</a></li>
+          <li><a href="https://hackr.io/tutorials/learn-python">Hackr.io - Python</a></li>
+          <li><a href="http://www.cs.luc.edu/~anh/python/hands-on/3.0/">Hands-on Python Tutorial</a></li>
+          <li><a href="http://www.alan-g.me.uk/">Learning to Program</a></li>
+          <li><a href="http://letsfindcourse.com/python">Letsfindcourse - Python</a></li>
+          <li><a href="http://en.wikibooks.org/wiki/Non-Programmer's_Tutorial_for_Python_3.0">Wikibooks Non-Programmer's Tutorial for Python</a></li>
+          <li><a href="https://overiq.com/python/3.4/intro-to-python/">Learn Python by OverIQ</a></li>
+          <li><a href="http://www.alan-g.me.uk/l2p/">Learning to Program by Alan Gauld</a></li>
+          <li><a href="http://pythontips.com/">Python tips</a></li>
+          <li><a href="http://docs.python.org/py3k/tutorial/">Python Tutorial in Python's documentation set</a></li>
+          <li><a href="http://www.python-course.eu/python3_course.php">The Python-Course.eu tutorial</a></li>
+          <li><a href="https://www.pythonspot.com/">Pythonspot Tutorials</a></li>
+          <li><a href="http://thepythonguru.com/">The Python Guru</a></li>
+          <li><a href="https://coderslegacy.com/">CodersLegacy</a></li>
+          <li><a href="https://thecodezine.com/">The Codezine</a></li>
+          <li><a href="https://gitconnected.com/learn/python">Top Courses to Learn Python - gitconnected</a></li>
+          <li><a href="https://coursesity.com/best-tutorials-learn/python">Coursesity - Python</a></li>
+          <li><a href="https://wiki.python.org/moin/BeginnersGuide/Programmers">BeginnersGuide/Programmers</a></li>
+          <li><a href="https://realpython.com/python-first-steps/">Real Python: first steps</a></li>
+          <li><a href="https://python.swaroopch.com">python.swaroopch.com</a></li>
+          <li><a href="https://www.learnpython.org">LearnPython.org</a></li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="archive-card">
+      <summary>Interactive Courses</summary>
+      <div class="archive-body">
+        <ul class="resource-list resource-list-columns">
+          <li><a href="http://www.checkio.org/">CheckiO</a></li>
+          <li><a href="https://www.codecademy.com/search?query=python">Codecademy Python</a></li>
+          <li><a href="https://codetheblocks.com/">Code the Blocks</a></li>
+          <li><a href="http://cscircles.cemc.uwaterloo.ca/">Computer Science Circles</a></li>
+          <li><a href="https://www.datacamp.com/courses/intro-to-python-for-data-science">DataCamp Python Tutorial</a></li>
+          <li><a href="https://finxter.com/">Finxter</a></li>
+          <li><a href="https://hackinscience.org/">HackInScience</a></li>
+          <li><a href="http://interactivepython.org/runestone/static/thinkcspy/index.html">How to Think Like a Computer Scientist: Interactive Edition</a></li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="archive-card">
+      <summary>Books</summary>
+      <div class="archive-body">
+        <ul class="resource-list">
+          <li><strong>Automate the Boring Stuff with Python</strong> by Al Sweigart — <a href="https://automatetheboringstuff.com/">website</a> · <a href="http://www.amazon.com/gp/product/1593275994/">print version</a></li>
+          <li><strong>How To Think Like a Computer Scientist</strong> by Allen Downey, Jeffrey Elkner, Chris Meyers, updated by Peter Wentworth — <a href="http://openbookproject.net/thinkcs/python/english3e/">website</a> · <a href="http://openbookproject.net/thinkcs/python/english3e/">print version</a></li>
+          <li><strong>Making Games with Python &amp; Pygame</strong> by Al Sweigart — <a href="http://inventwithpython.com/pygame">website</a> · <a href="http://www.amazon.com/Making-Games-Python-Pygame-Sweigart/dp/1469901730?ie=UTF8&tag=playwithpyth-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0982106017">print version</a></li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="archive-card">
+      <summary>Videos and Tools</summary>
+      <div class="archive-body">
+        <ul class="resource-list">
+          <li><a href="https://youtu.be/uCzFUKWtzgA?list=PLboXykqtm8dy_DNg1NZiS08Dnyj35PWXw">Python Programming Tutorials for Beginners</a></li>
+          <li><a href="http://young-programmers.blogspot.com/search/label/python">Young Programmers Podcast</a></li>
+          <li><a href="http://thonny.org/">Thonny, Python IDE for beginners</a></li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="archive-card">
+      <summary>Interesting Link on the Web</summary>
+      <div class="archive-body">
+        <ul class="resource-list">
+          <li><a href="https://thinkygames.com/games/the-farmer-was-replaced/">The Farmer Was Replaced</a></li>
+        </ul>
+      </div>
+    </details>
+  </div>
+</section>
+
+<section id="contact" class="content-section">
+  <article class="content-card contact-card">
+    <div class="section-heading">
+      <p class="section-kicker">Contact</p>
+      <h2>Course Communication</h2>
+    </div>
+    <p>
+      Please use the following email address for course related issues:
+      <a href="mailto:ceng240@ceng.metu.edu.tr">ceng240@ceng.metu.edu.tr</a>
+    </p>
+  </article>
+</section>

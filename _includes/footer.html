@@ -1,37 +1,24 @@
 <footer class="site-footer h-card">
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
-  <div class="wrapper">
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col">
-        <p class="feed-subscribe">
-          <a href="{{ 'feed.xml' | relative_url }}">
-            <svg class="svg-icon orange">
-              <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
-            </svg><span>Subscribe</span>
-          </a>
-        </p>
-      {%- if site.author %}
-        <ul class="contact-list">
-          {% if site.author.name -%}
-            <li class="p-name">{{ site.author.name | escape }}</li>
-          {% endif -%}
-          {% if site.author.email -%}
-            <li><a class="u-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
-          {%- endif %}
-        </ul>
-      {%- endif %}
-      </div>
-      <div class="footer-col">
-        <p>{{ site.description | escape }}</p>
-      </div>
+  <div class="wrapper footer-shell">
+    <div class="footer-brand">
+      <p class="footer-kicker">Course Information</p>
+      <h2>CENG240 Course Hub</h2>
+      <p>{{ site.description | escape }}</p>
+      <p class="footer-note">
+        This page keeps announcements, materials, schedule, weekly coverage, and supplementary
+        links together in one place.
+      </p>
     </div>
 
-    <div class="social-links">
-      {%- include social.html -%}
+    <div class="footer-meta">
+      <p class="footer-label">Instructors</p>
+      <p>{{ site.author.name | escape }}</p>
+      <p class="footer-label">Course Email</p>
+      <p><a class="u-email" href="mailto:ceng240@ceng.metu.edu.tr">ceng240@ceng.metu.edu.tr</a></p>
+      <p class="footer-label">Quick Links</p>
+      <p><a href="#announcements">Announcements</a> · <a href="#materials">Materials</a> · <a href="#reference">Reference</a></p>
     </div>
-
   </div>
-
 </footer>
