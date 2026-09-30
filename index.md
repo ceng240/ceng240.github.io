@@ -29,6 +29,9 @@ Available at: [https://pp4e-book.github.io/](https://pp4e-book.github.io/)
 | Labs          | 30%      |
 | Final         | 30%      |
 
+ ## Lab Schedule
+
+ ![Lab Schedule](assests/LabSchedFall2026.jpeg)
 
 ## Course Conduct
 
