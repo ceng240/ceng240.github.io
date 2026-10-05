@@ -7,7 +7,7 @@
 
 ## Announcements
 
-### About Registration: The course is currently offered to students that satisfy both of the following conditions: i) The students from departments that should take the course in Fall Semester ii) The students that either failed the course (FF,FD,NA) or taking it for the first time. Others must wait for Add-drop period during which there may be updates to section criteria to allow other students to take the course depending on the capacity of the course. Note that course capacity is directly related to lab capacity which is fixed.
+### About Add Drop Period: Course is currently open to students who are on probation status or their cGPA <= 2.0. Those students can take the course only if there is a section that is suitable for their weekly schedule. Otherwise do not register to the course since we wont be able to offer assistance in terms of section changes. Other students that are currently registered to course should not drop the course otherwise they wont be able to add it again unless they are on probation status or cGPA <= 2.0.
 
 * Midterm date: **1st of December 18:00**.
 * Final date:  **5th of January 13:30**.
