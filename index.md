@@ -7,7 +7,9 @@
 
 ## Announcements
 
-### About Add Drop Period: Course is currently open to students who are on probation status or their cGPA <= 2.0. Those students can take the course only if there is a section that is suitable for their weekly schedule. Otherwise do not register to the course since we wont be able to offer assistance in terms of section changes. Other students that are currently registered to course should not drop the course otherwise they wont be able to add it again unless they are on probation status or cGPA <= 2.0.
+### About Add Drop Period: Tomorrow (8th October) at 13:00 the ones who are registered to course will be able to change their sections if a suitable section is available. However, you need to change your section only if your lab section is colliding with another course. If your lecture hour is colliding you can either follow the other lecture hour or follow the course via online videos. 
+
+## About Registration Office Hours: Friday: 9-11 - A401, Friday 2:30-3:30 - A206
 
 * Midterm date: **1st of December 18:00**.
 * Final date:  **5th of January 13:30**.
@@ -151,8 +153,8 @@ About Exams:
 
 | **DEPT** | **SECTION** | **PLACE** | **LECTURER** | **TIME** |
 | --- | --- | --- | --- | --- |
-| **ALL** | **1 - 18** | **U3** | **Hazal Mogultay Ozcan** | Monday 15:40-17:30 |
-| **ALL** | **19 - 36** | **U3** | **Hazal Mogultay Ozcan** | Friday 13:40-15:30 |
+| **ALL** | **1 - 15** | **U3** | **Hazal Mogultay Ozcan** | Monday 15:40-17:30 |
+| **ALL** | **16 - 30** | **YP-A3** | **Hazal Mogultay Ozcan** | Tuesday 15:40-17:30 |
 
 
 ## Weekly Coverage <!--and Lecture Videos-->
