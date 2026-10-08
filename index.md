@@ -7,7 +7,7 @@
 
 ## Announcements
 
-### About Add Drop Period: Tomorrow (8th October) at 13:00 the ones who are registered to course will be able to change their sections if a suitable section is available. However, you need to change your section only if your lab section is colliding with another course. If your lecture hour is colliding you can either follow the other lecture hour or follow the course via online videos. 
+### About Add Drop Period: Tomorrow (8th October) at 13:00 the ones who are registered to course will be able to change their sections if a suitable section is available. However, you need to change your section only if your lab section is colliding with another course. If your lecture hour is colliding you can either follow the other lecture hour or follow the course via online videos. You have 1 day to make those changes since tomorrow (Friday) at 13:00 the course will be offered to all. 
 
 ## About Registration Office Hours: Friday: 9-11 - A401, Friday 2:30-3:30 - A206
 
