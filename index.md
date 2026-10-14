@@ -215,31 +215,29 @@ About Exams:
   + Object-oriented Programming (OOP) Concepts: Class definition; Member functions & variables; Message passing; Encapsulation; Inheritance; Polymorphism; Basics of OOP in Python.
 - Lab Topics: Repetitive execution & functions (I).
 
-
-
 **Week 10 (23.11)**
 
 - Lecture Topics: 
   + File handling: Files and Sequential access; Parsing; Termination of Input; Formatting output; binary files.
-- Lab Topics: No Labs.
+- Lab Topics: Repetitive execution & functions (II).
   
 **Week 11 (30.11)**
 
 - Lecture Topics: 
   + Previous lecture contd.
-- Lab Topics: No Labs.
+- Lab Topics: OO operations on built-in objects.
   
-**Week 12 (7.12)**
+**Week 12 (07.12)**
 
 - Lecture Topics: 
   + Exception handling and Debugging: Kind of errors; Exceptions; Debugging techniques.algebraic functions etc.).
-- Lab Topics: Repetitive execution & functions (II)     
+- Lab Topics: File handling.      
 
 **Week 13 (14.12)**
 
 - Lecture Topics: 
   + Engineering and scientific libraries for Python: Libraries and tools for numerical & scientific calculations (arrays, n-D arrays, slicing, basic operations on arrays, commonly used functions, 
-- Lab Topics: OO operations on built-in objects.    
+- Lab Topics: No Labs.     
 
 **Week 14 (21.12)**
 
@@ -250,16 +248,9 @@ About Exams:
 **Week 15 (28.12)**
 
 - Lecture Topics:
-  + No Lectures.
-- Lab Topics: No Labs
-
-**Week 16 (1.06)**
-
-- Lecture Topics:
   + An Application: Approximation & optimization.
   + An Application: Solving a simple regression problem.
-- Lab Topics: File handling.
-
+- Lab Topics: No Labs.
 
 
 ## Contact
