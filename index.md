@@ -243,15 +243,9 @@ About Exams:
 
 - Lecture Topics:
   + Engineering and scientific libraries for Python [continued]: Data handling & analysis, and plotting. Illustration of these tools with examples.
-- Lab Topics: No Labs.
-
-**Week 15 (28.12)**
-
-- Lecture Topics:
   + An Application: Approximation & optimization.
   + An Application: Solving a simple regression problem.
 - Lab Topics: No Labs.
-
 
 ## Contact
 
