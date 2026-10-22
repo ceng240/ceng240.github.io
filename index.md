@@ -224,25 +224,24 @@ About Exams:
 **Week 11 (07.12)**
 
 - Lecture Topics: 
-  + Previous lecture contd.
+  + Exception handling and Debugging: Kind of errors; Exceptions; Debugging techniques.algebraic functions etc.).
 - Lab Topics: Repetitive execution & functions (II).
   
 **Week 12 (14.12)**
 
 - Lecture Topics: 
-  + Exception handling and Debugging: Kind of errors; Exceptions; Debugging techniques.algebraic functions etc.).
+  + Engineering and scientific libraries for Python: Libraries and tools for numerical & scientific calculations (arrays, n-D arrays, slicing, basic operations on arrays, commonly used functions.
 - Lab Topics: OO operations on built-in objects.
 
 **Week 13 (21.12)**
 
 - Lecture Topics: 
-  + Engineering and scientific libraries for Python: Libraries and tools for numerical & scientific calculations (arrays, n-D arrays, slicing, basic operations on arrays, commonly used functions.
+  + Engineering and scientific libraries for Python [continued]: Data handling & analysis, and plotting. Illustration of these tools with examples.
 - Lab Topics: File handling.      
 
 **Week 14 (28.12)**
 
 - Lecture Topics:
-  + Engineering and scientific libraries for Python [continued]: Data handling & analysis, and plotting. Illustration of these tools with examples.
   + An Application: Approximation & optimization.
   + An Application: Solving a simple regression problem.
 - Lab Topics: No Labs.
